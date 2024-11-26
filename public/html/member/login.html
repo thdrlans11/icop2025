@@ -1,0 +1,113 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text hide">
+                <h2 class="sub-visual-tit">M2community 2024 INTERNATIONAL CONFERENCE. NOVEMBER 7 THU ~ 9 FRI. 2024. LOTTE HOTEL WORDL, SEOUL, KOREA</h2>
+            </div>                    
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="/conf_typeb/html/member/signup_intro.html" class="btn-sub-menu js-btn-sub-menu">SIGN UP</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/about/invitation.html">M2community</a></li>
+                        <li><a href="/conf_typeb/html/program/program.html">PROGRAM</a></li>
+                        <li><a href="/conf_typeb/html/abstract/guide.html">SUBMISSION</a></li>
+                        <li><a href="/conf_typeb/html/regist/guide.html">ATTENDANCE</a></li>
+                        <li><a href="/conf_typeb/html/sponsor/guide.html">SPONSORSHIP</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="/conf_typeb/html/member/login.html" class="btn-sub-menu js-btn-sub-menu">Login</a>
+                    <ul>
+                        <li class="on"><a href="/conf_typeb/html/member/login.html">Login</a></li>
+                        <li><a href="/conf_typeb/html/member/find_id.html">Forgotten your ID?</a></li>
+                        <li><a href="/conf_typeb/html/member/find_pw.html">Forgotten your password?</a></li>
+                        <li><a href="/conf_typeb/html/member/signup_intro.html">Sign-Up</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Login</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <div class="sub-tit-wrap">
+                <h4 class="sub-tit">Login</h4>
+            </div>
+            <div class="login-form-wrap cf">
+                <div class="form-conbox">
+                    <form action="/conf_typeb/" method="">
+                        <fieldset>
+                            <legend class="hide">LOGIN</legend>
+                            <div class="login-conbox">
+                                <h3 class="login-tit">LOGIN</h3>
+                                <div class="input-box">
+                                    <input type="text" name="" id="" class="form-item" placeholder="ID(E-mail)">
+                                    <input type="passowrd" name="" id="" class="form-item" placeholder="Password">
+                                    <div class="btn-wrap">
+                                        <button type="submit" class="btn btn-login">LOGIN</button>
+                                        <p class="text-right">
+                                            <a href="./find_id.html"><img src="/conf_typeb/assets/image/icon/ic_person.png" alt="">Forgotten your ID</a>
+                                            <a href="./find_pw.html"><img src="/conf_typeb/assets/image/icon/ic_lock.png" alt="">Forgotten your Password</a>
+                                        </p>
+                                        <a href="./signup_intro.html" class="btn btn-signup">Sign up</a>
+                                        <p>
+                                            <strong class="required">*</strong> Please sign up if this is your first visit.
+                                        </p>
+                                    </div> 
+                                </div>    
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="form-conbox form-info-box">
+                    <h3 class="tit">Important Date </h3>
+                    <ul class="important-date-list">
+                        <li>
+                            <span class="dday">END</span>
+                            <div>
+                                <p>Deadline of Abstract Submission</p>
+                                <strong class="highlights">October 31, 2024</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dday">D-100</span>
+                            <div>
+                                <p>Deadline of Early Bird Registration</p>
+                                <strong class="highlights">October 31, 2024</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dday">D-100</span>
+                            <div>
+                                <p>Deadline of Regular Registration</p>
+                                <strong class="highlights">February 28, 2025</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dday">D-100</span>
+                            <div>
+                                <p>Deadline of Regular Registration</p>
+                                <strong class="highlights">February 28, 2025</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </article>
+</section> 
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/footer.inc';
+?>

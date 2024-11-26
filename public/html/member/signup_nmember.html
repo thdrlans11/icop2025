@@ -1,0 +1,277 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text hide">
+                <h2 class="sub-visual-tit">M2community 2024 INTERNATIONAL CONFERENCE. NOVEMBER 7 THU ~ 9 FRI. 2024. LOTTE HOTEL WORDL, SEOUL, KOREA</h2>
+            </div>                    
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="/conf_typeb/html/member/signup_intro.html" class="btn-sub-menu js-btn-sub-menu">SIGN UP</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/about/invitation.html">M2community</a></li>
+                        <li><a href="/conf_typeb/html/program/program.html">PROGRAM</a></li>
+                        <li><a href="/conf_typeb/html/abstract/guide.html">SUBMISSION</a></li>
+                        <li><a href="/conf_typeb/html/regist/guide.html">ATTENDANCE</a></li>
+                        <li><a href="/conf_typeb/html/sponsor/guide.html">SPONSORSHIP</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="/conf_typeb/html/member/find_id.html" class="btn-sub-menu js-btn-sub-menu">Sign-Up</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/member/login.html">Login</a></li>
+                        <li><a href="/conf_typeb/html/member/find_id.html">Forgotten your ID?</a></li>
+                        <li><a href="/conf_typeb/html/member/find_pw.html">Forgotten your password?</a></li>
+                        <li class="on"><a href="/conf_typeb/html/member/signup_intro.html">Sign-Up</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">회원가입</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <div class="write-form-wrap">
+                <form action="./signup_complete_nmember.html" method="">
+                    <fieldset>
+                        <legend class="hide">Sign-Up</legend>
+                        <div class="sub-tit-wrap">
+                            <h3 class="sub-tit">Use of your Personal Information</h3>
+                        </div>
+                        <div class="term-wrap">
+                            <div class="term-conbox">
+                                <p class="term-tit text-center">2024 KALC International Conference 개인정보 취급 방침</p>
+                                <ul class="list-type list-type-square">
+                                    <li>
+                                        <strong>개인정보의 수집 및 이용목적</strong>
+                                        <p>
+                                            M2community 2025 홈페이지는 M2community 2025의 온라인 초록 접수, 사전등록 서비스 및 홍보 웹레터 발송을 제공하고 있습니다. 이때 회원님께서 입력한 개인정보를 바탕으로 회원님의 초록 제출, 등록비 결제 및 홍보 웹레터 수신이 가능하게 됩니다.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>수집하는 개인정보의 항목</strong>
+                                        <p>
+                                            M2community 2025는 학술대회 초록 접수 및 사전등록을 위해 개인정보를 요구하고 있습니다. 국가, 아이디(E-mail), 성명(국문/영문), 등록구분, 의사면허번호, Title, Degree, 과(국문/영문), 소속(국문,영문), 핸드폰 번호, 특이식성을 필수 입력사항으로 수집하고 있습니다.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>개인정보의 보유 및 이용기간</strong>
+                                        <p>회원님이 M2community 2025에 제공하는 서비스를 받는 동안 회원님의 개인정보는 M2community 2025에서 계속 보유하며 서비스 제공을 위해 이용하게 됩니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="checkbox-wrap cst text-center">
+                                <label for="chk_agree" class="checkbox-group">
+                                    <input type="checkbox" name="" id="chk_agree">상기 내용을 확인하였으며, 개인정보 수집 및 활용에 동의합니다.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="sub-tit-wrap">
+                            <h3 class="sub-tit">Personal Information</h3>
+                        </div>
+                        <p class="help-text">
+                            ※ 필수 입력 항목은 빨간색 (<strong class="required">*</strong>)이 표시되어 있습니다. <br>
+                            ※ 입력하신 정보는 초록 제출 및 대회 등록 시 활용되니, 정확하게 입력해 주시기 바랍니다.
+                        </p>
+                        <div class="write-wrap">
+                            <ul>
+                                <li>
+                                    <div class="form-tit">Country <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        Korea, Republic of
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">ID (Email) <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="form-group has-btn">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <a href="#n" class="btn btn-small color-type6">ID (E-mail) 중복 확인</a>
+                                        </div>
+                                        <p class="help-text text-red mt-10">
+                                            * 학회 회원 시 가입하셨던 이메일 주소로 사용 가능합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">비밀번호 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <input type="password" name="" id="" class="form-item">
+                                        <p class="help-text text-red mt-10">
+                                            * KALC-IC에서 로그인 시 사용할 비밀번호를 입력해 주십시오.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">비밀번호 확인 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <input type="password" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">이름 (국문) <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">이름 (영문) <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="form-group n2">
+                                            <input type="text" name="" id="" class="form-item" placeholder="First Name">
+                                            <input type="text" name="" id="" class="form-item" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">생년월일 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                        <div class="help-text text-red mt-10">
+                                            * 예시 : 19810101
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">등록구분 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="radio-wrap cst">
+                                            <label for="cate1" class="radio-group"><input type="radio" name="cate" id="cate1">전문의</label>
+                                            <label for="cate2" class="radio-group"><input type="radio" name="cate" id="cate2">전임의</label>
+                                            <label for="cate3" class="radio-group"><input type="radio" name="cate" id="cate3">전공의</label>
+                                            <label for="cate4" class="radio-group"><input type="radio" name="cate" id="cate4">간호사</label>
+                                            <label for="cate5" class="radio-group"><input type="radio" name="cate" id="cate5">연구원</label>
+                                            <label for="cate6" class="radio-group"><input type="radio" name="cate" id="cate6">학생(대학 학부생)</label>
+                                            <label for="cate7" class="radio-group"><input type="radio" name="cate" id="cate7">기타 <input type="text" name="" id="" class="form-item"></label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">의사면허번호 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="form-group has-btn">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <a href="#n" class="btn btn-small color-type6">면허번호 중복확인</a>
+                                        </div>
+                                        <div class="checkbox-wrap cst mt-10">
+                                            <label for="chk1" class="checkbox-group">
+                                                <input type="checkbox" name="" id="chk1">없음
+                                            </label>
+                                            <span class="help-text text-blue">* 의사면허번호가 없으신 경우 없음 체크해주세요</span>
+                                        </div>
+                                        <div class="help-text text-red mt-10">
+                                            * 원활한 평점 제공을 위하여 면허번호를 정확히 기입하시기 바랍니다.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">Title (직위) <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="radio-wrap cst">
+                                            <label for="chk-title1" class="radio-group"><input type="radio" name="chk-title" id="chk-title1">Prof.</label>
+                                            <label for="chk-title2" class="radio-group"><input type="radio" name="chk-title" id="chk-title2">Dr.</label>
+                                            <label for="chk-title3" class="radio-group"><input type="radio" name="chk-title" id="chk-title3">Mr.</label>
+                                            <label for="chk-title4" class="radio-group"><input type="radio" name="chk-title" id="chk-title4">Ms.</label>
+                                            <label for="chk-title5" class="radio-group"><input type="radio" name="chk-title" id="chk-title5">Mrs.</label>
+                                            <label for="chk-title6" class="radio-group"><input type="radio" name="chk-title" id="chk-title6">기타 <input type="text" name="" id="" class="form-item"></label>                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">소속 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-item">
+                                                <option value="">:::: Selected :::::</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-text mt-10">
+                                            <span class="text">국문</span>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                        <div class="form-group form-group-text mt-10">
+                                            <span class="text">영문</span>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">과 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-item">
+                                                <option value="">:::: Selected :::::</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-text mt-10">
+                                            <span class="text">국문</span>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                        <div class="form-group form-group-text mt-10">
+                                            <span class="text">영문</span>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">핸드폰 번호 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="form-group form-group-text n3">
+                                            <select name="" id="" class="form-item">
+                                                <option value="">010</option>
+                                            </select>
+                                            <span class="text">-</span>
+                                            <input type="text" name="" id="" class="form-item">
+                                            <span class="text">-</span>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sub-tit-wrap">
+                            <h3 class="sub-tit">Preventing Automation Program Entry</h3>
+                        </div>
+                        <div class="write-wrap">
+                            <ul>
+                                <li>
+                                    <div class="form-con">
+                                        <div class="captcha">
+                                            <span class="img"><img id="captcha_img" src="/conf_typea/assets/image/common/captcha.png"></span>
+                                            <button type="button" onclick="refresh_captcha();return false;"><img src="/conf_typea/assets/image/icon/ic_refresh.png" class="refresh"></button>                                                
+                                            <input type="text" name="captcha" id="captcha" class="form-item">
+                                        </div>
+                                        <p class="help-text text-blue mt-10">
+                                            * For information security, you can register as a member after entering the text written below.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-wrap text-center">
+                            <a href="/conf_typea/" class="btn btn-type1 color-type1">Cancel</a>
+                            <button type="submit" class="btn btn-type1 color-type2">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </article>
+</section> 
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/footer.inc';
+?>

@@ -1,0 +1,61 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+//About the Congress
+Route::prefix('about')->controller(\App\Http\Controllers\About\AboutController::class)->group(function() {
+    Route::get('overview', 'overview')->name('about.overview');
+    Route::get('welcome', 'welcome')->name('about.welcome');
+    Route::get('society', 'society')->name('about.society');
+    Route::get('committee', 'committee')->name('about.committee');
+    Route::get('contact', 'contact')->name('about.contact');
+});
+
+// Program
+Route::prefix('program')->controller(\App\Http\Controllers\Program\ProgramController::class)->group(function() {
+    Route::get('speakers', 'speakers')->name('program.speakers');
+});
+
+//Registration
+Route::prefix('registration')->controller(\App\Http\Controllers\Registration\RegistrationController::class)->group(function() {
+    Route::get('/', 'guide')->name('registration.guide');  
+    Route::middleware('noCash')->group(function(){
+        Route::get('registration/{step}/{sid?}', 'registration')->where('step', '1|2|3|4')->name('apply.registration');
+        Route::post('emailCheck', 'emailCheck')->name('apply.registration.emailCheck');
+        Route::post('makePrice', 'makePrice')->name('apply.registration.makePrice');
+        Route::post('upsert/{step}', 'upsert')->where('step', '1|2|3|4')->name('apply.registration.upsert');
+        // Route::post('payRegist', 'payRegist')->name('apply.payRegist');
+    });
+    Route::get('search', 'search')->name('registration.search');
+    Route::post('search', 'searchResult')->name('registration.searchResult');
+});
+
+//Notice
+Route::prefix('board/{code}')->middleware('boardCheck')->controller(\App\Http\Controllers\Board\BoardController::class)->group(function() {
+    Route::get('', 'list')->name('board.list');
+    Route::get('calendar', 'calendar')->name('board.calendar');
+    Route::get('form/{sid?}', 'form')->name('board.form');     
+    Route::post('upsert/{sid?}', 'upsert')->name('board.upsert');
+    Route::get('view/{sid}', 'view')->name('board.view');
+    Route::get('delete/{sid}', 'delete')->name('board.delete');
+    Route::post('dbChange', 'dbChange')->name('board.dbChange');
+    Route::post('preview', 'popupPreview')->name('board.popupPreview');
+});
+
+//Location
+Route::prefix('location')->controller(\App\Http\Controllers\Location\LocationController::class)->group(function() {
+    Route::get('venue', 'venue')->name('location.venue');
+});
+
+require __DIR__.'/common.php';

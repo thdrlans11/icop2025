@@ -1,0 +1,133 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text">
+                <img src="/assets/image/sub/img_subvisual_text01.png" alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025">
+                <img src="/assets/image/sub/img_subvisual_text02.png" alt="June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)">
+            </div>
+            <div class="sub-visual-logo">
+                <img src="/assets/image/sub/img_subvisual_logo.png" alt="ISOP, ICOP, The Korean Society of Protistologsis. The Korean Society of Phycology">
+            </div>
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <a href="/" class="btn btn-home"></a>
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">About the Congress</a>
+                    <ul>
+                        <li><a href="#n">About the Congress</a></li>
+                        <li><a href="#n">Program</a></li>
+                        <li><a href="#n">Abstract</a></li>
+                        <li><a href="#n">Registration</a></li>
+                        <li><a href="#n">Location</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Notice</a>
+                    <ul>
+                        <li><a href="#n"><span>Overview</span></a></li>
+                        <li><a href="#n"><span>Welcome Message</span></a></li>
+                        <li><a href="#n"><span>About Society</span></a></li>
+                        <li><a href="#n"><span>Committee</span></a></li>
+                        <li class="on"><a href="#n"><span>Notice</span></a></li>
+                        <li><a href="#n"><span>Contact Info</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Notice</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+
+            <!-- s:board -->
+            <link rel="stylesheet" href="./assets/css/board.css">
+
+            <div id="board" class="board-wrap">
+                <div class="board-write">
+                    <div class="write-form-wrap">
+                        <form action="./list.html" method="">
+                            <fieldset>
+                                <legend class="hide">글쓰기</legend>
+                                <ul class="write-wrap">
+                                    <li>
+                                        <div class="form-tit">Writer</div>
+                                        <div class="form-con">
+                                            ICOP/ISOP 2025
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit">Subject</div>
+                                        <div class="form-con">
+                                            <input type="text" name="" id="" class="form-item">
+                                            <div class="checkbox-wrap cst mt-10">
+                                                <label for="tit1" class="checkbox-group">
+                                                    <input type="checkbox" name="cate" id="tit1">메인 노출
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit">Date</div>
+                                        <div class="form-con">
+                                            <input type="text" name="" id="" class="form-item datepicker">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit">Link URL</div>
+                                        <div class="form-con">
+                                            <input type="text" name="" id="" class="form-item" placeholder="http://">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-tit">Open</div>
+                                        <div class="form-con">
+                                            <div class="radio-wrap cst">
+                                                <label for="open1" class="radio-group">
+                                                    <input type="radio" name="open" id="open1">공개
+                                                </label>
+                                                <label for="open2" class="radio-group">
+                                                    <input type="radio" name="open" id="open2">비공개
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-con">
+                                            에디터 영역
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-con">
+                                            파일 등록 영역
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-wrap text-center">
+                                    <a href="./list.html" class="btn btn-board btn-cancel">Cancel</a>
+                                    <button type="submit" class="btn btn-board btn-write">OK</button>
+                                </div>                      
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- //e:board -->
+            
+        </div>
+
+    </article>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/include/footer.inc';
+?>

@@ -1,0 +1,198 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text hide">
+                <h2 class="sub-visual-tit">M2community 2024 INTERNATIONAL CONFERENCE. NOVEMBER 7 THU ~ 9 FRI. 2024. LOTTE HOTEL WORDL, SEOUL, KOREA</h2>
+            </div>                    
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="/conf_typeb/html/mypage/home.html" class="btn-sub-menu js-btn-sub-menu">MY PAGE</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/about/invitation.html">M2community</a></li>
+                        <li><a href="/conf_typeb/html/program/program.html">PROGRAM</a></li>
+                        <li><a href="/conf_typeb/html/abstract/guide.html">SUBMISSION</a></li>
+                        <li><a href="/conf_typeb/html/regist/guide.html">ATTENDANCE</a></li>
+                        <li><a href="/conf_typeb/html/sponsor/guide.html">SPONSORSHIP</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="/conf_typeb/html/mypage/home.html" class="btn-sub-menu js-btn-sub-menu">Home</a>
+                    <ul>
+                        <li class="on"><a href="/conf_typeb/html/mypage/home.html">Home</a></li>
+                        <li><a href="/conf_typeb/html/mypage/personal.html">Personal Information</a></li>
+                        <li><a href="/conf_typeb/html/mypage/registration.html">Registration</a></li>
+                        <li><a href="/conf_typeb/html/mypage/abstract.html">Abstract Submission</a></li>
+                        <li><a href="/conf_typeb/html/mypage/invited.html">Invited Paper</a></li>
+                        <li><a href="/conf_typeb/html/mypage/list.html">Abstract Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Home</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <!-- <div class="sub-tab-wrap">
+                <ul class="sub-tab-menu n6">
+                    <li class="on"><a href="./home.html">Home</a></li>
+                    <li><a href="./personal.html">Personal Information</a></li>
+                    <li><a href="./registration.html">Registration</a></li>
+                    <li><a href="./abstract.html">Abstract Submission</a></li>
+                    <li><a href="./invited.html">Invited Paper</a></li>
+                    <li class="review"><a href="./list.html">Abstract Review</a></li>
+                </ul>
+            </div> -->
+
+            <div class="border-box text-center bg-gray">
+                Welcome <strong class="text-navy">{first_name} {last_name}</strong>
+           </div>
+
+           <div class="sub-tit-wrap">
+                <h4 class="sub-tit">Personal Information</h4>
+           </div>
+           <ul class="write-wrap">
+                <li class="n2">
+                    <div class="form-tit">ID(E-mail)</div>
+                    <div class="form-con">
+                        ID(E-mail)
+                    </div>
+                    <div class="form-tit">성명(국/영문)</div>
+                    <div class="form-con">
+                        {국문 성명} / {first_name} {last_name}
+                    </div>
+                </li>
+                <li class="n2">
+                    <div class="form-tit">등록구분</div>
+                    <div class="form-con">
+                        {등록구분}
+                    </div>
+                    <div class="form-tit">소속</div>
+                    <div class="form-con">
+                        {국문소속} <br>
+                        {영문소속}
+                    </div>
+                </li>
+           </ul>
+
+            <ul class="write-wrap">
+                <li class="n2">
+                    <div class="form-tit">ID(E-mail)</div>
+                    <div class="form-con">
+                        ID(E-mail)
+                    </div>
+                    <div class="form-tit">Name</div>
+                    <div class="form-con">
+                        {Name}
+                    </div>
+                </li>
+                <li class="n2">
+                    <div class="form-tit">Category</div>
+                    <div class="form-con">
+                        {Category}
+                    </div>
+                    <div class="form-tit">Affiliation</div>
+                    <div class="form-con">
+                        {Affiliation}
+                    </div>
+                </li>
+            </ul>
+
+            <div class="btn-wrap text-center">
+                <a href="./personal.html" class="btn btn-type1 color-type3">Review &amp; Modify</a>
+            </div>
+
+            <div class="sub-tit-wrap">
+                <h4 class="sub-tit">Abstract Submission</h4>
+            </div>
+            <div class="table-wrap scroll-x touch-help">
+                <table class="cst-table">
+                    <caption class="hide">Abstract Submission</caption>
+                    <colgroup>
+                        <col style="width: 8%;">
+                        <col style="width: 15%;">
+                        <col>
+                        <col style="width: 12%;">
+                        <col style="width: 18%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Abstract No.</th>
+                            <th scope="col">Abstract Title</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Review / Modify</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>{Abstract No}</td>
+                            <td class="text-left">
+                                {Abstract Title}
+                            </td>
+                            <td>
+                                <span class="text-blue">Complete</span>
+                            </td>
+                            <td>
+                                <div class="btn-wrap">
+                                    <a href="#n" class="btn btn-small btn-mypage btn-preview color-type3">Preview</a>
+                                    <a href="#n" class="btn btn-small btn-mypage color-type4">Modify</a>
+                                    <a href="#n" class="btn btn-small btn-mypage color-type1">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>{Abstract No}</td>
+                            <td class="text-left">
+                                {Abstract Title}
+                            </td>
+                            <td>
+                                <span class="text-red">In process</span>
+                            </td>
+                            <td>
+                                <div class="btn-wrap">
+                                    <a href="#n" class="btn btn-small btn-mypage btn-preview color-type3">Preview</a>
+                                    <a href="#n" class="btn btn-small btn-mypage color-type4">Modify</a>
+                                    <a href="#n" class="btn btn-small btn-mypage color-type1">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>{Abstract No}</td>
+                            <td class="text-left">
+                                {Abstract Title}
+                            </td>
+                            <td>
+                                <span class="text-red">Withdraw</span>
+                            </td>
+                            <td>
+                                <div class="btn-wrap">
+                                    <a href="#n" class="btn btn-small btn-mypage btn-preview color-type3">Preview</a>
+                                    <a href="#n" class="btn btn-small btn-mypage color-type4">Modify</a>
+                                    <a href="#n" class="btn btn-small btn-mypage color-type1">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+</section> 
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/footer.inc';
+?>

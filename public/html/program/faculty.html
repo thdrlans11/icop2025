@@ -1,0 +1,219 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text hide">
+                <h2 class="sub-visual-tit">M2community 2024 INTERNATIONAL CONFERENCE. NOVEMBER 7 THU ~ 9 FRI. 2024. LOTTE HOTEL WORDL, SEOUL, KOREA</h2>
+            </div>                    
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="/conf_typeb/html/about/invitation.html" class="btn-sub-menu js-btn-sub-menu">PROGRAM</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/about/invitation.html">M2community</a></li>
+                        <li><a href="/conf_typeb/html/program/program.html">PROGRAM</a></li>
+                        <li><a href="/conf_typeb/html/abstract/guide.html">SUBMISSION</a></li>
+                        <li><a href="/conf_typeb/html/regist/guide.html">ATTENDANCE</a></li>
+                        <li><a href="/conf_typeb/html/sponsor/guide.html">SPONSOR</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="/conf_typeb/html/program/program.html" class="btn-sub-menu js-btn-sub-menu">Invited faculty</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/program/program.html">Program at a Glance</a></li>
+                        <li><a href="/conf_typeb/html/program/scientific.html">Scientific Program</a></li>
+                        <li class="on"><a href="/conf_typeb/html/program/faculty.html">Invited faculty</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Invited faculty</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <div class="sch-wrap">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">검색</legend>
+                        <div class="form-group">
+                            <select name="search_key" id="search_key" class="form-item sch-cate">
+                                <option value="all" selected="">All</option>
+                                <option value="names">Name</option>
+                                <option value="office">Affiliation</option>
+                                <option value="country">Country</option>
+                            </select>
+                            <input type="text" name="" id="" class="form-item sch-key" placeholder="Search Session (Name, Affiliation, Country)">
+                            <button type="submit" class="btn btn-sch">Search</button>
+                            <button type="reset" class="btn btn-sch btn-reset">Clear Search</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="sub-tab-wrap">
+                <ul class="room-tab-menu type2">
+                <li class="on"><a href="#n">All</a></li>
+                <li><a href="#n">Domestic (Korean)</a></li>
+                <li><a href="#n">International</a></li>
+                </ul>
+            </div>
+
+            <ul class="invited-list">
+                <li>
+                    <div class="img-wrap">
+
+                    </div>
+                    <div class="text-wrap">
+                        <p class="name">Cheol Kyu Park</p>
+                        <p class="affiliation">
+                            <strong>Chonnam National University Medical School and Hwasun Hospital</strong>
+                            Korea
+                        </p>
+                        <div class="btn-wrap">
+                            <a href="#detail-popup" class="btn btn-detail js-pop-open">Details +</a>
+                            <a href="#n" class="btn btn-cv">CV</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-wrap">
+
+                    </div>
+                    <div class="text-wrap">
+                        <p class="name">Eun Joo Kang</p>
+                        <p class="affiliation">
+                            <strong>Korea University Guro Hospital</strong>
+                            Korea
+                        </p>
+                        <div class="btn-wrap">
+                            <a href="#detail-popup" class="btn btn-detail js-pop-open">Details +</a>
+                            <a href="#n" class="btn btn-cv">CV</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-wrap">
+
+                    </div>
+                    <div class="text-wrap">
+                        <p class="name">Cheol Kyu Park</p>
+                        <p class="affiliation">
+                            <strong>Chonnam National University Medical School and Hwasun Hospital</strong>
+                            Korea
+                        </p>
+                        <div class="btn-wrap">
+                            <a href="#detail-popup" class="btn btn-detail js-pop-open">Details +</a>
+                            <a href="#n" class="btn btn-cv">CV</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img-wrap">
+
+                    </div>
+                    <div class="text-wrap">
+                        <p class="name">Eun Joo Kang</p>
+                        <p class="affiliation">
+                            <strong>Korea University Guro Hospital</strong>
+                            Korea
+                        </p>
+                        <div class="btn-wrap">
+                            <a href="#detail-popup" class="btn btn-detail js-pop-open">Details +</a>
+                            <a href="#n" class="btn btn-cv">CV</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+</section> 
+
+<div class="popup-wrap" id="detail-popup" style="display: none;">
+    <div class="popup-contents">
+        <div class="popup-tit-wrap">
+            <h4 class="popup-tit">{연자 성함 (소속)}</h4>
+        </div>
+        <div class="popup-conbox">
+            <div class="table-wrap">
+                <table class="cst-table">
+                    <caption class="hide">세션</caption>
+                    <colgroup>
+                        <col style="width: 30%;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="2" class="text-left">
+                                세션 제목
+                                <p>서브 세션 제목</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Date & Time</th>
+                            <td class="text-left">June 21 (Fri.), 14:40 – 15:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Location</th>
+                            <td class="text-left">{Room}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Role</th>
+                            <td class="text-left">{Chair or Speaker or Panel/Judge}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-wrap">
+                <table class="cst-table">
+                    <caption class="hide">세션</caption>
+                    <colgroup>
+                        <col style="width: 30%;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="2" class="text-left">
+                                세션 제목
+                                <p>서브 세션 제목</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Date & Time</th>
+                            <td class="text-left">June 21 (Fri.), 14:40 – 15:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Location</th>
+                            <td class="text-left">{Room}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Role</th>
+                            <td class="text-left">{Chair or Speaker or Panel/Judge}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btn-wrap text-center">
+                <a href="#n" class="btn btn-type1 color-type1 js-pop-close">Cloes</a>
+            </div>
+        </div>
+        <button type="button" class="btn-pop-close js-pop-close"><img src="/conf_typeb/assets/image/icon/ic_popup_close_white.png" alt=""><span class="hide">팝업 닫기</span></button>
+    </div>
+</div>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/footer.inc';
+?>

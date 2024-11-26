@@ -1,0 +1,351 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text hide">
+                <h2 class="sub-visual-tit">M2community 2024 INTERNATIONAL CONFERENCE. NOVEMBER 7 THU ~ 9 FRI. 2024. LOTTE HOTEL WORDL, SEOUL, KOREA</h2>
+            </div>                    
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="/conf_typeb/html/regist/guide.html" class="btn-sub-menu js-btn-sub-menu">ATTENDANCE</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/about/invitation.html">M2community</a></li>
+                        <li><a href="/conf_typeb/html/program/program.html">PROGRAM</a></li>
+                        <li><a href="/conf_typeb/html/abstract/guide.html">SUBMISSION</a></li>
+                        <li><a href="/conf_typeb/html/regist/guide.html">ATTENDANCE</a></li>
+                        <li><a href="/conf_typeb/html/sponsor/guide.html">SPONSORSHIP</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="/conf_typeb/html/regist/guide.html" class="btn-sub-menu js-btn-sub-menu">Registration</a>
+                    <ul>
+                        <li class="on"><a href="/conf_typeb/html/regist/guide.html">Registration</a></li>
+                        <li><a href="/conf_typeb/html/regist/transportation.html">Transportation</a></li>
+                        <li><a href="/conf_typeb/html/regist/accomodation.html">Accomodation</a></li>
+                        <li><a href="/conf_typeb/html/regist/seoul.html">More about Seoul</a></li>
+                        <li><a href="/conf_typeb/html/regist/visa/list.html">Visa</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Registration</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <div class="sub-tit-wrap">
+                <h4 class="sub-tit">Registration</h4>
+            </div>
+            <form action="" method="">
+                <fieldset>
+                    <legend class="hide">Registration</legend>
+                    <div class="write-wrap">
+                        <div class="write-tit-wrap text-center">
+                            <h5>Personal Information</h5>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="form-tit">Country</div>
+                                <div class="form-con">
+                                    {Country}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">ID (Email)</div>
+                                <div class="form-con">
+                                    {ID (Email)}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Name</div>
+                                <div class="form-con">
+                                    {First name} {Last name} / {국문이름}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">대한폐암학회 회원여부</div>
+                                <div class="form-con">
+                                    {회원 or 비회원}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">등록구분</div>
+                                <div class="form-con">
+                                    {등록구분}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">의사면허번호</div>
+                                <div class="form-con">
+                                    {의사면허번호}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">전문의번호</div>
+                                <div class="form-con">
+                                    {전문의번호}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Title</div>
+                                <div class="form-con">
+                                    {Title}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">소속</div>
+                                <div class="form-con">
+                                    {영문소속} / {국문소속}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">과</div>
+                                <div class="form-con">
+                                    {영문 과} / {국문 과}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">핸드폰 번호</div>
+                                <div class="form-con">
+                                    {핸드폰 번호}
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="help-text text-red mt-10">
+                        * If you wish to modify personal information, please click the Personal Information Modify' button. <a href="#n" class="btn btn-small color-type5">Personal Information Modify</a>
+                    </div>
+
+                    <div class="write-wrap">
+                        <div class="write-tit-wrap text-center">
+                            <h5>Faculty</h5>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="form-tit">
+                                    Faculty status <strong class="required">*</strong> <br>
+                                    (chairman, speaker, panelist)
+                                </div>
+                                <div class="form-con">
+                                    <div class="radio-wrap cst">
+                                        <label for="chk1_1" class="radio-group"><input type="radio" name="chk1" id="chk1_1">Yes</label>
+                                        <label for="chk1_2" class="radio-group"><input type="radio" name="chk1" id="chk1_2">No (Not applicable)</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Faculty Dinner <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <div class="inner-table-wrap">
+                                        <ul>
+                                            <li>날짜: TBD | 시간: TBD | 장소: TBD</li>
+                                            <li>
+                                                <div class="radio-wrap cst">
+                                                    <label for="chk2_1" class="radio-group"><input type="radio" name="chk2" id="chk2_1">Yes</label>
+                                                    <label for="chk2_2" class="radio-group"><input type="radio" name="chk2" id="chk2_2">No (Not applicable)</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Room reservation <strong class="required">*</strong> <br>(enter only relevant person)</div>
+                                <div class="form-con">
+                                    <div class="inner-table-wrap">
+                                        <ul>
+                                            <li>
+                                                <span class="text-blue">숙박장소: 롯데호텔월드</span> <br>
+                                                숙박가능일수 및 안내 등은 보내드린 메일을 참고해 주시기 바랍니다. <br>
+                                                객실과 1인 조식이 제공되며, 그 외 개별 사용비용은 퇴실 시 지불해주시기 바랍니다. <br>
+                                                추후 숙박일정 변경을 원하실 경우 준비사무국으로 문의 부탁드립니다. (kalcic@innon.co.kr)
+                                            </li>
+                                            <li>
+                                                <div class="form-tit">체크인 <strong class="required">*</strong></div>
+                                                <div class="form-con">
+                                                    <input type="text" name="" id="" class="form-item datepicker">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-tit">체크 아웃 <strong class="required">*</strong></div>
+                                                <div class="form-con">
+                                                    <input type="text" name="" id="" class="form-item datepicker">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-tit">Room Type <strong class="required">*</strong></div>
+                                                <div class="form-con">
+                                                    <div class="radio-wrap cst">
+                                                        <label for="chk3_1" class="radio-group"><input type="radio" name="chk3" id="chk3_1">Type 1</label>
+                                                        <label for="chk3_2" class="radio-group"><input type="radio" name="chk3" id="chk3_2">Type 2</label>
+                                                        <label for="chk3_3" class="radio-group"><input type="radio" name="chk3" id="chk3_3">Type 3</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-tit">Honorarium <strong class="required">*</strong></div>
+                                                <div class="form-con">
+                                                    <div class="inner-table-wrap">
+                                                        <ul>
+                                                            <li>
+                                                                원천징수 신고를 위해 주민등록번호 제공이 필요하오니 이 점 양해 부탁드리며, <br>
+                                                                소정의 사례비는 학술대회 종료 후 일괄 송금될 예정입니다. 제공해주시는 모든 정보는 행사 종료 후 모두 폐기됩니다.
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-tit">은행명 <strong class="required">*</strong></div>
+                                                                <div class="form-con">
+                                                                    <input type="text" name="" id="" class="form-item">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-tit">계좌번호 <strong class="required">*</strong></div>
+                                                                <div class="form-con">
+                                                                    <input type="text" name="" id="" class="form-item">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-tit">예금주 <strong class="required">*</strong></div>
+                                                                <div class="form-con">
+                                                                    <input type="text" name="" id="" class="form-item">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-tit">주민등록번호 <strong class="required">*</strong></div>
+                                                                <div class="form-con">
+                                                                    <input type="text" name="" id="" class="form-item">
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-tit">주민등록상 주소 <strong class="required">*</strong></div>
+                                                                <div class="form-con">
+                                                                    <input type="text" name="" id="" class="form-item">
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="write-wrap">
+                        <div class="write-tit-wrap text-center">
+                            <h5>Registration Fee - Early (~9/2)</h5>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="form-tit">Category <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <div class="inner-table-wrap radio-wrap cst">
+                                        <table class="cst-table">
+                                            <colgroup>
+                                                <col style="width: 50%;">
+                                                <col style="width: 50%;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <label for="chk4_1" class="radio-group"><input type="radio" name="chk4" id="chk4_1">KALC Member - KRW 80,000</label>
+                                                    </td>
+                                                    <td class="text-left">
+                                                        <label for="chk4_2" class="radio-group"><input type="radio" name="chk4" id="chk4_2">KALC International Member - KRW 80,000</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <label for="chk4_3" class="radio-group"><input type="radio" name="chk4" id="chk4_3">Resident - KRW 50,000</label>
+                                                    </td>
+                                                    <td class="text-left">
+                                                        <label for="chk4_4" class="radio-group"><input type="radio" name="chk4" id="chk4_4">Fellow - KRW 50,000</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <label for="chk4_5" class="radio-group"><input type="radio" name="chk4" id="chk4_5">Trainee - KRW 50,000</label>
+                                                    </td>
+                                                    <td class="text-left">
+                                                        <label for="chk4_6" class="radio-group"><input type="radio" name="chk4" id="chk4_6">Nurse - Nurse 50,000</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <label for="chk4_7" class="radio-group"><input type="radio" name="chk4" id="chk4_7">Army Doctor - KRW 50,000</label>
+                                                    </td>
+                                                    <td class="text-left">
+                                                        <label for="chk4_8" class="radio-group"><input type="radio" name="chk4" id="chk4_8">Researcher - KRW 50,000</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <label for="chk4_9" class="radio-group"><input type="radio" name="chk4" id="chk4_9">Others - KRW 50,000</label>
+                                                    </td>
+                                                    <td class="text-left">
+                                                        <label for="chk4_10" class="radio-group"><input type="radio" name="chk4" id="chk4_10">Non-Member - KRW 130,000</label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <label for="chk4_11" class="radio-group"><input type="radio" name="chk4" id="chk4_11">Healthcare Professional - KRW 130,000</label>
+                                                    </td>
+                                                    <td class="text-left">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="border-box price-box">
+                        <strong class="tit text-skyblue">Total Amount : KRW 400,000</strong>
+                    </div>
+
+                    <div class="write-wrap">
+                        <div class="write-tit-wrap text-center">
+                            <h5>Preventing Automation Program Entry</h5>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="form-con">
+                                    <div class="captcha">
+                                        <span class="img"><img id="captcha_img" src="/conf_typea/assets/image/common/captcha.png"></span>
+                                        <img src="/conf_typea/assets/image/icon/ic_refresh.png" class="refresh" onclick="refresh_captcha();return false;">
+                                        <input type="text" name="captcha" id="captcha" class="form-item">
+                                    </div>
+                                    <p class="help-text mt-10 text-blue">
+                                        * For information security, you can register as a member after entering the text written below.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-wrap text-center">
+                        <a href="./guide.html" class="btn btn-type1 color-type1">Cancel</a>
+                        <button type="submit" class="btn btn-type1 color-type2">Next</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </article>
+</section> 
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/footer.inc';
+?>

@@ -1,0 +1,290 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text hide">
+                <h2 class="sub-visual-tit">M2community 2024 INTERNATIONAL CONFERENCE. NOVEMBER 7 THU ~ 9 FRI. 2024. LOTTE HOTEL WORDL, SEOUL, KOREA</h2>
+            </div>                    
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="/conf_typeb/html/abstract/guide.html" class="btn-sub-menu js-btn-sub-menu">SUBMISSION</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/about/invitation.html">M2community</a></li>
+                        <li><a href="/conf_typeb/html/program/program.html">PROGRAM</a></li>
+                        <li><a href="/conf_typeb/html/abstract/guide.html">SUBMISSION</a></li>
+                        <li><a href="/conf_typeb/html/regist/guide.html">ATTENDANCE</a></li>
+                        <li><a href="/conf_typeb/html/sponsor/guide.html">SPONSORSHIP</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="/conf_typeb/html/abstract/invited.html" class="btn-sub-menu js-btn-sub-menu">Invited Paper</a>
+                    <ul>
+                        <li><a href="/conf_typeb/html/abstract/guide.html">Abstract Submission</a></li>
+                        <li class="on"><a href="/conf_typeb/html/abstract/invited.html">Invited Paper</a></li>
+                        <li><a href="/conf_typeb/html/abstract/guidelines.html">Presentation Guidelines</a></li>
+                        <li><a href="/conf_typeb/html/abstract/awards.html">Awards</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Invited Paper</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <div class="sub-tit-wrap">
+                <h4 class="sub-tit">Invited Paper</h4>
+            </div>
+            <div class="info-box text-center">
+                <strong>Abstract Submission deadline : <span class="text-pink">by September 23 (Mon), 2024</span></strong>
+            </div>
+
+            <div class="write-form-wrap">
+                <form action="./invited_preveiw.html" method="">
+                    <fieldset>
+                        <legend class="hide">Invited Paper</legend>
+                        <div class="write-wrap">
+                            <div class="write-tit-wrap text-center">
+                                <h5>Personal Information</h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="form-tit">Invited Paper No.</div>
+                                    <div class="form-con">
+                                        {L-0001}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">Country <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        {Country}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">Name <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        {Name}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">E-mail <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        {E-mail}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">Phone Number <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        {Phone Number}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">Accommodation <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="inner-table-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-tit">Check-in</div>
+                                                    <div class="form-con">
+                                                        {2024-08-01}
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-tit">Check-out</div>
+                                                    <div class="form-con">
+                                                        {2024-08-01}
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Country > Korea, Republic of 선택 시 노출 -->
+                        <div class="write-wrap">
+                            <div class="write-tit-wrap text-center">
+                                <h5> Bank Information (For Korean)</h5><br>
+                                <div class="help-text text-red mt-5">※ 좌장 및 연자료 지급을 위함 이오니 오타없이 기입하여 주시기 바랍니다.</div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="form-tit">예금주 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        {예금주}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">은행명 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        {은행명}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">계좌정보 <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        {계좌정보}
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Country > Korea, Republic of 외 모든 국가 선택 시 노출 -->
+                        <div class="write-wrap">
+                            <div class="write-tit-wrap text-center">
+                                <h5> Flight Schedule (For Overseas Speakers)</h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="form-tit">Arrival</div>
+                                    <div class="form-con">
+                                        <div class="inner-table-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-tit">Date & Time</div>
+                                                    <div class="form-con">
+                                                        {2024-08-01}
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-tit">Flight No. (ex. OZ 511)</div>
+                                                    <div class="form-con">
+                                                        {OZ 511}
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">Departure</div>
+                                    <div class="form-con">
+                                        <div class="inner-table-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-tit">Date & Time</div>
+                                                    <div class="form-con">
+                                                        {2024-08-01}
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-tit">Flight No. (ex. OZ 511)</div>
+                                                    <div class="form-con">
+                                                        {OZ 511}
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="write-wrap">
+                            <div class="write-tit-wrap text-center">
+                                <h5> Lecture Note</h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="form-tit">Session <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <div class="inner-table-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-tit">Day 1</div>
+                                                    <div class="form-con">
+                                                        {Day 1 select}
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-tit">Day 2</div>
+                                                    <div class="form-con">
+                                                        {Day 2 select}
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">Title</div>
+                                    <div class="form-con">                                        
+                                        {Title}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">Method of Abstract Submission</div>
+                                    <div class="form-con">                                        
+                                        <div class="radio-wrap cst">
+                                            <label for="chk1_1" class="radio-group"><input type="radio" name="chk1" id="chk1_1" checked>File Upload</label>
+                                            <label for="chk1_2" class="radio-group"><input type="radio" name="chk1" id="chk1_2">Type</label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Method or Abstarct Submission > File Uplaod 선택 시 -->
+                                <li>
+                                    <div class="form-tit">
+                                        Abstract File Upload <strong class="required">*</strong> <br>
+                                        <span class="text-red">(Upload Word file only)</span>
+                                    </div>
+                                    <div class="form-con">
+                                        <div class="attach"><a href="#n" target="_blank" class="link">File.jpg</a></div>
+                                    </div>
+                                </li>
+
+                                <!-- Method or Abstarct Submission > Type 선택 시 -->
+                                <li>
+                                    <div class="form-tit">
+                                        Body <strong class="required">*</strong>
+                                    </div>
+                                    <div class="form-con">
+                                        {Body}
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="write-wrap">
+                            <ul>
+                                <li>
+                                    <div class="form-tit">Preventing Automation Program Entry <strong class="required">*</strong> </div>
+                                    <div class="form-con">
+                                        <div class="captcha">
+                                            <span class="img"><img id="captcha_img" src="/conf_typea/assets/image/common/captcha.png"></span>
+                                            <img src="/conf_typea/assets/image/icon/ic_refresh.png" class="refresh" onclick="refresh_captcha();return false;">
+                                            <input type="text" name="captcha" id="captcha" class="form-item">
+                                        </div>
+                                        <p class="help-text mt-10 text-blue">
+                                            * For information security, you can register as a member after entering the text written below.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-wrap text-center">
+                            <a href="#n" class="btn btn-type1 color-type1">Cancel</a>                       
+                            <button type="submit" class="btn btn-type1 color-type3">Modify</button>
+                            <button type="submit" class="btn btn-type1 color-type2">Final Submission</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </article>
+</section> 
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/footer.inc';
+?>
