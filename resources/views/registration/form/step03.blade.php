@@ -34,36 +34,36 @@
         <!-- Bank Transfer 선택 시 노출-->
         @if( $apply->lang == 'KOR' )
         <li>
-            <div class="form-tit">Bank Account Information</div>
+            <div class="form-tit">Bank Name</div>
             <div class="form-con">
-                TBD
+                WOORI BANK
             </div>
         </li>
         @else
         <li class="n2">
-            <div class="form-tit">Bank Account Information</div>
+            <div class="form-tit">Bank Name</div>
             <div class="form-con">
-                TBD
+                WOORI BANK
             </div>
             <div class="form-tit">Bank Address</div>
             <div class="form-con">
-                TBD
+                32, Gwangnam-ro, Suyeong-gu, Busan, Republic of Korea
             </div>
         </li>
         <li class="n2">
             <div class="form-tit">Account No.</div>
             <div class="form-con">
-                TBD
+                1081-201-425622
             </div>
             <div class="form-tit">Account Name</div>
             <div class="form-con">
-                TBD
+                The Korean society of protistology
             </div>
         </li>
         <li>
             <div class="form-tit">Swift Code</div>
             <div class="form-con">
-                TBD
+                HVBKKRSEXXX
             </div>
         </li>
         @endif
@@ -145,7 +145,7 @@
         We value your personal information and abide by the Act on Promotion of Information Network Usage and Information Protection. The Korean Society of Protistologists and The Korean Society of Phycology (hereafter: ‘the Society) uses the personal information provided by you to provide personal information about what you use and We will inform you of what measures are being taken to protect personal information. <br>
         The Society will notify you through the website announcement (or individual notice) when revising the Privacy Policy. <br><br>
 
-        - This policy will be effective as of November 1, 2025. <br><br>
+        - This policy will be effective as of December 1, 2024.<br><br>
 
         <strong class="tit">■ Personal information items to collect</strong> <br>
         The Society collects personal information for the management of the annual scientific session of the Korean Society of Protistologists and The Korean Society of Phycology (hereafter: ‘the Event’) <br><br>

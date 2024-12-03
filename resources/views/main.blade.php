@@ -60,7 +60,7 @@
                     </li>
                     <li>
                         Early Registration Deadline
-                        <p class="date">February 28 (Fri), 2025</p>
+                        <p class="date">March 7 (Fri), 2025</p>
                         <span class="dday {{ DDay('earlyRegistration') == 'END' ? 'end' : '' }}">{{ DDay('earlyRegistration') }}</span>
                     </li>
                     <li>
@@ -89,12 +89,12 @@
 <article class="main-contents notice-block">
     <div class="inner-layer">
         <div class="main-conbox main-board-conbox">
-            <div class="main-tit-wrap btn-tit-block">
+            <div class="main-tit-wrap btn-tit-block type2">
                 <h3 class="main-tit">Notice &amp; Newsletters</h3>
                 <div class="board-btn-wrap">
                     <button class="btn-rolling btn-news-prev slick-arrow" type="button"><span class="hide">Previous</span></button>
                     <button class="btn-rolling btn-news-next slick-arrow" type="button"><span class="hide">Next</span></button>
-                    <a href="#n" class="btn btn-more">More View <span class="arrow">+</span></a>
+                    <a href="/board/notice" class="btn btn-more">More View <span class="arrow">+</span></a>
                 </div> 
             </div>
             <div class="main-board-list js-board-rolling">
@@ -128,6 +128,42 @@
         </div>
         <div class="speakers-wrap">
             <div class="speakers-rolling cf js-speakers-rolling">
+			<div class="speakers-con">
+                    <div class="img-wrap">
+                        <img src="/assets/image/main/speakers_04.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <strong class="tit">Mann Kyoon Shin</strong>
+                        <p class="affiliation">Dept. of Biological Science, University of Ulsan<br>Professor, University of Ulsan</p>
+                    </div>
+                </div>
+				<div class="speakers-con">
+                    <div class="img-wrap">
+                        <img src="/assets/image/main/speakers_03.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <strong class="tit">Andrew J. Roger</strong>
+                        <p class="affiliation">Dept. of Biochemistry and Molecular Biology, Dalhousie University</p>
+                    </div>
+                </div>
+				 <div class="speakers-con">
+                    <div class="img-wrap">
+                        <img src="/assets/image/main/speakers_05.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <strong class="tit">Shuhai Xiao</strong>
+                        <p class="affiliation">Dept. of Geobiology, Virginia Tech<br>Professor, Virginia Tech</p>
+                    </div>
+                </div>
+				<div class="speakers-con">
+                    <div class="img-wrap">
+                        <img src="/assets/image/main/speakers_06.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <strong class="tit">Thomas Mock</strong>
+                        <p class="affiliation">School of Environmental Sciences, University of East Anglia UK</p>
+                    </div>
+                </div>
                 <div class="speakers-con">
                     <div class="img-wrap">
                         <img src="/assets/image/main/speakers_01.png" alt=""><!--// image size: w200 x h210 -->
@@ -146,33 +182,10 @@
                         <p class="affiliation">Max Planck Institute for Marine Microbiology</p>
                     </div>
                 </div>
-                <div class="speakers-con">
-                    <div class="img-wrap">
-                        <img src="/assets/image/main/speakers_03.png" alt="">
-                    </div>
-                    <div class="text-wrap">
-                        <strong class="tit">Andrew J. Roger</strong>
-                        <p class="affiliation">Dept. of Biochemistry and Molecular Biology, Dalhousie University</p>
-                    </div>
-                </div>
-                <div class="speakers-con">
-                    <div class="img-wrap">
-                        <img src="/assets/image/main/speakers_04.png" alt="">
-                    </div>
-                    <div class="text-wrap">
-                        <strong class="tit">Mann Kyoon Shin</strong>
-                        <p class="affiliation">Dept. of Biological Science, University of Ulsan<br>Professor, University of Ulsan</p>
-                    </div>
-                </div>
-                <div class="speakers-con">
-                    <div class="img-wrap">
-                        <img src="/assets/image/main/speakers_05.png" alt="">
-                    </div>
-                    <div class="text-wrap">
-                        <strong class="tit">Shuhai Xiao</strong>
-                        <p class="affiliation">Dept. of Geobiology, Virginia Tech<br>Professor, Virginia Tech</p>
-                    </div>
-                </div>
+                
+                
+               
+				
                <!--  <div class="speakers-con">
                     <div class="img-wrap">
                         <img src="/assets/image/main/img_no_speakers.png" alt="">

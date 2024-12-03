@@ -23,7 +23,7 @@
             </tr>
             <tr>
                 <th scope="row">Venue</th>
-                <td class="text-left">Sungkyunkwan University, Seoul, Korea (TBC)</td>
+                <td class="text-left">Sungkyunkwan University, Seoul, Korea </td>
             </tr>
             <tr>
                 <th scope="row">City, Country</th>

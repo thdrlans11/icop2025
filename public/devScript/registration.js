@@ -57,12 +57,6 @@ $(document).ready(function(){
     });
 
     $("input:radio[name='payMethod']").click(function(){
-
-        if( $(this).val() == "C" ){
-            swalAlert("Comming Soon!", "", "info");
-            return false;
-        }
-
         if( $(this).val() == "B" ){
             $(".Bbox").show();
         }else{
@@ -336,6 +330,11 @@ function registrationCheck_03(f)
     
     if( !captchaCheck ){
         swalAlert("Captcha authentication failed.", "", "warning", "captcha");
+        return false;
+    }
+
+    if( $("input:radio[name='payMethod']:checked").val() == "C" && $("input:hidden[name='adminMode']").val() != "Y" ){
+        startPayment();
         return false;
     }
 }

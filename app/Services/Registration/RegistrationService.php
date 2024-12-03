@@ -9,6 +9,7 @@ use App\Services\dbService;
 use App\Services\CommonService;
 use App\Services\Util\MailService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 /**
  * Class RegistrationService
@@ -107,6 +108,22 @@ class RegistrationService extends dbService
 
     public function upsert_01(Request $request)
     {   
+        //허니팟 작동 ( 봇 방지 )
+        if( !$request->sid && checkUrl() != 'admin' ){
+            
+            $rules = array(
+                'my_name' => 'honeypot',
+                'my_time' => 'required|honeytime:5'
+            );
+
+            $validator = Validator::make(['my_name'=>$request->my_name, 'my_time'=>$request->my_time], $rules);
+
+            if($validator->fails()){
+                return redirect()->route('main');
+            }
+
+        }
+
         $this->transaction();
 
         try {    
@@ -219,6 +236,9 @@ class RegistrationService extends dbService
             //완료시에만 저장
             if( $request->saveMode == 'next' && checkUrl() != 'admin' ){
                 if( $request->payMethod == 'C' && $registration->payStatus == 'N' ){
+                    $registration->pgCode = $request->replycode;
+                    $registration->pgMsg = $request->replyMsg;
+                    $registration->pgTid = $request->tid;
                     $registration->payStatus = 'Y';
                     $registration->payComplete_at = now();                
                 }

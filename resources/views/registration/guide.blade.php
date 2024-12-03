@@ -9,7 +9,7 @@
     <div class="regi-date-wrap">
         <div class="regi-date-conbox">
             Early Bird Registration Closes
-            <strong>by 28 February 2025 (23:59 KST)</strong>
+            <strong>by 7 March 2025 (23:59 KST)</strong>
         </div>
         <div class="regi-date-conbox">
             Late Registration Closes
@@ -56,8 +56,8 @@
             <thead>
                 <tr>
                     <th scope="col" colspan="2" class="bg-skyblue">Registration Fee</th>
-                    <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~Feb 28, 2025)</span></th>
-                    <th scope="col" class="bg-green">Late Registration <br><span>(March 1, 2025~)</span></th>
+                    <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~March 7, 2025)</span></th>
+                    <th scope="col" class="bg-green">Late Registration <br><span>(March 8 – April 30, 2025)</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -114,7 +114,7 @@
                     <td class="text-left">
                         All program Sessions <br>
                         Lunch (Mon, Tue, Thu, Fri) <br>
-                        Coffee Breaks <br>
+                        Coffee Break <br>
                         Exhibition Hall
                     </td>
                 </tr>
@@ -123,7 +123,7 @@
                     <td class="text-left">
                         All program Sessions <br>
                         Lunch (Mon, Tue, Thu, Fri) <br>
-                        offee Break <br>
+                        Coffee Break <br>
                         Exhibition Hall
                     </td>
                 </tr>
@@ -131,7 +131,7 @@
                     <th scope="row">Accompanying Person</th>
                     <td class="text-left">
                         All program Sessions <br>
-                        Coffee Breaks
+                        Coffee Break
                     </td>
                 </tr>
             </tbody>

@@ -250,6 +250,11 @@
     letter-spacing: -0.04em;
     vertical-align: middle;
 }
+.sub-tit + img{
+    margin-left: 10px;
+    margin-top: 15px;
+    vertical-align: middle;
+}
 .sub-contit{
     margin-top: 20px;
     margin-bottom: 10px;
@@ -1325,39 +1330,51 @@ p + .name strong{
 }
 .invited-con{
     display: flex;
-    gap: 60px;
+    gap: 45px;
     align-items: start;
 }
 .invited-con .img-wrap{
     overflow: hidden;
     flex: 0 0 auto;
-    width: 170px;
+    width: 250px;
     border-radius: 5px;
 }
 .invited-con .text-wrap{
-    padding: 10px 0;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     line-height: 1.6;
 }
 .invited-con .text-wrap .tit{
-    display: inline;
-    padding: 0 2px 2px;
-    font-size: 2rem;
+    display: inline-block;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    background-image: url('../image/sub/ic_lecture_tit.png');
+    font-size: 2.4rem;
     font-weight: 700;
     color: #02348b;
-    box-shadow: inset 0 -10px #f1f8ff;
     line-height: 1.3;
+}
+.invited-con .text-wrap .tit > span{
+    display: inline;
+    padding: 0 2px 2px;
+    box-shadow: inset 0 -10px #f1f8ff;
 }
 .invited-con .text-wrap .tit + *{
     margin-top: 15px;
 }
 .invited-con .text-wrap .tit + strong{
     display: block;
+    margin-bottom: 5px;
 }
-.invited-con .text-wrap strong{
+.invited-con .text-wrap strong:not(.name){
     font-weight: 600;
 }
-
+.invited-con .list-type-bar > li:before{
+    top: 15px;
+}
+.invited-con .list-type-dot > li:before{
+    top: 14px;
+}
 
 /* SUBMISSION::Guidelines */
 .pre-type-list{

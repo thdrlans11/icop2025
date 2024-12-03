@@ -10,12 +10,21 @@
     @include('registration.form.tab')
 
     <div class="write-form-wrap">
-        <form id="registrationForm" action="{{ route('apply.registration.upsert', ['step'=>$step]) }}" method="post" enctype="multipart/form-data" onsubmit="return registrationCheck_0{{ $step }}(this);">
+        <form id="registrationForm" name="PGIOForm" action="{{ route('apply.registration.upsert', ['step'=>$step]) }}" method="post" enctype="multipart/form-data" onsubmit="return registrationCheck_0{{ $step }}(this);">
             {{ csrf_field() }}
             <input type="hidden" name="step" value="{{ $step }}"/>
             <input type="hidden" name="type" value="{{ $type }}"/>
             <input type="hidden" name="sid" value="{{ isset($apply) ? encrypt($apply->sid) : '' }}"/>
             <input type="hidden" name="saveMode" id="saveMode" value=""/>
+
+            @if( $step == 1 && !isset($apply) )
+            {!! Honeypot::generate('my_name', 'my_time') !!}
+            @endif
+
+            @if( $step == 3 && $apply->payStatus == 'N' )
+            @include('registration.payGate.form')
+            @endif
+
             <fieldset>
                 <legend class="hide">Go to Register</legend>
 
@@ -63,6 +72,10 @@
                 </div>
             </fieldset>
         </form>
+
+        @if( $step == 3 && $apply->payStatus == 'N' )
+        <div id="PGIOscreen" class="mt-30"></div>
+        @endif
     </div>
 </div>
 @endsection

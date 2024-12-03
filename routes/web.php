@@ -25,6 +25,7 @@ Route::prefix('about')->controller(\App\Http\Controllers\About\AboutController::
 // Program
 Route::prefix('program')->controller(\App\Http\Controllers\Program\ProgramController::class)->group(function() {
     Route::get('speakers', 'speakers')->name('program.speakers');
+    Route::get('symposia', 'symposia')->name('program.symposia');
 });
 
 //Registration

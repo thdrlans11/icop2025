@@ -8,7 +8,7 @@ return [
     ],
 
     'chaText' => [
-        'E' => 'Early Bird Registration (~Feb 28, 2025)',
+        'E' => 'Early Bird Registration (~March 7, 2025)',
         'L' => 'Late Registration (March 1, 2025~)'
     ],
 

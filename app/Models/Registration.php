@@ -57,6 +57,11 @@ class Registration extends Model
         return $title;
     }
 
+    public function makeName()
+    {
+        return $this->firstName.' '.$this->lastName;
+    }
+
     public function makeTotalText($action = null)
     {
         $unit = config('site.registration.unit')[$this->lang];

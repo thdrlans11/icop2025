@@ -14,7 +14,7 @@
 </p>
 
 <div class="sub-tit-wrap">
-    <h4 class="sub-tit">Past Congresses & Chairpersons</h4>
+    <h4 class="sub-tit">Past Congresses & Chairpersons</h4> <img src="/assets/image/sub/img_sub_logo.png" alt="">
 </div>
 <p>
     The International Congress of Protistology (ICOP) has been running every four years without a break since 1961, and has provided an important venue to highlight the progress of our science and a great opportunity to reconnect with colleagues worldwide.

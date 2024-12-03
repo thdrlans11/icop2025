@@ -143,9 +143,8 @@
                         <span>Congress Team</span>
                     </strong>
                     <ul>
-                        <li>E. <a href="mailto:info@icop2025.org" target="_blank">info@icop2025.org</a></li>
-                        <li>P. <a href="tel:+82-2-6959-5333" target="_blank">+82-2-6959-5333</a></li>
-                        <li>F. +82-2-70-8677-6333</li>
+                        <li>E. <a href="mailto:icop2025org@gmail.com" target="_blank">icop2025org@gmail.com</a></li>
+                        <li>P. <a href="tel:+82-2-6959-5333" target="_blank">+82-2-446-6123</a></li>
                     </ul>
                 </div>
                 <strong class="footer-logo">

@@ -21,8 +21,51 @@
         </div>
     </li>
 </ul>
+<h5 class="sub-tit-dot">Local organizing Committee </h5>
+<ul class="committee-list n3">
+    <li>
+        <div class="committee-conbox">
+            <strong class="name">Bum Soo Park</strong>
+            <p>
+                Hanyang University, Korea
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="committee-conbox">
+            <strong class="name">Eunsoo Kim</strong>
+            <p>
+                Ewha Womans University, Korea
+            </p>
+        </div>
+    </li>
+	<li>
+        <div class="committee-conbox">
+            <strong class="name">Jin Hee Sung</strong>
+            <p>
+                Sungkyunkwan University, Korea
+            </p>
+        </div>
+    </li>
+	<li>
+        <div class="committee-conbox">
+            <strong class="name">Sun Young Kim </strong>
+            <p>
+                National Marine Biodiversity Institute of Korea 
+            </p>
+        </div>
+    </li>
+	<li>
+        <div class="committee-conbox">
+            <strong class="name">Sunju Kim</strong>
+            <p>
+                Pukyong National University, Korea
+            </p>
+        </div>
+    </li>
+</ul>
 
-<h5 class="sub-tit-dot">Local Organizing Committee</h5>
+<h5 class="sub-tit-dot">Local Scientific Advisory</h5>
 <ul class="committee-list n3">
     <li>
         <div class="committee-conbox">

@@ -19,4 +19,9 @@ class ProgramController extends Controller
         return view('program.speakers')->with(['subNum' => '3']);
     }
 
+    public function symposia()
+    {
+        return view('program.symposia')->with(['subNum' => '4']);
+    }
+
 }

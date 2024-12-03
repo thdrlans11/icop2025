@@ -26,6 +26,12 @@ return [
             'route_target' => 'registration.guide',
             'route_param' => [],
         ],
+        '6' => [
+            'name' => 'Sponsors',
+            'url' => "",
+            'route_target' => 'ready',
+            'route_param' => ['mainNum'=>'6', 'subNum'=>'1'],
+        ],        
         '5' => [
             'name' => 'Location',
             'url' => "",
@@ -87,10 +93,16 @@ return [
                 'route_param' => ['mainNum'=>'2', 'subNum'=>'2'],
             ],
             '3' => [
-                'name' => 'Invited Speakers',
+                'name' => 'Plenary Lectures',
                 'url' => "",
                 'route_target' => 'program.speakers',
                 'route_param' => ['mainNum'=>'2', 'subNum'=>'3'],
+            ],
+            '4' => [
+                'name' => 'Special Symposia',
+                'url' => "",
+                'route_target' => 'ready',
+                'route_param' => ['mainNum'=>'2', 'subNum'=>'4'],
             ]
         ],
         '3' => [
@@ -158,6 +170,14 @@ return [
                 'route_target' => 'ready',
                 'route_param' => ['mainNum'=>'5', 'subNum'=>'3'],
             ],
+        ],
+        '6' => [            
+            '1' => [
+                'name' => 'Sponsors Guidelines',
+                'url' => "",
+                'route_target' => 'ready',
+                'route_param' => ['mainNum'=>'6', 'subNum'=>'1'],
+            ]
         ]
     ],
     

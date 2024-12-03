@@ -16,6 +16,7 @@
             <input type="hidden" name="type" value="{{ $type }}"/>
             <input type="hidden" name="sid" value="{{ encrypt($apply->sid) }}"/>
             <input type="hidden" name="saveMode" id="saveMode" value=""/>
+            <input type="hidden" name="adminMode" value="Y"/>
             <fieldset>
                 <legend class="hide">Go to Register</legend>
 

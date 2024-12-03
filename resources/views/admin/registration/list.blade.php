@@ -165,14 +165,14 @@ function dbChange(sid,db,field,f){
                         <td class="text-left">
                             <div class="form-group has-btn">
                                 <input type="text" class="form-item dateTimeCalendar" readonly value="{{ $period[$key.'sdate'] ?? '' }}">
-                                <button type="button" class="btn btn-small color-type5" onclick="dbChange('{{ encrypt('1') }}', 'registration_periods', '{{ $key }}sdate', this);">저장</button>
+                                <span class="material-symbols-outlined" style="font-size:30px; cursor: pointer;" onclick="dbChange('{{ encrypt('1') }}', 'registration_periods', '{{ $key }}sdate', this);">save_as</span>    
                             </div>
                         </td>
                         <th scope="row">{{ $val }} 등록 종료 일시</th>
                         <td class="text-left">
                             <div class="form-group has-btn">
                                 <input type="text" class="form-item dateTimeCalendar" readonly value="{{ $period[$key.'edate'] ?? '' }}">
-                                <button type="button" class="btn btn-small color-type5" onclick="dbChange('{{ encrypt('1') }}', 'registration_periods', '{{ $key }}edate', this);">저장</button>
+                                <span class="material-symbols-outlined" style="font-size:30px; cursor: pointer;" onclick="dbChange('{{ encrypt('1') }}', 'registration_periods', '{{ $key }}edate', this);">save_as</span>    
                             </div>
                         </td>
                     </tr>
