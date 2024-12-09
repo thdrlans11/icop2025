@@ -16,14 +16,14 @@ class Country extends Model
         'sid'
     ];
 
-    public function countryList()
+    public function countryList( $mode = 'ENG' )
     {
         $countryList = Country::orderByRaw("CASE cc WHEN 'KR' THEN 1 ELSE 2 END, cn ASC")->get();
         
         $cc = [];
 
         foreach( $countryList as $index => $country ){
-            if( $country->cc == 'KR' ){ continue; }
+            if( $country->cc == 'KR' && $mode == 'ENG' ){ continue; }
             $cc[$country->cc] = array( 'cn'=>$country->cn, 'cnum'=>$country->cnum );
         }	
 

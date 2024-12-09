@@ -194,6 +194,12 @@ return [
             'route_target' => 'admin.registration.list',
             'route_param' => [],
         ],
+        '3' => [
+            'name' => 'Special Symposium',
+            'url' => "",
+            'route_target' => 'admin.symposium.list',
+            'route_param' => [],
+        ],
     ],
 ]
 

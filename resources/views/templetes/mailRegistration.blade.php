@@ -10,7 +10,7 @@
         <tbody>
             <tr>
                 <td style="padding: 0;text-align: center;text-align: center;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 20px;color: #050505;">
-                    <img src="{{ env('APP_URL') }}/assets/image/mail/mail_header.jpg" alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025. June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)" style="display: inline-block;border:0 none;vertical-align: top;" />
+                    <img src="{{ env('APP_URL') }}/assets/image/mail/mail_header_241204.jpg" alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025. June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)" style="display: inline-block;border:0 none;vertical-align: top;" />
                 </td>
             </tr>
             <tr>
@@ -310,7 +310,7 @@
             </tr>        
             <tr>
                 <td>
-                    <img src="{{ env('APP_URL') }}/assets/image/mail/mail_footer.jpg" alt="Contact Information | Congress Team. E.info@icop2025.org. P.+82-2-6959-5333. F.+82-2-70-8677-6333. Copyright @ ICOP 2025. All Rights Reserved." style="display: inline-block;border:0 none;vertical-align: top;" />
+                    <img src="{{ env('APP_URL') }}/assets/image/mail/mail_footer.png" alt="Contact Information | Congress Team. E.info@icop2025.org. P.+82-2-6959-5333. F.+82-2-70-8677-6333. Copyright @ ICOP 2025. All Rights Reserved." style="display: inline-block;border:0 none;vertical-align: top;" />
                 </td>
             </tr>
         </tbody>

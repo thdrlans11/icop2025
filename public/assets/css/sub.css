@@ -1376,6 +1376,12 @@ p + .name strong{
     top: 14px;
 }
 
+/* Program::Special Symposia */
+.cst-table td .form-group,
+.cst-table td .form-item{
+    width: 100%;
+}
+
 /* SUBMISSION::Guidelines */
 .pre-type-list{
     display: flex;
@@ -2028,6 +2034,19 @@ p + .name strong{
     color: #98c0d1;
     line-height: 1.2;
     letter-spacing: -0.02em;
+}
+.step-list.n2 > li{
+    width: 100%;
+    max-width: 50%;
+}
+.step-list.n2 > li:nth-child(1){
+    background-image: url();
+}
+.step-list.n2 > li:nth-child(2){
+    background-image: url('/assets/image/sub/bg_step04.png');
+}
+.step-list.n2 > li:nth-child(2).on{
+    background-image: url('/assets/image/sub/bg_step04_on.png');
 }
 .step-list > li strong{
     display: block;

@@ -1,24 +1,22 @@
 <div class="step-list-wrap">
-    <div class="step-list-wrap">
-        <ul class="step-list">
-            <li {!! $step == '1' ? 'class="on"' : '' !!}>
-                Step 01
-                <strong>Personal Information</strong>
-            </li>
-            <li {!! $step == '2' ? 'class="on"' : '' !!}>
-                Step 02
-                <strong>Select registration fee</strong>
-            </li>
-            <li {!! $step == '3' ? 'class="on"' : '' !!}>
-                Step 03
-                <strong>Payment progress</strong>
-            </li>
-            <li {!! $step == '4' ? 'class="on"' : '' !!}>
-                Step 04
-                <strong>Confirmation</strong>
-            </li>
-        </ul>
-    </div>
+    <ul class="step-list">
+        <li {!! $step == '1' ? 'class="on"' : '' !!}>
+            Step 01
+            <strong>Personal Information</strong>
+        </li>
+        <li {!! $step == '2' ? 'class="on"' : '' !!}>
+            Step 02
+            <strong>Select registration fee</strong>
+        </li>
+        <li {!! $step == '3' ? 'class="on"' : '' !!}>
+            Step 03
+            <strong>Payment progress</strong>
+        </li>
+        <li {!! $step == '4' ? 'class="on"' : '' !!}>
+            Step 04
+            <strong>Confirmation</strong>
+        </li>
+    </ul>
 </div>
 
 @if( $step == '3' && $apply->lang != 'KOR' )

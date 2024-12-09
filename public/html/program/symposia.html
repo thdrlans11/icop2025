@@ -1,0 +1,306 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text">
+                <img src="/assets/image/sub/img_subvisual_text01.png"
+                    alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025">
+                <img src="/assets/image/sub/img_subvisual_text02.png"
+                    alt="June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)">
+            </div>
+            <div class="sub-visual-logo">
+                <img src="/assets/image/sub/img_subvisual_logo.png"
+                    alt="ISOP, ICOP, The Korean Society of Protistologsis. The Korean Society of Phycology">
+            </div>
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <a href="/" class="btn btn-home"></a>
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Program</a>
+                    <ul>
+                        <li><a href="#n">About the Congress</a></li>
+                        <li><a href="#n">Program</a></li>
+                        <li><a href="#n">Abstract</a></li>
+                        <li><a href="#n">Registration</a></li>
+                        <li><a href="#n">Location</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Overview</a>
+                    <ul>
+                        <li><a href="#n"><span>Program at a glance</span></a></li>
+                        <li><a href="#n"><span>Program in Detail</span></a></li>
+                        <li><a href="#n"><span>Invited Speakers</span></a></li>
+                        <li class="on"><a href="#n"><span>Special Symposia</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Special Symposia</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <div class="step-list-wrap">
+                <ul class="step-list n2">
+                    <li class="on">
+                        Step 01
+                        <strong>Proposal for Special Symposium</strong>
+                    </li>
+                    <li>
+                        Step 02
+                        <strong>Confirmation</strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-img-box">
+                <img src="/assets/image/sub/ic_notice.png" alt="">
+                <div class="text-wrap">
+                    <strong class="tit">Please fill in the requested information below and submit by January 31, 2025.</strong>
+                </div>
+            </div>
+            <div class="write-form-wrap">
+                <form action="./symposia_preview.html" method="">
+                    <fieldset>
+                        <legend class="hide">Special Symposia 등록</legend>                        
+                        <div class="sub-tit-wrap">
+                            <h4 class="sub-tit">Personal Information</h4>
+                        </div>
+                        <ul class="write-wrap">
+                            <li>
+                                <div class="form-tit">Country <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <select name="" id="" class="form-item">
+                                        <option value="">Country choice</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Name <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <div class="form-group n2">
+                                        <input type="text" name="" class="form-item" placeholder="First name">
+                                        <input type="text" name="" class="form-item" placeholder="Last name">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Affiliation <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <input type="text" name="" class="form-item">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">E-mail <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <div class="form-group has-btn">
+                                        <input type="text" name="" id="" class="form-item">
+                                        <a href="#n" class="btn btn-small color-type3">Duplication check</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Phone Number <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <div class="form-group form-group-text n2">
+                                        <div class="text-wrap">
+                                            <p>+ Country Code</p>
+                                            <input type="text" name="" id="" class="form-item" value="">
+                                            <input type="hidden" name="" id="" class="form-item" value="">
+                                        </div>
+                                        <span class="text">-</span>
+                                        <div class="text-wrap">
+                                            <p>Mobile Number</p>
+                                            <input type="text" name="mobile" id="mobile" class="form-item num_only1" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Photo <strong class="required">*</strong> <br><span class="help-text">(Only Jpg, png)</span></div>
+                                <div class="form-con">
+                                    <div class="filebox">
+                                        <input class="upload-name form-item" name="fileName" id="fileName" value="" placeholder="Select File" readonly="readonly">
+                                        <label for="user_image">Select File</label>
+                                        <input type="file" id="user_image" name="user_image" class="file-upload" accept="image/gif, image/jpeg, image/png">
+                                        <input type="hidden" name="file_del" id="file_del" value="" readonly="">
+                                        <div class="attach-file">
+                                            <a href="#n" target="_blank">첨부파일.pdf</a>
+                                            <a href="#n" class="btn-file-delete"><img src="/assets/image/icon/ic_attach_del.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="sub-tit-wrap">
+                            <h4 class="sub-tit">Symposium Information</h4>
+                        </div>
+                        <ul class="write-wrap">
+                            <li>
+                                <div class="form-tit">Symposium Title <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <input type="text" name="" id="" class="form-item">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Brief synopsis of topic <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    <input type="text" name="" id="" class="form-item">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="price-box">
+                            <img src="/assets/image/sub/ic_price.png" alt="">
+                            <div class="text-wrap">
+                                <p>
+                                    Please note that each symposium organizer should be recommended to invite FOUR speakers, with 20 minutes allotted for each talk, totaling 80 minutes for each symposium. <br>
+                                    We plan to offer a budget of <strong class=" text-orange">1,000,000 WON</strong> (the official currency of the Republic of Korea) for each symposium.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="table-wrap mt-60">
+                            <table class="cst-table">
+                                <caption class="hide">Speakers Information</caption>
+                                <colgroup>
+                                    <col style="width: 12%;">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Afflication</th>
+                                        <th scope="col">Country</th>
+                                        <th scope="col">Lecture Title</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Speaker 1 <strong class="required">*</strong></th>
+                                        <td>
+                                            <div class="form-group n2">
+                                                <input type="text" name="" id="" class="form-item" placeholder="First name">
+                                                <input type="text" name="" id="" class="form-item" placeholder="Last name">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </td>
+                                        <td>
+                                            <select name="" id="" class="form-item">
+                                                <option value="">Country choice</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Speaker 2 <strong class="required">*</strong></th>
+                                        <td>
+                                            <div class="form-group n2">
+                                                <input type="text" name="" id="" class="form-item" placeholder="First name">
+                                                <input type="text" name="" id="" class="form-item" placeholder="Last name">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </td>
+                                        <td>
+                                            <select name="" id="" class="form-item">
+                                                <option value="">Country choice</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Speaker 3 <strong class="required">*</strong></th>
+                                        <td>
+                                            <div class="form-group n2">
+                                                <input type="text" name="" id="" class="form-item" placeholder="First name">
+                                                <input type="text" name="" id="" class="form-item" placeholder="Last name">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </td>
+                                        <td>
+                                            <select name="" id="" class="form-item">
+                                                <option value="">Country choice</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Speaker 4 <strong class="required">*</strong></th>
+                                        <td>
+                                            <div class="form-group n2">
+                                                <input type="text" name="" id="" class="form-item" placeholder="First name">
+                                                <input type="text" name="" id="" class="form-item" placeholder="Last name">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </td>
+                                        <td>
+                                            <select name="" id="" class="form-item">
+                                                <option value="">Country choice</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" class="form-item">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="sub-tit-wrap">
+                            <h4 class="sub-tit">Preventing Automation Program Entry</h4>
+                        </div>
+                        <ul class="write-wrap">
+                            <li>
+                                <div class="form-con">
+                                    <div class="captcha">
+                                        <span class="img"><img id="captcha_img" src="/assets/image/common/captcha.png"></span>
+                                        <button type="button" onclick="refresh_captcha();return false;"><img src="/assets/image/icon/ic_refresh.png" class="refresh"></button>
+                                        <input type="text" name="captcha" id="captcha" class="form-item">
+                                    </div>
+                                    <p class="help-text mt-10 text-blue">
+                                        * For information security, you can register as a member after entering the text written below.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-wrap text-center">
+                            <a href="#n" class="btn btn-type1 color-type2">Cancel</a>
+                            <button type="submit" class="btn btn-type1 color-type1">Next</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </article>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/include/footer.inc';
+?>

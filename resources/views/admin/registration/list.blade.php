@@ -292,7 +292,7 @@ function dbChange(sid,db,field,f){
                             <option value="{{ $key }}" {{ $d->payStatus == $key ? 'selected' : '' }}>{{ $val }}</option>
                             @endforeach
                         </select>
-                        @if( $d->payStatus != 'N' )
+                        @if( $d->payStatus == 'Y' )
                         <a href="{{ route('registration.receipt', ['sid'=>encrypt($d->sid)]) }}" class="btn btn-small color-type4" onclick="window.open(this.href,'receipt','width=800,height=852,scrollbars=yes'); return false;">Receipt</a>
                         @endif
                         @endif

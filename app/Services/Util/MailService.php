@@ -2,6 +2,7 @@
 
 namespace App\Services\Util;
 
+use App\Models\Country;
 use App\Services\dbService;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -39,7 +40,19 @@ class MailService extends dbService
                 }
                 
                 $this->body = view('templetes.mailRegistration', ['apply'=>$data, 'kind'=>$kind])->render();
-                break;
+            break;
+
+            case 'symposiumComplete' :
+                $this->receiver_name = $data->firstName.' '.$data->lastName;
+                $this->receiver_email = $data->email;
+                $this->subject = '['.config('site.common.info.siteName').'] Thank you for submitting a proposal for the Special Symposium!';        
+
+                if( $mode == 'preview' ){
+                    return view('templetes.mailSymposium', ['apply'=>$data, 'kind'=>$kind, 'country'=>(new Country())->countryList('KOR')])->render();
+                }
+                
+                $this->body = view('templetes.mailSymposium', ['apply'=>$data, 'kind'=>$kind, 'country'=>(new Country())->countryList('KOR')])->render();
+            break;
         }        
 
         $this->wiseuSend($this);

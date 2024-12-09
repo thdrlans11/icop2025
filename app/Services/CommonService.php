@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Models\BoardFile;
 use App\Models\Registration;
+use App\Models\SpecialSymposium;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
@@ -57,7 +58,13 @@ class CommonService
                 $registration = Registration::findOrFail(decrypt($sid));
                 
                 $data = ['realfile' => $registration->realfile, 'filename' => $registration->filename];
-                break;    
+                break; 
+            
+            case 'symposium':
+                $registration = SpecialSymposium::findOrFail(decrypt($sid));
+                
+                $data = ['realfile' => $registration->realfile, 'filename' => $registration->filename];
+                break;
         
             default:
                 return redirect()->back()->withError('잘못된 접근입니다.');

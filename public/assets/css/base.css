@@ -1356,3 +1356,6 @@ textarea.form-item{
 .m-hide{
     display: block;
 }
+.d-inline{
+    display: inline-block !important;
+}

@@ -251,11 +251,11 @@ class RegistrationService extends dbService
 
             $registration->save();
 
-            $this->dbCommit($msg ?? ( checkUrl() == 'admin' ? '관리자 ' : '사용자' ).' 사전등록 스텝 3 저장');
-
             if( $mailSend ){
                 (new MailService())->makeMail($registration, 'registrationComplete');
             }
+
+            $this->dbCommit($msg ?? ( checkUrl() == 'admin' ? '관리자 ' : '사용자' ).' 사전등록 스텝 3 저장');
 
             switch($request->saveMode){
                 case 'prev' : $moveStep = $request->step - 1; break;

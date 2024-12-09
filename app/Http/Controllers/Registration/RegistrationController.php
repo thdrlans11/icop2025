@@ -12,7 +12,6 @@ class RegistrationController extends Controller
 
     public function __construct()
     {
-            
         $this->RegistrationService = new RegistrationService();
 
         view()->share([

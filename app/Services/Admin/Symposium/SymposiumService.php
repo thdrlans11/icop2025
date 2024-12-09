@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\Admin\Registration;
+namespace App\Services\Admin\Symposium;
 
 use App\Models\Country;
-use App\Models\Registration;
-use App\Models\RegistrationPeriod;
+use App\Models\SpecialSymposium;
+use App\Models\SpecialSymposiumPeriod;
 use App\Services\CommonService;
 use App\Services\dbService;
 use App\Services\Util\ExcelService;
@@ -12,17 +12,17 @@ use App\Services\Util\MailService;
 use Illuminate\Http\Request;
 
 /**
- * Class RegistrationService
+ * Class SymposiumService
  * @package App\Services
  */
-class RegistrationService extends dbService
+class SymposiumService extends dbService
 {
     public function list(Request $request)
     {
         if( $request->del != 'Y' ){
-            $lists = Registration::orderBy('created_at','desc');
+            $lists = SpecialSymposium::orderBy('created_at','desc');
         }else{
-            $lists = Registration::onlyTrashed()->orderBy('created_at','desc');
+            $lists = SpecialSymposium::onlyTrashed()->orderBy('created_at','desc');
         }
         
         foreach( $request->all() as $key => $val ){
@@ -40,7 +40,7 @@ class RegistrationService extends dbService
 
         if ($request->excel) {
             $cntQuery = clone $lists;
-            return (new ExcelService())->RegistrationExcel($lists, $cntQuery->count());
+            return (new ExcelService())->SymposiumExcel($lists, $cntQuery->count(), (new Country())->countryList('KOR'));
         }
 
         if( $request->paginate ){
@@ -53,29 +53,28 @@ class RegistrationService extends dbService
         $lists = setListSeq($lists);
         $data['lists'] = $lists;
         $data['type'] = $request->type;
-        $data['period'] = RegistrationPeriod::find(1);
-        $data['country'] = (new Country())->countryList();
+        $data['period'] = SpecialSymposiumPeriod::find(1);
+        $data['country'] = (new Country())->countryList('KOR');
 
         return $data;
     }
-    
+
     public function modifyForm(Request $request)
     {
-        $registration = Registration::find(decrypt($request->sid));
+        $registration = SpecialSymposium::find(decrypt($request->sid));
 
         $data['step'] = $request->step;
         $data['type'] = $registration->type;        
-        $data['country'] = (new Country())->countryList();
+        $data['country'] = (new Country())->countryList('KOR');
         $data['captcha'] = (new CommonService())->captchaMakeService();
         $data['apply'] = $registration;
-
         return $data;
     }
 
     public function sendMailForm(Request $request)
     {
-        $registration = Registration::find(decrypt($request->sid));
-        $mailBody = (new MailService())->makeMail($registration, 'registrationComplete', 'preview');
+        $registration = SpecialSymposium::find(decrypt($request->sid));
+        $mailBody = (new MailService())->makeMail($registration, 'symposiumComplete', 'preview');
 
         $data['apply'] = $registration;
         $data['mailBody'] = $mailBody;
@@ -85,13 +84,13 @@ class RegistrationService extends dbService
 
     public function sendMail(Request $request)
     {
-        $registration = Registration::find(decrypt($request->sid));
+        $registration = SpecialSymposium::find(decrypt($request->sid));
 
         if( $request->email ){
             $registration->email = $request->email;
         }
 
-        (new MailService())->makeMail($registration, 'registrationComplete');
+        (new MailService())->makeMail($registration, 'symposiumComplete');
 
         return redirect()->back()->withSuccess('메일 전송이 완료되었습니다.')->with('close','Y');
     }
@@ -102,44 +101,27 @@ class RegistrationService extends dbService
 
         try {
 
-            if( $request->db == 'registration_periods' ){
+            if( $request->db == 'symposium_periods' ){
 
-                $registrationPeriod = RegistrationPeriod::find(decrypt($request->sid));
+                $registrationPeriod = SpecialSymposiumPeriod::find(decrypt($request->sid));
                 $registrationPeriod[$request->field] = $request->value;
                 $registrationPeriod->save();
 
-                $msg = '관리자 사전등록 날짜 변경';
+                $msg = '관리자 Speical Symposium 날짜 변경';
 
             }else{
 
-                $registration = Registration::withTrashed()->find(decrypt($request->sid));
+                $registration = SpecialSymposium::withTrashed()->find(decrypt($request->sid));
 
                 if( $request->field == 'delete' ){
                     if( $request->value == 'Y' ){
                         $registration->delete();
-                        $msg = '관리자 사전등록 삭제';
+                        $msg = '관리자 Speical Symposium 삭제';
                     }else{
                         $registration->restore();
-                        $msg = '관리자 사전등록 복구';
+                        $msg = '관리자 Speical Symposium 복구';
                     }
                     
-                }else{
-                    $registration[$request->field] = $request->value;
-
-                    if( $request->field == 'payStatus' ){
-                        if( $request->value != 'N' ){
-                            $registration->payComplete_at = now();
-                            //(new MailService())->makeMail($registration, 'applyPayComplete');
-                        }else{
-                            $registration->payComplete_at = null;
-                        }
-
-                        $msg = '관리자 결제상태 변경';
-                    }else if( $request->field == 'payMethod' ){
-                        $msg = '관리자 결제방법 변경';
-                    }
-
-                    $registration->save();
                 }
 
             }               

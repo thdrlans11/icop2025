@@ -65,6 +65,17 @@
                                     <img src="{{ env('APP_URL') }}/assets/image/mail/bg_receipt.png" alt="ICOP SEOUL, KOREA 2025." style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: -1;">
                                 </td>
                             </tr>
+							<tr>
+                                <td style="padding-top: 40px;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 16px;color: #444444;line-height: 1.3;letter-spacing: -0.02em;text-align: center;">
+                                    On behalf of the organizing committee of ICOP/ISOP 2025,<br/>
+                                    We sincerely appreciate your registration.
+                                </td>
+                            </tr>
+							<tr>
+                                <td style="padding-top: 20px;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 16px;color: #444444;line-height: 1.3;letter-spacing: -0.02em;text-align: center;">
+                                   We have duly received the amount above.
+                                </td>
+                            </tr>
                             <tr>
                                 <td style="padding-top: 40px;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 16px;font-weight: 700;color: #282828;line-height: 1.3;letter-spacing: -0.02em;text-align: center;">
                                     {{ $apply->payComplete_at ? $apply->payComplete_at->toDateString() : '' }}

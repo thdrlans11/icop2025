@@ -28,6 +28,15 @@ Route::prefix('program')->controller(\App\Http\Controllers\Program\ProgramContro
     Route::get('symposia', 'symposia')->name('program.symposia');
 });
 
+//Special Symposium
+Route::prefix('symposium')->controller(\App\Http\Controllers\Symposium\SymposiumController::class)->group(function() {
+    Route::middleware('noCash')->group(function(){
+        Route::get('registration/{step}/{sid?}', 'registration')->where('step', '1|2|3')->name('apply.symposium');
+        Route::post('emailCheck', 'emailCheck')->name('apply.registration.emailCheck');
+        Route::post('upsert/{step}', 'upsert')->where('step', '1|2')->name('apply.symposium.upsert');
+    });
+});
+
 //Registration
 Route::prefix('registration')->controller(\App\Http\Controllers\Registration\RegistrationController::class)->group(function() {
     Route::get('/', 'guide')->name('registration.guide');  
