@@ -184,7 +184,7 @@ function dbChange(sid,db,field,f){
 
             <col style="width: 8%;">
             <col style="width: 8%;">
-
+            <col style="width: 5%;">
             <col style="width: 6%;">
         </colgroup>
         <thead>
@@ -205,6 +205,7 @@ function dbChange(sid,db,field,f){
                 <th scope="col">Title</th>
                 <th scope="col">Topic</th>
                 <th scope="col">Mail 재발송</th>
+                <th scope="col">메모</th>
                 <th scope="col">관리</th>
             </tr>
         </thead>
@@ -242,6 +243,13 @@ function dbChange(sid,db,field,f){
                     @else
                     -
                     @endif
+                </td>
+                <td>
+                    <a href="{{ route('admin.symposium.memoForm', ['sid'=>encrypt($d->sid)]) }}" class="Load_Base_fix" Wsize="730" Hsize="900" Tsize="2%" Reload="Y">
+                        <span class="material-symbols-outlined">
+                            content_paste{{ !$d->memo ? '_off' : ''}}
+                        </span>
+                    </a>
                 </td>
                 <td>
                     @if( request()->query('del') == 'Y' )

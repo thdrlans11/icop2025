@@ -60,5 +60,14 @@ class RegistrationController extends Controller
         return $this->RegistrationService->dbChange($request);
     }
 
+    public function memoForm(Request $request)
+    {
+        return view('admin.registration.memo')->with( $this->RegistrationService->memoForm($request) );
+    }
+
+    public function memo(Request $request)
+    {
+        return $this->RegistrationService->memo($request);
+    }
 
 }

@@ -197,4 +197,5 @@ class SymposiumService extends dbService
         $maxNumber = SpecialSymposium::selectRaw('max(substring(rnum,4)) as maxNumber')->where('year', config('site.common.default.year'))->where('lang', $lang)->first();
         return 'R'.( $lang == 'KOR' ? 'K' : 'F' ).'-'.($maxNumber['maxNumber']?sprintf('%04d',($maxNumber['maxNumber'])+1):'0001');
     }
+    
 }

@@ -154,4 +154,33 @@ class RegistrationService extends dbService
 
         }
     }
+
+    public function memoForm(Request $request)
+    {
+        $registration = Registration::find(decrypt($request->sid));
+        $data['apply'] = $registration;
+
+        return $data;
+    }    
+
+    public function memo(Request $request)
+    {   
+        $this->transaction();
+
+        try {
+
+            $registration = Registration::find(decrypt($request->sid));
+            $registration->memo = $request->memo;
+            $registration->save();
+
+            $this->dbCommit('사전등록 메모 변경'); 
+            
+            return redirect()->back()->withSuccess('메모 저장이 완료되었습니다.')->with('close','Y');
+
+        } catch (\Exception $e) {
+
+            return $this->dbRollback($e);
+
+        }
+    }
 }

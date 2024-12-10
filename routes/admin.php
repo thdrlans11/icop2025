@@ -18,19 +18,21 @@ Route::prefix('admin')->group(function(){
         Route::post('/sendMail/{sid}', 'sendMail')->name('admin.registration.sendMail');
         Route::get('/excel', 'excel')->name('admin.registration.excel');
         Route::post('/dbChange', 'dbChange')->name('admin.registration.dbChange');
+        Route::get('/memo/{sid}', 'memoForm')->name('admin.registration.memoForm');
+        Route::post('/memo/{sid}', 'memo')->name('admin.registration.memo');
     });
 
     //Special Symposium
     Route::prefix('symposium')->controller(\App\Http\Controllers\Admin\Symposium\SymposiumController::class)->group(function() {
         Route::get('/', 'list')->name('admin.symposium.list');
-
         Route::get('/modify/{sid}', 'modifyForm')->name('admin.symposium.modifyForm');
         Route::post('/modify/{sid}', 'modify')->name('admin.symposium.modify');
         Route::get('/sendMail/{sid}', 'sendMailForm')->name('admin.symposium.sendMailForm');
         Route::post('/sendMail/{sid}', 'sendMail')->name('admin.symposium.sendMail');
-
         Route::get('/excel', 'excel')->name('admin.symposium.excel');
         Route::post('/dbChange', 'dbChange')->name('admin.symposium.dbChange');
+        Route::get('/memo/{sid}', 'memoForm')->name('admin.symposium.memoForm');
+        Route::post('/memo/{sid}', 'memo')->name('admin.symposium.memo');
     });
 
 });

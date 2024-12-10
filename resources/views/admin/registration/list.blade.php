@@ -205,8 +205,8 @@ function dbChange(sid,db,field,f){
     <table class="cst-table list-table">
         <caption class="hide">목록</caption>
         <colgroup>
-            <col style="width: 3%;">
-            <col style="width: 5%;">
+            <col style="width: 2%;">
+            <col style="width: 4%;">
             <col style="width: *">
             <col style="width: 6%;">
             
@@ -222,6 +222,7 @@ function dbChange(sid,db,field,f){
             <col style="width: 6%;">
             <col style="width: 6%;">
             <col style="width: 6%;">
+            <col style="width: 3%;">
             <col style="width: 5%;">
         </colgroup>
         <thead>
@@ -245,6 +246,7 @@ function dbChange(sid,db,field,f){
                 <th scope="col">입금 예정일<br>(입금자)</th>
                 <th scope="col">입금완료일</th>
                 <th scope="col">Mail 재발송</th>
+                <th scope="col">메모</th>
                 <th scope="col">관리</th>
             </tr>
         </thead>
@@ -308,6 +310,13 @@ function dbChange(sid,db,field,f){
                     @else
                     -
                     @endif
+                </td>
+                <td>
+                    <a href="{{ route('admin.registration.memoForm', ['sid'=>encrypt($d->sid)]) }}" class="Load_Base_fix" Wsize="730" Hsize="900" Tsize="2%" Reload="Y">
+                        <span class="material-symbols-outlined">
+                            content_paste{{ !$d->memo ? '_off' : ''}}
+                        </span>
+                    </a>
                 </td>
                 <td>
                     @if( request()->query('del') == 'Y' )

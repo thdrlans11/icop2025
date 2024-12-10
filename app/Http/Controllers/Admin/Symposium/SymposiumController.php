@@ -57,4 +57,14 @@ class SymposiumController extends Controller
     {
         return $this->SymposiumService->dbChange($request);
     }
+
+    public function memoForm(Request $request)
+    {
+        return view('admin.symposium.memo')->with( $this->SymposiumService->memoForm($request) );
+    }
+
+    public function memo(Request $request)
+    {
+        return $this->SymposiumService->memo($request);
+    }
 }
