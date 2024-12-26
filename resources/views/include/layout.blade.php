@@ -64,11 +64,23 @@
                     <ul class="gnb js-gnb">
                         @foreach( config('site.menu.menu') as $key => $val )
                         <li>
-                            <a href="{{ route($val['route_target'],$val['route_param']) }}">{{ $val['name'] }}</a>
+                            <a href="{{ route($val['route_target'],$val['route_param']) }}">
+                                {{ $val['name'] }}
+                                @if( $key == '2' )
+                                <span class="new">N</span>
+                                @endif
+                            </a>
                             @if( isset( config('site.menu.sub_menu')[$key] ) )
                             <ul>
                                 @foreach( config('site.menu.sub_menu')[$key] as $skey => $sval )
-                                <li><a href="{{ route($sval['route_target'],$sval['route_param']) }}">{{ $sval['name'] }}</a></li>
+                                <li>
+                                    <a href="{{ route($sval['route_target'],$sval['route_param']) }}">
+                                        {{ $sval['name'] }}
+                                        @if( $key == '2' && $skey == '3' )
+                                        <span class="new">N</span>
+                                        @endif
+                                    </a>
+                                </li>
                                 @endforeach
                             </ul>
                             @endif

@@ -60,7 +60,7 @@ if (!function_exists('DDay')) {
         }else if( $target == 'abstract' ){
             $date = '2025-03-31';
         }else if( $target == 'earlyRegistration' ){
-            $date = '2025-03-07';
+            $date = '2025-03-14';
         }else if( $target == 'lastRegistration' ){
             $date = '2025-04-30';
         }

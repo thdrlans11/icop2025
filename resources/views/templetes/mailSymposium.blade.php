@@ -10,12 +10,12 @@
         <tbody>
             <tr>
                 <td style="padding: 0;text-align: center;text-align: center;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 20px;color: #050505;">
-                    <img src="{{ env('APP_URL') }}/assets/image/mail/mail_header.jpg" alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025. June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)" style="display: inline-block;border:0 none;vertical-align: top;" />
+                    <img src="{{ env('APP_URL') }}/assets/image/mail/mail_header_241204.jpg" alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025. June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)" style="display: inline-block;border:0 none;vertical-align: top;" />
                 </td>
             </tr>
             <tr>
                 <th scope="row" style="padding: 20px;background-color: #0579b5;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 18px;font-weight: 700;color: #fff;line-height: 1.3;letter-spacing: -0.02em;box-sizing: border-box;">
-                    [{{ config('site.common.info.siteName') }}] Thank you for submitting a proposal for the Special Symposium!
+                   Thank you for submitting a proposal for the Special Symposium!
                 </th>
             </tr>
             <tr>
@@ -23,7 +23,7 @@
                     <table style="width: 100%;border-collapse: collapse;border-spacing: 0;">
                         <tbody>
                             <tr>
-                                <th scope="col" style="padding-bottom: 30px;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 16px;font-weight: 700;line-height: 1.7;text-align: center;">
+                                <th scope="col" style="padding-bottom: 30px;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 16px;font-weight: 700;line-height: 1.7; text-align:left;">
                                     Thank you for submitting a proposal for the Special Symposium for ICOP/ISOP 2025!
                                 </th>
                             </tr>
@@ -191,7 +191,7 @@
             </tr>        
             <tr>
                 <td>
-                    <img src="{{ env('APP_URL') }}/assets/image/mail/mail_footer.jpg" alt="Contact Information | Congress Team. E.info@icop2025.org. P.+82-2-6959-5333. F.+82-2-70-8677-6333. Copyright @ ICOP 2025. All Rights Reserved." style="display: inline-block;border:0 none;vertical-align: top;" />
+                    <img src="{{ env('APP_URL') }}/assets/image/mail/mail_footer.png" alt="Contact Information | Congress Team. E.info@icop2025.org. P.+82-2-6959-5333. F.+82-2-70-8677-6333. Copyright @ ICOP 2025. All Rights Reserved." style="display: inline-block;border:0 none;vertical-align: top;" />
                 </td>
             </tr>
         </tbody>

@@ -14,6 +14,11 @@ class ProgramController extends Controller
         ]);
     }
 
+    public function program()
+    {
+        return view('program.program')->with(['subNum' => '1']);
+    }
+
     public function speakers()
     {
         return view('program.speakers')->with(['subNum' => '3']);

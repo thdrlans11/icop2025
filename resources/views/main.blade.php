@@ -60,7 +60,7 @@
                     </li>
                     <li>
                         Early Registration Deadline
-                        <p class="date">March 7 (Fri), 2025</p>
+                        <p class="date">March 14 (Fri), 2025</p>
                         <span class="dday {{ DDay('earlyRegistration') == 'END' ? 'end' : '' }}">{{ DDay('earlyRegistration') }}</span>
                     </li>
                     <li>
@@ -100,7 +100,7 @@
             <div class="main-board-list js-board-rolling">
                 @foreach( $notices as $notice )
                 <div class="main-board-con">
-                    <a href="{{ route('board.view', ['code'=>$notice->code, 'sid'=>base64_encode($notice->sid)]) }}">
+                    <div class="con-link" onclick="location.href='{{ route('board.view', ['code'=>$notice->code, 'sid'=>base64_encode($notice->sid)]) }}'" href="">
                         <strong class="subject ellipsis2">{{ $notice->subject }}</strong>
                         <div class="contents ellipsis3" style="overflow:hidden">
                             {!! $notice->content !!}
@@ -108,7 +108,7 @@
                         <span class="date">
                             {{ $notice->created_at->toDateString() }}
                         </span>
-                    </a>
+                    </div>
                 </div>
                 @endforeach
             </div>
@@ -214,4 +214,40 @@
         </div>
     </div>
 </article>
+
+@if( !isset($_COOKIE['layer_main']) )
+<script>
+function setCookiePopup( name, value, expiredays ){
+    var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+    $('.pop-main').hide();
+}	
+</script>
+<div class="popup-wrap pop-main">
+    <div class="popup-contents">
+        <div class="popup-conbox">
+            <img src="/assets/image/main/img_pop_symposia.png" alt="">
+            <strong class="tit">
+                CALL FOR <span>SPECIAL SYMPOSIA</span>
+            </strong>
+            <p>
+                OPEN UNTIL <span class="highlights">JAN. 31, 2025!</span>
+            </p>
+            <div class="btn-wrap text-center">
+                <a href="{{ route('apply.symposium', ['step'=>'1']) }}" class="btn">Symposium Proposal Submission <img src="/assets/image/main/ic_pop_arrow.png" alt=""></a>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <div class="checkbox-wrap cst text-center">
+                <label for="chk1" class="checkbox-group">
+                    <input type="checkbox" id="chk1" onclick="setCookiePopup('layer_main','done','1')">Not Open for 24 Hours
+                </label>
+            </div>
+        </div>
+        <button type="button" class="btn-pop-close" onclick="$('.pop-main').hide();"><span class="hide">팝업 닫기</span></button>
+    </div>
+</div>
+@endif
+
 @endsection

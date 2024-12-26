@@ -82,6 +82,8 @@
 <div class="sub-tit-wrap">
     <h4 class="sub-tit">Symposium Information</h4>
 </div>
+<p>It is advisable to keep the proposal within a limit of 200 words.
+</p>
 <ul class="write-wrap">
     <li>
         <div class="form-tit">Symposium Title <strong class="required">*</strong></div>
@@ -101,7 +103,7 @@
     <img src="/assets/image/sub/ic_price.png" alt="">
     <div class="text-wrap">
         <p>
-            Please note that each symposium organizer should be recommended to invite FOUR speakers, with 20 minutes allotted for each talk, totaling 80 minutes for each symposium. <br>
+            Please note that each symposium organizer <strong>should be recommended to invite FOUR speakers</strong>, with 20 minutes allotted for each talk, totaling 80 minutes for each symposium. <br>
             We plan to offer a budget of <strong class=" text-orange">1,000,000 WON</strong> (the official currency of the Republic of Korea) for each symposium.
         </p>
     </div>
@@ -121,7 +123,7 @@
             <tr>
                 <th scope="col">No.</th>
                 <th scope="col">Name</th>
-                <th scope="col">Afflication</th>
+                <th scope="col">Affliation</th>
                 <th scope="col">Country</th>
                 <th scope="col">Lecture Title</th>
             </tr>

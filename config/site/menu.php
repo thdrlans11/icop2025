@@ -11,8 +11,8 @@ return [
         '2' => [
             'name' => 'Program',
             'url' => "",
-            'route_target' => 'ready',
-            'route_param' => ['mainNum'=>'2', 'subNum'=>'1'],
+            'route_target' => 'program.program',
+            'route_param' => [],
         ],
         '3' => [
             'name' => 'Abstract',
@@ -83,8 +83,10 @@ return [
             '1' => [
                 'name' => 'Program at a glance',
                 'url' => "",
-                'route_target' => 'ready',
-                'route_param' => ['mainNum'=>'2', 'subNum'=>'1'],
+                'route_target' => 'program.program',
+				//'route_target' => 'ready',
+                'route_param' => [],
+				//'route_param' => ['mainNum'=>'2', 'subNum'=>'1'],
             ],
             '2' => [
                 'name' => 'Program in Detail',
@@ -101,8 +103,8 @@ return [
             '4' => [
                 'name' => 'Special Symposia',
                 'url' => "",
-                'route_target' => 'ready',
-                'route_param' => ['mainNum'=>'2', 'subNum'=>'4'],
+                'route_target' => 'apply.symposium',
+                'route_param' => ['step'=>'1'],
             ]
         ],
         '3' => [

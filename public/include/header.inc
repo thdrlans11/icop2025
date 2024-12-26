@@ -68,10 +68,11 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#n">Program</a>
+                            <a href="#n">Program <span class="new">N</span></a>
                             <ul>
                                 <li><a href="#n">Program at a glance</a></li>
                                 <li><a href="#n">Program in Detail</a></li>
+                                <li><a href="#n">Plenary Lectures <span class="new">N</span></a></li>
                                 <li><a href="#n">Invited Speakers</a></li>
                             </ul>
                         </li>

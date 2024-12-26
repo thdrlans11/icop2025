@@ -1091,31 +1091,87 @@ p + .name strong{
 .table-wrap:has(.program-table){
     border-top: 0;
 }
-.program-table thead th{
-    border-bottom: 0;
+
+.program-tab-menu{
+    gap: 15px;
+    border: 0;
+}
+.program-tab-menu > li{
+    border-radius: 50px;
+    border: 1px solid #d2dfe6;
+}
+.sub-tit.program-tit{
+    position: relative;
+    padding: 0;
     background: none;
+    background: linear-gradient(to right, #2aacbb, #007cdc);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.sub-tit.program-tit:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    content: attr(title);
+    clear: both;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white, 0px 2px 0 white, 2px 0px 0 white, 0px -2px 0 white, -2px 0px 0 white;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+}
+.program-table thead{
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-image: url('../image/sub/bg_program_table.png');
+}
+.program-table thead th{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 0;
+    background: none;
+    border-bottom: 0;
+    color: #fff;
     font-weight: 600;
 }
-.program-table .bg-blue{
-    background-color: #F7F7FD;
+.program-table thead th + th:before{
+    opacity: 0.35;
 }
-.program-table .bg-skyblue{
-    background-color: #EEF7FB;
+.program-table td{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #343434;
+}
+.program-table .bg-orange{
+    background-color: #fff0f0 !important;
+}
+.program-table .bg-orange2{
+    background-color: #fff6e6 !important;
 }
 .program-table .bg-pink{
-    background-color: #F9ECFD !important;
+    background-color: #fff0fd !important;
 }
-.program-table th[class*="bg"]{
-    color: #fff;
+.program-table .bg-yellow{
+    background-color: #fffff0 !important;
 }
-.program-table th.bg-blue{
-    background-color: #3a43c9;
+.program-table .bg-green{
+    background-color: #f9fff0 !important;
 }
-.program-table th.bg-skyblue{
-    background-color: #44acd6;
+.program-table .bg-skyblue{
+    background-color: #f0fcff !important;
 }
-.program-table th.bg-pink{
-    background-color: #c259ea !important;
+.program-table .bg-gray{
+    background-color: #f3f3f3 !important;
+}
+.program-table .bg-purple{
+    background-color: #f2dcf5 !important;
+}
+
+.program-table .bg-navy{
+    background-color: #f0f0ff !important;
 }
 
 /* PRGORAM::Scientific Program */
@@ -1311,12 +1367,12 @@ p + .name strong{
 
 .invited-conbox{
     padding: 50px;
-    border: 1px solid #e4e8ea;
+    /* border: 1px solid #e4e8ea;*/ 
     border-radius: 5px;
 }
-.invited-conbox + .invited-conbox{
+/* .invited-conbox + .invited-conbox{
     margin-top: 30px;
-}
+}*/ 
 .invited-conbox .name{
     font-size: 3rem;
     font-weight: 700;

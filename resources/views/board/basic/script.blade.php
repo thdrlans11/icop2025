@@ -71,6 +71,9 @@ $(document).ready(function(){
         image_title: true,
         automatic_uploads: true,
         file_picker_types: 'image',
+
+        paste_webkit_styles: 'all',  // 웹킷 스타일 유지
+
         images_upload_handler: tinymce_image_upload_handler,
         file_picker_callback: function(cb, value, meta) {
             var input = document.createElement('input');

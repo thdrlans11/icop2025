@@ -35,68 +35,13 @@
                     <img src="/assets/image/sub/img_andrewjroger.png" alt="Andrew J. Roger">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name">Andrew J. Roger</strong>
+                    <strong class="name"><a href="http://rogerlab.biochemistryandmolecularbiology.dal.ca/" target="_blank" style="color:#0b9bba">Andrew J. Roger</a></strong>
                     <p>
                         Dept. of Biochemistry and Molecular Biology, Dalhousie University <br>
                         Canada
                     </p>
                     <p class="tit"><span>Lecture Title: TBD</span></p>
-                    <strong>Education</strong>
-                    <ul class="list-type list-type-dot">
-                        <li>PhD, Dalhousie University</li>
-                    </ul> <br>
-
-                    <strong>Academic Positions</strong>
-                    <ul class="list-type list-type-dot">
-                        <li>Department member since 2001</li>
-                        <li>CGEB Founding Director,&nbsp;<a href="https://icgenomics.ca/" target="_blank"
-                                class="link">Institute for Comparative Genomics (ICG)</a></li>
-                        <li>Canada Research Chair in Comparative Genomics</li>
-                    </ul> <br>
-
-                    <strong>Research Topics</strong> <br>
-                    <p>Genome, Organelle and Protein Evolution</p> <br>
-
-                    <strong><u>Research:</u></strong> <br>
-                    <strong>Determining the "super-kingdoms" of eukaryotic organisms by phylogenomics.</strong>
-                    <p>Using genomic surveys and molecular genetic methods, we isolate genes coding for multiple
-                        highly conserved proteins (ribosomal proteins, cpn60, hsp70 and hsp90, elongation
-                        factors, tubulins, RNA polymerases etc.) from diverse aerobic and anaerobic, parasitic
-                        and free-living protists. We do computer-based phylogenetic analyses of these sequences
-                        to: reconstruct ancient relationships amongst the unicellular protistan eukaryotes and
-                        other major eukaryotic groups. In particular we are investigating a hypothetical
-                        eukaryote super-kingdom called the 'Excavata' that is proposed to contain organisms such
-                        as Giardia, Trichomonas, trypanosomes and a variety of aerobic and anaerobic flagellates
-                        and amoebae.</p>
-
-                    <strong>Comparative genomics of unicellular eukaryotes</strong> <br>
-                    <p>Through EST surveys, we characterize the highly expressed genes from a wide variety of
-                        protistan genomes. We are specifically interested in the gene content of anaerobic
-                        protists, that have acquired genes by lateral gene transfer (LGT) from Eubacteria,
-                        Archaebacteria and Eukaryotes. By studying LGT in these organisms we are gaining an
-                        understanding of how both parasitic and free-living unicellular eukaryotic genomes
-                        change over time.</p>
-
-                    <strong>The biology and evolution of mitochondria, hydrogenosomes and mitosomes</strong>
-                    <br>
-                    <p>Mitochondria are derived from an ancient endosymbiosis of a eubacterium in eukaryotic
-                        cells. Although all known eukaryotes appear to have diverged from each other since this
-                        event, many unicellular eukaryotes that live in oxygen-poor habitats (e.g. the human gut
-                        or anoxic fresh-water environments) lack aerobic mitochondrial functions and instead
-                        have transformed their mitochondria into hydrogen-producing 'hydrogenosomes or reduced
-                        mitosomes. We are interested in characterizing the functional biodiversity of these
-                        alternatives to mitochondria and understanding the mechanisms by which they have
-                        evolved.</p>
-
-                    <strong>Modeling the evolution of genes and genomes</strong> <br>
-                    <p>We collaborate extensively with statisticians and computer scientists to develop
-                        stochastic models of gene, protein and genome evolution. We are particularly interested
-                        in creating models that capture the dynamic nature of molecular evolution over the 3.5
-                        billion years of divergence in the tree of life.</p> <br>
-
-                    <strong><u>Keywords:</u></strong>
-                    <p>DNA-sequencing, phylogenetic methods, bioinformatics, computational biology,
-                        immunofluorescence, comparative genomics</p>
+					<p>Andrew has made important contributions to evolutionary protistology and was the founding Director of the Centre for Comparative Genomics and Evolutionary Bioinformatics at Dalhousie University (now the Institute of Comparative Genomics, icgenomics.ca).  Over two and a half decades, Andrew and his collaborators have employed comparative genomic, phylogenetic, and other ‘omic’ approaches to clarifying how eukaryotic cells and their symbiont-derived organelles originated and diversified in the past ~2 billion years.  Other topics of particular interest include adaptations to low oxygen conditions in anaerobic protists and clarifying the role of lateral gene transfer in these adaptations, as well as the development methods and models for ‘deep-time’ phylogenetic inference. Andrew has published more than 200 peer-reviewed articles in these fields and has received numerous accolades for his work, including being appointed as a Tier I, Canada Research Chair,  and receiving an award of a Fellowship in the Royal Society of Canada.</p>
                 </div>
             </div>
         </div>
@@ -106,20 +51,16 @@
                     <img src="/assets/image/sub/img_shuhaixiao.png" alt="Shuhai Xiao">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name">Shuhai Xiao</strong>
+                    <strong class="name"><a href="https://sites.google.com/vt.edu/geobiology" target="_blank" style="color:#0b9bba">Shuhai Xiao</a></strong>
                     <p>
-                        Dept. of Geobiology, Virginia Tech <br>
-                        Professor, Virginia Tech <br>
+                        Professor, Member of the U.S. National Academy of Sciences<br>
+                        Virginia Tech <br>
                         USA
                     </p>
                     <p class="tit"><span>Lecture Title: TBD</span></p>
                     <p>
-                        Shuhai Xiao is a paleobiologist and geobiologist who studies the interactions between
-                        the biosphere and its environments at critical transitions in Earth history,
-                        particularly during the Ediacaran-Cambrian transition. He integrates paleobiological,
-                        sedimentological, and geochemical data to shed light on important evolutionary events
-                        (such as the origin and diversification of eukaryotes, multicellular organisms, and
-                        animals), their environmental contexts, and their geobiological consequences.
+                        Shuhai Xiao is a paleobiologist and geobiologist who studies the interactions between the biosphere and its environments at critical transitions in Earth history, particularly during the Ediacaran-Cambrian transition. He integrates paleobiological, sedimentological, geochemical, and phylogenetic data to shed light on important evolutionary events, including the origin and diversification of eukaryotes, multicellular organisms, and animals. He is a member of the U.S. National Academy of Sciences and a fellow of the Americal Association for the Advancement of Science.
+
                     </p>
                 </div>
             </div>

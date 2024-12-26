@@ -269,7 +269,12 @@ function dbChange(sid,db,field,f){
                 <td>{{ $d->email }}</td>
                 <td>{{ $d->firstName.' '.$d->lastName }} {!! $d->lang == 'KOR' ? '<br>'.'( '.$d->name.' )' : '' !!}</td>
                 <td>{{ $d->country->cn }}</td>
-                <td>{{ $d->category ? config('site.registration.category')[$d->category] : '' }}</td>
+                <td>
+                    {{ $d->category ? config('site.registration.category')[$d->category] : '' }}
+                    @if( $d->category == 'B' )
+                    <a href="{{ route('download', ['type'=>'only', 'tbl'=>'registration', 'sid'=>encrypt($d->sid)]) }}" class="btn btn-small color-type8">다운로드</a>
+                    @endif
+                </td>
                 <td>{{ $d->attendType ? config('site.registration.attendType')[$d->attendType] : '' }}</td>
                 <td>{{ config('site.registration.unit')[$d->lang] }} {{ number_format($d->price) }}</td>
                 <td>{{ $d->created_at->toDateString() }} {!! $d->complete_at ? '<br>'.'( '.$d->complete_at->toDateString().' )' : '' !!}</td>

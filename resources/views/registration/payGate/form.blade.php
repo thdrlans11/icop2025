@@ -25,7 +25,7 @@ function getPGIOresult() {
 }
 </script>
 
-<input type="hidden" name="mid" value="paygateus">
+<input type="hidden" name="mid" value="protists">
 <input type="hidden" name="charset" value="UTF-8">
 <input type="hidden" name="langcode" value="US">
 <input type="hidden" name="paymethod" value="104">
