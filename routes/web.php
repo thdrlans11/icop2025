@@ -67,6 +67,8 @@ Route::prefix('board/{code}')->middleware('boardCheck')->controller(\App\Http\Co
 //Location
 Route::prefix('location')->controller(\App\Http\Controllers\Location\LocationController::class)->group(function() {
     Route::get('venue', 'venue')->name('location.venue');
+    Route::get('map', 'map')->name('location.map');
+    Route::get('accommodation', 'accommodation')->name('location.accommodation');
 });
 
 require __DIR__.'/common.php';

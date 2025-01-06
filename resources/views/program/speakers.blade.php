@@ -35,7 +35,7 @@
                     <img src="/assets/image/sub/img_andrewjroger.png" alt="Andrew J. Roger">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name"><a href="http://rogerlab.biochemistryandmolecularbiology.dal.ca/" target="_blank" style="color:#0b9bba">Andrew J. Roger</a></strong>
+                    <strong class="name"><a href="http://rogerlab.biochemistryandmolecularbiology.dal.ca/" target="_blank" style="color:#0b9bba"><u>Andrew J. Roger</u></a></strong>
                     <p>
                         Dept. of Biochemistry and Molecular Biology, Dalhousie University <br>
                         Canada
@@ -51,7 +51,7 @@
                     <img src="/assets/image/sub/img_shuhaixiao.png" alt="Shuhai Xiao">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name"><a href="https://sites.google.com/vt.edu/geobiology" target="_blank" style="color:#0b9bba">Shuhai Xiao</a></strong>
+                    <strong class="name"><a href="https://sites.google.com/vt.edu/geobiology" target="_blank" style="color:#0b9bba"><u>Shuhai Xiao</u></a></strong>
                     <p>
                         Professor, Member of the U.S. National Academy of Sciences<br>
                         Virginia Tech <br>
@@ -140,6 +140,49 @@
                         Jana received her PhD in 2011 from the Max Planck Institute for Marine Microbiology,
                         Bremen, Germany. Since 2018, she has been heading the research group ‘Greenhouse Gases’
                         there.
+                    </p>
+                </div>
+            </div>
+        </div>
+		<div class="sub-tit-wrap" style="text-align:center;">
+<h3 class="page-tit" style="font-size: 3.2rem;">Hunter Award Winner Presentation</h3>
+</div>
+		<div class="invited-conbox">
+            <div class="invited-con">
+                <div class="img-wrap">
+                    <img src="/assets/image/sub/img_ShanGao.png" alt="ShanGao">
+                </div>
+                <div class="text-wrap">
+                    <strong class="name"><a href="https://scxy.ouc.edu.cn/lplb/2018/0811/c13774a207662/page.htm" target="_blank"><u>Shan Gao </u></a></strong>
+                    <p>
+                        Professor<br>
+                        Ocean University of China, China
+                    </p>
+                    <p class="tit"><span>Lecture Title: TBD</span></p>
+                    <p>
+                        Shan is a leading scientist in the field of epigenetics, by using the ciliated protozoa Tetrahymena thermophila as the model system. Her current research focuses on understanding the regulation mechanism of DNA N6-methyladenine (6mA), as well as the functional divergence and biological significance of 6mA in eukaryotes. Her work has provided key evidence supporting eukaryotic 6mA as a bona fide epigenetic mark and has offered new insights into the divergent evolution of eukaryotes from the unique perspective of DNA methylation. She has won the Hunter Award and the Holz-Conner Award from the International Society of Protistologists. She is currently the Vice Chair of Ciliate Advisory Board and the Executive Council member of Chinese Society of Protozoology.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+		<div class="invited-conbox">
+            <div class="invited-con">
+                <div class="img-wrap">
+                    <img src="/assets/image/sub/img_Laura-eme.png" alt="Laura-eme">
+                </div>
+                <div class="text-wrap">
+                    <strong class="name">Laura Eme</strong>
+                    <p>
+                        Associate Professor<br>
+                        University of Rhode Island, USA<br>
+					Research Director<br>
+					Université Paris-Saclay, France
+					</p>
+                    <p class="tit"><span>Lecture Title: TBD</span></p>
+                    <p>
+                        Laura is an evolutionary microbiologist focusing on the origin and evolution of eukaryotes, with particular emphasis on the archaeal ancestry of eukaryotes, the origin and evolution of mitochondria, and the development of key eukaryotic cellular systems during eukaryotic diversification. Dr. Eme has a strong background in molecular phylogenetics and comparative genomics, which she uses to study the origin and evolution of eukaryotic cells, focusing on microbial diversity. She explores topics such as the archaeal ancestry of eukaryotes, mitochondrial evolution, endosymbiosis, horizontal gene transfer, and the ecological forces driving genomic diversity. She was awarded the 2023 Hutner Prize by ISOP for her contributions to understanding the origins and early evolution of eukaryotes. Laura is also an Associate Editor for several journals in molecular evolution including Genome Biology and Evolution, Molecular Phylogenetics and Evolution and Journal of Molecular Evolution.   
+
                     </p>
                 </div>
             </div>

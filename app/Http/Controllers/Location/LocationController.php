@@ -18,4 +18,14 @@ class LocationController extends Controller
     {
         return view('location.venue')->with(['subNum' => '1']);
     }
+
+    public function map()
+    {
+        return view('location.map')->with(['subNum' => '2']);
+    }
+
+    public function accommodation()
+    {
+        return view('location.accommodation')->with(['subNum' => '3']);
+    }
 }

@@ -225,7 +225,7 @@
     background-image: url('../image/sub/ic_page_tit.png');
 }
 .sub-conbox{
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: -0.02em;
@@ -243,7 +243,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-image: url('../image/sub/ic_sub_tit.png');
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: #0b9bba;
     line-height: 1.2;
@@ -2261,33 +2261,6 @@ p + .name strong{
     line-height: 1.2;
     vertical-align: top;
 }
-.hotel-conbox{
-    display: flex;
-    align-items: center;
-    gap: 55px;
-    padding: 20px 30px;
-}
-.hotel-conbox a{
-    word-break: break-all;
-}
-.hotel-conbox .img-wrap{
-    flex: 0 0 auto;
-    width: 50%;
-    max-width: 50%;
-    gap: 20px;
-}
-.hotel-conbox .img-wrap img{
-    width: calc((100% - 25px)/2);
-}
-.hotel-conbox .img-wrap img + img{
-    margin-left: 20px;
-}
-.hotel-conbox .btn-wrap{
-    margin: 10px 0;
-}
-.hotel-conbox + .hotel-conbox{
-    border-top: 1px solid #dadada;
-}
 
 /* About the Congress::Contact Info */
 .map-wrap{
@@ -2364,6 +2337,251 @@ p + .img-wrap{
     flex: 1;
     border-radius: 0 0 40px 0;
     box-shadow: 0 16px 40px rgba(141,148,160,0.3);
+}
+
+/* Location::Map & Transportation */
+.trans-conbox strong{
+    font-weight: 500;
+}
+.trans-map-wrap{
+    height: 460px;
+    margin-top: 30px;
+}
+.trans-map-wrap iframe{
+    width: 100%;
+    height: 100%;
+}
+.map-tit-wrap{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    background-color: #e6f2f8;
+    border-radius: 50px;
+    text-align: center;
+}
+p + .map-tit-wrap{
+    margin-top: 90px;
+}
+.map-tit{
+    padding: 12px 15px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #0081c1;
+    letter-spacing: -0.04em;
+}
+.map-tit img{
+    margin-left: 5px;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+.map-info-tit{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #0081c1;
+    text-align: center;
+    vertical-align: top;
+    line-height: 1.3;
+    letter-spacing: -0.04em;
+}
+.map-info-tit span{
+    display: inline-block;
+    padding: 0 5px 0;
+    box-shadow: inset 0 -13px #e6f2f8;
+}
+.table-wrap:has(.type2),
+.table-wrap:has(.type3){
+    overflow: hidden;
+    border-top: 0;
+    border-radius: 10px;
+    border: 1px solid #115b94;
+}
+.cst-table.type2 thead th,
+.cst-table.type3 thead th{
+    border: 0;
+    border-radius: 10px;
+    font-size: 2.2rem;
+    color: #fff;
+}
+.cst-table.type2 thead th{
+    background-color: #115b94;
+}
+.cst-table.type3 thead th{
+    background-color: #117794;
+}
+.cst-table.type2 tbody tr:last-child th,
+.cst-table.type2 tbody tr:last-child td,
+.cst-table.type3 tbody tr:last-child th,
+.cst-table.type3 tbody tr:last-child td{
+    border-bottom: 0;
+}
+.cst-table.type2 tbody th,
+.cst-table.type3 tbody th{
+    font-weight: 500;
+}
+.cst-table.type2 tbody th{
+    background-color: #f2f8fb;
+    color: #115b94;
+}
+.cst-table.type3 tbody th{
+    background-color: #f2fbfb;
+    color: #117794;
+}
+.cst-table.type2 th,
+.cst-table.type2 td,
+.cst-table.type3 th,
+.cst-table.type3 td{
+    border: 0;
+    border-bottom: 1px solid #c2ccd4;
+    font-size: 1.9rem;
+}
+.terminal-info-wrap{
+    margin: 90px 0 60px;
+    padding: 20px 20px 70px;
+    border: 1px solid #115b94;
+    border-radius: 10px;
+}
+.terminal-info-wrap img{
+    max-width: 100%;
+}
+.terminal-info-wrap .sub-tab-menu{
+    gap: 15px;
+    border: 0;
+}
+.terminal-info-wrap .sub-tab-menu > li{
+    height: 70px;
+    background-color: #d0dfea;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.terminal-info-wrap .sub-tab-menu > li > a{
+    font-size: 2.8rem;
+    color: #657784;
+    letter-spacing: -0.04em;
+    transition: 0.3s ease;
+}
+.terminal-info-wrap .sub-tab-menu > li:hover,
+.terminal-info-wrap .sub-tab-menu > li.on{
+    background: linear-gradient(to top, #1365b2, #1897c0);
+    box-shadow: none;
+}
+.terminal-info-wrap .sub-tab-menu > li:hover > a,
+.terminal-info-wrap .sub-tab-menu > li.on > a{
+    color: #fff;
+}
+.trans-conbox .con-wrap{
+    align-items: top;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.trans-conbox .con-wrap .table-wrap + .table-wrap{
+    margin-top: 0;
+}
+
+/* Location::Accommodation */
+.hotel-conbox .bg-img-box{
+    padding: 40px;
+    background-color: #f8fdff;
+    font-size: 1.7rem;
+    letter-spacing: -0.05em;
+}
+.hotel-conbox .bg-img-box .text-red{
+    font-weight: 500;
+}
+.hotel-tit-wrap{
+    margin-top: 70px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e3e3e3;
+}
+.hotel-tit-wrap:nth-of-type(1){
+    margin-top: 0;
+}
+.hotel-tit{
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.hotel-tit-wrap .star{
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.hotel-tit-wrap .star img{
+    margin: 6px 2px;
+    vertical-align: top;
+}
+.hotel-contents{
+    display: flex;
+    gap: 50px;
+}
+.hotel-contents .img-wrap{
+    flex: 0 0 auto;
+    width: 726px;
+}
+.hotel-contents .img-wrap img{
+    max-width: 100%;
+}
+.hotel-contents .text-wrap{
+    margin-top: auto;
+}
+.hotel-contents .text-wrap ul > li{
+    padding: 5px 0;
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    font-size: 2.0rem;
+}
+.hotel-contents .text-wrap ul > li strong{
+    font-weight: 500;
+}
+.hotel-contents .text-wrap .address{
+    background-image: url('../image/sub/ic_hotel_address.png');
+}
+.hotel-contents .text-wrap .phone{
+    background-image: url('../image/sub/ic_hotel_phone.png');
+}
+.hotel-contents .btn-wrap{
+    margin-top: 20px;;
+    padding-left: 45px;
+}
+.hotel-contents .btn-hotel{
+    display: inline-block;
+    min-width: 185px;
+    padding: 11px 20px;
+    border-radius: 3px;
+    background-color: #2993ca;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-image: url('../image/sub/ic_btn_arrow.png');
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+}
+.hotel-contents .img-rolling{
+    position: relative;
+}
+.hotel-contents .slick-arrow{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 60px;
+    height: 85px;
+    background-color: rgba(255,255,255,0.8);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999em;
+}
+.hotel-contents .slick-prev{
+    left: 0;
+    background-image: url('../image/sub/ic_slick_prev.png');
+}
+.hotel-contents .slick-next{
+    right: 0;
+    background-image: url('../image/sub/ic_slick_next.png');
 }
 
 /* Registration::More about Seoul */

@@ -327,9 +327,7 @@ function dbChange(sid,db,field,f){
                     @if( request()->query('del') == 'Y' )
                     <a href="#n" class="btn btn-small color-type4 btn-recovery" onclick="swalConfirm('복구 처리하시겠습니까?', '', function(){ dbChange('{{ encrypt($d->sid) }}','registration','delete',$('.btn-recovery')); })" data-status="N">복구</a>
                     @else
-                        @if( $d->status == 'Y' )
                         <a href="{{ route('admin.registration.modifyForm', ['sid'=>encrypt($d->sid), 'step'=>'1']) }}" class="btn-admin btn-modify Load_Base_fix" Wsize="1500" Hsize="900" Tsize="2%" Reload="Y"><img src="/devAdmin/assets/image/admin/ic_modify.png" alt="수정"></a>
-                        @endif
                         <a href="#n" class="btn-admin btn-del" onclick="swalConfirm('삭제 처리하시겠습니까?', '', function(){ dbChange('{{ encrypt($d->sid) }}','registration','delete',$('.btn-del')); })" data-status="Y"><img src="/devAdmin/assets/image/admin/ic_del.png" alt="삭제"></a>
                     @endif
                 </td>

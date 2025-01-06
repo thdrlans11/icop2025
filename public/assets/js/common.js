@@ -16,6 +16,7 @@ $(function (e) {
         slideTabMenu();
         fileUpload();
         imgMap();
+        imgRolling();
 
 		if(wWidth < 1025){		
 		}else{
@@ -307,4 +308,17 @@ function imgMap(){
     $('img[usemap]').each(function(e){
         $('img[usemap]').rwdImageMaps();
     });
+}
+
+function imgRolling(){
+    if($('.js-img-rolling').each(function(e){
+        $(this).not('.slick-initialized').slick({
+            dots: false,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 1000,
+            infinite: true,
+        });
+    }));
 }

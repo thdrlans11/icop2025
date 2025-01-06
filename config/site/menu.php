@@ -169,7 +169,7 @@ return [
             '3' => [
                 'name' => 'Accommodation',
                 'url' => "",
-                'route_target' => 'ready',
+                'route_target' => 'location.accommodation',
                 'route_param' => ['mainNum'=>'5', 'subNum'=>'3'],
             ],
         ],
