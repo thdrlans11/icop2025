@@ -54,7 +54,7 @@ class RegistrationService extends dbService
         $data['lists'] = $lists;
         $data['type'] = $request->type;
         $data['period'] = RegistrationPeriod::find(1);
-        $data['country'] = (new Country())->countryList();
+        $data['country'] = (new Country())->countryList('KOR');
 
         return $data;
     }
@@ -65,7 +65,7 @@ class RegistrationService extends dbService
 
         $data['step'] = $request->step;
         $data['type'] = $registration->type;        
-        $data['country'] = (new Country())->countryList();
+        $data['country'] = (new Country())->countryList('KOR');
         $data['captcha'] = (new CommonService())->captchaMakeService();
         $data['apply'] = $registration;
 

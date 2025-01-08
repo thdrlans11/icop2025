@@ -1,3 +1,12 @@
+@if( request()->query('country') == 'KOR' )
+<script>
+$(document).ready(function(){
+    $("#ccode option[value!='KR']").remove();
+    $("#ccode").val("KR");
+    $("#ccode").change();
+}); 
+</script>
+@endif
 <div class="sub-tit-wrap">
     <h4 class="sub-tit">Personal Information</h4>
 </div>

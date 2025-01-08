@@ -196,7 +196,7 @@
                     <img src="/assets/image/sub/img_Anna.png" alt="Anna">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name"><a href="https://ibe.biol.uw.edu.pl/en/people/karnkowska/" target="_blank">Anna Karnkowska</a></strong>
+                    <strong class="name"><a href="https://ibe.biol.uw.edu.pl/en/people/karnkowska/" target="_blank"><u>Anna Karnkowska</u></a></strong>
                     <p>
                         Associate Professor<br>
 						University of Warsaw, Poland

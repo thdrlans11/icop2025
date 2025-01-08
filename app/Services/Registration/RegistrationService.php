@@ -36,7 +36,11 @@ class RegistrationService extends dbService
 
         $data['step'] = $request->step;
         $data['type'] = $type;        
-        $data['country'] = (new Country())->countryList();
+        if( $request->country == 'KOR' || ( isset($registration) && $registration->ccode == 'KR' ) ){
+            $data['country'] = (new Country())->countryList('KOR');
+        }else{
+            $data['country'] = (new Country())->countryList();
+        }
         $data['captcha'] = (new CommonService())->captchaMakeService();
         $data['apply'] = $registration ?? null;
         $data['subNum'] = '2';
@@ -285,7 +289,7 @@ class RegistrationService extends dbService
 
     public function search()
     {
-        $data['country'] = (new Country())->countryList();
+        $data['country'] = (new Country())->countryList('KOR');
         $data['subNum'] = '3';
 
         return $data;
