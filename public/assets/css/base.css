@@ -93,7 +93,7 @@ body.ovh{
     color: #487eb0 !important;
 }
 .text-skyblue3{
-    color: #346ef1 !important;
+    color: #357bca !important;
 }
 .text-blue,
 .text-blue *{
@@ -110,6 +110,9 @@ body.ovh{
 }
 .text-orange{
     color: #e45000 !important;
+}
+.text-green{
+    color: #0083af !important;
 }
 .text-mint{
     color: #20b2b7 !important;
@@ -158,7 +161,7 @@ body.ovh{
 }
 
 .bg-skyblue{
-    background-color: #f4f8ff;
+    background-color: #f2fbfe !important;
 }
 .bg-skyblue2{
     background-color: #f2f8ff;
@@ -386,7 +389,7 @@ body.ovh{
     content: '';
     clear: both;
     position: absolute;
-    top: 8px;
+    top: 9px;
     left: 0;
     width: 13px;
     height: 10px;
@@ -445,9 +448,34 @@ body.ovh{
     border-color: #1565c0;
     color: #fff;
 }
+.btn.color-type6{
+    background-color: #d85666;
+    border-color: #d85666;
+    color: #fff;
+}
+.btn.color-type7{
+    background-color: #4e6177;
+    border-color: #4e6177;
+    color: #Fff;
+}
+.btn.color-type8{
+    background-color: #158db4;
+    border-color: #158db4;
+    color: #fff;
+}
+.btn.color-type9{
+    background-color: #da3131;
+    border-color: #da3131;
+    color: #fff;
+}
+.btn.color-gra1{
+    background: linear-gradient(108deg, #22a3b2, #1565c0);
+    color: #fff;
+}
 .btn.btn-small{
     padding: 8px 14px;
     margin: 4px;
+    border: 1px solid transparent;
     border-radius: 3px;
     font-size: 14px;
     font-weight: 500;
@@ -476,6 +504,21 @@ body.ovh{
     background-color: #fff;
     border-color: #1565c0;
     color: #1565c0;
+}
+.btn-line.color-type6{
+    background-color: #fff;
+    border-color: #d85666;
+    color: #d85666;
+}
+.btn-line.color-type7{
+    background-color: #fff;
+    border-color: #4e6177;
+    color: #4e6177;
+}
+.btn-line.color-type8{
+    background-color: #fff;
+    border-color: #158db4;
+    color: #158db4;
 }
 .btn.btn-round{
     border-radius: 30px;
@@ -533,7 +576,7 @@ body.ovh{
 }
 .radio-wrap.n2 label,
 .checkbox-wrap.n2 label{
-    width: 50%;
+    width: calc((100% - 20px)/2);
 }
 .cst .radio-group input[type="radio"],
 .cst .checkbox-group input[type="checkbox"]{
@@ -726,12 +769,12 @@ textarea.form-item{
 }
 .write-wrap .btn.btn-arrow{
     min-width: initial;
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     padding: 0;
     margin: 1px;
     border-radius: 3px;
-    border: 1px solid #e5e0d5;
+    border: 1px solid #d7e0e4;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-transition: 0.3s ease;
@@ -745,6 +788,9 @@ textarea.form-item{
 }
 .write-wrap .btn.btn-arrow.down{    
     background-image: url('../image/sub/ic_arrow_down.png');
+}
+.write-wrap .btn.btn-arrow.delete{    
+    background-image: url('../image/sub/ic_delete.png');
 }
 .write-wrap dd .list-type-check{
     margin-top: 10px;

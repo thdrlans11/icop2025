@@ -66,7 +66,7 @@
                         <li>
                             <a href="{{ route($val['route_target'],$val['route_param']) }}">
                                 {{ $val['name'] }}
-                                @if( $key == '2' )
+                                @if( $key == '2' || $key == '5' )
                                 <span class="new">N</span>
                                 @endif
                             </a>
@@ -76,7 +76,7 @@
                                 <li>
                                     <a href="{{ route($sval['route_target'],$sval['route_param']) }}">
                                         {{ $sval['name'] }}
-                                        @if( $key == '2' && $skey == '3' )
+                                        @if( ( $key == '2' && $skey == '3' ) || ( $key == '5' && $skey == '2' ) )
                                         <span class="new">N</span>
                                         @endif
                                     </a>

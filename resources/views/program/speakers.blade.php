@@ -145,7 +145,7 @@
             </div>
         </div>
 		<div class="sub-tit-wrap" style="text-align:center;">
-<h3 class="page-tit" style="font-size: 3.2rem;">Hunter Award Winner Presentation</h3>
+<h3 class="page-tit" style="font-size: 3.2rem;">Hutner Award Winner Presentation</h3>
 </div>
 		<div class="invited-conbox">
             <div class="invited-con">
@@ -182,6 +182,39 @@
                     <p class="tit"><span>Lecture Title: TBD</span></p>
                     <p>
                         Laura is an evolutionary microbiologist focusing on the origin and evolution of eukaryotes, with particular emphasis on the archaeal ancestry of eukaryotes, the origin and evolution of mitochondria, and the development of key eukaryotic cellular systems during eukaryotic diversification. Dr. Eme has a strong background in molecular phylogenetics and comparative genomics, which she uses to study the origin and evolution of eukaryotic cells, focusing on microbial diversity. She explores topics such as the archaeal ancestry of eukaryotes, mitochondrial evolution, endosymbiosis, horizontal gene transfer, and the ecological forces driving genomic diversity. She was awarded the 2023 Hutner Prize by ISOP for her contributions to understanding the origins and early evolution of eukaryotes. Laura is also an Associate Editor for several journals in molecular evolution including Genome Biology and Evolution, Molecular Phylogenetics and Evolution and Journal of Molecular Evolution.   
+
+                    </p>
+                </div>
+            </div>
+        </div>
+				<div class="sub-tit-wrap" style="text-align:center;">
+<h3 class="page-tit" style="font-size: 3.2rem;"> ISOP Past Presidents Talk </h3>
+</div>
+<div class="invited-conbox">
+            <div class="invited-con">
+                <div class="img-wrap">
+                    <img src="/assets/image/sub/img_Anna.png" alt="Anna">
+                </div>
+                <div class="text-wrap">
+                    <strong class="name"><a href="https://ibe.biol.uw.edu.pl/en/people/karnkowska/" target="_blank">Anna Karnkowska</a></strong>
+                    <p>
+                        Associate Professor<br>
+						University of Warsaw, Poland
+					</p>
+                    <p class="tit"><span>Lecture Title: TBD</span></p>
+                    <p>
+                        Anna is a leading expert in endosymbiosis and the evolution of organelles in protists. 
+Her team focuses on the evolution of eukaryotic cells, the study of the diversity of microbial
+eukaryotes and the investigation of their interactions with other microorganisms, with
+symbiosis being a central theme. Her research interests include the origin and evolution of
+endosymbiotic organelles such as mitochondria and chloroplasts as well as the
+endosymbioses of various microbial eukaryotes. By unravelling the complexity of these
+relationships, she aims to deepen our understanding of endosymbiosis and its impact on
+ecosystem functioning. Anna has published in prestigious journals such as PNAS, Current
+Biology, and Molecular Biology and Evolution. She has received numerous national awards
+for her scientific contributions, including the L’Oréal-UNESCO For Women in Science Award
+in 2021. Recently, she was recognized as a FEMS European Academy of Microbiology Fellow.
+Anna is a Past President of the International Society of Protistologists.
 
                     </p>
                 </div>

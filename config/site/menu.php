@@ -98,7 +98,7 @@ return [
                 'name' => 'Plenary Lectures',
                 'url' => "",
                 'route_target' => 'program.speakers',
-                'route_param' => ['mainNum'=>'2', 'subNum'=>'3'],
+                'route_param' => [],
             ],
             '4' => [
                 'name' => 'Special Symposia',
@@ -163,14 +163,14 @@ return [
             '2' => [
                 'name' => 'Map & Transportation',
                 'url' => "",
-                'route_target' => 'ready',
-                'route_param' => ['mainNum'=>'5', 'subNum'=>'2'],
+                'route_target' => 'location.map',
+                'route_param' => [],
             ],
             '3' => [
                 'name' => 'Accommodation',
                 'url' => "",
                 'route_target' => 'location.accommodation',
-                'route_param' => ['mainNum'=>'5', 'subNum'=>'3'],
+                'route_param' => [],
             ],
         ],
         '6' => [            

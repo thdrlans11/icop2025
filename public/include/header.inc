@@ -97,8 +97,8 @@
                             <a href="/html/location/venue.html">Location</a>
                             <ul>
                                 <li><a href="/html/location/venue.html">Venue</a></li>
-                                <li><a href="#n">Map & Transportation</a></li>
-                                <li><a href="#n">Accomodation</a></li>
+                                <li><a href="/html/location/map.html">Map & Transportation <span class="new">N</span></a></li>
+                                <li><a href="/html/location/accommodation.html">Accommodation</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -141,7 +141,7 @@
 }
 .gnb > li > ul > li > a{
     display: block;
-    padding: 8px 30px;
+    padding: 8px 10px;
     font-size: 1.7rem;
     line-height: 1.3;
     color: #676767;
@@ -198,7 +198,7 @@
 #gnb .new{
     display: inline-block;
     margin: 0 5px;
-    margin-top: -1px;
+    margin-top: 0;
     width: 24px;
     height: 24px;
     padding: 5px 0;

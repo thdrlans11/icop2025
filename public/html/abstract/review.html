@@ -1,0 +1,100 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text">
+                <img src="/assets/image/sub/img_subvisual_text01.png" alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025">
+                <img src="/assets/image/sub/img_subvisual_text02.png" alt="June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)">
+            </div>
+            <div class="sub-visual-logo">
+                <img src="/assets/image/sub/img_subvisual_logo.png" alt="ISOP, ICOP, The Korean Society of Protistologsis. The Korean Society of Phycology">
+            </div>
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <a href="/" class="btn btn-home"></a>
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Abstract</a>
+                    <ul>
+                        <li><a href="#n">About the Congress</a></li>
+                        <li><a href="#n">Program</a></li>
+                        <li><a href="#n">Abstract</a></li>
+                        <li><a href="#n">Registration</a></li>
+                        <li><a href="#n">Location</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Abstract Review & Modification</a>
+                    <ul>
+                        <li><a href="#n"><span>Abstract Guidelines</span></a></li>
+                        <li><a href="#n"><span>Online Submission</span></a></li>
+                        <li class="on"><a href="#n"><span>Abstract Review & Modification</span></a></li>
+                        <li><a href="#n"><span>Presentation Guidelines</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Abstract Review & Modification</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <div class="abstract-conbox">
+                <div class="sub-tab-wrap">
+                    <ul class="sub-tab-menu">
+                        <li><a href="#n">Abstract Guidelines</a></li>
+                        <li><a href="#n">Online Submission</a></li>
+                        <li class="on"><a href="#n">Abstract Review & Modification</a></li>
+                    </ul>
+                </div>
+                <div class="line-box border-box">
+                    <img src="/assets/image/sub/ic_review.png" alt="">
+                    <div class="text-wrap">
+                        <ul class="list-type list-type-dot">
+                            <li>To review and make modifications, please put your information below which you used when you submitted the abstract.</li>
+                            <li>If you have a problem in search of your information, please contact the ICOP/ISOP 2025 secretariat (<a href="mailto:icop2025org@gmail.com" target="_blank">icop2025org@gmail.com</a>).</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="write-form-wrap">
+                    <form action="./result.html" method="">
+                        <fieldset>
+                            <legend class="hide">Abstract Reveiw & Modification</legend>
+                            <ul class="write-wrap">
+                                <li>
+                                    <div class="form-tit">Country <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <select name="" id="" class="form-item">
+                                            <option value="">Country choice</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">E-mail <strong class="required">*</strong></div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn-wrap text-center">
+                                <button type="submit" class="btn btn-type1 color-type4">Search</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+</section> 
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/include/footer.inc';
+?>

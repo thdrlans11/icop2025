@@ -1,36 +1,41 @@
 <?php
 $main = "sub";
-include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/header.inc';
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.inc';
 ?>
 
 <section id="container" class="<?php echo $main;?>">
     <article class="sub-visual">
         <div class="sub-visual-con inner-layer">
-            <div class="sub-visual-text hide">
-                <h2 class="sub-visual-tit">M2community 2024 INTERNATIONAL CONFERENCE. NOVEMBER 7 THU ~ 9 FRI. 2024. LOTTE HOTEL WORDL, SEOUL, KOREA</h2>
-            </div>                    
+            <div class="sub-visual-text">
+                <img src="/assets/image/sub/img_subvisual_text01.png" alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025">
+                <img src="/assets/image/sub/img_subvisual_text02.png" alt="June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)">
+            </div>
+            <div class="sub-visual-logo">
+                <img src="/assets/image/sub/img_subvisual_logo.png" alt="ISOP, ICOP, The Korean Society of Protistologsis. The Korean Society of Phycology">
+            </div>
         </div>
     </article>
     <article class="sub-menu-wrap">
         <div class="sub-menu inner-layer cf">
+            <a href="/" class="btn btn-home"></a>
             <ul class="sub-menu-list js-sub-menu-list cf">
                 <li class="sub-menu-depth01">
-                    <a href="/conf_typeb/html/abstract/guide.html" class="btn-sub-menu js-btn-sub-menu">SUBMISSION</a>
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Abstract</a>
                     <ul>
-                        <li><a href="/conf_typeb/html/about/invitation.html">M2community</a></li>
-                        <li><a href="/conf_typeb/html/program/program.html">PROGRAM</a></li>
-                        <li><a href="/conf_typeb/html/abstract/guide.html">SUBMISSION</a></li>
-                        <li><a href="/conf_typeb/html/regist/guide.html">ATTENDANCE</a></li>
-                        <li><a href="/conf_typeb/html/sponsor/guide.html">SPONSORSHIP</a></li>
+                        <li><a href="#n">About the Congress</a></li>
+                        <li><a href="#n">Program</a></li>
+                        <li><a href="#n">Abstract</a></li>
+                        <li><a href="#n">Registration</a></li>
+                        <li><a href="#n">Location</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu-depth02">
-                    <a href="/conf_typeb/html/abstract/guide.html" class="btn-sub-menu js-btn-sub-menu">Abstract Submission</a>
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Online Submission</a>
                     <ul>
-                        <li class="on"><a href="/conf_typeb/html/abstract/guide.html">Abstract Submission</a></li>
-                        <li><a href="/conf_typeb/html/abstract/invited.html">Invited Paper</a></li>
-                        <li><a href="/conf_typeb/html/abstract/guidelines.html">Presentation Guidelines</a></li>
-                        <li><a href="/conf_typeb/html/abstract/awards.html">Awards</a></li>
+                        <li><a href="#n"><span>Abstract Guidelines</span></a></li>
+                        <li class="on"><a href="#n"><span>Online Submission</span></a></li>
+                        <li><a href="#n">Abstract Review & Modification</a></li>
+                        <li><a href="#n">Presentation Guidelines</a></li>
                     </ul>
                 </li>
             </ul>
@@ -38,42 +43,32 @@ include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/header.inc';
     </article>
     <article class="sub-contents">
         <div class="page-tit-wrap inner-layer">
-            <h3 class="page-tit">Abstract Submission</h3>
+            <h3 class="page-tit">Online Submission</h3>
         </div>
         <div class="sub-conbox inner-layer">
-            <div class="sub-tit-wrap">
-                <h4 class="sub-tit">Abstract Submission</h4>
-            </div>
-
-            <!-- Only PC -->
-            <div class="">
+            <div class="abstract-conbox">
                 <div class="abs-success-conbox">
+                    <img src="/assets/image/sub/ic_abst_complete.png" alt="">
                     <strong class="tit">Your abstract has been successfully submitted!</strong>
-                    <strong class="highlights text-navy">Abstract Submission No. : A-0001</strong>
+                    <strong class="highlights text-skyblue3">Abstract Submission No. : A-0001</strong>
                     <ul class="list-type list-type-dot">
                         <li>Your abstract has been successfully submitted.</li>
                         <li>
                             To review and make modification, please visit ‘My Page’ on the congress website. <br>
-                            After <strong class="text-red">November 30(Sat), 2024 24:00(KST)</strong> (Abstract Submission Deadline), you will no longer be able to modify your submitted abstract.
+                            After <strong class="text-red">March 31 (Mon), 2025</strong> (Abstract Submission Deadline), you will no longer be able to modify your submitted abstract.
                         </li>
                     </ul>
                     <div class="btn-wrap">
-                        <a href="./step01.html" class="btn btn-type1 color-type5">Submit another abstract</a>
-                        <a href="../regist/guide.html" class="btn btn-type1 color-type6">Go to Registration</a>
-                        <a href="../mypage/abstract.html" class="btn btn-type1 color-type3">Go to My page</a>
+                        <a href="./write.html" class="btn btn-type1 color-type7">Submit another abstract</a>
+                        <a href="../regist/guide.html" class="btn btn-type1 color-type1">Go to Registration</a>
+                        <a href="./review.html" class="btn btn-type1 color-gra1">Abstract Review & Modification</a>
                     </div>
                 </div>
-            </div>
-
-            <!-- Only PC -->
-            <div class="notice-box m-show">
-                <img src="/conf_typeb/assets/image/sub/img_notice.png" alt="">
-                <p class="tit">Only available on the PC</p>
             </div>
         </div>
     </article>
 </section> 
 
 <?php
-include $_SERVER['DOCUMENT_ROOT'].'/conf_typeb/include/footer.inc';
+include $_SERVER['DOCUMENT_ROOT'].'/include/footer.inc';
 ?>
