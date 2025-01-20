@@ -53,6 +53,12 @@ class SymposiumController extends Controller
         return $this->SymposiumService->list($request);
     }
 
+    public function word(Request $request)
+    {
+        $request->merge(['word' => true]);
+        return $this->SymposiumService->list($request);
+    }
+
     public function dbChange(Request $request)
     {
         return $this->SymposiumService->dbChange($request);

@@ -274,7 +274,7 @@
                 </tr>
                 <tr>
                     <td>12:30-14:00</td>
-                    <td colspan="5" class="bg-skyblue">Luncheon</td>
+                    <td colspan="5" class="bg-skyblue">Luncheon (*not officially provided)  </td>
                 </tr>
                 <tr>
                     <td>14:00</td>

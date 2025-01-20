@@ -72,7 +72,7 @@
                             </a>
                             @if( isset( config('site.menu.sub_menu')[$key] ) )
                             <ul>
-                                @foreach( config('site.menu.sub_menu')[$key] as $skey => $sval )
+                                @foreach( config('site.menu.sub_menu')[$key] as $skey => $sval ) @if( $key == '4' && $skey > 3 ) @continue @endif
                                 <li>
                                     <a href="{{ route($sval['route_target'],$sval['route_param']) }}">
                                         {{ $sval['name'] }}
@@ -119,7 +119,9 @@
                         <li class="sub-menu-depth02">
                             <a href="#n" class="btn-sub-menu js-btn-sub-menu">{{ config('site.menu.sub_menu')[$mainNum][$subNum]['name'] }}</a>
                             <ul>
-                                @foreach( config('site.menu.sub_menu')[$mainNum] as $skey => $sval )
+                                @foreach( config('site.menu.sub_menu')[$mainNum] as $skey => $sval ) 
+                                @if( $mainNum == '4' && $skey > 3 && !isset($rgubun) ) @continue @endif
+                                @if( $mainNum == '4' && $skey <= 3 && isset($rgubun) ) @continue @endif
                                 <li {!! $subNum == $skey ? 'class="on"' : '' !!}>
                                     <a href="{{ route($sval['route_target'],$sval['route_param']) }}"><span>{{ $sval['name'] }}</span></a>
                                 </li>

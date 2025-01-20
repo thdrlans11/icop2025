@@ -8,8 +8,8 @@ return [
     ],
 
     'chaText' => [
-        'E' => 'Early Bird Registration (~March 7, 2025)',
-        'L' => 'Late Registration (March 1, 2025~)'
+        'E' => 'Early Bird Registration (~March 14, 2025)',
+        'L' => 'Late Registration (March 15, 2025~)'
     ],
 
     'title' => [
@@ -36,36 +36,43 @@ return [
 
     'category' => [
         'A' => 'Delegate',
-        'B' => 'Student'
+        'B' => 'Student',
+        'C' => 'Post Doctor'
     ],
 
     'categoryPrice' => [
         'KOR' => [
             'E' => [
                 'A' => '600000',
-                'B' => '350000'
+                'B' => '350000',
+                'C' => '350000'
             ],
             'L' => [
                 'A' => '700000',
-                'B' => '500000'
+                'B' => '500000',
+                'C' => '500000'
             ],
             'S' => [
                 'A' => '700000',
-                'B' => '500000'
+                'B' => '500000',
+                'C' => '500000'
             ]
         ],
         'ENG' => [
             'E' => [
                 'A' => '600',
-                'B' => '350'
+                'B' => '350',
+                'C' => '350'
             ],
             'L' => [
                 'A' => '700',
-                'B' => '500'
+                'B' => '500',
+                'C' => '500'
             ],
             'S' => [
                 'A' => '700',
-                'B' => '500'
+                'B' => '500',
+                'C' => '500'
             ]
         ]
         
@@ -119,6 +126,12 @@ return [
     'payMethod' => [
         'C' => 'Credit Card',
         'B' => 'Bank Transfer',
+        'F' => 'Free',
+    ],
+
+    'payMethodKor' => [
+        'C' => '카드결제',
+        'B' => '계좌이체',
         'F' => 'Free',
     ],
 

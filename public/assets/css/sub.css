@@ -291,6 +291,9 @@
     border-radius: 5px;
     border: 1px solid #d2dfe6;
 }
+.sub-tab-menu.n2{
+    max-width: 860px;
+}
 .sub-tab-menu > li{
     position: relative;
     flex: 1;
@@ -1518,6 +1521,40 @@ p + .name strong{
 .abstract-conbox .list-type-dot > li:before{
     top: 16px;
 }
+.con-wrap:has(.table-wrap){
+    align-items: start;
+    gap: 50px;
+}
+.con-wrap .table-wrap{
+    width: 50%;
+}
+.con-wrap .table-wrap tr{
+    height: 50px;
+}
+.con-wrap .table-wrap + .table-wrap{
+    margin-top: 0;
+}
+.img-box{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.img-box .btn-wrap{
+    margin-top: 15px;
+}
+.img-box .btn-type1{
+    position: relative;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.img-box .btn .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    line-height: 1;
+}
 
 /* Abstract::Online Submission */
 .abstract-conbox .info-box{
@@ -1843,20 +1880,6 @@ p + .name strong{
 .presentation-conbox .cst-table tbody th + td{
     border-left: 0;
 }
-.btn.btn-download{
-    display: inline-block;
-    padding: 7px 20px;
-    padding-right: 40px;
-    border: 1px solid #2f3a92;
-    border-radius: 30px;
-    background-repeat: no-repeat;
-    background-position: right 15px center;
-    background-image: url('../image/sub/ic_download.png');
-    font-size: 16px;
-    font-weight: 500;
-    color: #1d3daf;
-    letter-spacing: -0.03em;
-}
 .bg-box{
     padding: 35px 40px;
     background-color: #f4f4ff;
@@ -2099,6 +2122,10 @@ p + .name strong{
     font-weight: 500;
     line-height: 1.2;
     color: #2f2f2f;
+}
+.table-wrap + .list-type > li:before,
+.sub-tit-wrap + .list-type > li:before{
+    top: 16px;
 }
 
 /* Registration::Go to Register */
@@ -2355,6 +2382,136 @@ p + .name strong{
 }
 .map-info-list .website{
     background-image: url('../image/sub/ic_website.png');
+}
+
+/* Sponsors::Sonsor Ship */
+.sponsor-conbox + .sponsor-conbox{
+    margin-top: 50px;
+}
+.sponsor-tit{
+    display: block;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #cfd7e4;
+    text-align: center;
+}
+.sponsor-tit span{
+    display: block;
+    padding: 20px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+.silver .sponsor-tit > span{
+    background-image: url('../image/sub/bg_sponsor_silver.png');
+}
+.sponsor-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.sponsor-list > li{
+    border: 1px solid #dcdfe5;
+}
+.sponsor-list.n3 > li{
+    width: calc((100% - 40px)/3);
+}
+.sponsor-list.n4 > li{
+    width: calc((100% - 60px)/4);
+}
+.sponsor-list.n5 > li{
+    width: calc((100% - 80px)/5);
+}
+.sponsor-list > li > a{
+    display: block;
+}
+.sponsor-list > li img{
+    max-width: 100%;
+}
+
+/* Sponsors::후원신청서식 */
+.sponsor-info-conbox .bg-img-box{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sponsor-info-conbox .bg-img-box .tit{
+    color: #222222;
+}
+.sponsor-info-conbox .bg-img-box .tit > strong{
+    font-weight: 600;
+    color: #f45c5c;
+}
+.btn.btn-download{
+    display: inline-block;
+    padding: 7px 20px;
+    padding-right: 40px;
+    border: 1px solid #2f3a92;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-image: url('../image/icon/ic_btn_download.png');
+    font-size: 16px;
+    font-weight: 500;
+    color: #1d3daf;
+    letter-spacing: -0.03em;
+}
+.sponsor-info-conbox .btn-wrap{
+    margin-top: 35px;
+}
+.sponsor-info-conbox .btn-download{
+    min-width: 260px;
+    padding: 12px 30px;
+    margin: 0 8px;
+    padding-right: 50px;
+    background-position: right 20px center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.sponsor-info-conbox .btn-download:hover{
+    background-image: url('../image/icon/ic_btn_download_on.png');
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+}
+.sponsor-info-conbox .btn-download:nth-child(1){
+    border-color: #0b9bba;
+    color: #0b9bba;
+}
+.sponsor-info-conbox .btn-download:nth-child(1):hover{
+    background-color: #0b9bba;
+    color: #fff;
+}
+.sponsor-info-conbox .btn-download:nth-child(2){
+    border-color: #0b5dba;
+    color: #0b5dba;
+}
+.sponsor-info-conbox .btn-download:nth-child(2):hover{
+    background-color: #0b5dba;
+    color: #fff;
+}
+.sponsor-info-conbox .btn-download:nth-child(3){
+    border-color: #0b2cba;
+    color: #0b2cba;
+}
+.sponsor-info-conbox .btn-download:nth-child(3):hover{
+    background-color: #0b2cba;
+    color: #fff;
+}
+.sponsor-info-conbox .btn-download:nth-child(4){
+    border-color: #824ec2;
+    color: #824ec2;
+}
+.sponsor-info-conbox .btn-download:nth-child(4):hover{
+    background-color: #824ec2;
+    color: #fff;
 }
 
 /* Location::Venue */
@@ -2913,73 +3070,4 @@ p + .map-tit-wrap{
 }
 .result-wrap{
     margin-top: 60px;
-}
-
-/* SPONSORSHIP::Our Sponsors */
-.sponsor-conbox + .sponsor-conbox{
-    margin-top: 50px;
-}
-.sponsor-tit{
-    display: block;
-    position: relative;
-    margin-bottom: 20px;
-    padding: 26px 30px;
-    border-radius: 0 40px 40px 40px;
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.1;
-    color: #fff;
-    letter-spacing: -0.03em;
-    text-align: center;
-}
-.sponsor-tit:before{
-    display: block;
-    content: '';
-    clear: both;
-    position: absolute;
-    top: 0;
-    left: 40px;
-    width: 8px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 0 0 50px 50px;
-}
-.diamond .sponsor-tit{
-    background-color: #21a9db;
-}
-.platinum .sponsor-tit{
-    background-color: #253163;
-}
-.gold .sponsor-tit{
-    background-color: #e3a318;
-}
-.silver .sponsor-tit{
-    background-color: #85898e;
-}
-.bronze .sponsor-tit{
-    background-color: #6f5d53;
-}
-.sponsor-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.sponsor-list > li{    
-    border: 1px solid #ccc;
-}
-.sponsor-list.n3 > li{
-    width: calc((100% - 40px)/3);
-}
-.sponsor-list.n4 > li{
-    width: calc((100% - 60px)/4);
-}
-.sponsor-list.n5 > li{
-    width: calc((100% - 80px)/5);
-}
-.sponsor-list > li > a{
-    display: block;
-}
-.sponsor-list > li img{
-    max-width: 100%;
 }

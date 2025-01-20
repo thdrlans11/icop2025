@@ -59,7 +59,7 @@
                         <span class="dday {{ DDay('abstract') == 'END' ? 'end' : '' }}">{{ DDay('abstract') }}</span>
                     </li>
                     <li>
-                        Early Registration Deadline
+                        Early Bird Registration Deadline
                         <p class="date">March 14 (Fri), 2025</p>
                         <span class="dday {{ DDay('earlyRegistration') == 'END' ? 'end' : '' }}">{{ DDay('earlyRegistration') }}</span>
                     </li>
@@ -182,6 +182,34 @@
                         <p class="affiliation">Max Planck Institute for Marine Microbiology</p>
                     </div>
                 </div>
+				<div class="speakers-con">
+                    <div class="img-wrap">
+                        <img src="/assets/image/main/speakers_07.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <strong class="tit">Shan Gao</strong>
+                        <p class="affiliation">Professor<br>Ocean University of China, China</p>
+                    </div>
+                </div>
+				<div class="speakers-con">
+                    <div class="img-wrap">
+                        <img src="/assets/image/main/speakers_08.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <strong class="tit">Laura Eme</strong>
+                        <p class="affiliation">Associate Professor<br>
+University of Rhode Island, USA
+                    </div>
+                </div>
+				<div class="speakers-con">
+                    <div class="img-wrap">
+                        <img src="/assets/image/main/speakers_09.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                        <strong class="tit">Anna Karnkowska</strong>
+                        <p class="affiliation">Associate Professor<br>University of Warsaw, Poland</p>
+                    </div>
+                </div>
                 
                 
                
@@ -204,13 +232,13 @@
     <div class="sponsor-rolling-wrap inner-layer">
         <span class="tit font-sebang">Sponsors By</span>
         <div class="sponsor-rolling js-sponsor-rolling">
+            <a href="https://www.tomocube.com/" target="_blank"><img src="/assets/image/main/bnr_tomocube_250115.jpg" alt=""></a>
             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
-            <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
-            <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
+<!--             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a> -->
         </div>
     </div>
 </article>

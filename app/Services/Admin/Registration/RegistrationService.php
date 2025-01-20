@@ -68,6 +68,7 @@ class RegistrationService extends dbService
         $data['country'] = (new Country())->countryList('KOR');
         $data['captcha'] = (new CommonService())->captchaMakeService();
         $data['apply'] = $registration;
+        $data['rgubun'] = $registration->ccode == 'KR' ? 'KOR' : null;
 
         return $data;
     }

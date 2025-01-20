@@ -29,8 +29,10 @@ return [
         '6' => [
             'name' => 'Sponsors',
             'url' => "",
-            'route_target' => 'ready',
-            'route_param' => ['mainNum'=>'6', 'subNum'=>'1'],
+            'route_target' => 'sponsor.ship',
+            'route_param' => [],
+//            'route_target' => 'ready',
+//            'route_param' => ['mainNum'=>'6', 'subNum'=>'1'],
         ],        
         '5' => [
             'name' => 'Location',
@@ -152,6 +154,24 @@ return [
                 'route_target' => 'registration.search',
                 'route_param' => [],
             ],
+            '4' => [
+                'name' => '등록 가이드라인',
+                'url' => "",
+                'route_target' => 'registration.guide',
+                'route_param' => ['rgubun'=>'KOR'],
+            ],
+            '5' => [
+                'name' => '온라인 등록',
+                'url' => "",
+                'route_target' => 'apply.registration',
+                'route_param' => ['rgubun'=>'KOR', 'step'=>'1'],
+            ],
+            '6' => [
+                'name' => '등록 확인 및 영수증',
+                'url' => "",
+                'route_target' => 'registration.search',
+                'route_param' => ['rgubun'=>'KOR'],
+            ],
         ],
         '5' => [
             '1' => [
@@ -175,10 +195,16 @@ return [
         ],
         '6' => [            
             '1' => [
-                'name' => 'Sponsors Guidelines',
+                'name' => 'Sponsorship',
                 'url' => "",
-                'route_target' => 'ready',
-                'route_param' => ['mainNum'=>'6', 'subNum'=>'1'],
+                'route_target' => 'sponsor.ship',
+                'route_param' => [],
+            ],
+			 '2' => [
+                'name' => '후원신청서식',
+                'url' => "",
+                'route_target' => 'sponsor.info',
+                'route_param' => [],
             ]
         ]
     ],
@@ -193,7 +219,7 @@ return [
         '2' => [
             'name' => 'Abstract',
             'url' => "",
-            'route_target' => 'admin.registration.list',
+            'route_target' => 'admin.abstract.list',
             'route_param' => [],
         ],
         '3' => [

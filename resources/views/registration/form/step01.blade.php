@@ -1,4 +1,4 @@
-@if( request()->query('country') == 'KOR' )
+@if( $rgubun == 'KOR' )
 <script>
 $(document).ready(function(){
     $("#ccode option[value!='KR']").remove();

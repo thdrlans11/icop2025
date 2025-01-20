@@ -130,12 +130,12 @@
                     <p>
                         Jana’s research focuses on beneficial interactions between eukaryotic microbes and
                         bacterial symbionts, particularly those that affect the biogeochemical cycling of
-                        nitrogen. <br><br>
+                        nitrogen. <br>
 
                         Jana and her group study the ecological role, diversity and physiology of protist
                         symbionts in groundwaters, freshwater lakes, and the ocean, using a variety of
                         biogeochemical, molecular and imaging techniques, most notably fluorescent microscopy
-                        and nanoSIMS. <br><br>
+                        and nanoSIMS. <br>
 
                         Jana received her PhD in 2011 from the Max Planck Institute for Marine Microbiology,
                         Bremen, Germany. Since 2018, she has been heading the research group ‘Greenhouse Gases’

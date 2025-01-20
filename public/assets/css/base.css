@@ -468,6 +468,11 @@ body.ovh{
     border-color: #da3131;
     color: #fff;
 }
+.btn.color-type10{
+    background-color: #4b54c6;
+    border-color: #4b54c6;
+    color: #fff;
+}
 .btn.color-gra1{
     background: linear-gradient(108deg, #22a3b2, #1565c0);
     color: #fff;
@@ -520,8 +525,25 @@ body.ovh{
     border-color: #158db4;
     color: #158db4;
 }
+.btn-line.color-type9{
+    background-color: #fff;
+    border-color: #da3131;
+    color: #da3131;
+}
+.btn-line.color-type10{
+    background-color: #fff;
+    border-color: #4b54c6;
+    color: #4b54c6;
+}
 .btn.btn-round{
     border-radius: 30px;
+}
+.btn .arrow{
+    display: inline-block;
+    vertical-align: top;
+}
+.btn .arrow img{
+    vertical-align: top;
 }
 
 /* align */

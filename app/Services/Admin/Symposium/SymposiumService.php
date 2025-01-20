@@ -8,6 +8,7 @@ use App\Models\SpecialSymposiumPeriod;
 use App\Services\CommonService;
 use App\Services\dbService;
 use App\Services\Util\ExcelService;
+use App\Services\Util\WordService;
 use App\Services\Util\MailService;
 use Illuminate\Http\Request;
 
@@ -41,6 +42,10 @@ class SymposiumService extends dbService
         if ($request->excel) {
             $cntQuery = clone $lists;
             return (new ExcelService())->SymposiumExcel($lists, $cntQuery->count(), (new Country())->countryList('KOR'));
+        }
+
+        if ($request->word) {
+            return (new WordService())->makeWord($lists, 'symposium');
         }
 
         if( $request->paginate ){

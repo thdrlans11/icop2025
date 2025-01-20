@@ -40,16 +40,29 @@ Route::prefix('symposium')->controller(\App\Http\Controllers\Symposium\Symposium
 
 //Registration
 Route::prefix('registration')->controller(\App\Http\Controllers\Registration\RegistrationController::class)->group(function() {
-    Route::get('/', 'guide')->name('registration.guide');  
+    Route::get('/guide/{rgubun?}', 'guide')->name('registration.guide');  
     Route::middleware('noCash')->group(function(){
-        Route::get('registration/{step}/{sid?}', 'registration')->where('step', '1|2|3|4')->name('apply.registration');
+        Route::get('registration/{step}/{rgubun?}', 'registration')->where('step', '1|2|3|4')->name('apply.registration');
         Route::post('emailCheck', 'emailCheck')->name('apply.registration.emailCheck');
         Route::post('makePrice', 'makePrice')->name('apply.registration.makePrice');
         Route::post('upsert/{step}', 'upsert')->where('step', '1|2|3|4')->name('apply.registration.upsert');
         // Route::post('payRegist', 'payRegist')->name('apply.payRegist');
     });
-    Route::get('search', 'search')->name('registration.search');
+    Route::get('search/{rgubun?}', 'search')->name('registration.search');
     Route::post('search', 'searchResult')->name('registration.searchResult');
+});
+
+//Abstract
+Route::prefix('abstract')->controller(\App\Http\Controllers\AbstractManage\AbstractController::class)->group(function() {
+    Route::get('/', 'guide')->name('abstract.guide');  
+    Route::middleware('noCash')->group(function(){
+        Route::get('registration/{step}/{sid?}', 'registration')->where('step', '1|2|3')->name('abstract.registration');
+        Route::post('upsert/{step}', 'upsert')->where('step', '1|2|3')->name('abstract.registration.upsert');
+    });
+    Route::get('search', 'search')->name('abstract.registration.search');
+    Route::post('search', 'searchResult')->name('abstract.registration.searchResult');
+    Route::get('delete/{sid}', 'delete')->name('abstract.delete');
+    Route::get('preview/{sid}', 'preview')->name('abstract.preview');
 });
 
 //Notice
@@ -62,6 +75,12 @@ Route::prefix('board/{code}')->middleware('boardCheck')->controller(\App\Http\Co
     Route::get('delete/{sid}', 'delete')->name('board.delete');
     Route::post('dbChange', 'dbChange')->name('board.dbChange');
     Route::post('preview', 'popupPreview')->name('board.popupPreview');
+});
+
+//Sponsor
+Route::prefix('sponsor')->controller(\App\Http\Controllers\Sponsor\SponsorController::class)->group(function() {
+    Route::get('info', 'info')->name('sponsor.info');
+    Route::get('ship', 'ship')->name('sponsor.ship');
 });
 
 //Location

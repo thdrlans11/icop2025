@@ -14,8 +14,8 @@
         <thead>
             <tr>
                 <th scope="col" colspan="2" class="bg-skyblue">Registration Fee</th>
-                <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~Feb 28, 2025)</span></th>
-                <th scope="col" class="bg-green">Late Registration <br><span>(March 1, 2025~)</span></th>
+                <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~March 14, 2025)</span></th>
+                <th scope="col" class="bg-green">Late Registration <br><span>(March 15, 2025~)</span></th>
             </tr>
         </thead>
         <tbody>
@@ -26,7 +26,8 @@
                 <td class="bg-green2">{{ config('site.registration.unit')[$apply->lang] }} {{ number_format(config('site.registration.categoryPrice')[$apply->lang]['L']['A']) }}</td>
             </tr>
             <tr>
-                <td>Student</td>
+                <td>Student<br>Post Doctor 
+				</td>
                 <td class="bg-blue">{{ config('site.registration.unit')[$apply->lang] }} {{ number_format(config('site.registration.categoryPrice')[$apply->lang]['E']['B']) }}</td>
                 <td class="bg-green2">{{ config('site.registration.unit')[$apply->lang] }} {{ number_format(config('site.registration.categoryPrice')[$apply->lang]['L']['B']) }}</td>
             </tr>

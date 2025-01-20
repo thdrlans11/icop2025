@@ -18,7 +18,7 @@
                 
                 @if( $apply->payStatus == 'N' && $modifyYn )
                 <div class="btn-wrap text-center">
-                    <a href="{{ route('apply.registration', ['step'=>'1', 'sid'=>encrypt($apply->sid)]) }}" class="btn btn-type1 btn-line color-type4">Modify</a>
+                    <a href="{{ route('apply.registration', ['step'=>'1', 'rgubun'=>$rgubun, 'sid'=>encrypt($apply->sid)]) }}" class="btn btn-type1 btn-line color-type4">Modify</a>
                 </div>
                 @endif
             </fieldset>

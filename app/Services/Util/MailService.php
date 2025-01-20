@@ -42,6 +42,18 @@ class MailService extends dbService
                 $this->body = view('templetes.mailRegistration', ['apply'=>$data, 'kind'=>$kind])->render();
             break;
 
+            case 'abstractComplete' :
+                $this->receiver_name = $data->firstName.' '.$data->lastName;
+                $this->receiver_email = $data->email;
+                $this->subject = '['.config('site.common.info.siteName').'] Completed Abstract Submission';        
+
+                if( $mode == 'preview' ){
+                    return view('templetes.mailAbstract', ['apply'=>$data, 'kind'=>$kind])->render();
+                }
+                
+                $this->body = view('templetes.mailAbstract', ['apply'=>$data, 'kind'=>$kind])->render();
+            break;
+
             case 'symposiumComplete' :
                 $this->receiver_name = $data->firstName.' '.$data->lastName;
                 $this->receiver_email = $data->email;

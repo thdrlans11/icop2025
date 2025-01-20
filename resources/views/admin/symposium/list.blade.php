@@ -151,6 +151,7 @@ function dbChange(sid,db,field,f){
             <button type="submit" class="btn btn-type1 color-type4">검색</button>
             <button type="reset" class="btn btn-type1 color-type6" onclick="location.href='{{ route('admin.symposium.list') }}'">검색 초기화</button>
             <a href="{{ route('admin.symposium.excel', request()->except('page')) }}" class="btn btn-type1 color-type10" target="_blank">Get Excel File</a>
+            <a href="{{ route('admin.symposium.word', request()->except(['page'])) }}" class="btn btn-type1 color-type9" target="_blank">워드 백업</a>
         </div>
     </fieldset>
 </form>

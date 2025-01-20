@@ -19,9 +19,14 @@ class RegistrationController extends Controller
         ]);
     }
 
-    public function guide()
+    public function guide(Request $request)
     {
-        return view('registration.guide')->with(['subNum'=>'1']);
+        if( $request->rgubun == 'KOR' ){
+            return view('registration.guideKor')->with(['subNum'=>'4', 'rgubun'=>$request->rgubun]);
+        }else{
+            return view('registration.guide')->with(['subNum'=>'1', 'cgubun'=>$request->cgubun ?? 'E']);
+        }
+        
     }
 
     public function registration(Request $request)
@@ -55,9 +60,9 @@ class RegistrationController extends Controller
         return view('registration.receipt')->with( $this->RegistrationService->receipt($request) );
     }
 
-    public function search()
+    public function search(Request $request)
     {
-        return view('registration.search')->with( $this->RegistrationService->search());
+        return view('registration.search')->with( $this->RegistrationService->search($request));
     }
 
     public function searchResult(Request $request)

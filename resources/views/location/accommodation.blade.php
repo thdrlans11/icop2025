@@ -34,7 +34,7 @@
                     <strong>Address:</strong> 7 Yulgok-ro 2-gil, Jongno District, Seoul
                 </li>
                 <li class="phone">
-                    <strong>Phone: </strong> <a href="tel:02-6730-8888" target="_blank">02-6730-8888</a>
+                    <strong>Phone: </strong> <a href="tel:02-6730-8888" target="_blank">+82-2-6730-8888</a>
                 </li>
             </ul>
             <div class="btn-wrap">
@@ -61,7 +61,7 @@
                     <strong>Address:</strong> 180 Yulgok-ro, Wonnam-dong, Jongno District, Seoul
                 </li>
                 <li class="phone">
-                    <strong>Phone: </strong> <a href="tel:02-6353-7700" target="_blank">02-6353-7700</a>
+                    <strong>Phone: </strong> <a href="tel:02-6353-7700" target="_blank">+82-2-6353-7700</a>
                 </li>
             </ul>
             <div class="btn-wrap">
@@ -69,7 +69,58 @@
             </div>
         </div>
     </div>
-
+		 <div class="hotel-tit-wrap">
+        <h5 class="hotel-tit">Mayplace Hotel </h5> <div class="star"><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""></div>
+    </div>
+    <div class="hotel-contents">
+        <div class="img-wrap">
+            <div class="img-rolling js-img-rolling">
+                <img src="/assets/image/sub/img_hotel_Mayplace01.png" alt="Mayplace Hotel ">
+                <img src="/assets/image/sub/img_hotel_Mayplace02.png" alt="Mayplace Hotel ">
+                <img src="/assets/image/sub/img_hotel_Mayplace03.png" alt="Mayplace Hotel ">
+                <img src="/assets/image/sub/img_hotel_Mayplace04.png" alt="Mayplace Hotel ">
+            </div>
+        </div>
+        <div class="text-wrap">
+            <ul>
+                <li class="address">
+                    <strong>Address:</strong>Mayplace, 179, Yulgok-ro, Jongno-gu, Seoul
+                </li>
+                <li class="phone">
+                    <strong>Phone: </strong> <a href="tel:+82-2-6730-1101 " target="_blank">+82-2-742-8080</a>
+                </li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="https://www.mayplace.co.kr/main/main.html" target="_blank" class="btn btn-hotel">Go to Website</a>
+            </div>
+        </div>
+    </div>
+	 <div class="hotel-tit-wrap">
+        <h5 class="hotel-tit">ibis Ambassador Seoul Insadong</h5> <div class="star"><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""></div>
+    </div>
+    <div class="hotel-contents">
+        <div class="img-wrap">
+            <div class="img-rolling js-img-rolling">
+                <img src="/assets/image/sub/img_hotel_ibis01.png" alt="Hotel IBIS">
+                <img src="/assets/image/sub/img_hotel_ibis02.png" alt="Hotel IBIS">
+                <img src="/assets/image/sub/img_hotel_ibis03.png" alt="Hotel IBIS">
+                <img src="/assets/image/sub/img_hotel_ibis04.png" alt="Hotel IBIS">
+            </div>
+        </div>
+        <div class="text-wrap">
+            <ul>
+                <li class="address">
+                    <strong>Address:</strong>31, Samil-daero 30-gil, Jongno-gu, Seoul
+                </li>
+                <li class="phone">
+                    <strong>Phone: </strong> <a href="tel:+82-2-6730-1101 " target="_blank">+82-2-6730-1101 </a>
+                </li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="https://www.ambatel.com/ibis/insadong/en/main.do" target="_blank" class="btn btn-hotel">Go to Website</a>
+            </div>
+        </div>
+    </div>
     <div class="hotel-tit-wrap">
         <h5 class="hotel-tit">Hotel DAAM</h5> <div class="star"><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""></div>
     </div>

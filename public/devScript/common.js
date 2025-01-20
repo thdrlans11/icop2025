@@ -49,6 +49,13 @@ $(document).ready(function(){
 		}
 	});
 
+	$(document).on("change",".emailOnly", function() {
+		if( !isCorrectEmail( $(this).val() ) ) {
+			alert('Email address seems incorrect (check @ and .’s)');
+			$(this).val('').focus();
+		}
+	});
+
 	$(".Load_Base_fix").on('click',function(){
 		var W_custom = $(this).attr('Wsize');
 		var H_custom = $(this).attr('Hsize');

@@ -36,14 +36,15 @@ class RegistrationService extends dbService
 
         $data['step'] = $request->step;
         $data['type'] = $type;        
-        if( $request->country == 'KOR' || ( isset($registration) && $registration->ccode == 'KR' ) ){
+        if( $request->rgubun == 'KOR' || ( isset($registration) && $registration->ccode == 'KR' ) ){
             $data['country'] = (new Country())->countryList('KOR');
         }else{
             $data['country'] = (new Country())->countryList();
         }
         $data['captcha'] = (new CommonService())->captchaMakeService();
         $data['apply'] = $registration ?? null;
-        $data['subNum'] = '2';
+        $data['rgubun'] = $request->rgubun ?? null;
+        $data['subNum'] = $request->rgubun ? '5' : '2';
 
         return view('registration.registration')->with($data);
     }
@@ -161,7 +162,7 @@ class RegistrationService extends dbService
             if( checkUrl() == 'admin' ){
                 return redirect()->route('admin.registration.modifyForm', ['step'=>$request->step, 'sid'=>encrypt($registration->sid)]);
             }else{
-                return redirect()->route('apply.registration', ['step'=>'2', 'sid'=>encrypt($registration->sid)]);
+                return redirect()->route('apply.registration', ['step'=>'2', 'rgubun'=>$request->rgubun, 'sid'=>encrypt($registration->sid)]);
             }
             
 
@@ -211,7 +212,7 @@ class RegistrationService extends dbService
             if( checkUrl() == 'admin' ){
                 return redirect()->route('admin.registration.modifyForm', ['step'=>$request->step, 'sid'=>encrypt($registration->sid)]);
             }else{
-                return redirect()->route('apply.registration', ['step'=>$moveStep, 'sid'=>encrypt($registration->sid)]);
+                return redirect()->route('apply.registration', ['step'=>$moveStep, 'rgubun'=>$request->rgubun, 'sid'=>encrypt($registration->sid)]);
             }
             
 
@@ -269,7 +270,7 @@ class RegistrationService extends dbService
             if( checkUrl() == 'admin' ){
                 return redirect()->route('admin.registration.modifyForm', ['step'=>$request->step, 'sid'=>encrypt($registration->sid)]);
             }else{
-                return redirect()->route('apply.registration', ['step'=>$moveStep, 'sid'=>encrypt($registration->sid)]);
+                return redirect()->route('apply.registration', ['step'=>$moveStep, 'rgubun'=>$request->rgubun, 'sid'=>encrypt($registration->sid)]);
             }
 
         } catch (\Exception $e) {
@@ -287,10 +288,11 @@ class RegistrationService extends dbService
         return $data;
     }
 
-    public function search()
+    public function search(Request $request)
     {
         $data['country'] = (new Country())->countryList('KOR');
-        $data['subNum'] = '3';
+        $data['subNum'] = $request->rgubun ? '6' : '3';
+        $data['rgubun'] = $request->rgubun ?? null;
 
         return $data;
     }
@@ -306,7 +308,8 @@ class RegistrationService extends dbService
         $periodCheck = $this->periodCheck();
 
         $data['apply'] = $registration;        
-        $data['subNum'] = '3';
+        $data['subNum'] = $registration->ccode == 'KR' ? '6' : '3';
+        $data['rgubun'] = $registration->ccode == 'KR' ? 'KOR' : null;
         $data['modifyYn'] = ( $periodCheck['type'] ? true : false );
 
         return view('registration.searchResult')->with($data);

@@ -1,0 +1,303 @@
+<?php
+$main = "sub";
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.inc';
+?>
+
+<section id="container" class="<?php echo $main;?>">
+    <article class="sub-visual">
+        <div class="sub-visual-con inner-layer">
+            <div class="sub-visual-text">
+                <img src="/assets/image/sub/img_subvisual_text01.png" alt="16th International Congress of Protistology 2025, Joint meeting of ICOP/ISOP 2025">
+                <img src="/assets/image/sub/img_subvisual_text02.png" alt="June 22 (Sunday), - June 27 (Friday), 2025. Sungkyunkwan University, Seoul, Korea (TBC)">
+            </div>
+            <div class="sub-visual-logo">
+                <img src="/assets/image/sub/img_subvisual_logo.png" alt="ISOP, ICOP, The Korean Society of Protistologsis. The Korean Society of Phycology">
+            </div>
+        </div>
+    </article>
+    <article class="sub-menu-wrap">
+        <div class="sub-menu inner-layer cf">
+            <a href="/" class="btn btn-home"></a>
+            <ul class="sub-menu-list js-sub-menu-list cf">
+                <li class="sub-menu-depth01">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Registration</a>
+                    <ul>
+                        <li><a href="#n">About the Congress</a></li>
+                        <li><a href="#n">Program</a></li>
+                        <li><a href="#n">Abstract</a></li>
+                        <li><a href="#n">Registration</a></li>
+                        <li><a href="#n">Location</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-depth02">
+                    <a href="#n" class="btn-sub-menu js-btn-sub-menu">Registration Guidelines</a>
+                    <ul>
+                        <li><a href="#n"><span>Registration Guidelines</span></a></li>
+                        <li class="on"><a href="#n"><span>Go to Register</span></a></li>
+                        <li><a href="#n"><span>Registration Confirmation and Receipt</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="sub-contents">
+        <div class="page-tit-wrap inner-layer">
+            <h3 class="page-tit">Go to Register</h3>
+        </div>
+        <div class="sub-conbox inner-layer">
+            <div class="sub-tab-wrap">
+                <ul class="sub-tab-menu">
+                    <li><a href="#n">Registration Guidelines</a></li>
+                    <li class="on"><a href="#n">Go to Register</a></li>
+                    <li><a href="#n">Registration confirmation and Receipt</a></li>
+                </ul>
+            </div>
+            <div class="step-list-wrap">
+                <div class="step-list-wrap">
+                    <ul class="step-list">
+                        <li>
+                            Step 01
+                            <strong>Personal Information</strong>
+                        </li>
+                        <li>
+                            Step 02
+                            <strong>Select registration fee</strong>
+                        </li>
+                        <li>
+                            Step 03
+                            <strong>Payment progress</strong>
+                        </li>
+                        <li class="on">
+                            Step 04
+                            <strong>Confirmation</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-img-box">
+                <img src="/assets/image/sub/ic_success.png" alt="">
+                <div class="text-wrap">
+                    <strong class="tit">Your online registration has been successfully submitted!</strong>
+                </div>
+            </div>
+
+            <div class="btn-wrap text-right">
+                <a href="#n" class="btn btn-type1 btn-line color-type5"><img src="/assets/image/sub/ic_receipt.png" alt=""> Receipt</a>
+            </div>
+            <div class="write-form-wrap">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">Go to Register</legend>
+                        <ul class="write-wrap">
+                            <li>
+                                <div class="form-tit">Registration No.</div>
+                                <div class="form-con">
+                                    <span class="text-red">Your registration no. will be given after your payment is completed. </span> or R-0001
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Registration Date</div>
+                                <div class="form-con">
+                                    Yyyy-mm-dd hh:mm:ss
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Country</div>
+                                <div class="form-con">
+                                    {Country}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">E-mail</div>
+                                <div class="form-con">
+                                    {E-mail}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Title</div>
+                                <div class="form-con">
+                                    {Title}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Degree</div>
+                                <div class="form-con">
+                                    {Degree}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Name</div>
+                                <div class="form-con">
+                                    {Name}
+                                </div>
+                            </li>
+                            
+                            <!-- Country > Korea, Repulic of 선택 시 노출-->
+                            <li>
+                                <div class="form-tit">국문 성명</div>
+                                <div class="form-con">
+                                    {국문 성명}
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="form-tit">Department</div>
+                                <div class="form-con">
+                                    {Department}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Affiliation</div>
+                                <div class="form-con">
+                                    {Affiliation}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Phone Number</div>
+                                <div class="form-con">
+                                    {Phone Number}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Category</div>
+                                <div class="form-con">
+                                    Delegate
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Attendance Type</div>
+                                <div class="form-con">
+                                    One Day
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Which date you want to register?</div>
+                                <div class="form-con">
+                                    June 23, June 24
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Accompanying Person</div>
+                                <div class="form-con">
+                                    2 Person – KRW 300,000
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Banquet</div>
+                                <div class="form-con">
+                                    3 Banquet – KRW 300,000
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">File upload</div>
+                                <div class="form-con">
+                                    첨부파일.pdf
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Total Amount</div>
+                                <div class="form-con">
+                                    KRW 850,000
+                                   <ul class="list-type list-type-bar">
+                                        <li>Delegate – KRW 600,000 or One day – June 23,24,25 – KRW 450,000</li>
+                                        <li>Accompanying Person - 2 Person – KRW 300,000</li>
+                                       <li>Banquet -  3 Banquet – KRW 300,000 </li>
+                                   </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Payment method</div>
+                                <div class="form-con">
+                                    Credit Card or Bank Transfer
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Payment Status</div>
+                                <div class="form-con">
+                                    <span class="text-blue">Completed</span> or <span class="text-red">Payment needed</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="help-text state-info mt-20">
+                            <strong class="text-red">* Payment Status</strong>
+                            <ul>
+                                <li><span class="text-red">Payment is needed : </span>Your payment is not completed.</li>
+                                <li><span class="text-blue">Complete : </span>Your payment is completed.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Bank Trasfer 선택 / Country > Korea, Republic of 선택 시 노출 -->
+                        <ul class="write-wrap">
+                            <li>
+                                <div class="form-tit">Bank Account Information</div>
+                                <div class="form-con">
+                                    TBD
+                                </div>
+                            </li>
+                            <li class="n2">
+                                <div class="form-tit">Registrant’s Name & Affiliation <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    
+                                </div>
+                                <div class="form-tit">Eexpected Remittance Date <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Bank Trasfer 선택 / Country > Korea, Republic of 외 국가 선택 시 노출 -->
+                        <ul class="write-wrap">
+                            <li class="n2">
+                                <div class="form-tit">Bank Account Information</div>
+                                <div class="form-con">
+                                    TBD
+                                </div>
+                                <div class="form-tit">Bank Address</div>
+                                <div class="form-con">
+                                    TBD
+                                </div>
+                            </li>
+                            <li class="n2">
+                                <div class="form-tit">Account No.</div>
+                                <div class="form-con">
+                                    TBD
+                                </div>
+                                <div class="form-tit">Account Name</div>
+                                <div class="form-con">
+                                    TBD
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-tit">Swift Code</div>
+                                <div class="form-con">
+                                    TBD
+                                </div>
+                            </li>                               
+                            <li class="n2">
+                                <div class="form-tit">Registrant’s Name & Affiliation <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    
+                                </div>
+                                <div class="form-tit">Eexpected Remittance Date <strong class="required">*</strong></div>
+                                <div class="form-con">
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="btn-wrap text-center">
+                            <a href="#n" class="btn btn-type1 btn-line color-type4">Modify</a>
+                            <a href="#n" class="btn btn-type1 color-type5">Go to Registration confirmation and Receipt</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </article>
+</section> 
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/include/footer.inc';
+?>
