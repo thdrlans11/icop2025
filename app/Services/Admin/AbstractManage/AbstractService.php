@@ -5,8 +5,10 @@ namespace App\Services\Admin\AbstractManage;
 use App\Models\AbstractPeriod;
 use App\Models\AbstractRegistration;
 use App\Models\Country;
+use App\Services\CommonService;
 use App\Services\dbService;
 use App\Services\Util\ExcelService;
+use App\Services\Util\MailService;
 use Illuminate\Http\Request;
 
 /**
@@ -45,7 +47,7 @@ class AbstractService extends dbService
 
         if ($request->excel) {
             $cntQuery = clone $lists;
-            return (new ExcelService())->RegistrationExcel($lists, $cntQuery->count());
+            return (new ExcelService())->AbstractExcel($lists, $cntQuery->count());
         }
 
         if( $request->paginate ){
@@ -62,6 +64,48 @@ class AbstractService extends dbService
         $data['country'] = (new Country())->countryList('KOR');
 
         return $data;
+    }
+
+    public function modifyForm(Request $request)
+    {
+        $abstract = AbstractRegistration::find(decrypt($request->sid));
+
+        $data['step'] = $request->step;
+        $data['countrys'] = (new Country())->countryList('KOR');
+        $data['captcha'] = (new CommonService())->captchaMakeService();
+        $data['apply'] = $abstract;
+
+        return $data;
+    }
+
+    public function sendMailForm(Request $request)
+    {
+        $abstract = AbstractRegistration::find(decrypt($request->sid));
+        $mailBody = (new MailService())->makeMail($abstract, 'abstractComplete', 'preview');
+
+        $data['apply'] = $abstract;
+        $data['mailBody'] = $mailBody;
+
+        return $data;
+    }
+
+    public function sendMail(Request $request)
+    {
+        $abstract = AbstractRegistration::find(decrypt($request->sid));
+
+        $p_author = $abstract->getPresentation();
+        $abstract->first_name = $p_author->first_name;
+        $abstract->last_name = $p_author->last_name;
+
+        if( $request->email ){
+            $abstract->email = $request->email;
+        }else{
+            $abstract->email = $p_author->email;
+        }
+
+        (new MailService())->makeMail($abstract, 'abstractComplete');
+
+        return redirect()->back()->withSuccess('메일 전송이 완료되었습니다.')->with('close','Y');
     }
 
     public function dbChange(Request $request)
@@ -93,7 +137,18 @@ class AbstractService extends dbService
                     
                 }else{
                     $abstract[$request->field] = $request->value;
+
+                    if( $request->field == 'status' ){
+                        if( $request->value == 'N' ){
+                            $abstract->complete_at = null;
+                        }else{
+                            $abstract->complete_at = now();
+                        }
+                    }
+
                     $abstract->save();
+
+                    $msg = '관리자 초록 상태 변경';
                 }
 
             }               

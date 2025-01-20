@@ -43,7 +43,7 @@ const tinymce_image_upload_handler = (blobInfo, progress) => new Promise((resolv
 });
 
 tinymce.init({
-    selector: 'textarea', // Replace this CSS selector to match the placeholder element for TinyMCE
+    selector: '.tinymce', // Replace this CSS selector to match the placeholder element for TinyMCE
     language: 'ko_KR',
     plugins: [
             'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',

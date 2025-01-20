@@ -32,7 +32,7 @@ function dbChange(sid,db,field,f){
 		}else{
             value = $(f).prev().val();
         }
-	}else if( db == 'abstracts' && field == 'delete' ){
+	}else if( db == 'abstract' && field == 'delete' ){
         value = $(f).data('status');
     }else{
         value = $(f).val();
@@ -168,7 +168,10 @@ function dbChange(sid,db,field,f){
         <div class="btn-wrap text-center">
             <button type="submit" class="btn btn-type1 color-type4">검색</button>
             <button type="reset" class="btn btn-type1 color-type6" onclick="location.href='{{ route('admin.abstract.list') }}'">검색 초기화</button>
-            <a href="{{ route('admin.abstract.excel', request()->except('page')) }}" class="btn btn-type1 color-type10" target="_blank">Get Excel File</a>
+            <a href="{{ route('admin.abstract.excel', request()->except('page')) }}" class="btn btn-type1 color-type10">Get Excel File</a>
+
+            <a href="{{ route('admin.abstract.excel', request()->except('page')) }}" onclick="swalAlert('준비중 입니다.', '', 'info'); return false;" class="btn btn-type1 color-type9">워드 백업</a>
+            <a href="{{ route('admin.abstract.excel', request()->except('page')) }}" onclick="swalAlert('준비중 입니다.', '', 'info'); return false;" class="btn btn-type1 color-type9">워드 백업 미리보기</a>
         </div>
     </fieldset>
 </form>
@@ -191,7 +194,7 @@ function dbChange(sid,db,field,f){
         <colgroup>
             <col style="width: 2%;">
             <col style="width: 4%;">
-            <col style="width: 6%;">
+            <col style="width: 8%;">
             <col style="width: 10%;">
             <col style="width: *">
             <col style="width: 8%;">
@@ -200,6 +203,7 @@ function dbChange(sid,db,field,f){
             <col style="width: 8%;">
 
             <col style="width: 8%;">
+            <col style="width: 6%;">
             <col style="width: 6%;">
 
             <col style="width: 4%;">
@@ -217,6 +221,7 @@ function dbChange(sid,db,field,f){
                 <th scope="col">Abstract Title</th>
                 <th scope="col">최초 등록일</th>
                 <th scope="col">최종 수정일</th>
+                <th scope="col">워드백업</th>
                 <th scope="col">Mail 재발송</th>
                 <th scope="col">메모</th>
                 <th scope="col">관리</th>
@@ -228,12 +233,18 @@ function dbChange(sid,db,field,f){
                 <td>{{ $d->seq }}</td>
                 <td>
                     @if( $d->status == 'Y' )
-                    <a href="{{ route('admin.registration.modifyForm', ['sid'=>encrypt($d->sid), 'step'=>'1']) }}" class="Load_Base_fix" Wsize="1500" Hsize="900" Tsize="2%" Reload="Y">{{ $d->rnum }}</a>
+                    <a href="{{ route('admin.abstract.modifyForm', ['sid'=>encrypt($d->sid), 'step'=>'1']) }}" class="Load_Base_fix" Wsize="1500" Hsize="900" Tsize="2%" Reload="Y">{{ $d->rnum }}</a>
                     @else
                     {{ $d->rnum }}
                     @endif
                 </td>
-                <td>{{ config('site.abstract.status')[$d->status] }}</td>
+                <td>
+                    <select onchange="dbChange('{{ encrypt($d->sid) }}', 'abstract', 'status', this);" class="form-item">  
+                        @foreach( config('site.abstract.status') as $key => $val )
+                        <option value="{{ $key }}" {{ $d->status == $key ? 'selected' : '' }}>{{ $val }}</option>
+                        @endforeach
+                    </select>
+                </td>
                 <td>{{ config('site.abstract.ptype')[$d->ptype] }}</td>
                 <td>{{ config('site.abstract.topic')[$d->topic] }}</td>
                 <td>{{ $d->getPresentation()->first_name.' '.$d->getPresentation()->last_name }}</td>
@@ -243,13 +254,20 @@ function dbChange(sid,db,field,f){
                 <td>{{ $d->complete_at }}</td>
                 <td>
                     @if( $d->status == 'Y' )
-                    <a href="{{ route('admin.registration.sendMailForm', ['sid'=>encrypt($d->sid)]) }}" class="btn btn-small color-type7 Load_Base_fix" Wsize="730" Hsize="900" Tsize="2%" Reload="N">메일발송</a>
+                    <a href="#n" class="btn btn-small color-type4" onclick="swalAlert('준비중 입니다.', '', 'info');">워드백업</a>
                     @else
                     -
                     @endif
                 </td>
                 <td>
-                    <a href="{{ route('admin.registration.memoForm', ['sid'=>encrypt($d->sid)]) }}" class="Load_Base_fix" Wsize="730" Hsize="900" Tsize="2%" Reload="Y">
+                    @if( $d->status == 'Y' )
+                    <a href="{{ route('admin.abstract.sendMailForm', ['sid'=>encrypt($d->sid)]) }}" class="btn btn-small color-type7 Load_Base_fix" Wsize="730" Hsize="900" Tsize="2%" Reload="N">메일발송</a>
+                    @else
+                    -
+                    @endif
+                </td>
+                <td>
+                    <a href="{{ route('admin.abstract.memoForm', ['sid'=>encrypt($d->sid)]) }}" class="Load_Base_fix" Wsize="730" Hsize="900" Tsize="2%" Reload="Y">
                         <span class="material-symbols-outlined">
                             content_paste{{ !$d->memo ? '_off' : ''}}
                         </span>
@@ -257,10 +275,10 @@ function dbChange(sid,db,field,f){
                 </td>
                 <td>
                     @if( request()->query('del') == 'Y' )
-                    <a href="#n" class="btn btn-small color-type4 btn-recovery" onclick="swalConfirm('복구 처리하시겠습니까?', '', function(){ dbChange('{{ encrypt($d->sid) }}','registration','delete',$('.btn-recovery')); })" data-status="N">복구</a>
+                    <a href="#n" class="btn btn-small color-type4 btn-recovery" onclick="swalConfirm('복구 처리하시겠습니까?', '', function(){ dbChange('{{ encrypt($d->sid) }}','abstract','delete',$('.btn-recovery')); })" data-status="N">복구</a>
                     @else
-                        <a href="{{ route('admin.registration.modifyForm', ['sid'=>encrypt($d->sid), 'step'=>'1']) }}" class="btn-admin btn-modify Load_Base_fix" Wsize="1500" Hsize="900" Tsize="2%" Reload="Y"><img src="/devAdmin/assets/image/admin/ic_modify.png" alt="수정"></a>
-                        <a href="#n" class="btn-admin btn-del" onclick="swalConfirm('삭제 처리하시겠습니까?', '', function(){ dbChange('{{ encrypt($d->sid) }}','registration','delete',$('.btn-del')); })" data-status="Y"><img src="/devAdmin/assets/image/admin/ic_del.png" alt="삭제"></a>
+                        <a href="{{ route('admin.abstract.modifyForm', ['sid'=>encrypt($d->sid), 'step'=>'1']) }}" class="btn-admin btn-modify Load_Base_fix" Wsize="1500" Hsize="900" Tsize="2%" Reload="Y"><img src="/devAdmin/assets/image/admin/ic_modify.png" alt="수정"></a>
+                        <a href="#n" class="btn-admin btn-del" onclick="swalConfirm('삭제 처리하시겠습니까?', '', function(){ dbChange('{{ encrypt($d->sid) }}','abstract','delete',$('.btn-del')); })" data-status="Y"><img src="/devAdmin/assets/image/admin/ic_del.png" alt="삭제"></a>
                     @endif
                 </td>
             </tr>

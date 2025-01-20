@@ -126,7 +126,7 @@ class AbstractService extends dbService
             $this->dbCommit($msg ?? ( checkUrl() == 'admin' ? '관리자 ' : '사용자' ).' 초록등록 스텝 1 저장');
 
             if( checkUrl() == 'admin' ){
-                return redirect()->route('admin.registration.modifyForm', ['step'=>$request->step, 'sid'=>encrypt($registration->sid)]);
+                return redirect()->route('admin.abstract.modifyForm', ['step'=>$request->step, 'sid'=>encrypt($registration->sid)]);
             }else{
 
                 switch($request->saveMode){

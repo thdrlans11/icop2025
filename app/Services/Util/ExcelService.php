@@ -90,6 +90,91 @@ class ExcelService
         return $excel->toBrowser();
     }
 
+    public function AbstractExcel($lists, $totCnt)
+    {        
+        $excel = SimpleExcelWriter::streamDownload('abstract.csv');
+        $excel->noHeaderRow();
+
+        // Header
+        $header = [
+            'No',
+            '접수번호',
+            'Presentation Type',
+            'Abstract Topics',
+            'Abstract Title',
+            'Abstract',
+            'Keywords',
+            'Do you agree to change your presentation type',
+            'Copyright Agreement',
+            
+            'Presenter First Name',
+            'Presenter Last Name',
+            'Presenter Email',
+            'Presenter Mobile',
+            'Presenter Country',
+            'Presenter Institution',
+
+            'Corresponding First Name',
+            'Corresponding Last Name',
+            'Corresponding Email',
+            'Corresponding Mobile',
+            'Corresponding Country',
+            'Corresponding Institution',
+            
+            '접수상태',
+            '접수시작일',
+            '접수완료일'
+        ];
+
+        // Add header to the CSV
+        $excel->addRow($header);
+
+        // Add data to the CSV
+        foreach ($lists->lazy(3000) as $key => $apply) {
+
+            $p_author = $apply->getPresentation();
+            $c_author = $apply->getCorresponding();
+
+            $this->row[$key] = [
+                ($totCnt - $key),
+                $apply->rnum,
+                config('site.abstract.ptype')[$apply->ptype],
+                config('site.abstract.topic')[$apply->topic],
+                $apply->subject,
+                $apply->content,
+                $apply->getKeyword(),
+                config('site.abstract.answer')[$apply->agree1],
+                config('site.abstract.agree')[$apply->agree2],
+
+                $p_author->first_name,
+                $p_author->last_name,
+                $p_author->email,
+                $p_author->mobile,
+                $p_author->country,
+                $apply->makePresentationInstitution(),
+
+                $c_author->first_name,
+                $c_author->last_name,
+                $c_author->email,
+                $c_author->mobile,
+                $c_author->country,
+                $apply->makeCorrespondingInstitution(),
+
+                config('site.abstract.status')[$apply->status],
+                $apply->created_at ?? '',
+                $apply->complete_at ?? ''
+            ];
+
+            // 특수문자 때문에
+            $this->row[$key] = excelEntity($this->row[$key]);
+
+            $excel->addRow($this->row[$key]);
+        }
+
+        // Download the CSV
+        return $excel->toBrowser();
+    }
+
     public function SymposiumExcel($lists, $totCnt, $country)
     {        
         $excel = SimpleExcelWriter::streamDownload('SpecialSymposium.csv');

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 @include('abstract.tinymce')
 
 <ul class="write-wrap">
@@ -233,7 +234,7 @@
             <div class="form-tit">Abstract <strong class="required">*</strong></div>
             <div class="form-con">
                 <input type="hidden" value="0" class="tinyword-cnt">
-                <textarea name="content" id="content" class="form-item">{!! $apply->content ?? '' !!}</textarea>
+                <textarea name="content" id="content" class="form-item tinymce">{!! $apply->content ?? '' !!}</textarea>
             </div>
         </li>
         <li>

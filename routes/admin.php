@@ -25,10 +25,10 @@ Route::prefix('admin')->group(function(){
     //사전등록
     Route::prefix('abstract')->controller(\App\Http\Controllers\Admin\AbstractManage\AbstractController::class)->group(function() {            
         Route::get('/', 'list')->name('admin.abstract.list');
-        // Route::get('/modify/{sid}', 'modifyForm')->name('admin.registration.modifyForm');
-        // Route::post('/modify/{sid}', 'modify')->name('admin.registration.modify');
-        // Route::get('/sendMail/{sid}', 'sendMailForm')->name('admin.registration.sendMailForm');
-        // Route::post('/sendMail/{sid}', 'sendMail')->name('admin.registration.sendMail');
+        Route::get('/modify/{sid}', 'modifyForm')->name('admin.abstract.modifyForm');
+        Route::post('/modify/{sid}', 'modify')->name('admin.abstract.modify');
+        Route::get('/sendMail/{sid}', 'sendMailForm')->name('admin.abstract.sendMailForm');
+        Route::post('/sendMail/{sid}', 'sendMail')->name('admin.abstract.sendMail');
         Route::get('/excel', 'excel')->name('admin.abstract.excel');
         Route::post('/dbChange', 'dbChange')->name('admin.abstract.dbChange');
         Route::get('/memo/{sid}', 'memoForm')->name('admin.abstract.memoForm');

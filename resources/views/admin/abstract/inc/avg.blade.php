@@ -30,7 +30,7 @@ $countryAvg = $abstractAvg['countryAvg'];
                         <ul class="bar-list">
                             @foreach( $countryAvg as $key => $val )
                             <li>
-                                <a href="{{ route('admin.abstract.list', ['ccode'=>$key]) }}">
+                                <a href="{{ route('admin.abstract.list', ['country'=>$key]) }}">
                                     {{ $val['cn'] }} : {{ number_format($val['count']) }}건
                                 </a>
                             </li>

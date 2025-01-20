@@ -3,7 +3,7 @@
 @section('content')
     
     <div class="write-form-wrap">
-        <form id="mailForm" action="{{ route('admin.registration.sendMail', ['sid'=>encrypt($apply->sid)]) }}" method="post">
+        <form id="mailForm" action="{{ route('admin.abstract.sendMail', ['sid'=>encrypt($apply->sid)]) }}" method="post">
             {{ csrf_field() }}
             <fieldset>
                 <legend class="hide">Mail</legend>

@@ -68,7 +68,7 @@ class AbstractRegistration extends Model
 
     public function getKeyword()
     {
-        $keyword = "" ;
+        $keyword = '' ;
         foreach( $this->keyword as $key => $val ){
             if( $val ){
                 $keyword .= ( $key > 0 ? ', ' : '' ).$val;
@@ -81,6 +81,40 @@ class AbstractRegistration extends Model
     {
         $presentation = AbstractAuthor::where('asid', $this->sid)->where('presentation_author', 'Y')->first();
         return $presentation;
+    }
+
+    public function makePresentationInstitution()
+    {
+        $text = '';
+        $presentation = $this->getPresentation();
+        
+        if( $presentation->institution_1 ){
+            $institution = AbstractInstitution::where('asid', $presentation->asid)->where('sort_number', $presentation->institution_1)->first();
+            $text .= '1. '.$institution->affiliation.' / '.$institution->country;
+        }
+        if( $presentation->institution_2 ){
+            $institution = AbstractInstitution::where('asid', $presentation->asid)->where('sort_number', $presentation->institution_2)->first();
+            $text .= "\r\n".'2. '.$institution->affiliation.' / '.$institution->country;
+        }
+
+        return $text;
+    }
+
+    public function makeCorrespondingInstitution()
+    {
+        $text = '';
+        $corresponding = $this->getCorresponding();
+        
+        if( $corresponding->institution_1 ){
+            $institution = AbstractInstitution::where('asid', $corresponding->asid)->where('sort_number', $corresponding->institution_1)->first();
+            $text .= '1. '.$institution->affiliation.' / '.$institution->country;
+        }
+        if( $corresponding->institution_2 ){
+            $institution = AbstractInstitution::where('asid', $corresponding->asid)->where('sort_number', $corresponding->institution_2)->first();
+            $text .= "\r\n".'2. '.$institution->affiliation.' / '.$institution->country;
+        }
+
+        return $text;
     }
 
     public function getCorresponding()
