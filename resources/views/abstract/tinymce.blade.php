@@ -90,8 +90,10 @@ tinymce.init({
     setup: function(editor) {
 
         editor.on('init', function(args) {
-            if ($('#max_words').length > 0) {
-                let tinymceVal = editor.getContent(); // 내용 가져오기
+            let tinymceVal = editor.getContent(); // 내용 가져오기
+            
+            if ($('#max_words').length > 0 && tinymceVal) {
+                
                 tinymceVal = tinymceVal.replace(/<[^>]*>?/g, ""); // html 태그 삭제
                 tinymceVal = tinymceVal.replace(/\&nbsp;/g, ' '); // &nbsp 삭제
 
@@ -130,14 +132,15 @@ tinymce.init({
                 tinymceVal = tinymceVal.replace(/<[^>]*>?/g, ""); // html 태그 삭제
                 tinymceVal = tinymceVal.replace(/\&nbsp;/g, ' '); // &nbsp 삭제
 
-                const countLength = tinymceVal.split(' ').length;
+                const tinymceSplit = tinymceVal.split(' '); 
+                const countLength = tinymceSplit.length;
 
                 const wordcount = tinymce.activeEditor.plugins.wordcount;
                 
                 const editorName = editor.getElement().getAttribute('name');
                 const lengthCheckEditor = [
                     'content'
-                ];
+                ];                
 
                 if (lengthCheckEditor.includes(editorName)) {
                     let tinywordCnt = 0;
@@ -150,7 +153,15 @@ tinymce.init({
                     });
 
                     if (tinywordCnt > maxLength) {
-                        editor.setContent('');
+
+                        let content = "";
+                        for (i = 0; i < 300; i++) {
+                            content += ( i > 0 ? ' ' : '' )+tinymceSplit[i];
+                        } 
+
+                        editor.setContent(content);
+                        tinywordCnt = wordcount.body.getWordCount();
+                        
                         alert('The content should be less than ' + maxLength + ' characters.');
                     }
 

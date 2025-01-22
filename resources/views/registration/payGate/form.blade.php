@@ -25,12 +25,12 @@ function getPGIOresult() {
 }
 </script>
 
-<input type="hidden" name="mid" value="protists">
+<input type="hidden" name="mid" value="{{ $apply->lang == 'ENG' ? 'protists' : 'paygatekr' }}">
 <input type="hidden" name="charset" value="UTF-8">
 <input type="hidden" name="langcode" value="US">
 <input type="hidden" name="paymethod" value="104">
 <input type="hidden" name="unitprice" id="unitprice" value="{{ $apply->price }}">
-<input type="hidden" name="goodcurrency" value="USD">
+<input type="hidden" name="goodcurrency" value="{{ $apply->lang == 'ENG' ? 'USD' : 'WON' }}">
 <input type="hidden" name="goodname" id="goodname" value="ICOP 2025 Registration">
 <input type="hidden" name="receipttoname" value="{{ $apply->makeName() }}">
 <input type="hidden" name="receipttoemail" value="{{ $apply->email }}">

@@ -55,14 +55,26 @@ $(document).ready(function(){
 		$('#subject_length').val(length);
 	});
 
-	$(document).on("click","input[name^='p_author_']",function(){
+	$(document).on("click", "input[name^='p_author_']",function(){
 		$("input[name^='p_author_']").attr("checked",false);
 		$(this).prop("checked",true);
 	});
 	
-	$(document).on("click","input[name^='c_author_']",function(){
+	$(document).on("click", "input[name^='c_author_']",function(){
 		$("input[name^='c_author_']").attr("checked",false);
 		$(this).prop("checked",true);
+	});
+
+	$(document).on("change", "select[name='author_institution_1[]'], select[name='author_institution_2[]']",function(){
+		
+		var value1 = $(this).closest("td").find("select[name='author_institution_1[]']").val();
+		var value2 = $(this).closest("td").find("select[name='author_institution_2[]']").val();
+
+		if( value1 == value2 ){
+			swalAlert("Affiliations cannot overlap.", "", "warning");
+			$(this).val("");
+		}
+
 	});
 });
 

@@ -141,7 +141,7 @@ class ExcelService
                 config('site.abstract.ptype')[$apply->ptype],
                 config('site.abstract.topic')[$apply->topic],
                 $apply->subject,
-                $apply->content,
+                strip_tags($apply->content),
                 $apply->getKeyword(),
                 config('site.abstract.answer')[$apply->agree1],
                 config('site.abstract.agree')[$apply->agree2],

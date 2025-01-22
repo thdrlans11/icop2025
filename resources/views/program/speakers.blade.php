@@ -8,14 +8,16 @@
                     <img src="/assets/image/sub/img_mannkyoonshin.png" alt="Mann Kyoon Shin">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name">Mann Kyoon Shin</strong>
+                    <strong class="name"><a href="https://biology.ulsan.ac.kr/biology/1398" target="_blank" style="color:#0b9bba"><u>Mann Kyoon Shin</u></a></strong>
                     <p>
                         Dept. of Biological Science, University of Ulsan <br>
                         Professor, University of Ulsan <br>
                         Korea
                     </p>
-                    <p class="tit"><span>Lecture Title: TBD</span></p>
-                    <strong>Research Fellow, American Museum of Natural History (AMNH), New York
+                    <p class="tit"><span>Lecture Title: Protistology in Korea: Past, Present, and Future</span></p>
+					<p>Prof. Shin has made significant contributions to the systematics of ciliate protistology and was the president of the Korean Society of Protistologists (KSOP) and the Korean Society of Systematic Zoology (KSSZ). Over three decades, he and his collaborators have focused on the species diversity and phylogeny of the ciliated protists. For more than six years, he served as an Editor-in-Chief of the journal (Animal Systematics, Evolution and Diversity, ASED) of the KSSZ. He currently serves as Subject (Protozoa) Editor of the journal Zootaxa and as an Editorial Board Member of the Journal of Eukaryotic Microbiology. He has also been re-elected as the President of KSOP to foster the next generations of Korean protistologists.</p>
+
+                    <!-- <strong>Research Fellow, American Museum of Natural History (AMNH), New York
                         (2012-2013)</strong>
                     <ul class="list-type list-type-bar">
                         <li>Research Associate, Princeton University, Dept. of Ecology &amp; Evolution
@@ -25,7 +27,7 @@
                         <li>President, The Korean Society of Protistologists (2016-2017)</li>
                         <li>Subject Editor of Protist, Zootaxa (mega journal of animal taxonomy) (2016-present)
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -72,11 +74,12 @@
                     <img src="/assets/image/sub/img_Thomas-Mock.png" alt="Thomas Mock">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name">Thomas Mock</strong>
+                    <strong class="name"><a href="https://research-portal.uea.ac.uk/en/persons/thomas-mock" target="_blank" style="color:#0b9bba"><u>Thomas Mock</u></a></strong>
                     <p>
                         School of Environmental Sciences, University of East Anglia UK
                     </p>
-                    <p class="tit"><span>Lecture Title: TBD</span></p>
+                    <p class="tit"><span>Lecture Title: Adaptive Evolution in Protists: Diatoms as a Test Case.
+</span></p>
                     <p>
                         He obtained his MSc (1998) in Biology with emphasis on Biological Oceanography at the
                         Christian-Albrechts University in Kiel (GEOMAR) and the PhD (2003) at Bremen University
@@ -121,7 +124,7 @@
                     <img src="/assets/image/sub/img_janamilucka.png" alt="Jana Milucka">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name">Jana Milucka</strong>
+                    <strong class="name"><a href="https://www.mpi-bremen.de/en/Greenhouse-Gases-Research-Group-2/Jana-Milucka.html" target="_blank" style="color:#0b9bba"><u>Jana Milucka</u></a></strong>
                     <p>
                         Max Planck Institute for Marine Microbiology <br>
                         Germany
@@ -130,12 +133,12 @@
                     <p>
                         Jana’s research focuses on beneficial interactions between eukaryotic microbes and
                         bacterial symbionts, particularly those that affect the biogeochemical cycling of
-                        nitrogen. <br>
+                        nitrogen. 
 
                         Jana and her group study the ecological role, diversity and physiology of protist
                         symbionts in groundwaters, freshwater lakes, and the ocean, using a variety of
                         biogeochemical, molecular and imaging techniques, most notably fluorescent microscopy
-                        and nanoSIMS. <br>
+                        and nanoSIMS. 
 
                         Jana received her PhD in 2011 from the Max Planck Institute for Marine Microbiology,
                         Bremen, Germany. Since 2018, she has been heading the research group ‘Greenhouse Gases’
@@ -172,7 +175,7 @@
                     <img src="/assets/image/sub/img_Laura-eme.png" alt="Laura-eme">
                 </div>
                 <div class="text-wrap">
-                    <strong class="name">Laura Eme</strong>
+                    <strong class="name"><a href="https://research-portal.uea.ac.uk/en/persons/thomas-mock" target="_blank" style="color:#0b9bba"><u>Laura Eme</u></a></strong>
                     <p>
                         Associate Professor<br>
                         University of Rhode Island, USA<br>

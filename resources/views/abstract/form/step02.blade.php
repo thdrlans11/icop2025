@@ -74,7 +74,7 @@
                     </td>
                     <td>
                         <div class="radio-wrap cst text-center">
-                            <label for="" class="radio-group"><input type="radio" {{ ( $author->presentation_author ?? '' ) == 'Y' ? 'checked' : '' }}></label>
+                            <label for="" class="radio-group"><input type="radio" {{ ( $author->presentation_author ?? '' ) == 'Y' ? 'checked' : '' }} onclick="return false"></label>
                         </div>
                     </td>
                     <td>
