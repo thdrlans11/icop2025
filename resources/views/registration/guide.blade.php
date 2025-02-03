@@ -6,7 +6,7 @@
     <div class="sub-tab-wrap">
         <ul class="sub-tab-menu n2">
             <li {!! $cgubun == 'E' ? 'class="on"' : '' !!}><a href="{{ route('registration.guide', ['cgubun'=>'E']) }}">Overseas</a></li>
-            <li {!! $cgubun == 'K' ? 'class="on"' : '' !!}><a href="{{ route('registration.guide', ['cgubun'=>'K']) }}">국내 참가자</a></li>
+            <li {!! $cgubun == 'K' ? 'class="on"' : '' !!}><a -href="{{ route('registration.guide', ['cgubun'=>'K']) }}" onClick="alert('Will be updated')">국내 참가자</a></li>
         </ul>
     </div>
 

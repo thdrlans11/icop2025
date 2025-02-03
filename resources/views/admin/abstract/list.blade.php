@@ -195,7 +195,7 @@ function dbChange(sid,db,field,f){
             <col style="width: 2%;">
             <col style="width: 4%;">
             <col style="width: 8%;">
-            <col style="width: 10%;">
+            <col style="width: 6%;">
             <col style="width: *">
             <col style="width: 8%;">
             <col style="width: 8%;">
@@ -214,7 +214,7 @@ function dbChange(sid,db,field,f){
                 <th scope="col">No</th>
                 <th scope="col">접수번호</th>
                 <th scope="col">Status</th>
-                <th scope="col">Presentation Type</th>
+                <th scope="col">Presentation<br>Type</th>
                 <th scope="col">Topic</th>
                 <th scope="col">Presentation<br>author</th>
                 <th scope="col">Corresponding<br>author</th>
@@ -246,10 +246,10 @@ function dbChange(sid,db,field,f){
                     </select>
                 </td>
                 <td>{{ config('site.abstract.ptype')[$d->ptype] }}</td>
-                <td>{{ config('site.abstract.topic')[$d->topic] }}</td>
-                <td>{{ $d->getPresentation()->first_name.' '.$d->getPresentation()->last_name }}</td>
-                <td>{{ $d->getCorresponding()->first_name.' '.$d->getCorresponding()->last_name }}</td>
-                <td>{{ $d->subject }}</td>
+                <td style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding:0px 10px">{{ config('site.abstract.topic')[$d->topic] }}</td>
+                <td style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding:0px 10px">{{ $d->getPresentation()->first_name.' '.$d->getPresentation()->last_name }}</td>
+                <td style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding:0px 10px">{{ $d->getCorresponding()->first_name.' '.$d->getCorresponding()->last_name }}</td>
+                <td style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding:0px 10px">{{ $d->subject }}</td>
                 <td>{{ $d->created_at }}</td>
                 <td>{{ $d->complete_at }}</td>
                 <td>

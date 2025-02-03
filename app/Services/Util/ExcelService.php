@@ -236,17 +236,17 @@ class ExcelService
                 $country[$apply->speakers[0]->ccode]['cn'],
                 $apply->speakers[0]->title,
                 
-                $apply->speakers[1]->fname.' '.$apply->speakers[0]->lname, 
+                $apply->speakers[1]->fname.' '.$apply->speakers[1]->lname, 
                 $apply->speakers[1]->affi,
                 $country[$apply->speakers[1]->ccode]['cn'],
                 $apply->speakers[1]->title,
 
-                $apply->speakers[2]->fname.' '.$apply->speakers[0]->lname, 
+                $apply->speakers[2]->fname.' '.$apply->speakers[2]->lname, 
                 $apply->speakers[2]->affi,
                 $country[$apply->speakers[2]->ccode]['cn'],
                 $apply->speakers[2]->title,
 
-                $apply->speakers[3]->fname.' '.$apply->speakers[0]->lname, 
+                $apply->speakers[3]->fname.' '.$apply->speakers[3]->lname, 
                 $apply->speakers[3]->affi,
                 $country[$apply->speakers[3]->ccode]['cn'],
                 $apply->speakers[3]->title,

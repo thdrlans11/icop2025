@@ -23,8 +23,11 @@ return [
         '4' => [
             'name' => 'Registration',
             'url' => "",
-            'route_target' => 'registration.guide',
+			'route_target' => 'registration.guide',
             'route_param' => [],
+			
+           /*'route_target' => 'ready',
+            'route_param' => ['mainNum'=>'4', 'subNum'=>'1']  */
         ],
         '6' => [
             'name' => 'Sponsors',
@@ -148,20 +151,39 @@ return [
             '1' => [
                 'name' => 'Registration Guidelines',
                 'url' => "",
-                'route_target' => 'registration.guide',
-                'route_param' => [],
+                /* 2025-02-03 닫음
+				
+
+				'route_target' => 'ready',
+				'route_param' => ['mainNum'=>'4', 'subNum'=>'1'],
+				*/
+				'route_target' => 'registration.guide',
+				'route_param' => [],
+                
             ],
             '2' => [
                 'name' => 'Go to Register',
                 'url' => "",
-                'route_target' => 'apply.registration',
-                'route_param' => ['step'=>'1'],
+                /* 
+				
+				'route_target' => 'ready',
+				'route_param' => ['mainNum'=>'4', 'subNum'=>'2'],*/
+
+				'route_target' => 'apply.registration',
+                'route_param' => ['step'=>'1'], 
+				
             ],
             '3' => [
                 'name' => 'Registration Confirmation and Receipt',
                 'url' => "",
-                'route_target' => 'registration.search',
+                /*
+				
+				'route_target' => 'ready',
+				'route_param' => ['mainNum'=>'4', 'subNum'=>'3'],*/
+
+				'route_target' => 'registration.search',
                 'route_param' => [],
+				
             ],
             '4' => [
                 'name' => '등록 가이드라인',

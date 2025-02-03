@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* ==================================================
+
+    * layout
+    
+================================================== */
+.wrap{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    background-color: #323c66;
+}
+#header{
+    position: fixed;
+    width: 130px;
+    height: 100%;
+    padding: 55px 0;
+    text-align: center;
+}
+.header-logo{
+    display: block;
+    width: 100%;
+}
+.header-logo > a{
+    display: block;
+    width: 100%;
+}
+.header-logo > a img{
+    max-width: 100%;
+}
+.gnb{
+    margin-top: 35px;
+}
+.gnb > li{
+    padding: 15px 25px;
+}
+.gnb > li + li{
+    border-top: 1px solid #374474;
+}
+.gnb > li > a{
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+    line-height: 1.3;
+    color: #fff;
+}
+.gnb .icon{
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 10px;
+    background-color: #374374;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gnb > li:nth-child(1) .icon{
+    background-image: url('../image/ic_gnb01.png');
+}
+.gnb > li:nth-child(2) .icon{
+    background-image: url('../image/ic_gnb02.png');
+}
+.gnb > li:nth-child(3) .icon{
+    background-image: url('../image/ic_gnb03.png');
+}
+.btn.btn-logout{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 55px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.01em;
+}
+.btn-logout .icon{
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 7px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../image/ic_logout.png');
+    background-color: #b91f24;
+}
+#container{
+    margin-left: 130px;
+    height: 100%;
+    min-height: 100vh;
+    padding: 55px 3.2% 55px 1.6%;
+    background-color: #eff4fa;
+    border-radius: 55px 0 0 55px;
+}
+.contents{
+    overflow-y: auto;
+    min-height: calc(100vh - 110px);
+    padding: 50px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 103px rgba(194,207,203,0.17);
+}
+.con-tit-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e6ec;
+}
+.con-tit{
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+.breadcrumb > li{
+    display: inline-block;
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+.breadcrumb > li + li{
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-image: url('../image/ic_breadcrumb.png');
+    margin-left: 15px;
+}
