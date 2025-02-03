@@ -14,7 +14,7 @@
         <strong class="tit">Instruction</strong>
         <ul class="list-type list-type-check">
             <li>Submitter is responsible for typing errors.</li>
-            <li>The abstract must not exceed <strong class="text-red">250</strong> words. Please do not include title, author, or institution information in the abstract.</li>
+            <li>The abstract must not exceed <strong class="text-red">300</strong> words. Please do not include title, author, or institution information in the abstract.</li>
             <li>The character count only includes text in the BODY of your abstract.</li>
         </ul>
     </div>

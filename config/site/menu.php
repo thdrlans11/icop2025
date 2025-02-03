@@ -17,7 +17,7 @@ return [
         '3' => [
             'name' => 'Abstract',
             'url' => "",
-            'route_target' => 'ready',
+            'route_target' => 'abstract.guide',
             'route_param' => ['mainNum'=>'3', 'subNum'=>'1'],
         ],
         '4' => [
@@ -111,22 +111,31 @@ return [
         ],
         '3' => [
             '1' => [
-                'name' => 'Abstract Guidelines',
+                'name' => 'Abstract Submission Guidelines',
                 'url' => "",
-                'route_target' => 'ready',
+                # 2025-01-31 오픈 'route_target' => 'ready',
+                'route_target' => 'abstract.guide',
                 'route_param' => ['mainNum'=>'3', 'subNum'=>'1'],
             ],
             '2' => [
                 'name' => 'Online Submission',
                 'url' => "",
+                /* 2025-01-31 오픈
                 'route_target' => 'ready',
                 'route_param' => ['mainNum'=>'3', 'subNum'=>'2'],
+                */
+                'route_target' => 'abstract.registration',
+                'route_param' => ['step'=>'1'],
             ],
             '3' => [
                 'name' => 'Abstract Review & Modification',
                 'url' => "",
+                /* 2025-01-31 오픈
                 'route_target' => 'ready',
                 'route_param' => ['mainNum'=>'3', 'subNum'=>'3'],
+                */
+                'route_target' => 'abstract.registration.search',
+                'route_param' => [],
             ],
             '4' => [
                 'name' => 'Presentation Guidelines',

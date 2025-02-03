@@ -53,7 +53,7 @@ class RegistrationService extends dbService
     {
         $apply = Registration::where('year', config('site.common.default.year'))->where('email', $request->email)->first();
 
-        if( $apply ){
+        if( $apply && $request->email != 'harang@paygate.net' ){
             return 'already';
         }else{
             return 'vailable';

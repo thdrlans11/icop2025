@@ -57,7 +57,7 @@
                                                 Abstract Topics
                                             </th>
                                             <td style="padding: 10px 15px;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;border-left: 1px solid #dddddd;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 14px;color: #444444;line-height: 1.3">
-                                                {{ config('site.abstract.topic')[$apply->topic] }}
+                                                {{ config('site.abstract.topic')[$apply->topic] }} {{ $apply->topic == 'Z' ? '( '.$apply->topic_other.' )' : '' }}
                                             </td>
                                         </tr>
                                     </table>

@@ -260,7 +260,7 @@ function setCookiePopup( name, value, expiredays ){
                 CALL FOR <span>SPECIAL SYMPOSIA</span>
             </strong>
             <p>
-                OPEN UNTIL <span class="highlights">JAN. 31, 2025!</span>
+                OPEN UNTIL <span class="highlights">February 14, 2025!</span>
             </p>
             <div class="btn-wrap text-center">
                 <a href="{{ route('apply.symposium', ['step'=>'1']) }}" class="btn">Symposium Proposal Submission <img src="/assets/image/main/ic_pop_arrow.png" alt=""></a>

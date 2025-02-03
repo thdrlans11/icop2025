@@ -14,7 +14,7 @@
     <li>
         <div class="form-tit">Abstract Topics <strong class="required">*</strong></div>
         <div class="form-con">
-            {{ config('site.abstract.topic')[$apply->topic] }}
+            {{ config('site.abstract.topic')[$apply->topic] }} {{ $apply->topic == 'Z' ? '( '.$apply->topic_other.' )' : '' }}
         </div>
     </li>
 </ul>
@@ -43,7 +43,7 @@
                     <th scope="col">First Name <strong class="required">*</strong></th>
                     <th scope="col">Last Name <strong class="required">*</strong></th>
                     <th scope="col">E-Mail <strong class="required">*</strong></th>
-                    <th scope="col">Mobile <strong class="required">*</strong></th>
+                    <th scope="col">Mobile </th>
                     <th scope="col">Country <strong class="required">*</strong></th>
                     <th scope="col">Institution No. <strong class="required">*</strong></th>
                     <th scope="col">Presentation Author <strong class="required">*</strong></th>

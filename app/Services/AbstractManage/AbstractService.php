@@ -73,6 +73,7 @@ class AbstractService extends dbService
     
             $registration->ptype = $request->ptype;
             $registration->topic = $request->topic;
+            $registration->topic_other = $request->topic_other;
             $registration->institution_count = $request->institution_count;
             $registration->author_count = $request->author_count;
             $registration->subject = $request->subject;

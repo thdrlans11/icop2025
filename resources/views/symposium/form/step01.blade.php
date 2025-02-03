@@ -29,7 +29,7 @@
     <li>
         <div class="form-tit">Affiliation <strong class="required">*</strong></div>
         <div class="form-con">
-            <input type="text" name="affiliation" id="affiliation" value="{{ $apply->affiliation ?? '' }}" class="form-item engNumOnly">
+            <input type="text" name="affiliation" id="affiliation" value="{{ $apply->affiliation ?? '' }}" class="form-item engNumSymOnly">
         </div>
     </li>
     <li>
@@ -88,13 +88,13 @@
     <li>
         <div class="form-tit">Symposium Title <strong class="required">*</strong></div>
         <div class="form-con">
-            <input type="text" name="title" id="title" value="{{ $apply->title ?? '' }}" class="form-item engNumOnly">
+            <input type="text" name="title" id="title" value="{{ $apply->title ?? '' }}" class="form-item korNone">
         </div>
     </li>
     <li>
         <div class="form-tit">Brief synopsis of topic <strong class="required">*</strong></div>
         <div class="form-con">
-            <input type="text" name="topic" id="topic" value="{{ $apply->topic ?? '' }}" class="form-item engNumOnly">
+            <input type="text" name="topic" id="topic" value="{{ $apply->topic ?? '' }}" class="form-item korNone">
         </div>
     </li>
 </ul>
@@ -123,7 +123,7 @@
             <tr>
                 <th scope="col">No.</th>
                 <th scope="col">Name</th>
-                <th scope="col">Affliation</th>
+                <th scope="col">Affiliation</th>
                 <th scope="col">Country</th>
                 <th scope="col">Lecture Title</th>
             </tr>
@@ -139,7 +139,7 @@
                     </div>
                 </td>
                 <td>
-                    <input type="text" name="speakerAffiliation[]" id="speakerAffiliation{{ $i }}" value="{{ $apply->speakers[$i-1]->affi ?? '' }}" class="form-item engNumOnly">
+                    <input type="text" name="speakerAffiliation[]" id="speakerAffiliation{{ $i }}" value="{{ $apply->speakers[$i-1]->affi ?? '' }}" class="form-item engNumSymOnly">
                 </td>
                 <td>
                     <select name="speakerCcode[]" id="speakerCcode{{ $i }}" class="form-item">
@@ -150,7 +150,7 @@
                     </select>
                 </td>
                 <td>
-                    <input type="text" name="speakerLectureTitle[]" id="speakerLectureTitle{{ $i }}" value="{{ $apply->speakers[$i-1]->title ?? '' }}" class="form-item engNumOnly">
+                    <input type="text" name="speakerLectureTitle[]" id="speakerLectureTitle{{ $i }}" value="{{ $apply->speakers[$i-1]->title ?? '' }}" class="form-item engNumSymOnly">
                 </td>
             </tr>
             @endfor

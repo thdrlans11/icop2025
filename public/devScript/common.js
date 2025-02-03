@@ -33,6 +33,15 @@ $(document).ready(function(){
 		  }
 	});
 
+	// 영문, 특수 기호, 숫자만 입력 가능 하도록 요청 ==== 2025-01-31 이동희
+	$(document).on("change",".engNumSymOnly", function() {
+		var ex = /[^A-Za-z0-9_\`\~\!\@\#\$\%\^\&\*\(\)\-\=\+\\\{\}\[\]\'\"\;\:\<\,\>\.\?\/\s]/gm;
+		  if( ex.test( $(this).val() ) ) {
+				alert('Please enter English only.');
+			  	$(this).val( $(this).val().replace( ex, '' ) ).focus();
+		  }
+	});
+
 	$(document).on("change",".numOnly", function() {
 		var ex = /[^0-9\+\-\s]/gm;
 		if( ex.test( $(this).val() ) ) {
@@ -45,6 +54,22 @@ $(document).ready(function(){
 		var ex = /[^ㄱ-ㅎ|ㅏ-ㅣ|가-힣\s]/gm;
 		if( ex.test( $(this).val() ) ) {
 			alert('한글만 입력해 주세요.');
+			$(this).val( $(this).val().replace( ex, '' ) ).focus();
+		}
+	});
+
+	$(document).on("change",".korNone", function() {
+		var ex = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/gm;
+		if( ex.test( $(this).val() ) ) {
+			alert('Please enter English only.');
+			$(this).val( $(this).val().replace( ex, '' ) ).focus();
+		}
+	});
+
+	$(document).on("change",".korNumNone", function() {
+		var ex = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣|0-9]/gm;
+		if( ex.test( $(this).val() ) ) {
+			alert('Please enter English only.');
 			$(this).val( $(this).val().replace( ex, '' ) ).focus();
 		}
 	});

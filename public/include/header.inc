@@ -79,7 +79,7 @@
                         <li>
                             <a href="#n">Abstract</a>
                             <ul>
-                                <li><a href="#n">Abstract Guidelines</a></li>
+                                <li><a href="#n">Abstract Submission Guidelines </a></li>
                                 <li><a href="#n">Online Submission</a></li>
                                 <li><a href="#n">Abstract Review & Modification</a></li>
                                 <li><a href="#n">Presentation Guidelines</a></li>

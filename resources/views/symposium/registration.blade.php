@@ -13,7 +13,7 @@
         <div class="bg-img-box">
             <img src="/assets/image/sub/ic_notice.png" alt="">
             <div class="text-wrap">
-                <strong class="tit">Please fill in the requested information below and submit by January 31, 2025.</strong>
+                <strong class="tit">Please fill in the requested information below and submit by February 14</strong>
             </div>
         </div>
     @else

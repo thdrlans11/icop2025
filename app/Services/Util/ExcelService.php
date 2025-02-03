@@ -139,7 +139,7 @@ class ExcelService
                 ($totCnt - $key),
                 $apply->rnum,
                 config('site.abstract.ptype')[$apply->ptype],
-                config('site.abstract.topic')[$apply->topic],
+                config('site.abstract.topic')[$apply->topic].( $apply->topic == 'Z' ? '( '.$apply->topic_other.' )' : '' ),
                 $apply->subject,
                 strip_tags($apply->content),
                 $apply->getKeyword(),

@@ -2123,8 +2123,8 @@ p + .name strong{
     line-height: 1.2;
     color: #2f2f2f;
 }
-.table-wrap + .list-type > li:before,
-.sub-tit-wrap + .list-type > li:before{
+.table-wrap + .list-type-dot > li:before,
+.sub-tit-wrap + .list-type-dot > li:before{
     top: 16px;
 }
 

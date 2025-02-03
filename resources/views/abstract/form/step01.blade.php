@@ -21,6 +21,9 @@
                 @foreach( config('site.abstract.topic') as $key => $val )
                 <label for="topic{{ $key }}" class="radio-group">
                     <input type="radio" name="topic" id="topic{{ $key }}" value="{{ $key }}" {{ ( $apply->topic ?? '' ) == $key ? 'checked' : '' }}>{{ $val }}
+                    @if( $key == 'Z' )
+                    <input type="text" name="topic_other" id="topic_other" value="{{ $apply->topic_other ?? '' }}" class="form-item" {{ ( $apply->topic ?? '' ) != 'Z' ? 'readonly' : '' }} />
+                    @endif
                 </label>
                 @endforeach
             </div>
@@ -76,18 +79,18 @@
                 </div>
                 <div class="form-tit">Department <strong class="required">*</strong></div>
                 <div class="form-con">
-                    <input type="text" name="department[]" value="{{ $institution->department ?? '' }}" class="form-item engOnly" onchange="toFirstOpper(this)">
+                    <input type="text" name="department[]" value="{{ $institution->department ?? '' }}" class="form-item korNumNone" onchange="toFirstOpper(this)">
                 </div>
             </li>
             
             <li class="n2">
                 <div class="form-tit">Affiliation <strong class="required">*</strong></div>
                 <div class="form-con">
-                    <input type="text" name="affiliation[]" value="{{ $institution->affiliation ?? '' }}" class="form-item engOnly" onchange="toFirstOpper(this)">
+                    <input type="text" name="affiliation[]" value="{{ $institution->affiliation ?? '' }}" class="form-item korNumNone" onchange="toFirstOpper(this)">
                 </div>
                 <div class="form-tit">City <strong class="required">*</strong></div>
                 <div class="form-con">
-                    <input type="text" name="city[]" value="{{ $institution->city ?? '' }}" class="form-item engOnly" onchange="toFirstOpper(this)">
+                    <input type="text" name="city[]" value="{{ $institution->city ?? '' }}" class="form-item korNumNone" onchange="toFirstOpper(this)">
                 </div>
             </li>
         </ul>
@@ -129,7 +132,7 @@
                     <th scope="col">First Name <strong class="required">*</strong></th>
                     <th scope="col">Last Name <strong class="required">*</strong></th>
                     <th scope="col">E-Mail <strong class="required">*</strong></th>
-                    <th scope="col">Mobile <strong class="required">*</strong></th>
+                    <th scope="col">Mobile</th>
                     <th scope="col">Country <strong class="required">*</strong></th>
                     <th scope="col">Institution No. <strong class="required">*</strong></th>
                     <th scope="col">Presentation Author <strong class="required">*</strong></th>
@@ -149,10 +152,10 @@
                         <input type="hidden" name="author_sid[]" value="{{ $author->sid ?? '' }}"/>
                     </td>
                     <td>
-                        <input type="text" name="author_firstname[]" value="{{ $author->first_name ?? '' }}" class="form-item engOnly" onchange="toFirstOpper(this)">
+                        <input type="text" name="author_firstname[]" value="{{ $author->first_name ?? '' }}" class="form-item korNumNone" onchange="toFirstOpper(this)">
                     </td>
                     <td>
-                        <input type="text" name="author_lastname[]" value="{{ $author->last_name ?? '' }}" class="form-item engOnly" onchange="toFirstOpper(this)">
+                        <input type="text" name="author_lastname[]" value="{{ $author->last_name ?? '' }}" class="form-item korNumNone" onchange="toFirstOpper(this)">
                     </td>
                     <td>
                         <input type="text" name="author_email[]" value="{{ $author->email ?? '' }}" id="" class="form-item emailOnly">
@@ -215,7 +218,7 @@
         <li>
             <div class="form-tit">Abstract Title <strong class="required">*</strong> </div>
             <div class="form-con">
-                <input type="text" name="subject" id="subject" value="{{ $apply->subject ?? '' }}" class="form-item engOnly" onchange="toFirstOpper(this)">
+                <input type="text" name="subject" id="subject" value="{{ $apply->subject ?? '' }}" class="form-item korNumNone" onchange="toFirstOpper(this)">
                 <p class="mt-10">
                     (<input type="text" id="subject_length" value="{{ empty($apply->subject) ? '' : count(explode(' ', $apply->subject)) }}" class="form-item n-bd text-center" readonly>) 30words (The title should be less than 30 words.)
                 </p>

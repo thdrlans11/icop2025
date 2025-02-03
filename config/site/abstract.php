@@ -26,10 +26,12 @@ return [
         'G' => 'Parasites, symbiosis, and pathogenic protists',
         'H' => 'Bacteria and viruses in protists',
         'I' => 'Photosynthetic eukaryotes',
-        'J' => 'Harmful protist',
+        'J' => 'Harmful Protists',
         'K' => 'Genomics, transcriptomics, and metagenomics',
         'L' => 'Taxonomy and Diverse protist lineages of all protists',
-        'M' => 'Carbon capture and sequestration with algae'        
+        'M' => 'Carbon capture and sequestration with algae',
+        'N' => 'Transcription regulation or 3D genome structures',
+        'Z' => 'Other'        
     ],    
 
     'status' => [

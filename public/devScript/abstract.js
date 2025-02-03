@@ -10,6 +10,14 @@ $(document).ready(function(){
     //     $("#registrationForm").submit();
     // })
 
+	$("input:radio[name='topic']").click(function(){
+		if( $(this).val() == "Z" ){
+			$("#topic_other").attr("readonly", false);
+		}else{
+			$("#topic_other").attr("readonly", true).val("");
+		}
+	});
+
     //소속 제거
 	$(document).on("click",".del_institution",function(){
 		$(this).closest(".institution_box").remove();
@@ -192,6 +200,13 @@ function registrationCheck_01(f)
         return false;
     }
 
+	if( $("input:radio[name='topic']:checked").val() == "Z" ){
+		if( !$(f.topic_other).val() ){
+			swalAlert("Please enter Topics Other.", "", "warning", "topic_other");
+			return false;
+		}		
+	}
+
 	//소속
 	var institution_count = $(f.institution_count).val();
 	
@@ -231,10 +246,11 @@ function registrationCheck_01(f)
 			swalAlert("Please enter Email.", "", "warning");
 			return false;
 		}
-		if( !$("input:text[name='author_mobile[]']").eq(i).val() ){
-			swalAlert("Please enter Mobile.", "", "warning");
-			return false;
-		}
+		// 2025-01-31 모바일 필수 체크 주석
+		// if( !$("input:text[name='author_mobile[]']").eq(i).val() ){
+		// 	swalAlert("Please enter Mobile.", "", "warning");
+		// 	return false;
+		// }
 		if( !$("select[name='author_country[]']").eq(i).val() ){
 			swalAlert("Please select the Country.", "", "warning");
 			return false;

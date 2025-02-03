@@ -43,6 +43,7 @@
             <li>Genomics, transcriptomics, and metagenomics</li>
             <li>Taxonomy and Diverse protist lineages of all protists</li>
             <li>Carbon capture and sequestration with algae</li>
+			<li>Transcription regulation or 3D genome structures</li>
         </ul>
     </div>
 

@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if( request()->ip() === '218.235.94.223' || request()->ip() === '218.235.94.247' ){
+        if( request()->ip() === '218.235.94.223' || request()->ip() === '218.235.94.247' || request()->ip() === '218.235.94.205'){
             config(['app.env' => 'local']);
             config(['app.debug' => true]);
             config(['debugbar.enabled' => true]);

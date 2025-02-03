@@ -2,6 +2,8 @@
 
 namespace App\Services\Symposium;
 
+use Illuminate\Support\Str;
+
 use App\Models\Country;
 use App\Models\SpecialSymposium;
 use App\Models\SpecialSymposiumPeriod;
@@ -49,7 +51,7 @@ class SymposiumService extends dbService
     }
 
     public function upsert_01(Request $request)
-    {   
+    {
         //허니팟 작동 ( 봇 방지 )
         if( !$request->sid && checkUrl() != 'admin' ){
             
@@ -82,7 +84,8 @@ class SymposiumService extends dbService
             }else{
                 $registration = SpecialSymposium::find(decrypt($request->sid));
             }
-    
+
+
             $registration->firstName = $request->firstName;
             $registration->lastName = $request->lastName;
             $registration->affiliation = $request->affiliation;
@@ -99,8 +102,10 @@ class SymposiumService extends dbService
                 (new CommonService())->fileDeleteService($request->delfile);
             }
 
-            $registration->title = $request->title;
-            $registration->topic = $request->topic;
+            // $registration->title = $request->title;
+            $registration->title = Str::words($request->title, 200, ''); // 200단어까지 저장(2025-01-31 이동희)
+            // $registration->topic = $request->topic;
+            $registration->topic = Str::words($request->topic, 200, ''); // 200단어까지 저장(2025-01-31 이동희)
 
             //speakers 처리
             $speakers = [];
@@ -114,7 +119,7 @@ class SymposiumService extends dbService
 
                 array_push($speakers, $speaker);
             }
-            
+
             $registration->speakers = $speakers;
             $registration->save();
 
@@ -125,10 +130,7 @@ class SymposiumService extends dbService
             }else{
                 return redirect()->route('apply.symposium', ['step'=>'2', 'sid'=>encrypt($registration->sid)]);
             }
-            
-
         } catch (\Exception $e) {
-
             return $this->dbRollback($e);
 
         } 
