@@ -108,6 +108,12 @@
             {!! $apply->banquet ? $apply->banquet == 'N' ? config('site.registration.banquet')[$apply->banquet] : $apply->makeTotalText('banquet') : '' !!}
         </div>
     </li>
+    <li>
+        <div class="form-tit">Field Trip</div>
+        <div class="form-con">
+            {!! $apply->tour ? $apply->tour == 'N' ? config('site.registration.tour')[$apply->tour] : $apply->makeTotalText('tour') : '' !!}
+        </div>
+    </li>
     @if( $apply->category == 'B' )
     <li>
         <div class="form-tit">File upload</div>
@@ -146,41 +152,6 @@
 <!-- Bank Trasfer 선택 / Country > Korea, Republic of 선택 시 노출 -->
 @if( $apply->payMethod == 'B' )
 <ul class="write-wrap">
-    @if( $apply->lang == 'KOR' )
-    <li>
-        <div class="form-tit">Bank Account Information</div>
-        <div class="form-con">
-            TBD
-        </div>
-    </li>
-    @else
-    <li class="n2">
-        <div class="form-tit">Bank Account Information</div>
-        <div class="form-con">
-            TBD
-        </div>
-        <div class="form-tit">Bank Address</div>
-        <div class="form-con">
-            TBD
-        </div>
-    </li>
-    <li class="n2">
-        <div class="form-tit">Account No.</div>
-        <div class="form-con">
-            TBD
-        </div>
-        <div class="form-tit">Account Name</div>
-        <div class="form-con">
-            TBD
-        </div>
-    </li>
-    <li>
-        <div class="form-tit">Swift Code</div>
-        <div class="form-con">
-            TBD
-        </div>
-    </li>   
-    @endif
     <li class="n2">
         <div class="form-tit">Registrant’s Name & Affiliation <strong class="required">*</strong></div>
         <div class="form-con">

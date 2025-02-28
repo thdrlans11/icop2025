@@ -18,7 +18,7 @@ return [
             'name' => 'Abstract',
             'url' => "",
             'route_target' => 'abstract.guide',
-            'route_param' => ['mainNum'=>'3', 'subNum'=>'1'],
+            'route_param' => [],
         ],
         '4' => [
             'name' => 'Registration',
@@ -28,6 +28,12 @@ return [
 			
            /*'route_target' => 'ready',
             'route_param' => ['mainNum'=>'4', 'subNum'=>'1']  */
+        ],
+        '7' => [
+            'name' => 'Tour',
+            'url' => "",
+            'route_target' => 'ready',
+            'route_param' => ['mainNum'=>'7', 'subNum'=>'1'],
         ],
         '6' => [
             'name' => 'Sponsors',
@@ -236,6 +242,20 @@ return [
                 'url' => "",
                 'route_target' => 'sponsor.info',
                 'route_param' => [],
+            ]
+        ],
+        '7' => [            
+            '1' => [
+                'name' => 'Field Trip',
+                'url' => "",
+                'route_target' => 'ready',
+                'route_param' => ['mainNum'=>'7', 'subNum'=>'1'],
+            ],
+			 '2' => [
+                'name' => 'Daily Tour Program',
+                'url' => "",
+                'route_target' => 'ready',
+                'route_param' => ['mainNum'=>'7', 'subNum'=>'2'],
             ]
         ]
     ],

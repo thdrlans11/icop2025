@@ -28,9 +28,9 @@ return [
 
     'default' => [
         'year' => '2025',
-        'adminReceive' => false, //사무국 메일 활성화
+        'adminReceive' => true, //사무국 메일 활성화
         'mailReceive' => true, // 기획자 메일 활성화
-     ],
+    ],
 
     'dayOfWeek' => [
         '0' => '일',

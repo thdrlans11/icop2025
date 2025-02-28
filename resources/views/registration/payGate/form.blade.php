@@ -25,7 +25,7 @@ function getPGIOresult() {
 }
 </script>
 
-<input type="hidden" name="mid" value="{{ $apply->lang == 'ENG' ? 'protists' : 'paygatekr' }}">
+<input type="hidden" name="mid" value="{{ $apply->lang == 'ENG' ? 'protists' : 'protistsus' }}">
 <input type="hidden" name="charset" value="UTF-8">
 <input type="hidden" name="langcode" value="{{ $apply->lang == 'ENG' ? 'US' : 'KR' }}">
 <input type="hidden" name="paymethod" value="{{ $apply->lang == 'ENG' ? '104' : 'card' }}">

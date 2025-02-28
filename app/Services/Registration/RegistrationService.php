@@ -72,6 +72,7 @@ class RegistrationService extends dbService
         $accompanying = $request->accompanying; //동반자
         $banquet = $request->banquet; //만찬
         $oneDay = $request->oneDay; //원데이
+        $tour = $request->tour; //Tour
 
         $unit = config('site.registration.unit')[$lang];
 
@@ -105,6 +106,12 @@ class RegistrationService extends dbService
             $banquetPrice = config('site.registration.banquetPrice')[$lang]*$banquet;
             $priceText .= 'Banquet - '.config('site.registration.banquet')[$banquet].' – '.$unit.' '.number_format($banquetPrice).' <br>';
             $totalPrice += $banquetPrice;
+        }
+
+        if( $tour && $tour != 'N' ){
+            $tourPrice = config('site.registration.tourPrice')[$lang];
+            $priceText .= 'Field Trip - '.config('site.registration.tour')[$tour].' – '.$unit.' '.number_format($tourPrice).' <br>';
+            $totalPrice += $tourPrice;
         }
 
         return ['priceUnit'=>$unit.' '.number_format($totalPrice), 'price'=>$totalPrice, 'priceText'=>$priceText];
@@ -187,6 +194,7 @@ class RegistrationService extends dbService
             $registration->oneDay = $request->oneDay;
             $registration->accompanying = $request->accompanying;
             $registration->banquet = $request->banquet;
+            $registration->tour = $request->tour;
             $registration->price = $request->price;
 
             if( $request->userfile ){

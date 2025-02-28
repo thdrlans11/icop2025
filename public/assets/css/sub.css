@@ -225,7 +225,7 @@
     background-image: url('../image/sub/ic_page_tit.png');
 }
 .sub-conbox{
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: -0.02em;
@@ -275,6 +275,37 @@
     color: #0f5b9c;
     line-height: 1;
     vertical-align: top;
+}
+.sub-contit-wrap.line{
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+.sub-contit-wrap.line:nth-of-type(1){
+    margin-top: 0;
+}
+.sub-contit-wrap.line:after{
+    display: block;
+    content: '';
+    clear: both;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    background-color: #24417b;
+}
+.sub-contit-wrap.line .sub-contit{
+    display: inline-block;
+    margin: 0;
+    padding-right: 15px;
+    background-color: #fff;
+    color: #115b94;
+    font-size: 2.2rem;
+    font-weight: 700;
+    vertical-align: middle;
 }
 
 /* sub tab menu */
@@ -1377,9 +1408,25 @@ p + .name strong{
     margin-top: 30px;
 }*/ 
 .invited-conbox .name{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: #0b9bba;
+}
+.invited-conbox .name a{
+    color: #0b9bba;
+}
+.invited-conbox .name .logo{
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #f5ad00;
+}
+.invited-conbox .name .logo img{
+    margin-right: 10px;
+    vertical-align: middle;
 }
 .invited-conbox .name + p{
     margin-top: 5px;
@@ -1433,6 +1480,41 @@ p + .name strong{
 }
 .invited-con .list-type-dot > li:before{
     top: 14px;
+}
+
+.tit + .abstract-con{
+    margin-top: 20px !important;
+}
+.abstract-con{
+    padding: 30px 20px;
+    margin-bottom: 35px;
+    border: 1px solid #e3e3e3;
+    border-top: 3px solid #2e90d3;
+    font-size: 1.7rem;
+}
+.abstract-con + p{
+    margin-top: 20px;
+}
+.btn-toggle{
+    width: 30px;
+    height: 30px;
+    margin-top: -3px;
+    margin-left: 15px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../image/sub/ic_btn_toggle.png');
+    vertical-align: middle;
+    transition: 0.3s ease;
+}
+.btn-toggle.on{
+    background-image: url('../image/sub/ic_btn_toggle_on.png');
+}
+.abstract-con{
+    display: none;
+}
+.invited-list .sub-tit{
+    color: #115b94;
 }
 
 /* Program::Special Symposia */
@@ -3070,4 +3152,99 @@ p + .map-tit-wrap{
 }
 .result-wrap{
     margin-top: 60px;
+}
+
+/* Tour::Field Trip */
+.trip-conbox{
+    font-size: 2rem;
+}
+.trip-conbox .list-type-decimal > li strong, 
+.trip-conbox .list-type-decimal > li::before{
+    font-weight: 600;
+}
+.trip-conbox .list-type-decimal > li + li{
+    margin-top: 10px;
+}
+.trip-conbox .con-wrap{
+    gap: 30px;
+}
+.trip-conbox .con-wrap .text-wrap{
+    padding: 0;
+}
+.con-wrap .info-list{
+    flex: 0 0 auto;
+    width: 550px;
+    padding: 35px;
+    background-color: #f3fbff;
+    border-radius: 15px;
+}
+.con-wrap .info-list li{
+    display: flex;
+    gap: 15px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    line-height: 1.4;
+}
+.con-wrap .info-list li + li{
+    margin-top: 15px;
+}
+.con-wrap .info-list li > strong{
+    flex: 0 0 auto;
+    color: #007fbe;
+}
+.con-wrap .info-list li.homepage{
+    background-image: url('../image/sub/ic_tour_home.png');
+}
+.con-wrap .info-list li.address{
+    background-image: url('../image/sub/ic_tour_addr.png');
+}
+.con-wrap .info-list li.person{
+    background-image: url('../image/sub/ic_tour_person.png');
+}
+.con-wrap .info-list li.area{
+    background-image: url('../image/sub/ic_tour_area.png');
+}
+.con-wrap .info-list li.map{
+    background-image: url('../image/sub/ic_tour_map.png');
+}
+.con-wrap .info-list li.eco{
+    background-image: url('../image/sub/ic_tour_eco.png');
+}
+.con-wrap a{
+    word-break: break-all;
+}
+.photo-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.photo-list li{
+    background-color: #f4f8ff;
+    padding: 25px;
+    border-radius: 10px;
+}
+.photo-list .img-wrap{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.photo-list .tit{
+    margin-top: 15px;
+    color: #24417b;
+    font-weight: 400;
+    text-align: center;
+}
+.btn.btn-video{
+    padding: 7px 20px;
+    margin-top: -3px;
+    border-radius: 22px 22px 0 22px;
+    background-color: #2c529f;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+.btn.btn-video img{
+    margin-top: -2px;
+    margin-right: 10px;
+    vertical-align: middle;
 }

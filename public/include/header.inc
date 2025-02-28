@@ -94,6 +94,20 @@
                             </ul>
                         </li>
                         <li>
+                            <a href="#n">Tour</a>
+                            <ul>
+                                <li><a href="#n">Feild Trip</a></li>
+                                <li><a href="#n">Daily Tour Program</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n">Sponsors</a>
+                            <ul>
+                                <li><a href="#n">Sponsorship</a></li>
+                                <li><a href="#n">후원신청서식</a></li>
+                            </ul>
+                        </li>
+                        <li>
                             <a href="/html/location/venue.html">Location</a>
                             <ul>
                                 <li><a href="/html/location/venue.html">Venue</a></li>

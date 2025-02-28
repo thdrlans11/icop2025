@@ -1,0 +1,362 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/html/sending/include/header.inc';
+?>
+
+<section id="container">
+    <div class="contents">
+        <div class="con-tit-wrap">
+            <h2 class="con-tit">대상자 관리</h2>
+            <ul class="breadcrumb">
+                <li><img src="/html/sending/assets/image/ic_home.png" alt="HOME"></li>
+                <li>대상자 관리</li>
+            </ul>
+        </div>
+        <div class="conbox">
+            <div class="sch-form-wrap">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">검색</legend>
+                        <div class="write-wrap">
+                            <div class="write-tit-wrap text-center">
+                                <div class="write-tit">세부 검색조건 설정</div> 
+                                <div class="radio-wrap cst">
+                                    <label for="chk1_1" class="radio-group"><input type="radio" name="chk1" id="chk1_1">And</label>
+                                    <label for="chk1_2" class="radio-group"><input type="radio" name="chk1" id="chk1_2">Or</label>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="n2">
+                                    <div class="form-tit">대상자</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                    <div class="form-tit">사용여부</div>
+                                    <div class="form-con">
+                                        <div class="checkbox-wrap cst">
+                                            <label for="chk2_1" class="checkbox-group"><input type="checkbox" name="" id="chk2_1">문자</label>
+                                            <label for="chk2_2" class="checkbox-group"><input type="checkbox" name="" id="chk2_2">E-mail</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap text-center">
+                            <button type="submit" class="btn btn-type1 color-type1"><img src="/html/sending/assets/image/ic_btn_sch.png" alt="" class="ic-btn"> 검색</button>
+                            <button type="reset" class="btn btn-type1 color-type2">초기화</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="table-contop text-right mb-20">
+                <div class="help-text text-red">대상자의 순서를 Drag&Drop하여 변경하실 수 있습니다. 변경하신 순서로 발송페이지에서 노출됩니다.</div>
+            </div>
+            <div class="table-wrap">
+                <table class="cst-table">
+                    <caption class="hide">목록</caption>
+                    <colgroup>
+                        <col style="width: 8%;">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col style="width: 12%;">
+                        <col style="width: 8%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">대상자</th>
+                            <th scope="col">문자</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">회원</th>
+                            <th scope="col">비회원</th>
+                            <th scope="col">관리</th>
+                            <th scope="col">순서</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_1" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_1" checked></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_2" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_2"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_3" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_3"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_4" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_4"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_5" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_5" checked></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_6" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_6"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_7" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_7"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_8" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_8"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_9" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_9"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_10" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_10"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_11" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_11"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_12" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_12"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_13" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_13"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_14" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_14"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_15" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_15"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_16" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_16"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_17" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_17"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_18" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_18"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>정회원</td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_19" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_19"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox-wrap cst text-center">
+                                    <label for="chk3_20" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_20"></label>
+                                </div>
+                            </td>
+                            <td>
+                                50명
+                            </td>
+                            <td>
+                                100명
+                            </td>
+                            <td>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_modify.png" alt="수정"></a>
+                                <a href="#n" class="btn btn-manage"><img src="/html/sending/assets/image/ic_btn_delete.png" alt="삭제"></a>
+                            </td>
+                            <td>
+                                <button type="button" class="btn-move"><span class="hide">이동</span></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-wrap text-right">
+                <a href="./write.html" class="btn btn-type1 color-type3"><span class="ic-btn plus">+</span>등록</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/html/sending/include/footer.inc';
+?>

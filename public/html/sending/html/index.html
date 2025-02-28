@@ -1,67 +1,207 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes,viewport-fit=cover">
-<meta name="format-detection" content="telephone=no, address=no, email=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="Author" content="">
-<meta name="Keywords" content="">
-<meta name="description" content="">
-<title>문자/메일 발송시스템</title>
-<link rel="icon" href="/html/sending/assets/image/favicon.ico">
-<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/slick.css">
-<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/jquery-ui.min.css">
-<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/common.css">
-<script type="text/javascript" src="/html/sending/assets/js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="/html/sending/assets/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/html/sending/assets/js/slick.min.js"></script>
-<script type="text/javascript" src="/html/sending/assets/js/jquery.rwdImageMaps.js"></script>
-<script type="text/javascript" src="/html/sending/assets/js/common.js"></script>
-</head>
-<body>
-    <div class="wrap">
-        <header id="header">
-            <h1 class="header-logo"><a href="/html/sending/"><img src="/html/sending/assets/image/h1_logo.png" alt="M2"></a></h1>
-            <ul class="gnb">
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/html/sending/include/header.inc';
+?>
+
+<section id="container">
+    <div class="contents">
+        <div class="con-tit-wrap">
+            <h2 class="con-tit">대상자관리</h2>
+            <ul class="breadcrumb">
+                <li><img src="/html/sending/assets/image/ic_home.png" alt="HOME"></li>
+                <li>대상자관리</li>
+            </ul>
+        </div>
+        <div class="conbox">
+            <div class="sub-tab-wrap">
+                <ul class="sub-tab-menu">
+                    <li class="on"><a href="#n">문자</a></li>
+                    <li><a href="#n">E-mail</a></li>
+                </ul>
+            </div>
+            <div class="sub-tit-wrap">
+                <h3 class="sub-tit">서브 타이틀</h3>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi magnam enim adipisci explicabo ea distinctio quibusdam cum nisi provident, error alias tempora, officia vero, est quam et iusto cumque! <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi magnam enim adipisci explicabo ea distinctio quibusdam cum nisi provident, error alias tempora, officia vero, est quam et iusto cumque! <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi magnam enim adipisci explicabo ea distinctio quibusdam cum nisi provident, error alias tempora, officia vero, est quam et iusto cumque! <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi magnam enim adipisci explicabo ea distinctio quibusdam cum nisi provident, error alias tempora, officia vero, est quam et iusto cumque! <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi magnam enim adipisci explicabo ea distinctio quibusdam cum nisi provident, error alias tempora, officia vero, est quam et iusto cumque! <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi magnam enim adipisci explicabo ea distinctio quibusdam cum nisi provident, error alias tempora, officia vero, est quam et iusto cumque! 
+            </p>
+            <div class="btn-wrap">
+                <a href="#n" class="btn btn-type1 color-type1">color-type1</a>
+                <a href="#n" class="btn btn-type1 color-type2">color-type2</a>
+                <a href="#n" class="btn btn-type1 color-type3">color-type3</a>
+                <a href="#n" class="btn btn-type1 color-type4">color-type4</a>
+                <a href="#n" class="btn btn-type1 color-type5">color-type5</a>
+                <a href="#n" class="btn btn-type1 color-type6">color-type6</a>
+                <a href="#n" class="btn btn-type1 color-type7">color-type7</a>
+                <a href="#n" class="btn btn-type1 color-type8">color-type8</a>
+                <a href="#n" class="btn btn-type1 color-type9">color-type9</a>
+                <a href="#n" class="btn btn-type1 color-type10">color-type10</a>
+                <a href="#n" class="btn btn-type1 color-type11">color-type11</a>
+            </div>
+            <div class="btn-wrap">
+                <a href="#n" class="btn btn-small color-type1">color-type1</a>
+                <a href="#n" class="btn btn-small color-type2">color-type2</a>
+                <a href="#n" class="btn btn-small color-type3">color-type3</a>
+                <a href="#n" class="btn btn-small color-type4">color-type4</a>
+                <a href="#n" class="btn btn-small color-type5">color-type5</a>
+                <a href="#n" class="btn btn-small color-type6">color-type6</a>
+                <a href="#n" class="btn btn-small color-type7">color-type7</a>
+                <a href="#n" class="btn btn-small color-type8">color-type8</a>
+                <a href="#n" class="btn btn-small color-type9">color-type9</a>
+                <a href="#n" class="btn btn-small color-type10">color-type10</a>
+                <a href="#n" class="btn btn-small color-type11">color-type11</a>
+            </div>
+
+            <br><br>
+
+            <div class="table-wrap">
+                <table class="cst-table">
+                    <caption class="hide">table</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">th</th>
+                            <th scope="col">th</th>
+                            <th scope="col">th</th>
+                            <th scope="col">th</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                        </tr>
+                        <tr>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                        </tr>
+                        <tr>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                        </tr>
+                        <tr>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br><br>
+
+            <div class="table-wrap">
+                <table class="cst-table type2">
+                    <caption class="hide">table</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">th</th>
+                            <th scope="col">th</th>
+                            <th scope="col">th</th>
+                            <th scope="col">th</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                        </tr>
+                        <tr>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                        </tr>
+                        <tr>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                        </tr>
+                        <tr>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                            <td>td</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br><br>
+
+            <ul class="write-wrap">
                 <li>
-                    <a href="#n">
-                        <span class="icon"></span>
-                        대상자관리
-                    </a>
+                    <div class="form-tit">Text</div>
+                    <div class="form-con">
+                        <input type="text" name="" id="" class="form-item">
+                    </div>
                 </li>
                 <li>
-                    <a href="#n">
-                        <span class="icon"></span>
-                        문자발송
-                    </a>
+                    <div class="form-tit">Radio</div>
+                    <div class="form-con">
+                        <div class="radio-wrap cst">
+                            <label for="chk1_1" class="radio-group"><input type="radio" name="chk1" id="chk1_1" checked>radio 1</label>
+                            <label for="chk1_2" class="radio-group"><input type="radio" name="chk1" id="chk1_2">radio 2</label>
+                            <label for="chk1_3" class="radio-group"><input type="radio" name="chk1" id="chk1_3">radio 3</label>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="#n">
-                        <span class="icon"></span>
-                        메일발송
-                    </a>
+                    <div class="form-tit">Checkbox</div>
+                    <div class="form-con">
+                        <div class="checkbox-wrap cst">
+                            <label for="chk2_1" class="checkbox-group"><input type="checkbox" name="" id="chk2_1">checkbox 1</label>
+                            <label for="chk2_2" class="checkbox-group"><input type="checkbox" name="" id="chk2_2">checkbox 2</label>
+                            <label for="chk2_3" class="checkbox-group"><input type="checkbox" name="" id="chk2_3">checkbox 3</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-tit">Textarea</div>
+                    <div class="form-con">
+                        <textarea name="" id="" class="form-item" rows="10"></textarea>
+                    </div>
+                </li>
+                <li class="n2">
+                    <div class="form-tit">항목 1</div>
+                    <div class="form-con">
+                        <input type="text" name="" id="" class="form-item">
+                    </div>
+                    <div class="form-tit">항목 2</div>
+                    <div class="form-con">
+                        <input type="text" name="" id="" class="form-item">
+                    </div>
                 </li>
             </ul>
-            <a href="#n" class="btn btn-logout">
-                <span class="icon"></span>
-                LOGOUT
-            </a>
-        </header>
-        <section id="container">
-            <div class="contents">
-                <div class="con-tit-wrap">
-                    <h2 class="con-tit">대상자관리</h2>
-                    <ul class="breadcrumb">
-                        <li><img src="/html/sending/assets/image/ic_home.png" alt="HOME"></li>
-                        <li>대상자관리</li>
-                    </ul>
-                </div>
-                <div class="conbox">
-                    
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
-</body>
-</html>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/html/sending/include/footer.inc';
+?>

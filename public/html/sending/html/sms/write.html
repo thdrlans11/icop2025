@@ -1,0 +1,510 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/html/sending/include/header.inc';
+?>
+
+<section id="container">
+    <div class="contents">
+        <div class="con-tit-wrap">
+            <h2 class="con-tit">문자 발송</h2>
+            <ul class="breadcrumb">
+                <li><img src="/html/sending/assets/image/ic_home.png" alt="HOME"></li>
+                <li>문자 발송</li>
+            </ul>
+        </div>
+
+        <!-- 문자 발송 설정 활성화 -->
+        <div class="sms-write-wrap">
+            <div class="sms-conbox active">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">문자 발송</legend>
+                        <div class="tit-wrap">
+                            <h3 class="tit">문자 발송 설정</h3>
+                        </div>
+                        <div class="write-wrap">
+                            <ul>
+                                <li>
+                                    <div class="form-tit">제목</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">발신번호</div>
+                                    <div class="form-con">
+                                        <select name="" id="" class="form-item">
+                                            <option value="">선택</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">치환</div>
+                                    <div class="form-con">
+                                        <ul class="replace-list">
+                                            <!-- 치환 항목 내용에 맞게 넓이 나눠 갖음. 줄바꿈이 필요할 시 li로 구분 -->
+                                            <li>
+                                                <div class="box">
+                                                    <strong>이름</strong>
+                                                    <div>
+                                                        {NAME}
+                                                    </div>
+                                                </div>
+                                                <div class="box">
+                                                    <strong>아이디</strong>
+                                                    <div>
+                                                        {ID}
+                                                    </div>
+                                                </div>
+                                                <div class="box">
+                                                    <strong>면허번호</strong>
+                                                    <div>
+                                                        {LICENSE}
+                                                    </div>
+                                                </div>
+                                                <div class="box">
+                                                    <strong>기타1</strong>
+                                                    <div>
+                                                        {ETC1}
+                                                    </div>
+                                                </div>
+                                                <!-- 
+                                                <div class="box">
+                                                    <strong>기타2</strong>
+                                                    <div>
+                                                        {ETC2}
+                                                    </div>
+                                                </div>
+                                                <div class="box">
+                                                    <strong>기타3</strong>
+                                                    <div>
+                                                        {ETC3}
+                                                    </div>
+                                                </div> -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="sms-con">
+                                <textarea name="" id="" class="form-item"></textarea>
+                                <div class="help-text">
+                                    60자 초과 시 LMS로 전환됩니다. <strong class="cnt">00자</strong>
+                                </div>
+                                <div class="form-group has-btn">
+                                    <input type="text" name="" id="" class="form-item" placeholder="핸드폰 번호를 입력해주세요.">
+                                    <button type="button" class="btn btn-small color-type10">테스트 발송</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrap text-center">
+                            <a href="#n" class="btn btn-type1 btn-line color-type2">목록으로</a>
+                            <button type="submit" class="btn btn-type1 color-type3"><img src="/html/sending/assets/image/ic_save.png" alt="" class="ic-btn"> 저장하기</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="sms-conbox">
+                <div class="tit-wrap">
+                    <h3 class="tit">대상자 관리 선택</h3>
+                </div>
+                <div class="img-wrap">
+                    <img src="/html/sending/assets/image/ic_sel01.png" alt="">
+                </div>
+                <p>
+                    문자 발송 설정을 <br>
+                    저장하시면 활성화됩니다.
+                </p>
+            </div>
+            <div class="sms-conbox">
+                <div class="tit-wrap">
+                    <h3 class="tit">대상자 리스트</h3>
+                </div>
+                <div class="img-wrap">
+                    <img src="/html/sending/assets/image/ic_sel02.png" alt="">
+                </div>
+                <p>
+                    문자 발송 설정을 <br>
+                    저장하시면 활성화됩니다.
+                </p>
+            </div>
+            <div class="sms-conbox">
+                <div class="tit-wrap">
+                    <h3 class="tit">추가 등록</h3>
+                </div>
+                <div class="img-wrap">
+                    <img src="/html/sending/assets/image/ic_sel03.png" alt="">
+                </div>
+                <p>
+                    문자 발송 설정을 <br>
+                    저장하시면 활성화됩니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 문자 발송 설정, 대상사 관리 선택, 대상자 리스트, 추가 등록 활성화 -->
+        <div class="sms-write-wrap">
+            <div class="sms-conbox active">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">문자 발송</legend>
+                        <div class="tit-wrap">
+                            <h3 class="tit">문자 발송 설정</h3>
+                        </div>
+                        <div class="write-wrap">
+                            <ul>
+                                <li>
+                                    <div class="form-tit">제목</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">발신번호</div>
+                                    <div class="form-con">
+                                        <select name="" id="" class="form-item">
+                                            <option value="">선택</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-tit">치환</div>
+                                    <div class="form-con">
+                                        <ul class="replace-list">
+                                            <!-- 치환 항목 내용에 맞게 넓이 나눠 갖음. 줄바꿈이 필요할 시 li로 구분 -->
+                                            <li>
+                                                <div class="box">
+                                                    <strong>이름</strong>
+                                                    <div>
+                                                        {NAME}
+                                                    </div>
+                                                </div>
+                                                <div class="box">
+                                                    <strong>아이디</strong>
+                                                    <div>
+                                                        {ID}
+                                                    </div>
+                                                </div>
+                                                <div class="box">
+                                                    <strong>면허번호</strong>
+                                                    <div>
+                                                        {LICENSE}
+                                                    </div>
+                                                </div>
+                                                <div class="box">
+                                                    <strong>기타1</strong>
+                                                    <div>
+                                                        {ETC1}
+                                                    </div>
+                                                </div>
+                                                <!-- 
+                                                <div class="box">
+                                                    <strong>기타2</strong>
+                                                    <div>
+                                                        {ETC2}
+                                                    </div>
+                                                </div>
+                                                <div class="box">
+                                                    <strong>기타3</strong>
+                                                    <div>
+                                                        {ETC3}
+                                                    </div>
+                                                </div> -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="sms-con">
+                                <textarea name="" id="" class="form-item"></textarea>
+                                <div class="help-text">
+                                    60자 초과 시 LMS로 전환됩니다. <strong class="cnt">00자</strong>
+                                </div>
+                                <div class="form-group has-btn">
+                                    <input type="text" name="" id="" class="form-item" placeholder="핸드폰 번호를 입력해주세요.">
+                                    <button type="button" class="btn btn-small color-type10">테스트 발송</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrap text-center">
+                            <a href="#n" class="btn btn-type1 btn-line color-type2">목록으로</a>
+                            <button type="submit" class="btn btn-type1 color-type3"><img src="/html/sending/assets/image/ic_save.png" alt="" class="ic-btn"> 저장하기</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="sms-conbox active type2">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">대상자 관리 선택</legend>
+                        <div class="tit-wrap">
+                            <h3 class="tit">대상자 관리 선택</h3>
+                        </div>
+                        <div class="scroll-y">
+                            <div class="table-wrap">
+                                <table class="cst-table">
+                                    <caption class="hide">대상자 관리 선택</caption>
+                                    <colgroup>
+                                        <col style="width: 20%;">
+                                        <col>
+                                        <col style="width: 25%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">선택</th>
+                                            <th scope="col">대상자명</th>
+                                            <th scope="col">인원</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox-wrap cst text-center">
+                                                    <label for="chk1_1" class="checkbox-group empty"><input type="checkbox" name="" id="chk1_1"></label>
+                                                </div>
+                                            </td>
+                                            <td>정회원</td>
+                                            <td>00명</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox-wrap cst text-center">
+                                                    <label for="chk1_2" class="checkbox-group empty"><input type="checkbox" name="" id="chk1_2"></label>
+                                                </div>
+                                            </td>
+                                            <td>정회원</td>
+                                            <td>00명</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table-conbottom">
+                            <p class="help-text">대상자관리에서 문자 사용으로 선택하신 목록입니다.</p>
+                        </div>
+                        <div class="btn-wrap text-center">
+                            <a href="#n" class="btn btn-type1 btn-line color-type2">목록으로</a>
+                            <button type="submit" class="btn btn-type1 color-type3"><img src="/html/sending/assets/image/ic_save.png" alt="" class="ic-btn"> 저장하기</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="sms-conbox active type2">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">대상자 선택 명단</legend>
+                        <div class="tit-wrap">
+                            <h3 class="tit">대상자 선택 명단</h3>
+                        </div>
+                        <div class="write-wrap">
+                            <div class="sch-wrap">
+                                <ul>
+                                    <li>
+                                        <div class="form-tit">검색</div>
+                                        <div class="form-con">
+                                            <div class="form-group has-btn">
+                                                <input type="text" name="" class="form-item">
+                                                <button type="submit" class="btn btn-small btn-line color-type8">조회</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="table-contop text-left">
+                            <strong>젠체 인원 : 00명</strong>
+                        </div>
+                        <div class="scroll-y type2">
+                            <div class="table-wrap">
+                                <table class="cst-table">
+                                    <caption class="hide">대상자 목록</caption>
+                                    <colgroup>
+                                        <col style="width: 12%;">
+                                        <col style="width: 17%;">
+                                        <col>
+                                        <col style="width: 20%;">
+                                        <col style="width: 17%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">선택</th>
+                                            <th scope="col">이름</th>
+                                            <th scope="col">핸드폰</th>
+                                            <th scope="col">개별 발송</th>
+                                            <th scope="col">발송일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox-wrap cst text-center">
+                                                    <label for="chk2_1" class="checkbox-group empty"><input type="checkbox" name="" id="chk2_1"></label>
+                                                </div>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>010-1234-5678</td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small color-type1">발송</a>
+                                            </td>
+                                            <td>25.01.01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox-wrap cst text-center">
+                                                    <label for="chk2_2" class="checkbox-group empty"><input type="checkbox" name="" id="chk2_2"></label>
+                                                </div>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>010-1234-5678</td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small color-type1">발송</a>
+                                            </td>
+                                            <td>25.01.01</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                       <div class="list-bottom">
+                            <div class="form-group date-form-group has-btn">
+                                <input type="text" name="" id="" class="form-item" placeholder="예약일">
+                                <input type="text" name="" id="" class="form-item" placeholder="예약 시간">
+                                <button type="button" class="btn btn-small color-type10">예약하기</button>
+                            </div>
+                            <div class="paging-wrap">
+                                <ul class="paging">
+                                    <li class="prev"><a href="#n"><span class="hide">이전</span></a></li>
+                                    <li class="num on"><a href="#n">1</a></li>
+                                    <li class="num"><a href="#n">2</a></li>
+                                    <li class="num"><a href="#n">3</a></li>
+                                    <li class="num"><a href="#n">4</a></li>
+                                    <li class="num"><a href="#n">5</a></li>
+                                    <li class="next"><a href="#n"><span class="hide">다음</span></a></li>
+                                </ul>
+                            </div>
+                       </div>
+                        <div class="btn-wrap text-center">
+                            <button type="button" class="btn btn-type1 btn-line color-type1">전체발송</button>
+                            <button type="button" class="btn btn-type1 btn-line color-type9">선택발송</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="sms-conbox active type2">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">추가 등록 명단</legend>
+                        <div class="tit-wrap">
+                            <h3 class="tit">추가 등록 명단</h3>
+                            <div class="btn-wrap">
+                                <a href="#n" class="btn btn-small color-type1">회원검색</a>
+                                <a href="#n" class="btn btn-small color-type3">추가</a>
+                            </div>
+                        </div>
+                        <div class="write-wrap">
+                            <div class="sch-wrap">
+                                <ul>
+                                    <li>
+                                        <div class="form-tit">검색</div>
+                                        <div class="form-con">
+                                            <div class="form-group has-btn">
+                                                <input type="text" name="" class="form-item">
+                                                <button type="submit" class="btn btn-small btn-line color-type8">조회</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="table-contop text-left">
+                            <strong>젠체 인원 : 00명</strong>
+                        </div>
+                        <div class="scroll-y type2">
+                            <div class="table-wrap">
+                                <table class="cst-table">
+                                    <caption class="hide">대상자 목록</caption>
+                                    <colgroup>
+                                        <col style="width: 12%;">
+                                        <col style="width: 15%;">
+                                        <col>
+                                        <col style="width: 17%;">
+                                        <col style="width: 15%;">
+                                        <col style="width: 17%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">선택</th>
+                                            <th scope="col">이름</th>
+                                            <th scope="col">핸드폰</th>
+                                            <th scope="col">개별 발송</th>
+                                            <th scope="col">발송일</th>
+                                            <th scope="col">삭제</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox-wrap cst text-center">
+                                                    <label for="chk3_1" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_1"></label>
+                                                </div>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>010-1234-5678</td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small color-type1">발송</a>
+                                            </td>
+                                            <td>25.01.01</td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small color-type6">삭제</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox-wrap cst text-center">
+                                                    <label for="chk3_2" class="checkbox-group empty"><input type="checkbox" name="" id="chk3_2"></label>
+                                                </div>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>010-1234-5678</td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small color-type1">발송</a>
+                                            </td>
+                                            <td>25.01.01</td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small color-type6">삭제</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <divc class="list-bottom">
+                            <div class="form-group date-form-group has-btn">
+                                <p class="help-text">2025-01-01 13:00 <br>발송이 예약 되었습니다.</p>
+                                <button type="button" class="btn btn-small color-type2">예약취소</button>
+                            </div>
+                            <div class="paging-wrap">
+                                <ul class="paging">
+                                    <li class="prev"><a href="#n"><span class="hide">이전</span></a></li>
+                                    <li class="num on"><a href="#n">1</a></li>
+                                    <li class="num"><a href="#n">2</a></li>
+                                    <li class="num"><a href="#n">3</a></li>
+                                    <li class="num"><a href="#n">4</a></li>
+                                    <li class="num"><a href="#n">5</a></li>
+                                    <li class="next"><a href="#n"><span class="hide">다음</span></a></li>
+                                </ul>
+                            </div>
+                        </divc>
+                        <div class="btn-wrap text-center">
+                            <button type="button" class="btn btn-type1 btn-line color-type1">전체발송</button>
+                            <button type="button" class="btn btn-type1 btn-line color-type9">선택발송</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/html/sending/include/footer.inc';
+?>

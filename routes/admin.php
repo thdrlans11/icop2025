@@ -22,7 +22,7 @@ Route::prefix('admin')->group(function(){
         Route::post('/memo/{sid}', 'memo')->name('admin.registration.memo');
     });
 
-    //사전등록
+    //초록등록
     Route::prefix('abstract')->controller(\App\Http\Controllers\Admin\AbstractManage\AbstractController::class)->group(function() {            
         Route::get('/', 'list')->name('admin.abstract.list');
         Route::get('/modify/{sid}', 'modifyForm')->name('admin.abstract.modifyForm');

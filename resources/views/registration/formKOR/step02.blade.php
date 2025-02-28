@@ -14,8 +14,8 @@
                     <thead>
                         <tr>
                             <th scope="col" colspan="2" class="bg-skyblue">구분</th>
-                            <th scope="col" class="bg-navy">Early Bird Registration <br><span>(3월 14일까지)</span></th>
-                            <th scope="col" class="bg-green">Late Registration <br><span>(3월 15일 - 4월 30일)</span></th>
+                            <th scope="col" class="bg-navy">Early Bird Registration <br><span>(3월 31일까지)</span></th>
+                            <th scope="col" class="bg-green">Late Registration <br><span>(3월 31일 - 4월 30일)</span></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,7 +41,7 @@
                         <tr>
                             <th scope="row">사교행사</th>
                             <td>Banquet</td>
-                            <td colspan="2">150,000 원</td>
+                            <td colspan="2">100,000 원</td>
                         </tr>
                     </tbody>
                 </table>

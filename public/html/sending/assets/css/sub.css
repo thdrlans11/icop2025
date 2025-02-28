@@ -4,3 +4,663 @@
     * sub
     
 ================================================== */
+.sch-form-wrap{
+    margin-bottom: 100px;
+}
+.btn-move{
+    width: 27px;
+    height: 27px;
+    border: 1px solid #7D8892;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../image/ic_move.png');
+    background-size: 7px;
+    font-size: 1.6rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cst-table td:has(.btn-small),
+.cst-table td:has(.form-item),
+.cst-table td:has(.btn-manage){
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.cst-table .btn-small{
+    margin: 2px;
+}
+.cst-table th{
+    position: relative;
+}
+.cst-table th .btn-wrap{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    margin: 0;
+    vertical-align: middle;
+}
+.cst-table .no-data{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cst-table .no-data strong{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.cst-table .no-data img{
+    margin-top: -3px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.write-wrap + .con-wrap{
+    margin-top: 40px;
+}
+.con-wrap{
+    display: flex;
+    border-bottom: 1px solid #e0e1e8;
+}
+.con-wrap.type2{
+    gap: 20px;
+    border: 0;
+}
+.con-wrap.type2 .conbox{
+    border: 0 !important;
+}
+.con-wrap .conbox{
+    width: 50%;
+}
+.con-wrap .conbox + .conbox{
+    border-left: 1px solid #e0e1e8;
+}
+.con-wrap .scroll-y{
+    overflow-y: auto;
+    max-height: 520px;
+}
+.btn.btn-add{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+}
+.btn.btn-manage{
+    margin: 2px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.help-text .btn-small{
+    margin-top: -5px;
+}
+
+.bg-box{
+    padding: 25px;
+    border: 1px solid #d7edff;
+    background-color: #f8fcff;
+    color: #4e7ca1;
+}
+.bg-box.type2{
+    background-color: #edf3f8;
+    border-color: #edf3f8;
+    font-size: 1.8rem;
+    color: #222222;
+}
+.bg-box .tit{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #206ba9;
+}
+.bg-box:has(.tit){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.sms-write-wrap{
+    display: flex;
+    gap: 25px;
+}
+.sms-write-wrap + .sms-write-wrap{
+    margin-top: 100px;
+}
+.sms-conbox{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: calc((100% - 75px)/4);
+    min-height: 530px;
+    padding-top: 100px;
+    border: 1px solid #ccd1e3;
+    border-radius: 5px;
+    background-color: #f5f7fa;
+    font-size: 1.6rem;
+    color: #5c6876;
+    line-height: 1.5;
+    text-align: center;
+}
+.sms-conbox .tit-wrap{
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    color: #313c66;
+}
+.sms-conbox .tit{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+.sms-conbox .img-wrap{
+    margin-bottom: 50px;
+}
+.sms-conbox.active{
+    padding-top: 0;
+    border-color: #4587ca;
+    background-color: #fff;
+}
+.sms-conbox.active .tit-wrap{
+    margin-bottom: 0;
+    padding: 12px 20px;
+    background-color: #4587ca;
+}
+.sms-conbox.active .tit-wrap .tit{
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 1.5;
+}
+.sms-conbox.active.type2{
+    border-color: #ccd1e3;
+}
+.sms-conbox.active.type2 .tit-wrap{
+    background-color: #676a79;
+}
+.sms-conbox .tit-wrap:has(.btn-wrap){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sms-conbox .tit-wrap .btn-wrap{
+    position: static;
+    width: auto;
+    margin: 0;
+    margin: -1.5px 0;
+}
+.sms-conbox .tit-wrap .btn-wrap .btn{
+    width: auto;
+    padding: 3px 10px;
+    font-size: 13px;
+}
+.sms-conbox .write-wrap{
+    border: 0;
+}
+.sms-conbox .form-tit,
+.sms-conbox .form-con{
+    padding: 10px;
+    font-size: 1.4rem;
+}
+.sms-conbox .form-tit{
+    width: 30%;
+    background-color: #eef4fa;
+}
+.sms-conbox .form-con{
+    width: 70%;
+}
+.sms-conbox .sms-con{
+    padding: 20px 20px 30px;
+}
+.sms-conbox .form-item{
+    height: 35px;
+    font-size: 1.4rem;
+}
+.sms-con textarea.form-item{
+    height: 180px;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.sms-con .help-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 1.4rem;
+}
+.sms-con .form-group{
+    margin-top: 20px;
+}
+.sms-con .form-group.has-btn{
+    gap: 0;
+}
+.sms-con .form-group.has-btn .btn{
+    padding: 10px 12px;
+}
+.form-con:has(.replace-list){
+    padding: 0;
+}
+.replace-list{
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.replace-list > li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    border: 0;
+}
+.replace-list > li + li{
+    border-top: 1px solid #e0e2e8;
+}
+.replace-list .box{
+    flex: 1;
+    font-size: 1.4rem;
+}
+.replace-list .box{
+    border-left: 1px solid #e0e2e8;
+    border-top: 1px solid #e0e2e8;
+}
+.replace-list .box strong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 10px 5px;
+    background-color: #eef4fa;
+    border-bottom: 1px solid #e0e2e8;
+    font-weight: 500;
+    color: #3d4153;
+    white-space: nowrap;
+}
+.replace-list .box div{
+    padding: 10px 5px;
+}
+.sms-conbox .btn-wrap{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -70px;
+}
+.sms-conbox .btn-wrap .btn{
+    min-width: initial;
+    width: 50%;
+    margin: 0;
+    padding: 11px 0;
+    font-size: 1.5rem;
+}
+.contents:has(.sms-write-wrap){
+    padding-bottom: 120px;
+}
+
+.sms-conbox .table-wrap{
+    border: 0;
+}
+.sms-conbox .cst-table th,
+.sms-conbox .cst-table td{
+    padding: 12px 2%;
+    font-size: 1.4rem;
+}
+.sms-conbox .table-conbottom{
+    margin-top: auto;
+    padding: 20px 20px 0;
+    text-align: left;
+}
+.sms-conbox .scroll-y{
+    overflow: hidden;
+    overflow-y: auto;
+    height: calc(100% - 120px);
+}
+.sms-conbox .scroll-y.type2{
+    height: calc(100% - 260px);
+}
+.sms-conbox form,
+.sms-conbox fieldset{
+    height: 100%;
+}
+.sms-conbox .form-group.has-btn .btn{
+    padding: 10px 14px;
+}
+.sms-conbox .btn-small{
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+.sms-conbox .sch-wrap .form-tit{
+    width: 20%;
+    background-color: #f0f2f7;
+}
+.sms-conbox .table-contop{
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    color: #222222;
+}
+.sms-conbox .table-contop strong{
+    font-weight: 500;
+}
+.sms-conbox .cst-table{
+    border-top: 1px solid #e0e1e8;
+}
+.sms-conbox form,
+.sms-conbox fieldset{
+    min-width: 0;
+}
+.sms-conbox .list-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.sms-conbox .date-form-group{
+    width: 100%;
+    padding: 20px 20px 0;
+}
+.sms-conbox .date-form-group .form-item{
+    width: calc((100% - 90px)/2);
+    max-width: none;
+}
+.sms-conbox .date-form-group .help-text{
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: left;
+}
+.sms-conbox .paging-wrap{
+    margin-top: 20px;
+}
+.sms-conbox .paging{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-top: 1px solid #ddd;
+    border-radius: 5px;
+}
+.sms-conbox .paging > li{
+    display: block;
+    width: calc(100% / 7);
+    height: 40px;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    border-left: 1px solid #dddddd;
+    text-align: center;
+}
+.sms-conbox .paging > li:first-child{
+    border-left: 0;
+}
+.sms-conbox .paging > li > a{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #676a79;
+}
+.sms-conbox .paging > .num:hover,
+.sms-conbox .paging > .num.on,
+.sms-conbox .paging > .num:hover > a,
+.sms-conbox .paging > .num.on > a{
+    background-color: #f3f3f3;
+    border-color: #ddd;
+    font-weight: 600;
+    color: inherit;
+}
+.sms-conbox .paging .prev,
+.sms-conbox .paging .next{
+    margin: 0;
+}
+
+/* list::paging */
+.paging-wrap{
+    margin-top: 40px;
+    text-align: center;
+}
+.paging{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.paging > li{
+    overflow: hidden;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    margin: 1px;
+    vertical-align: top;
+    transition: 0.3s ease;
+}
+.paging > .num{
+    border-color: transparent;
+}
+.paging > .num:hover,
+.paging > .num.on,
+.paging > .num:hover > a,
+.paging > .num.on > a{
+    background-color: #a3a3a3;
+    border-color: #a3a3a3;
+    font-weight: 600;
+    color: #fff;
+}
+.paging > li > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3px 0;
+    font-size: 14px;
+    color: #b3b3b3;
+    transition: 0.3s ease;
+}
+.paging > li:not(.num){
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s ease;
+}
+.paging > li:not(.num):hover{
+    background-color: none;
+}
+.paging .first{
+    background-image: url('../image/ic_first.png');
+}
+.paging .prev{
+    margin-right: 15px;
+    background-image: url('../image/ic_prev.png');
+}
+.paging .next{
+    margin-left: 15px;
+    background-image: url('../image/ic_next.png');
+}
+.paging .last{    
+    background-image: url('../image/ic_last.png');
+}
+
+.drag-box{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.drag-box img + p{
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+/* sub tab menu */
+.sub-tab-wrap{
+    width: 100%;
+    border-bottom: 2px solid #178feb;
+    margin-bottom: 45px;
+}
+.sub-tab-menu{
+    display: flex;
+}
+.sub-tab-menu > li{
+    height: 45px;
+    border: 2px solid #c2d4dc;
+    border-bottom: 0;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.sub-tab-menu > li + li{
+    margin-left: -2px;
+}
+.sub-tab-menu > li.on:first-child,
+.sub-tab-menu > li.hover:first-child{
+    border-left: 2px solid #178feb;
+}
+.sub-tab-menu > li > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    padding: 0 40px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.045em;
+    color: #c2d4dc;
+    line-height: 1.2;
+    transition: 0.3s ease;
+}
+.sub-tab-menu > li.on,
+.sub-tab-menu > li:hover{
+    position: relative;
+    border-color: #178feb;
+}
+.sub-tab-menu > li.on:before,
+.sub-tab-menu > li:hover:before{
+    display: block;
+    content: '';
+    clear: both;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.sub-tab-menu > li.on > a,
+.sub-tab-menu > li:hover > a{
+    color: #178feb;
+}
+
+.sub-tit-wrap{
+    margin-bottom: 30px;
+}
+.sub-tit-wrap:has(.full-right){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-tit{
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #313c66;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+.sub-tit.mail{
+    padding: 7px 0;
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('../image/ic_sms.png');
+}
+
+.box-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.statistic-list{
+    gap: 30px;
+}
+.statistic-list > li{
+    overflow: hidden;
+    width: calc((100% - 90px)/4);
+    border: 1px solid #e0e6ed;
+    border-radius: 15px;
+    text-align: center;
+}
+.statistic-list > li > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 25px 0;
+}
+.statistic-list > li > a:before,
+.statistic-list > li > a:after{
+    opacity: 0;
+    display: block;
+    content: '';
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34,34,34,0.5);
+    transition: 0.3s ease;
+}
+.statistic-list > li > a:after{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    content: '상세 내역 확인 \A' url('../image/ic_more.png');
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 3;
+    color: #ffffff;
+    white-space: pre;
+}
+.statistic-list > li:hover > a:before,
+.statistic-list > li:hover > a:after{
+    opacity: 1;
+}
+.statistic-list .month{
+    display: inline-block;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #178feb;
+    box-shadow: inset 0 -14px #e7f5ff;
+}
+.statistic-list ul{
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: top;
+}
+.statistic-list ul > li{
+    display: flex;
+    gap: 20px;
+}
+.statistic-list ul > li p{
+    min-width: 130px;
+    text-align: right;
+}
+.statistic-list ul > li strong{
+    flex: 0 0 auto;
+}
+
+@media screen and (max-width: 1600px){
+    #container{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+    .contents{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}

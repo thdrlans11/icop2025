@@ -1,0 +1,138 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/html/sending/include/header.inc';
+?>
+
+<section id="container">
+    <div class="contents">
+        <div class="con-tit-wrap">
+            <h2 class="con-tit">통계</h2>
+            <ul class="breadcrumb">
+                <li><img src="/html/sending/assets/image/ic_home.png" alt="HOME"></li>
+                <li>통계</li>
+            </ul>
+        </div>
+        <div class="conbox">
+            <div class="sub-tab-wrap">
+                <ul class="sub-tab-menu">
+                    <li><a href="#n">문자</a></li>
+                    <li class="on"><a href="#n">E-mail</a></li>
+                </ul>
+            </div>
+            <div class="sch-form-wrap">
+                <form action="" method="">
+                    <fieldset>
+                        <legend class="hide">검색</legend>
+                        <div class="write-wrap">
+                            <div class="write-tit-wrap text-center">
+                                <div class="write-tit">세부 검색조건 설정</div>
+                                <div class="radio-wrap cst">
+                                    <label for="chk1_1" class="radio-group"><input type="radio" name="chk1" id="chk1_1">And</label>
+                                    <label for="chk1_2" class="radio-group"><input type="radio" name="chk1" id="chk1_2">Or</label>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="n2">
+                                    <div class="form-tit">이름</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                    <div class="form-tit">발송일</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                </li>
+                                <li class="n2">
+                                    <div class="form-tit">E-mail</div>
+                                    <div class="form-con">
+                                        <input type="text" name="" id="" class="form-item">
+                                    </div>
+                                    <div class="form-tit">발송 여부</div>
+                                    <div class="form-con">
+                                        <div class="radio-wrap cst">
+                                            <label for="chk2_1" class="radio-group"><input type="radio" name="chk2" id="chk2_1">성공</label>
+                                            <label for="chk2_2" class="radio-group"><input type="radio" name="chk2" id="chk2_2">실패</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap text-center">
+                            <button type="submit" class="btn btn-type1 color-type1"><img src="/html/sending/assets/image/ic_btn_sch.png" alt="" class="ic-btn"> 검색</button>
+                            <button type="reset" class="btn btn-type1 color-type2">초기화</button>
+                            <button type="button" class="btn btn-type1 color-type9"><img src="/html/sending/assets/image/ic_excel.png" alt="" class="ic-btn">엑셀백업</button>
+                            <a href="./list_mail.html" class="btn btn-type1 btn-line color-type2">목록으로</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="bg-box mb-20">
+                <strong class="tit">2025년 1월 발송내역</strong>
+                <p class="full-right">
+                    총 발송건수 : 000건 / <span class="text-skyblue">성공 : 000건</span> / <span class="text-red">실패 : 000건</span>
+                </p>
+            </div>
+
+            <div class="table-wrap">
+                <table class="cst-table">
+                    <caption class="hide">목록</caption>
+                    <colgroup>
+                        <col style="width: 8%;">
+                        <col style="width: 20%;">
+                        <col>
+                        <col>
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">발송 일자</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">발송 여부</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>2025-01-01 13:00</td>
+                            <td>홍길동</td>
+                            <td>test@m2community.co.kr</td>
+                            <td><span class="text-skyblue">성공</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2025-01-01 13:00</td>
+                            <td>홍길동</td>
+                            <td>test@m2community.co.kr</td>
+                            <td><span class="text-red">실패</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="paging-wrap">
+                <ul class="paging">
+                    <li class="first"><a href="#n"><span class="hide">처음</span></a></li>
+                    <li class="prev"><a href="#n"><span class="hide">이전</span></a></li>
+                    <li class="num on"><a href="#n">1</a></li>
+                    <li class="num"><a href="#n">2</a></li>
+                    <li class="num"><a href="#n">3</a></li>
+                    <li class="num"><a href="#n">4</a></li>
+                    <li class="num"><a href="#n">5</a></li>
+                    <li class="num"><a href="#n">6</a></li>
+                    <li class="num"><a href="#n">7</a></li>
+                    <li class="num"><a href="#n">8</a></li>
+                    <li class="num"><a href="#n">9</a></li>
+                    <li class="num"><a href="#n">10</a></li>
+                    <li class="next"><a href="#n"><span class="hide">다음</span></a></li>
+                    <li class="last"><a href="#n"><span class="hide">마지막</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/html/sending/include/footer.inc';
+?>

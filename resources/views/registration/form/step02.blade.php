@@ -14,8 +14,8 @@
         <thead>
             <tr>
                 <th scope="col" colspan="2" class="bg-skyblue">Registration Fee</th>
-                <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~March 14, 2025)</span></th>
-                <th scope="col" class="bg-green">Late Registration <br><span>(March 15, 2025~)</span></th>
+                <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~March 31, 2025)</span></th>
+                <th scope="col" class="bg-green">Late Registration <br><span>(March 31, 2025~)</span></th>
             </tr>
         </thead>
         <tbody>
@@ -114,6 +114,29 @@
         </li>
     </ul>
 </div>
+
+@if( stristr( $_SERVER['REMOTE_ADDR'], "218.235.94" ) !== false )
+<div class="write-wrap mt-60">
+    <div class="write-tit-wrap text-center">
+        <h5>Field Trip</h5>
+    </div>
+    <ul>
+        <li>
+            <div class="form-tit">Field Trip <strong class="required">*</strong></div>
+            <div class="form-con">
+                <div class="radio-wrap cst">
+                    @foreach( config('site.registration.tour') as $key => $val )
+                    <label for="tour{{ $key }}" class="radio-group">
+                        <input type="radio" name="tour" id="tour{{ $key }}" value="{{ $key }}" {{ ( $apply->tour ?? '' ) == $key ? 'checked' : '' }} onclick="makePrice('{{$apply->lang}}')">{{ $val }} {{ $key != 'N' ? '- '.config('site.registration.unit')[$apply->lang].' '.number_format(config('site.registration.tourPrice')[$apply->lang]) : '' }}
+                    </label>
+                    @endforeach
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>    
+@endif
+
 <div class="write-wrap studentBox" {!! ( $apply->category ?? '' ) != 'B' ? 'style="display:none"' : '' !!}>
     <div class="write-tit-wrap text-center">
         <h5>Student Verification Documents (Student ID or Certificate of Enrollment) (Only jpg, png, gif, pdf)</h5>

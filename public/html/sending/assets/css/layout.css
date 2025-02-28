@@ -5,7 +5,9 @@
     
 ================================================== */
 .wrap{
+    overflow-x: auto;
     width: 100%;
+    min-width: 1400px;
     height: 100%;
     font-size: 1.6rem;
     line-height: 1.4;
@@ -13,9 +15,11 @@
 }
 #header{
     position: fixed;
+    z-index: 10;
     width: 130px;
     height: 100%;
     padding: 55px 0;
+    background-color: #323c66;
     text-align: center;
 }
 .header-logo{
@@ -106,6 +110,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+    margin-bottom: 30px;
     border-bottom: 1px solid #e1e6ec;
 }
 .con-tit{

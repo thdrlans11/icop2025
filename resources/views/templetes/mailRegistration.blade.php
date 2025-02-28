@@ -243,8 +243,7 @@
                                             </td>
                                         </tr>
                                         
-                                        <!-- Country > Korea, Repblic of 선택한 경우 노출 -->
-                                        @if( $apply->ccode == 'KR' )
+                                        {{-- @if( $apply->ccode == 'KR' )
                                         <tr>
                                             <th scope="row" style="padding: 10px 15px;background-color: #f4f4f4;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 14px;font-weight: 700;color: #000000;line-height: 1.3;text-align: left;">
                                                 Bank Account Information
@@ -254,7 +253,6 @@
                                             </td>
                                         </tr>
                                         @else
-                                        <!-- Country > Korea, Repblic of 외 국가 선택한 경우 노출 -->
                                         <tr>
                                             <th scope="row" style="padding: 10px 15px;background-color: #f4f4f4;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 14px;font-weight: 700;color: #000000;line-height: 1.3;text-align: left;">
                                                 Bank Account Information
@@ -295,7 +293,7 @@
                                                 TBD
                                             </td>
                                         </tr>
-                                        @endif
+                                        @endif --}}
                                     </table>
                                 </td>
                             </tr>

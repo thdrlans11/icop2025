@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="description" content="">
+<title>문자/메일 발송시스템</title>
+<link rel="icon" href="/html/sending/assets/image/favicon.ico">
+<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/slick.css">
+<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/jquery-ui.min.css">
+<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/common.css">
+<script type="text/javascript" src="/html/sending/assets/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/html/sending/assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/html/sending/assets/js/slick.min.js"></script>
+<script type="text/javascript" src="/html/sending/assets/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript" src="/html/sending/assets/js/common.js"></script>
+</head>
+<body>
+    <div class="popup-wrap win-popup-wrap type1">
+        <div class="popup-contents">
+            <div class="popup-tit-wrap">
+                <h3 class="popup-tit">발송 명단 및 결과</h3>
+            </div>
+            <div class="popup-conbox">
+                <div class="scroll-y">
+                    <div class="popup-contit-wrap">
+                        <h4 class="popup-contit">발송 제목</h4>
+                    </div>
+                    <div class="con-wrap type2">
+                        <div class="conbox">
+                            <div class="table-wrap">
+                                <table class="cst-table type2">
+                                    <caption class="hide">발송 목록</caption>
+                                    <colgroup>
+                                        <col style="width: 12%;">
+                                        <col>
+                                        <col style="width: 19%;">
+                                        <col>
+                                        <col style="width: 19%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">발송일</th>
+                                            <th scope="col">대상자 수</th>
+                                            <th scope="col">발송(성공/실패)</th>
+                                            <th scope="col">대상 확인</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2025.01.01 13:00</td>
+                                            <td>120</td>
+                                            <td>
+                                                <span class="text-skyblue">100</span>/<span class="text-red">20</span>
+                                            </td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small btn-line color-type7">확인</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>2025.01.01 13:00</td>
+                                            <td>120</td>
+                                            <td>
+                                                <span class="text-skyblue">100</span>/<span class="text-red">20</span>
+                                            </td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small btn-line color-type7">확인</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>2025.01.01 13:00</td>
+                                            <td>120</td>
+                                            <td>
+                                                <span class="text-skyblue">100</span>/<span class="text-red">20</span>
+                                            </td>
+                                            <td>
+                                                <a href="#n" class="btn btn-small btn-line color-type7">확인</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="conbox">
+                            <div class="sch-form-wrap">
+                                <form action="" method="">
+                                    <fieldset>
+                                        <legend class="hide">검색</legend>
+                                        <div class="write-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-tit">이름</div>
+                                                    <div class="form-con">
+                                                        <input type="text" name="" id="" class="form-item">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-tit">핸드폰</div>
+                                                    <div class="form-con">
+                                                        <input type="text" name="" id="" class="form-item">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-tit">발송 여부</div>
+                                                    <div class="form-con">
+                                                        <div class="checkbox-wrap cst">
+                                                            <label for="chk1_1" class="checkbox-group"><input type="checkbox" name="" id="chk1_1">성공</label>
+                                                            <label for="chk1_2" class="checkbox-group"><input type="checkbox" name="" id="chk1_2">실패</label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="table-wrap mt-20">
+                                            <table class="cst-table type2">
+                                                <caption class="hide">발송 명단 및 결과</caption>
+                                                <colgroup>
+                                                    <col style="width: 12%;">
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">이름</th>
+                                                        <th scope="col">핸드폰</th>
+                                                        <th scope="col">발송 여부</th>
+                                                        <th scope="col">발송일</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>홍길동</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>성공</td>
+                                                        <td>2025.01.01 13:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>홍길동</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td><span class="text-red">실패</span></td>
+                                                        <td><span class="text-red">실패 사유</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>홍길동</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>성공</td>
+                                                        <td>2025.01.01 13:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>홍길동</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>성공</td>
+                                                        <td>2025.01.01 13:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>홍길동</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>성공</td>
+                                                        <td>2025.01.01 13:10</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="btn-wrap text-center">
+                                            <a href="#n" class="btn btn-type1 color-type2">닫기</a>
+                                            <button type="button" class="btn btn-type1 color-type9"><img src="/html/sending/assets/image/ic_excel.png" alt="" class="ic-btn">명단 엑셀 다운로드</button>
+                                        </div>
+
+                                        <div class="bg-box text-center no-data">
+                                            선택 된 발송 이력이 없어, 결과를 확인하실 수 없습니다.
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-pop-close"><span class="hide">닫기</span></button>
+        </div>
+    </div>
+</body>
+</html>

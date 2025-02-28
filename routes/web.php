@@ -90,4 +90,9 @@ Route::prefix('location')->controller(\App\Http\Controllers\Location\LocationCon
     Route::get('accommodation', 'accommodation')->name('location.accommodation');
 });
 
+//Tour
+Route::prefix('tour')->controller(\App\Http\Controllers\Tour\TourController::class)->group(function() {
+    Route::get('/', 'trip')->name('tour.trip');
+});
+
 require __DIR__.'/common.php';

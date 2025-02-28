@@ -7,8 +7,6 @@
 @else
 <script type="text/javascript" src="/devScript/registration.js?time={{ time() }}"></script>
 @endif
-
-
 @endpush
 
 @section('content')

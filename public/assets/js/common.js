@@ -17,6 +17,7 @@ $(function (e) {
         fileUpload();
         imgMap();
         imgRolling();
+        toggleCon();
 
 		if(wWidth < 1025){		
 		}else{
@@ -321,4 +322,11 @@ function imgRolling(){
             infinite: true,
         });
     }));
+}
+
+function toggleCon(){
+    $('.js-btn-toggle').on('click',function(e){
+        $(this).toggleClass('on');
+        $(this).parent().next('.js-toggle-con').stop().slideToggle();
+    });
 }

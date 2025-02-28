@@ -6,7 +6,7 @@
     <div class="sub-tab-wrap">
         <ul class="sub-tab-menu n2">
             <li {!! $cgubun == 'E' ? 'class="on"' : '' !!}><a href="{{ route('registration.guide', ['cgubun'=>'E']) }}">Overseas</a></li>
-            <li {!! $cgubun == 'K' ? 'class="on"' : '' !!}><a -href="{{ route('registration.guide', ['cgubun'=>'K']) }}" onClick="alert('Will be updated')">국내 참가자</a></li>
+            <li {!! $cgubun == 'K' ? 'class="on"' : '' !!}><a href="{{ route('registration.guide', ['cgubun'=>'K']) }}" -onClick="alert('Will be updated')">국내 참가자</a></li>
         </ul>
     </div>
 
@@ -17,7 +17,7 @@
     <div class="regi-date-wrap">
         <div class="regi-date-conbox">
             Early Bird Registration Closes
-            <strong>by 14 March 2025 (23:59 KST)</strong>
+            <strong>by 31 March 2025 (23:59 KST)</strong>
         </div>
         <div class="regi-date-conbox">
             Late Registration Closes
@@ -64,8 +64,8 @@
             <thead>
                 <tr>
                     <th scope="col" colspan="2" class="bg-skyblue">Registration Fee</th>
-                    <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~March 14, 2025)</span></th>
-                    <th scope="col" class="bg-green">Late Registration <br><span>(March 15 – April 30, 2025)</span></th>
+                    <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~March 31, 2025)</span></th>
+                    <th scope="col" class="bg-green">Late Registration <br><span>(March 31 – April 30, 2025)</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -262,7 +262,7 @@
     <div class="regi-date-wrap">
         <div class="regi-date-conbox">
             Early Bird Registration Closes
-            <strong>2025년 3월 14일 (금)</strong>
+            <strong>2025년 3월 31일 (월)</strong>
         </div>
         <div class="regi-date-conbox">
             Late Registration Closes
@@ -278,8 +278,8 @@
         <div class="text-wrap">
             원생생물학회, 조류학회의 홈페이지 배너 및 게시판 링크를 통해서 진행할 수 있습니다. 
             <div class="btn-wrap">
-                <a href="#n" target="_blank" class="btn btn-type1 color-type10">원생생물학회 <span class="arrow"><img src="/assets/image/icon/ic_btn_arrow.png" alt=""></span></a>
-				  <a href="#n" target="_blank" class="btn btn-type1 color-type10">조류학회 <span class="arrow"><img src="/assets/image/icon/ic_btn_arrow.png" alt=""></span></a>
+                <a href="https://kosp.kr/bbs/?code=notice&mode=view&number=114" target="_blank" class="btn btn-type1 color-type10">원생생물학회 <span class="arrow"><img src="/assets/image/icon/ic_btn_arrow.png" alt=""></span></a>
+				  <a href="https://www.algae.or.kr/boards/notice/36831/detail/community/notice/" target="_blank" class="btn btn-type1 color-type10">조류학회 <span class="arrow"><img src="/assets/image/icon/ic_btn_arrow.png" alt=""></span></a>
             </div>
         </div>
     </div>

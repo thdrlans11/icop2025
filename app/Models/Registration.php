@@ -108,6 +108,16 @@ class Registration extends Model
             }
         }
 
+        if( $this->tour && $this->tour != 'N' ){
+            $tourPrice = config('site.registration.tourPrice')[$this->lang];
+            $priceText .= ' - '.'Field Trip - '.config('site.registration.tour')[$this->tour].' - '.$unit.' '.number_format($tourPrice).' <br>';
+            $totalPrice += $tourPrice;
+
+            if( $action == 'tour' ){
+                return config('site.registration.tour')[$this->tour].' - '.$unit.' '.number_format($tourPrice);
+            }
+        }
+
         return $unit.' '.number_format($totalPrice).'<br>'.$priceText;
     }
 

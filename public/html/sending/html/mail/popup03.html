@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="description" content="">
+<title>문자/메일 발송시스템</title>
+<link rel="icon" href="/html/sending/assets/image/favicon.ico">
+<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/slick.css">
+<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/jquery-ui.min.css">
+<link type="text/css" rel="stylesheet" href="/html/sending/assets/css/common.css">
+<script type="text/javascript" src="/html/sending/assets/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/html/sending/assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/html/sending/assets/js/slick.min.js"></script>
+<script type="text/javascript" src="/html/sending/assets/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript" src="/html/sending/assets/js/common.js"></script>
+</head>
+<body>
+    <div class="popup-wrap win-popup-wrap type1">
+        <div class="popup-contents">
+            <div class="popup-tit-wrap">
+                <h3 class="popup-tit">추가 등록 업로드 결과</h3>
+            </div>
+            <div class="popup-conbox">
+                <div class="scroll-y">
+                    <div class="bg-box type2 text-center">
+                        총 00건 중 00건 <span class="text-skyblue">업로드 성공</span>/ 00건 <span class="text-red">실패</span>
+                    </div>
+                    <div class="table-wrap mt-20">
+                        <table class="cst-table">
+                            <caption class="hide">개별 대상자 업로드 결과</caption>
+                            <colgroup>
+                                <col style="width: 8%;">
+                                <col style="width: 20%;">
+                                <col>
+                                <col style="width: 45%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <a href="#n" class="btn btn-small btn-line color-type7 btn-add">+</a>
+                                    </th>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">핸드폰</th>
+                                    <th scope="col">실패 사유</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td class="text-left">
+                                        <span class="text-red">누락된 값이 존재합니다.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td class="text-left">
+                                        <span class="text-red">올바른 이메일 형식이 아닙니다.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>홍길동</td>
+                                    <td>010-1234-5678</td>
+                                    <td class="text-left">
+                                        <span class="text-red">올바른 핸드폰 번호 형식이 아닙니다.</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="btn-wrap text-center">
+                    <a href="#n" class="btn btn-type1 color-type2">닫기</a>
+                    <button type="button" class="btn btn-type1 color-type8"><img src="/html/sending/assets/image/ic_btn_download.png" alt="" class="ic-btn">실패 내역 다운로드</button>
+                </div>
+            </div>
+            <button type="button" class="btn-pop-close"><span class="hide">닫기</span></button>
+        </div>
+    </div>
+</body>
+</html>

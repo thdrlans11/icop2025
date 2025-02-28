@@ -60,7 +60,7 @@
                     </li>
                     <li>
                         Early Bird Registration Deadline
-                        <p class="date">March 14 (Fri), 2025</p>
+                        <p class="date">March 31 (Mon), 2025</p>
                         <span class="dday {{ DDay('earlyRegistration') == 'END' ? 'end' : '' }}">{{ DDay('earlyRegistration') }}</span>
                     </li>
                     <li>
@@ -252,7 +252,7 @@ function setCookiePopup( name, value, expiredays ){
     $('.pop-main').hide();
 }	
 </script>
-<div class="popup-wrap pop-main">
+<!-- <div class="popup-wrap pop-main">
     <div class="popup-contents">
         <div class="popup-conbox">
             <img src="/assets/image/main/img_pop_symposia.png" alt="">
@@ -275,7 +275,7 @@ function setCookiePopup( name, value, expiredays ){
         </div>
         <button type="button" class="btn-pop-close" onclick="$('.pop-main').hide();"><span class="hide">팝업 닫기</span></button>
     </div>
-</div>
+</div> -->
 @endif
 
 @endsection
