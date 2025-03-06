@@ -348,7 +348,7 @@ class RegistrationService extends dbService
 
     private function makeRegistNumber()
     {
-        $maxNumber = Registration::selectRaw('max(substring(rnum,3)) as maxNumber')->where('year', config('site.common.default.year'))->first();
+        $maxNumber = Registration::withTrashed()->selectRaw('max(substring(rnum,3)) as maxNumber')->where('year', config('site.common.default.year'))->first();
         return 'R-'.($maxNumber['maxNumber']?sprintf('%04d',($maxNumber['maxNumber'])+1):'0001');
     }
 }

@@ -63,6 +63,7 @@ Route::prefix('abstract')->controller(\App\Http\Controllers\AbstractManage\Abstr
     Route::post('search', 'searchResult')->name('abstract.registration.searchResult');
     Route::get('delete/{sid}', 'delete')->name('abstract.delete');
     Route::get('preview/{sid}', 'preview')->name('abstract.preview');
+    Route::get('/awards', 'awards')->name('abstract.awards');  
 });
 
 //Notice

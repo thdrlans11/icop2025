@@ -216,7 +216,7 @@
 @push('scripts')
 <script>
 $(document).ready(function(){
-    priceProcess('{{ $apply->type ?? '' }}', '{{ $apply->lang ?? '' }}', '{{ $apply->category ?? '' }}', '{{ $apply->attendType ?? '' }}', '{{ $apply->accompanying ?? '' }}', '{{ $apply->banquet ?? '' }}', '{{ $apply->getOneDay('key') }}');
+    priceProcess('{{ $apply->type ?? '' }}', '{{ $apply->lang ?? '' }}', '{{ $apply->category ?? '' }}', '{{ $apply->attendType ?? '' }}', '{{ $apply->accompanying ?? '' }}', '{{ $apply->banquet ?? '' }}', '{{ $apply->getOneDay('key') }}', '{{ $apply->tour ?? '' }}');
 });    
 </script>
 @endpush

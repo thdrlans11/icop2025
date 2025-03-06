@@ -31,6 +31,26 @@
     </li>
 </ul>
 
+<ul class="write-wrap">
+    <li>
+        <div class="form-tit">Apply for Awards</div>
+        <div class="form-con">
+            @if( $_SERVER['REMOTE_ADDR'] == '218.235.94.223' )
+            <div class="checkbox-wrap cst mb-10">
+                <label for="student" class="checkbox-group">
+                    <input type="checkbox" name="student" id="student" value="Y" {{ ( $apply->student ?? '' ) == 'Y' ? 'checked' : '' }}>I am a Student
+                </label>
+            </div>
+            @endif
+            <div class="checkbox-wrap cst">
+                <label for="award" class="checkbox-group">
+                    <input type="checkbox" name="award" id="award" value="Y" {{ ( $apply->award ?? '' ) == 'Y' ? 'checked' : '' }}>I agree to present in the ‘Awards Session’ session.
+                </label>
+            </div>
+        </div>
+    </li>
+</ul>    
+
 <div class="sub-tit-wrap mt-60">
     <h4 class="sub-tit">Authors Information</h4>
 </div>

@@ -2067,37 +2067,6 @@ p + .name strong{
     font-weight: 600;
 }
 
-/* SUBMISSION::Awards */
-/* .line-box{
-    padding: 40px;
-    border: 2px solid #dddddd;
-}
-.line-box + .line-box{
-    margin-top: 20px;
-}
-.line-box .tit{
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-.line-box .tit > strong{
-    font-size: 28px;
-    font-weight: 700;
-}
-.line-box .bg-box{
-    padding: 15px 25px;    
-    margin: 0;
-    margin-top: 25px;
-    background-color: #f4f4ff;
-    font-size: 1.7rem;
-}
-.line-box .bg-box .tit{
-    font-size: 1.7rem;
-    font-weight: 700;
-}
-.line-box .bg-box .list-type{
-    margin-top: 5px;
-} */
-
 /* Abstract Review */
 .abst-list-table th,
 .abst-list-table td{
@@ -2118,6 +2087,104 @@ p + .name strong{
 .status.inprocess{
     color: #ec0853;
 }
+
+/* Abstract::Travel Grants & Review */
+.awards-list > li{
+    overflow: hidden;
+    position: relative;
+    padding: 50px;
+    padding-right: 25%;
+    border-radius: 20px;
+}
+.awards-list > li + li{
+    margin-top: 20px;
+}
+.awards-list .tit{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+}
+.awards-list .img-wrap{
+    position: absolute;
+    margin-top: auto;
+    text-align: center;
+    animation: move-top 0.7s ease-in-out 0.5s;
+}
+@keyframes move-top{
+	0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.awards-list > li:nth-child(1){
+    background-color: #f2ffee;
+}
+.awards-list > li:nth-child(1) .tit{
+    color: #42a523;
+}
+.awards-list > li:nth-child(1) .img-wrap{
+    right: 30px;
+    bottom: -66px;
+}
+.awards-list > li:nth-child(1) .btn-awards{
+    background-color: #42a523;
+}
+.awards-list > li:nth-child(2){
+    background-color: #f2f9fe;
+}
+.awards-list > li:nth-child(2) .img-wrap{
+    right: 10px;
+    bottom: -48px;
+}
+.awards-list > li:nth-child(2) .tit{
+    color: #0068b3;
+}
+.awards-list > li:nth-child(3){
+    background-color: #f4f5ff;
+}
+.awards-list > li:nth-child(3) .tit{
+    color: #3e4bc9;
+}
+.awards-list > li:nth-child(3) .btn-awards{
+    background-color: #3e4bc9;
+}
+.awards-list > li:nth-child(3) .img-wrap{
+    right: 60px;
+    bottom: -56px;
+}
+.btn.btn-awards{
+    display: inline-block;
+    margin: 2px 4px;
+    position: relative;
+    padding: 12px 20px;
+    padding-right: 50px;
+    border-radius: 20px 20px 0 20px;
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    vertical-align: middle;
+}
+.btn-awards .arrow{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    line-height: 1;
+    font-size: 1px;
+    vertical-align: top;
+}
+.btn-awrads .arrow img{
+    vertical-align: middle;
+}
+
 
 /* Registration::Registration Guidelines */
 .regi-date-wrap{

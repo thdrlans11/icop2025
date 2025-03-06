@@ -60,6 +60,22 @@
                                                 {{ config('site.abstract.topic')[$apply->topic] }} {{ $apply->topic == 'Z' ? '( '.$apply->topic_other.' )' : '' }}
                                             </td>
                                         </tr>
+                                        @if( $apply->award == 'Y' || $apply->student == 'Y' )
+                                        <tr>
+                                            <th scope="row" style="padding: 10px 15px;background-color: #f4f4f4;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 14px;font-weight: 700;color: #000000;line-height: 1.3;text-align: left;">
+                                                Apply for Awards
+                                            </th>
+                                            <td style="padding: 10px 15px;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;border-left: 1px solid #dddddd;font-family: 'Malgun Gothic', '맑은고딕', '돋움', 'dotum', sans-serif;font-size: 14px;color: #444444;line-height: 1.3">
+                                                @if( $apply->student == 'Y' )
+                                                <div>I am a Student</div>
+                                                @endif
+
+                                                @if( $apply->award == 'Y' )
+                                                <div>I agree to present in the ‘Awards Session’ session.</div>
+                                                @endif
+                                            </td>
+                                        </tr>
+                                        @endif
                                     </table>
                                 </td>
                             </tr>

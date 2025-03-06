@@ -113,6 +113,27 @@
         </li>
     </ul>
 </div>
+
+<div class="write-wrap mt-60">
+    <div class="write-tit-wrap text-center">
+        <h5>Field Trip</h5>
+    </div>
+    <ul>
+        <li>
+            <div class="form-tit">Field Trip <strong class="required">*</strong></div>
+            <div class="form-con">
+                <div class="radio-wrap cst">
+                    @foreach( config('site.registration.tour') as $key => $val )
+                    <label for="tour{{ $key }}" class="radio-group">
+                        <input type="radio" name="tour" id="tour{{ $key }}" value="{{ $key }}" {{ ( $apply->tour ?? '' ) == $key ? 'checked' : '' }} onclick="makePrice('{{$apply->lang}}')">{{ $val }} {{ $key != 'N' ? '- '.config('site.registration.unit')[$apply->lang].' '.number_format(config('site.registration.tourPrice')[$apply->lang]) : '' }}
+                    </label>
+                    @endforeach
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>    
+
 <div class="write-wrap studentBox" {!! ( $apply->category ?? '' ) != 'B' ? 'style="display:none"' : '' !!}>
     <div class="write-tit-wrap text-center">
         <h5>학생 증빙 자료 제출 (jpg, png, gif, pdf 파일)</h5>

@@ -115,7 +115,6 @@
     </ul>
 </div>
 
-@if( stristr( $_SERVER['REMOTE_ADDR'], "218.235.94" ) !== false )
 <div class="write-wrap mt-60">
     <div class="write-tit-wrap text-center">
         <h5>Field Trip</h5>
@@ -135,7 +134,6 @@
         </li>
     </ul>
 </div>    
-@endif
 
 <div class="write-wrap studentBox" {!! ( $apply->category ?? '' ) != 'B' ? 'style="display:none"' : '' !!}>
     <div class="write-tit-wrap text-center">

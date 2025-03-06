@@ -57,5 +57,10 @@ class AbstractController extends Controller
     {
         return $this->AbstractService->preview($request);
     }
+
+    public function awards()
+    {
+        return view('abstract.awards')->with(['subNum'=>'5']);
+    }
    
 }

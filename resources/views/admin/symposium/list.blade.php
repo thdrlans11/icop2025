@@ -220,7 +220,7 @@ function dbChange(sid,db,field,f){
                 </td> --}}
                 <td>{{ $d->seq }}</td>                
                 <td>
-                    <a href="{{ route('admin.registration.modifyForm', ['sid'=>encrypt($d->sid), 'step'=>'1']) }}" class="Load_Base_fix" Wsize="1500" Hsize="900" Tsize="2%" Reload="Y">{{ $d->rnum }}</a>
+                    <a href="{{ route('admin.symposium.modifyForm', ['sid'=>encrypt($d->sid), 'step'=>'1']) }}" class="Load_Base_fix" Wsize="1500" Hsize="900" Tsize="2%" Reload="Y">{{ $d->rnum }}</a>
                 </td>
                 <td>{{ $d->firstName.' '.$d->lastName }}</td>
                 <td>{{ $d->affiliation }}</td>

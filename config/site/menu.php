@@ -32,8 +32,8 @@ return [
         '7' => [
             'name' => 'Tour',
             'url' => "",
-            'route_target' => 'ready',
-            'route_param' => ['mainNum'=>'7', 'subNum'=>'1'],
+            'route_target' => 'tour.trip',
+            'route_param' => [],
         ],
         '6' => [
             'name' => 'Sponsors',
@@ -151,6 +151,12 @@ return [
                 'url' => "",
                 'route_target' => 'ready',
                 'route_param' => ['mainNum'=>'3', 'subNum'=>'4'],
+            ],
+            '5' => [
+                'name' => 'Travel Grant & Awards',
+                'url' => "",
+                'route_target' => 'ready', //abstract.awards
+                'route_param' => ['mainNum'=>'3', 'subNum'=>'5'],
             ]
         ],
         '4' => [
@@ -248,8 +254,8 @@ return [
             '1' => [
                 'name' => 'Field Trip',
                 'url' => "",
-                'route_target' => 'ready',
-                'route_param' => ['mainNum'=>'7', 'subNum'=>'1'],
+                'route_target' => 'tour.trip',
+                'route_param' => [],
             ],
 			 '2' => [
                 'name' => 'Daily Tour Program',

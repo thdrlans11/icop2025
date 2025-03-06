@@ -17,6 +17,20 @@
             {{ config('site.abstract.topic')[$apply->topic] }} {{ $apply->topic == 'Z' ? '( '.$apply->topic_other.' )' : '' }}
         </div>
     </li>
+    @if( $apply->award == 'Y' || $apply->student == 'Y' )
+    <li>
+        <div class="form-tit">Apply for Awards</div>
+        <div class="form-con">
+            @if( $apply->student == 'Y')
+            <div>I am a Student</div>
+            @endif
+            
+            @if( $apply->award == 'Y')
+            <div>I agree to present in the ‘Awards Session’ session.</div>
+            @endif
+        </div>
+    </li>
+    @endif
 </ul>
 
 <div class="write-wrap">

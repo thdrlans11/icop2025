@@ -39,10 +39,14 @@
                 <div class="text-wrap">
                     <strong class="name"><a href="http://rogerlab.biochemistryandmolecularbiology.dal.ca/" target="_blank"><u>Andrew J. Roger</u></a></strong>
                     <p>
-                        Dept. of Biochemistry and Molecular Biology, Dalhousie University <br>
-                        Canada
+                        Institute for Comparative Genomics, Dept. of Biochemistry and Molecular Biology, Dalhousie University,
+						<br>Canada
                     </p>
-                    <p class="tit"><span>Lecture Title: New insights into the origin and early evolution of eukaryotes from phylogenomic analyses.</span></p>
+                    <p class="tit"><span>Lecture Title: New insights into the origin and early evolution of eukaryotes from phylogenomic analyses.</span><button type="button" class="btn-toggle js-btn-toggle"></button></p>
+					<div class="abstract-con js-toggle-con">
+                        The origin of eukaryotic cells from prokaryotic ancestors — eukaryogenesis — remains one of the most enigmatic major transitions in the evolution of life on Earth. It is widely accepted that the nucleocytoplasmic lineage of eukaryotes is related to asgard Archaea and mitochondria evolved from endosymbionts related to Alphaproteobacteria. However, the precise phylogenetic positions of these two ancestral lineages, the nature of additional genetic contributors, the position of the root of the eukaryotic tree and the relative timing of events that occurred in eukaryogenesis remain unclear. We assembled a large carefully-curated data set of proteins of mitochondrial origin from a wide diversity of eukaryotes as well as proteobacterial relatives of mitochondria. Through broad taxonomic sampling and phylogenomic model development we were able to pinpoint the phylogenetic origin of mitochondria and determine the position of the root of the eukaryote tree of Life (eToL).  Our analyses reveal that mitochondria are the sister group of the Alphaproteobacteria and that the eukaryotic root lies between two multi-supergroup assemblages: ‘Opimoda+’ and ‘Diphoda+'. Compellingly, this eToL root position is consistently supported across different models and robustness analyses. Notably, groups containing ‘typical excavates’ are placed on both sides of the root, suggesting the complex features of the ‘excavate’ cell architecture trace back to LECA. This study sheds light on the ancestral cells from which extant eukaryotes arose and provides a crucial framework for investigating the origin and evolution of canonical eukaryotic features.
+
+                    </div>
                     <p>Andrew has made important contributions to evolutionary protistology and was the founding Director of the Centre for Comparative Genomics and Evolutionary Bioinformatics at Dalhousie University (now the Institute of Comparative Genomics,&nbsp;icgenomics.ca). &nbsp;Over two and a half decades, Andrew and his collaborators have employed comparative genomic, phylogenetic, and other ‘omic’ approaches to clarifying how eukaryotic cells and their symbiont-derived organelles originated and diversified in the past ~2 billion years. &nbsp;Other topics of particular interest include adaptations to low oxygen conditions in anaerobic protists and clarifying the role of lateral gene transfer in these adaptations, as well as the development methods and models for ‘deep-time’ phylogenetic inference. Andrew has published more than 200 peer-reviewed articles in these fields and has received numerous accolades for his work, including being appointed as a Tier I, Canada Research Chair, &nbsp;and receiving an award of a Fellowship in the Royal Society of Canada.</p>
                 </div>
             </div>
@@ -140,7 +144,17 @@
                         Max Planck Institute for Marine Microbiology <br>
                         Germany
                     </p>
-                    <p class="tit"><span>Lecture Title: Ecology of a novel protist symbiosis</span></p>
+                    <p class="tit"><span>Lecture Title: Ecology of a novel protist symbiosis</span><button type="button" class="btn-toggle js-btn-toggle"></button></p>
+					<div class="abstract-con js-toggle-con">
+                        Microbial symbioses with protists are ubiquitous in nature and fundamentally contribute to the functioning of natural as well as engineered ecosystems. Symbiotic microbes engage in a wide range of functions for their hosts and profoundly shape host physiology, evolution and ecology.<br>
+In my talk I will present our latest work on the recently described ‘respiratory’ symbiosis between a gamma-proteobacterial symbiont Candidatus Azoamicus and a plagiopylean ciliate [1]. Based on the genes retained in its strongly reduced genome (< 300 kbp), the symbiont is thought to have a dedicated role in respiration and generation of energy, in the form of ATP, for its host.<br>
+Since its original discovery in the anoxic waters of a freshwater lake, relatives of Ca. Azoamicus have been found also in marine, groundwater and wastewater environments [2, 3]. Variations in the gene content of the new symbiont lineages strongly indicate that the capacity for aerobic respiration was originally present in the symbiont predecessor but was subsequently lost multiple times. Moreover, the absence of the pathway for nitrate respiration in the sister lineage of the Ca. Azoamicaceae family indicates that the capacity for anaerobic respiration was acquired horizontally, possibly upon the establishment of a symbiotic lifestyle [2]. <br>
+The hosts of all respiratory symbiont species known so far seem to affiliate with an uncultivated monophyletic lineage that represents a sister clade to the Plagiopylea. Importantly, the congruent topology of the symbiont phylogenomic and host 18S rRNA tree corroborate the proposed long-term vertical inheritance of this symbiosis [3].<br><br>
+[1] Graf, J. S. et al. Nature 591 (2021).<br>
+[2] Speth D. R. et al. Nat Commun 15 (2024). <br>
+[3] Nicolas-Asselineau L. et al. (in prep.)
+
+                    </div>
                     <p>
                         Jana’s research focuses on beneficial interactions between eukaryotic microbes and
                         bacterial symbionts, particularly those that affect the biogeochemical cycling of
@@ -245,7 +259,11 @@
                         Professor<br>
 						University of British Columbia, Canada
                     </p>
-                    <p class="tit"><span>Lecture Title: It all starts with a joke: a “genomics guy” in the field. </span></p>
+                    <p class="tit"><span>Lecture Title: It all starts with a joke: a “genomics guy” in the field. </span><button type="button" class="btn-toggle js-btn-toggle"></button></p>
+					<div class="abstract-con js-toggle-con">
+                        Returning from his expedition to the Sea of Cortez, John Steinbeck observed that all fieldwork should be done twice: once to make all the mistakes, and the second time to get the data. Over the last twelve years I have been testing this principle over and over, coming to the conclusion that, if anything, this is touchingly idealistic. Twelve years ago my lab was almost entirely lab-based genomic research. There was nothing wrong with this, but I was interested in finding new ways to keep more personally engaged in the research, and also thought that the huge pool of uncultivable protists in nature was an under-tapped source of new projects. Around this time, our work started to suggest an interesting new kind of apicomplexan might live in coral reefs, so I sent off a joke email to a reef-ecology friend, which somehow led me to be invited to a research station in Curacao. I spent the next few years making a mess of the place, testing out a variety of distracting toys and time-wasting methods, and generally trying to figure out how and why we could do field-based research. It was all quite fun, and engaging, but more surprisingly was also incredibly productive. The mystery apicomplexans, now called corallicolids, have been found across the globe on coral reefs but also cold marine environments, and while they have lost photosynthesis like other apicomplexans, they are unique in having retained chlorophyll biosynthesis for reasons we still do not quite understand. Reconstructing their evolution and the major transitions in apicomplexans in general has emphasized how important parallel changes have been in parasite evolution – where what appear to be complex and unlikely changes actually happened many times in many lineages in parallel. Along the way we refined methods for collecting, isolating cells in the field, and generating transcriptomes from single isolated cells, all of which opened unlimited doors to new projects on all manner of protists. 
+
+                    </div>
                     <p>
                         Patrick is an evolutionary biologist and protistologist working on a wide range of protist groups. Work in his lab focuses broadly on symbiosis, and especially endosymbiosis, with protists playing roles as either host or symbiont. Patrick’s research has touched on organelle evolution and the tree of eukaryotes, horizontal gene transfer, and intracellular parasites of both protists and animals. Patrick is the Past President of ISOP. 
 

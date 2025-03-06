@@ -74,6 +74,8 @@ class AbstractService extends dbService
             $registration->ptype = $request->ptype;
             $registration->topic = $request->topic;
             $registration->topic_other = $request->topic_other;
+            $registration->student = $request->student ?? 'N';
+            $registration->award = $request->award ?? 'N';
             $registration->institution_count = $request->institution_count;
             $registration->author_count = $request->author_count;
             $registration->subject = $request->subject;
@@ -255,7 +257,7 @@ class AbstractService extends dbService
 
     private function makeRegistNumber()
     {
-        $maxNumber = AbstractRegistration::selectRaw('max(substring(rnum,3)) as maxNumber')->where('year', config('site.common.default.year'))->first();
+        $maxNumber = AbstractRegistration::withTrashed()->selectRaw('max(substring(rnum,3)) as maxNumber')->where('year', config('site.common.default.year'))->first();
         return 'A-'.($maxNumber['maxNumber']?sprintf('%04d',($maxNumber['maxNumber'])+1):'0001');
     }
 

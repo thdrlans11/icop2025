@@ -108,6 +108,12 @@
             {!! $apply->banquet ? $apply->banquet == 'N' ? config('site.registration.banquet')[$apply->banquet] : $apply->makeTotalText('banquet') : '' !!}
         </div>
     </li>
+    <li>
+        <div class="form-tit">Field Trip</div>
+        <div class="form-con">
+            {!! $apply->tour ? $apply->tour == 'N' ? config('site.registration.tour')[$apply->tour] : $apply->makeTotalText('tour') : '' !!}
+        </div>
+    </li>
     @if( $apply->category == 'B' )
     <li>
         <div class="form-tit">File upload</div>

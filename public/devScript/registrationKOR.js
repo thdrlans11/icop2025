@@ -107,6 +107,7 @@ function makePrice(lang){
     var attendType = $("input:radio[name='attendType']:checked").val();
     var accompanying = $("input:radio[name='accompanying']:checked").val();
     var banquet = $("input:radio[name='banquet']:checked").val();
+    var tour = $("input:radio[name='tour']:checked").val();
     var oneDay = "";
 
     $("input:checkbox[name='oneDay[]']").each(function(index){
@@ -115,10 +116,10 @@ function makePrice(lang){
         }
     });
     
-    priceProcess(type, lang, category, attendType, accompanying, banquet, oneDay);
+    priceProcess(type, lang, category, attendType, accompanying, banquet, oneDay, tour);
 }
 
-function priceProcess(type, lang, category, attendType, accompanying, banquet, oneDay)
+function priceProcess(type, lang, category, attendType, accompanying, banquet, oneDay, tour)
 {
     $.ajax({
         type: 'POST',
@@ -130,7 +131,8 @@ function priceProcess(type, lang, category, attendType, accompanying, banquet, o
                 attendType : attendType,
                 accompanying : accompanying,
                 banquet : banquet,
-                oneDay : oneDay
+                oneDay : oneDay,
+                tour : tour
               },
         async: false,
         success: function(data) {
@@ -262,6 +264,11 @@ function registrationCheck_02(f)
                 return false;
             }
         }
+    }
+
+    if( $("input:radio[name='tour']").length > 0 && !$("input:radio[name='tour']").is(":checked") ){
+        swalAlert("Field Trip을 선택해주세요.", "", "warning", "tourN");
+        return false;
     }
     
     var captcha = $("#captcha").val();

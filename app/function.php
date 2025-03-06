@@ -60,7 +60,7 @@ if (!function_exists('DDay')) {
         }else if( $target == 'abstract' ){
             $date = '2025-03-31';
         }else if( $target == 'earlyRegistration' ){
-            $date = '2025-03-14';
+            $date = '2025-03-31';
         }else if( $target == 'lastRegistration' ){
             $date = '2025-04-30';
         }
@@ -70,7 +70,7 @@ if (!function_exists('DDay')) {
         $currentDate = \Carbon\Carbon::now();
         $targetDate = \Carbon\Carbon::create($date[0], $date[1], $date[2]);
 
-        $daysUntilTarget = $currentDate->diffInDays($targetDate);
+        $daysUntilTarget = $currentDate->diffInDays($targetDate)+1;
 
         if ($daysUntilTarget > 0) {
             return "D-" . $daysUntilTarget;

@@ -252,6 +252,56 @@ function setCookiePopup( name, value, expiredays ){
     $('.pop-main').hide();
 }	
 </script>
+
+ 
+    // 멀티 팝업 작업 - 25.03.06 
+    <div class="popup-wrap pop-main">
+    <div class="popup-rolling-wrap inner-layer">
+        <div class="popup-contents">
+            <div class="popup-conbox popup-link-conbox">
+                <p class="tit">
+                    Orakai Hotel Special Price <br>
+                    for ICOP 2025
+                </p>
+                <div class="btn-wrap text-center">
+                    <a href="https://be4.wingsbooking.com/BWORAKAI1313" target="_blank" class="btn btn-reserve"><img src="/assets/image/main/ic_btn_link.png" alt=""> Reservation Link <img src="/assets/image/main/ic_pop_link.png" alt="" class="ic-click"></a>
+                </div>
+                <div class="img-wrap text-cetner">
+                    <img src="/assets/image/main/img_pop_apply.png" alt="Apply Promotion Code">
+                </div>
+            </div>
+        </div>
+        <div class="popup-contents">
+            <div class="popup-conbox">
+                <div class="img-wrap"><a href="https://protistologists.org/programs/awards/holz-conner-award/" target="_blank"><img src="/assets/image/main/popup_250305_V2.png" alt=""></a></div>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <div class="checkbox-wrap cst text-center">
+                <label for="chk1" class="checkbox-group">
+                    <input type="checkbox" id="chk1" onclick="setCookiePopup('layer_main','done','1')">Not Open for 24 Hours
+                </label>
+            </div>
+        </div>
+        <button type="button" class="btn-pop-close" onclick="$('.pop-main').hide();"><span class="hide">팝업 닫기</span></button>
+    </div>
+</div> 
+
+<!-- <div class="popup-wrap pop-main">
+    <div class="popup-contents">
+        <div class="popup-conbox">
+            <div class="img-wrap"><a href="https://protistologists.org/programs/awards/holz-conner-award/" target="_blank"><img src="/assets/image/main/popup_250305_V2.png" alt=""></a></div>
+        </div>
+        <div class="popup-footer">
+            <div class="checkbox-wrap cst text-center">
+                <label for="chk1" class="checkbox-group">
+                    <input type="checkbox" id="chk1" onclick="setCookiePopup('layer_main','done','1')">Not Open for 24 Hours
+                </label>
+            </div>
+        </div>
+        <button type="button" class="btn-pop-close" onclick="$('.pop-main').hide();"><span class="hide">팝업 닫기</span></button>
+    </div>
+</div> -->
 <!-- <div class="popup-wrap pop-main">
     <div class="popup-contents">
         <div class="popup-conbox">
@@ -279,3 +329,4 @@ function setCookiePopup( name, value, expiredays ){
 @endif
 
 @endsection
+
