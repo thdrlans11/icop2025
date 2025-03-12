@@ -93,11 +93,17 @@
                     <td>Banquet</td>
                     <td colspan="2">USD 100</td>
                 </tr>
+				<tr>
+                    <th scope="row">Tour</th>
+                    <td>Field Trip</td>
+                    <td colspan="2">USD 330</td>
+                </tr>
             </tbody>
         </table>
     </div>
     <ul class="list-type list-type-dot mt-15">
-        <li class="text-red">To register as a student (including Post Doctor), you need to submit proof of your student status, such as a copy of your student ID or a certificate of enrollment with a valid date.</li>
+        <li class="text-red">To register as a student, you need to submit proof of your student status, such as a copy of your student ID or a certificate of enrollment with a valid date.</li>
+		<li class="text-red">Registration for the Field Trip is available on a first-come, first-served basis, limited to 10 participants who have completed their payments.</li>
     </ul>
 
     <div class="sub-tit-wrap">
@@ -194,7 +200,7 @@
                                     </tr>
                                     <tr>
                                         <td>BANK ADDRESS</td>
-                                        <td class="text-left">32, Gwangnam-ro, Suyeong-gu, Busan, Republic of Korea</td>
+                                        <td class="text-left">17, WORLD CUP BUK-RO 60-GIL, MAPO-GU, SEOUL, 03921, SOUTH KOREA</td>
                                     </tr>
                                     <tr>
                                         <td>ACCOUNT NO.</td>
@@ -206,7 +212,7 @@
                                     </tr>
                                     <tr>
                                         <td>SWIFT CODE</td>
-                                        <td class="text-left">HVBKKRSEXXX</td>
+                                        <td class="text-left">HVBKKRSEXXX or HVBKKRSE</td>
                                     </tr>
                                 </tbody>
                             </table>

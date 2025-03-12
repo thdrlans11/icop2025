@@ -17,6 +17,8 @@
         <h4 class="sub-tit">List of Hotels</h4>
     </div>
     <div class="hotel-list">
+       
+    
         <div class="active-box">
             <div class="tit">
                 <p>
@@ -51,33 +53,31 @@
                 </div>
             </div>
 		
-            <div class="sub-contit-wrap line">
-                <h5 class="sub-contit">How to Reservation</h5>
+		<h5 class="map-info-tit"><span style="font-size: 120%;">How to Reservation</span></h5>
+        <div class="img-wrap text-center">
+            <img src="/assets/image/sub/img_hotel_reservation01.png" alt="">
+            <button type="button" class="btn-click btn-click01"><img src="/assets/image/sub/ic_click_on.png" alt=""></button>
+        </div>
+        <div class="img-wrap text-center">
+            <img src="/assets/image/sub/img_hotel_reservation02.png" alt="">
+            <button type="button" class="btn-click btn-click02"><img src="/assets/image/sub/ic_click_on.png" alt=""></button>
+        </div>
+        <div class="img-wrap n2 text-center">
+            <div class="img">
+                <img src="/assets/image/sub/img_hotel_reservation03.png" alt="">
+                <p class="typing-text">
+                    <span>ICOP25</span>
+                </p>
+                <button type="button" class="btn-click btn-click03"><img src="/assets/image/sub/ic_click_on.png" alt=""></button>
             </div>
-            <div class="img-wrap text-center">
-                <img src="/assets/image/sub/img_hotel_reservation01.png" alt="">
-                <button type="button" class="btn-click btn-click01"><img src="/assets/image/sub/ic_click_on.png" alt=""></button>
+            <div class="img">
+                <img src="/assets/image/sub/img_hotel_reservation04.png" alt="">
+                <button type="button" class="btn-click btn-click04"><img src="/assets/image/sub/ic_click_on.png" alt=""></button>
             </div>
-            <div class="img-wrap text-center">
-                <img src="/assets/image/sub/img_hotel_reservation02.png" alt="">
-                <button type="button" class="btn-click btn-click02"><img src="/assets/image/sub/ic_click_on.png" alt=""></button>
-            </div>
-            <div class="img-wrap n2 text-center">
-                <div class="img">
-                    <img src="/assets/image/sub/img_hotel_reservation03.png" alt="">
-                    <p class="typing-text">
-                        <span>ICOP25</span>
-                    </p>
-                    <button type="button" class="btn-click btn-click03"><img src="/assets/image/sub/ic_click_on.png" alt=""></button>
-                </div>
-                <div class="img">
-                    <img src="/assets/image/sub/img_hotel_reservation04.png" alt="">
-                    <button type="button" class="btn-click btn-click04"><img src="/assets/image/sub/ic_click_on.png" alt=""></button>
-                </div>
-            </div>
-            <div class="img-wrap text-center">
-                <img src="/assets/image/sub/img_hotel_reservation05.png" alt="">
-            </div>
+        </div>
+        <div class="img-wrap text-center">
+            <img src="/assets/image/sub/img_hotel_reservation05.png" alt="">
+        </div>
 
 		</div>
 
@@ -98,7 +98,7 @@
                     <li class="address">
                         <strong>Address:</strong> 7 Yulgok-ro 2-gil, Jongno District, Seoul
                     </li>
-                    <li class="phone">s
+                    <li class="phone">
                         <strong>Phone: </strong> <a href="tel:02-6730-8888" target="_blank">02-6730-8888</a>
                     </li>
                 </ul>
@@ -107,59 +107,6 @@
                 </div>
             </div>
         </div>
-
-		<div class="hotel-tit-wrap">
-        <h5 class="hotel-tit">Mayplace Hotel </h5> <div class="star"><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""></div>
-    </div>
-    <div class="hotel-contents">
-        <div class="img-wrap">
-            <div class="img-rolling js-img-rolling">
-                <img src="/assets/image/sub/img_hotel_Mayplace01.png" alt="Mayplace Hotel ">
-                <img src="/assets/image/sub/img_hotel_Mayplace02.png" alt="Mayplace Hotel ">
-                <img src="/assets/image/sub/img_hotel_Mayplace03.png" alt="Mayplace Hotel ">
-                <img src="/assets/image/sub/img_hotel_Mayplace04.png" alt="Mayplace Hotel ">
-            </div>
-        </div>
-        <div class="text-wrap">
-            <ul>
-                <li class="address">
-                    <strong>Address:</strong>Mayplace, 179, Yulgok-ro, Jongno-gu, Seoul
-                </li>
-                <li class="phone">
-                    <strong>Phone: </strong> <a href="tel:+82-2-6730-1101 " target="_blank">+82-2-742-8080</a>
-                </li>
-            </ul>
-            <div class="btn-wrap">
-                <a href="https://www.mayplace.co.kr/main/main.html" target="_blank" class="btn btn-hotel">Go to Website</a>
-            </div>
-        </div>
-    </div>
-	 <div class="hotel-tit-wrap">
-        <h5 class="hotel-tit">ibis Ambassador Seoul Insadong</h5> <div class="star"><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""></div>
-    </div>
-    <div class="hotel-contents">
-        <div class="img-wrap">
-            <div class="img-rolling js-img-rolling">
-                <img src="/assets/image/sub/img_hotel_ibis01.png" alt="Hotel IBIS">
-                <img src="/assets/image/sub/img_hotel_ibis02.png" alt="Hotel IBIS">
-                <img src="/assets/image/sub/img_hotel_ibis03.png" alt="Hotel IBIS">
-                <img src="/assets/image/sub/img_hotel_ibis04.png" alt="Hotel IBIS">
-            </div>
-        </div>
-        <div class="text-wrap">
-            <ul>
-                <li class="address">
-                    <strong>Address:</strong>31, Samil-daero 30-gil, Jongno-gu, Seoul
-                </li>
-                <li class="phone">
-                    <strong>Phone: </strong> <a href="tel:+82-2-6730-1101 " target="_blank">+82-2-6730-1101 </a>
-                </li>
-            </ul>
-            <div class="btn-wrap">
-                <a href="https://www.ambatel.com/ibis/insadong/en/main.do" target="_blank" class="btn btn-hotel">Go to Website</a>
-            </div>
-        </div>
-    </div>
     
         <div class="hotel-tit-wrap">
             <h5 class="hotel-tit">Hotel DAAM</h5> <div class="star"><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""></div>
@@ -189,7 +136,6 @@
             </div>
         </div>
     
-		
         
     </div>  
 </div>

@@ -84,11 +84,17 @@
                             <td>Banquet</td>
                             <td colspan="2">100,000 원</td>
                         </tr>
+						 <tr>
+                            <th scope="row">투어</th>
+                            <td>Field Trip</td>
+                            <td colspan="2">350,000원</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <ul class="list-type list-type-dot mt-15">
                 <li class="text-red">학생 등록의 경우, 등록 시 학생증을 필히 제출해주십시오.</li>
+				<li class="text-red">Field Trip은 결제 완료 기준으로 10명 선착순 신청입니다.</li>
             </ul>
 
             <div class="sub-tit-wrap">

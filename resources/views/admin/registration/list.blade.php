@@ -191,7 +191,7 @@ function dbChange(sid,db,field,f){
 
 <div class="list-contop text-right cf">
     <span class="cnt full-left">
-        [총 <strong>{{ $lists->count() }}</strong>명]
+        [총 <strong>{{ $lists->total() }}</strong>명]
     </span>
     <select name="" id="" class="form-item" onchange="location.href='/admin/registration/?paginate='+$(this).val()">
         <option value="20">20</option>

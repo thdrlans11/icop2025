@@ -89,6 +89,62 @@ $countryAvg = $registrationAvg['countryAvg'];
                             @endforeach
                         </ul>
                     </div>
+                </li>
+                <li>
+                    <div class="form-tit">Banquest - Payment needed</div>
+                    <div class="form-con">
+                        <ul class="bar-list">
+                            @foreach( config('site.registration.banquet') as $key => $val )
+                            <li>
+                                <a href="{{ route('admin.registration.list', ['banquet'=>$key, 'payStatus'=>'N']) }}">
+                                    {{ $val }} : {{ number_format($optionAvg['banquetN'.$key]) }}건
+                                </a> 
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-tit">Banquest - Complete</div>
+                    <div class="form-con">
+                        <ul class="bar-list">
+                            @foreach( config('site.registration.banquet') as $key => $val )
+                            <li>
+                                <a href="{{ route('admin.registration.list', ['banquet'=>$key, 'payStatus'=>'YF']) }}">
+                                    {{ $val }} : {{ number_format($optionAvg['banquetY'.$key]) }}건
+                                </a> 
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </li>                
+                <li>
+                    <div class="form-tit">Field Trip - Payment needed</div>
+                    <div class="form-con">
+                        <ul class="bar-list">
+                            @foreach( config('site.registration.tour') as $key => $val )
+                            <li>
+                                <a href="{{ route('admin.registration.list', ['tour'=>$key, 'payStatus'=>'N']) }}">
+                                    {{ $val }} : {{ number_format($optionAvg['tourN'.$key]) }}건
+                                </a> 
+                            </li>
+                            @endforeach
+                        </ul>    
+                    </div>
+                </li>
+                <li>
+                    <div class="form-tit">Field Trip - Complete</div>
+                    <div class="form-con">
+                        <ul class="bar-list">
+                            @foreach( config('site.registration.tour') as $key => $val )
+                            <li>
+                                <a href="{{ route('admin.registration.list', ['tour'=>$key, 'payStatus'=>'YF']) }}">
+                                    {{ $val }} : {{ number_format($optionAvg['tourY'.$key]) }}건
+                                </a> 
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </li>                
             </ul>
         </div>

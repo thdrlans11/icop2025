@@ -473,6 +473,11 @@ body.ovh{
     border-color: #4b54c6;
     color: #fff;
 }
+.btn.color-type11{
+    background-color: #2993ca;
+    border-color: #2993ca;
+    color: #fff;
+}
 .btn.color-gra1{
     background: linear-gradient(108deg, #22a3b2, #1565c0);
     color: #fff;

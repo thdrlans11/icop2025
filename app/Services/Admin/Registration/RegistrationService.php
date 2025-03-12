@@ -26,12 +26,18 @@ class RegistrationService extends dbService
         }
         
         foreach( $request->all() as $key => $val ){
-            if( ( $key == 'ccode' || $key == 'rnum' || $key == 'email' || $key == 'regName' || $key == 'category' || $key == 'attendType' || $key == 'payMethod' || $key == 'payStatus' || $key == 'lang' ) && $val ){
+            if( ( $key == 'ccode' || $key == 'rnum' || $key == 'email' || $key == 'regName' || $key == 'category' || $key == 'attendType' || $key == 'payMethod' || $key == 'payStatus' || $key == 'lang' || $key == 'banquet' || $key == 'tour' ) && $val ){
                 if( $key == 'regName' ){
                     $lists->where(function($lists) use ($val) {
                         $lists->whereRaw("CONCAT(firstName,' ',lastName) LIKE '%".$val."%'")
                             ->orWhere('name', 'LIKE', '%' . $val . '%');
                     });
+                }else if( $key == 'payStatus' ){
+                    if( $val != 'YF' ){
+                        $lists->where($key, 'LIKE', '%'.$val.'%');    
+                    }else{
+                        $lists->whereIn($key, ['Y','F']);    
+                    }
                 }else{
                     $lists->where($key, 'LIKE', '%'.$val.'%');
                 }

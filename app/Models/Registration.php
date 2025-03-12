@@ -140,7 +140,23 @@ class Registration extends Model
         sum( case when category in ('B') then 1 else 0 end ) as categoryB,
 
         sum( case when attendType in ('F') then 1 else 0 end ) as attendTypeF,
-        sum( case when attendType in ('O') then 1 else 0 end ) as attendTypeO")->where('year', config('site.common.default.year'))->first();
+        sum( case when attendType in ('O') then 1 else 0 end ) as attendTypeO,
+        
+        sum( case when payStatus in ('N') and banquet='N' then 1 else 0 end ) as banquetNN,
+        sum( case when payStatus in ('N') and banquet='1' then 1 else 0 end ) as banquetN1,
+        sum( case when payStatus in ('N') and banquet='2' then 1 else 0 end ) as banquetN2,
+        sum( case when payStatus in ('N') and banquet='3' then 1 else 0 end ) as banquetN3,
+        
+        sum( case when payStatus not in ('N') and banquet='N' then 1 else 0 end ) as banquetYN,
+        sum( case when payStatus not in ('N') and banquet='1' then 1 else 0 end ) as banquetY1,
+        sum( case when payStatus not in ('N') and banquet='2' then 1 else 0 end ) as banquetY2,
+        sum( case when payStatus not in ('N') and banquet='3' then 1 else 0 end ) as banquetY3,
+        
+        sum( case when payStatus in ('N') and tour='N' then 1 else 0 end ) as tourNN,
+        sum( case when payStatus in ('N') and tour='Y' then 1 else 0 end ) as tourNY,
+        
+        sum( case when payStatus not in ('N') and tour='N' then 1 else 0 end ) as tourYN,
+        sum( case when payStatus not in ('N') and tour='Y' then 1 else 0 end ) as tourYY")->where('year', config('site.common.default.year'))->first();
 
         $data['optionAvg'] = $optionAvg;
 

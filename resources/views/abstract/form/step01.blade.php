@@ -35,18 +35,18 @@
     <li>
         <div class="form-tit">Apply for Awards</div>
         <div class="form-con">
-            @if( $_SERVER['REMOTE_ADDR'] == '218.235.94.223' )
             <div class="checkbox-wrap cst mb-10">
                 <label for="student" class="checkbox-group">
                     <input type="checkbox" name="student" id="student" value="Y" {{ ( $apply->student ?? '' ) == 'Y' ? 'checked' : '' }}>I am a Student
                 </label>
             </div>
-            @endif
             <div class="checkbox-wrap cst">
                 <label for="award" class="checkbox-group">
                     <input type="checkbox" name="award" id="award" value="Y" {{ ( $apply->award ?? '' ) == 'Y' ? 'checked' : '' }}>I agree to present in the ‘Awards Session’ session.
                 </label>
+                <a href="#pop-awards" class="btn btn-small color-type11 js-pop-open"><img src="/assets/image/sub/ic_awards.png" alt="">Travel Grants & Awards</a>
             </div>
+            
         </div>
     </li>
 </ul>    
@@ -296,3 +296,46 @@
         </li>
     </ul>
 </div>
+
+<!-- s:popup -->
+<div class="popup-wrap" id="pop-awards" style="display: none;">
+    <div class="popup-contents">
+        <div class="popup-conbox">
+            <div class="awards-conbox">
+                <ol class="awards-list">
+                    <li>
+                        <div class="text-wrap">
+                            <strong class="tit">1. Jahn-Bovee Awards (by ISOP)</strong>
+                            <p>
+                                Oral Presentations (3 Winners) <br>
+                                Poster Presentations (3 Winners) <br>
+                                Only ISOP student members are eligible for Jahn-Bovee awards. <a href="https://protistologists.org/programs/awards/jahn-bovee-award/" target="_blank" class="btn btn-awards">More Details <span class="arrow"><img src="/assets/image/sub/ic_btn_arrow02.png" alt=""></span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-wrap">
+                            <strong class="tit">2. Best Presentation Awards (by ICOP 2025)</strong>
+                            <p>
+                                Oral Presentations (3 Winners) <br>
+                                Poster Presentations (3 Winners) <br>
+                                All students are eligible for Best Presentation Awards. <br>
+                                Please check the box indicating your agreement to present in the awards session when submitting your abstract.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-wrap">
+                            <strong class="tit">3. Travel Grants (The Holz-Conner Award by ISOP)</strong>
+                            <p>
+                                Each award offers up to $1,500 per recipient to assist with travel and accommodation expenses for those presenting their work.&nbsp;Eligibility for the award is exclusive to Society members, with the submission deadline 15 March 2025. <a href="https://protistologists.org/programs/awards/holz-conner-award/" target="_blank" class="btn btn-awards">More Details<span class="arrow"><img src="/assets/image/sub/ic_btn_arrow02.png" alt=""></span></a>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <button type="button" class="btn btn-pop-close js-pop-close"><span class="hide">닫기</span></button>
+    </div>
+</div>
+<!-- //e:popup -->

@@ -233,9 +233,9 @@ University of Rhode Island, USA
         <span class="tit font-sebang">Sponsors By</span>
         <div class="sponsor-rolling js-sponsor-rolling">
             <a href="https://www.tomocube.com/" target="_blank"><img src="/assets/image/main/bnr_tomocube_250115.jpg" alt=""></a>
-            <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
-            <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
-            <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
+            <a href="https://www.nnibr.re.kr/" target="_blank"><img src="/assets/image/main/bnr_NNIBR_250310.png" alt=""></a>
+            <a href="https://fbp.nnibr.re.kr/fbcc/" target="_blank"><img src="/assets/image/main/bnr_FBCC_250310.png" alt=""></a>
+            <a href="https://www.dnalink.com/" target="_blank"><img src="/assets/image/main/bnr_DNALINK_250311.png" alt=""></a>
             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
 <!--             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a> -->
@@ -254,7 +254,7 @@ function setCookiePopup( name, value, expiredays ){
 </script>
 
  
-    // 멀티 팝업 작업 - 25.03.06 
+    <!-- 멀티 팝업 작업 - 25.03.06  -->
     <div class="popup-wrap pop-main">
     <div class="popup-rolling-wrap inner-layer">
         <div class="popup-contents">
@@ -264,7 +264,7 @@ function setCookiePopup( name, value, expiredays ){
                     for ICOP 2025
                 </p>
                 <div class="btn-wrap text-center">
-                    <a href="https://be4.wingsbooking.com/BWORAKAI1313" target="_blank" class="btn btn-reserve"><img src="/assets/image/main/ic_btn_link.png" alt=""> Reservation Link <img src="/assets/image/main/ic_pop_link.png" alt="" class="ic-click"></a>
+                    <a href="https://be4.wingsbooking.com/BWORAKAI1313?lang_type=EN" target="_blank" class="btn btn-reserve"><img src="/assets/image/main/ic_btn_link.png" alt=""> Reservation Link <img src="/assets/image/main/ic_pop_link.png" alt="" class="ic-click"></a>
                 </div>
                 <div class="img-wrap text-cetner">
                     <img src="/assets/image/main/img_pop_apply.png" alt="Apply Promotion Code">
