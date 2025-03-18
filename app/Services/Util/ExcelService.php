@@ -38,13 +38,15 @@ class ExcelService
             'Field Trip',
             'File upload',
             '결제방법',
+            '등록비',
             '입금자',
             '입금일',
             '입금상태',
             '실제입금일',
             '접수상태',
             '접수시작일',
-            '접수완료일'
+            '접수완료일',
+            '메모'
         ];
 
         // Add header to the CSV
@@ -73,13 +75,15 @@ class ExcelService
                 $apply->tour ? $apply->tour == 'N' ? config('site.registration.tour')[$apply->tour] : $apply->makeTotalText('tour') : '',
                 $apply->category == 'B' ? $apply->filename : '',
                 $apply->payMethod ? config('site.registration.payMethod')[$apply->payMethod] : '',
+                config('site.registration.unit')[$apply->lang].' '.number_format($apply->price),
                 $apply->payMethod == 'B' ? $apply->payDate : '',
                 $apply->payMethod == 'B' ? $apply->payName : '',
                 config('site.registration.payStatus')[$apply->payStatus],
                 $apply->payComplete_at ?? '',
                 config('site.registration.status')[$apply->status],
                 $apply->created_at ?? '',
-                $apply->complete_at ?? ''
+                $apply->complete_at ?? '',
+                $apply->memo ?? '',
             ];
 
             // 특수문자 때문에

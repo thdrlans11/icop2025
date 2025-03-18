@@ -76,7 +76,7 @@
                                 <li>
                                     <a href="{{ route($sval['route_target'],$sval['route_param']) }}">
                                         {{ $sval['name'] }}
-                                        @if( ( $key == '2' && $skey == '3' ) || ( $key == '5' && $skey == '3' ) )
+                                        @if( ( $key == '2' && $skey == '3' ) || ( $key == '5' && $skey == '3' ) || ( $key == '5' && $skey == '4' ) )
                                         <span class="new">N</span>
                                         @endif
                                     </a>

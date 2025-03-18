@@ -28,4 +28,9 @@ class LocationController extends Controller
     {
         return view('location.accommodation')->with(['subNum' => '3']);
     }
+
+    public function restaurant()
+    {
+        return view('location.restaurant')->with(['subNum' => '4']);
+    }
 }

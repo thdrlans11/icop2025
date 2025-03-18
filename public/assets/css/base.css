@@ -326,7 +326,7 @@ body.ovh{
     padding-left: 15px;
 }
 .list-type-bar > li:before{
-    top: 13px !important;
+    top: 13px;
     width: 6px;
     height: 1px;
     background-color: #111;

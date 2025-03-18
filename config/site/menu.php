@@ -155,7 +155,7 @@ return [
             '5' => [
                 'name' => 'Travel Grant & Awards',
                 'url' => "",
-                'route_target' => 'ready', //abstract.awards
+                'route_target' => 'abstract.awards',
                 'route_param' => ['mainNum'=>'3', 'subNum'=>'5'],
             ]
         ],
@@ -235,6 +235,12 @@ return [
                 'route_target' => 'location.accommodation',
                 'route_param' => [],
             ],
+            '4' => [
+                'name' => 'Restaurant',
+                'url' => "",
+                'route_target' => 'location.restaurant',
+                'route_param' => [],
+            ]
         ],
         '6' => [            
             '1' => [
@@ -260,8 +266,8 @@ return [
 			 '2' => [
                 'name' => 'Daily Tour Program',
                 'url' => "",
-                'route_target' => 'ready',
-                'route_param' => ['mainNum'=>'7', 'subNum'=>'2'],
+                'route_target' => 'tour.dailyProgram',
+                'route_param' => [],
             ]
         ]
     ],

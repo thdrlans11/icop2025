@@ -18,4 +18,8 @@ class TourController extends Controller
     {
         return view('tour.trip')->with(['subNum' => '1']);
     }
+    public function dailyProgram()
+    {
+        return view('tour.dailyProgram')->with(['subNum' => '2']);
+    }
 }

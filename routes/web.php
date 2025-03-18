@@ -89,11 +89,13 @@ Route::prefix('location')->controller(\App\Http\Controllers\Location\LocationCon
     Route::get('venue', 'venue')->name('location.venue');
     Route::get('map', 'map')->name('location.map');
     Route::get('accommodation', 'accommodation')->name('location.accommodation');
+    Route::get('restaurant', 'restaurant')->name('location.restaurant');
 });
 
 //Tour
 Route::prefix('tour')->controller(\App\Http\Controllers\Tour\TourController::class)->group(function() {
     Route::get('/', 'trip')->name('tour.trip');
+    Route::get('dailyProgram', 'dailyProgram')->name('tour.dailyProgram');
 });
 
 require __DIR__.'/common.php';

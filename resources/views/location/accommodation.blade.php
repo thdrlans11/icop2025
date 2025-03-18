@@ -20,8 +20,7 @@
         <div class="active-box">
             <div class="tit">
                 <p>
-                    Venue Hotel <br>
-                    <strong>Special Price <br>for ICOP 2025</strong>
+                    <strong>Special Price Hotel<br>for ICOP 2025</strong>
                 </p>
             </div>
             <div class="hotel-tit-wrap">
