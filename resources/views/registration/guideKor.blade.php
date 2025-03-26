@@ -96,7 +96,41 @@
                 <li class="text-red">학생 등록의 경우, 등록 시 학생증을 필히 제출해주십시오.</li>
 				<li class="text-red">Field Trip은 결제 완료 기준으로 10명 선착순 신청입니다.</li>
             </ul>
-
+			<div class="sub-tit-wrap">
+                <h4 class="sub-tit">등록비 포함사항</h4>
+            </div>
+		 <div class="table-wrap mt-20">
+                <table class="cst-table">
+                    <caption class="hide">취소 및 환불</caption>
+                    <colgroup>
+                        <col style="width: 40%;">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                Delegate<br>
+								Student<br>
+								Post Doctor
+                            </th>
+                            <td>
+                                세션장 및 전시장 출입<br>
+								점심 (월,화,목,금) – 수요일 점심 미제공<br>
+								커피브레이크
+                            </td>
+                        </tr>
+                       <tr>
+                            <th scope="row">
+                                Accompanying Person
+                            </th>
+                            <td>
+                                점심 (월,화,목,금) – 수요일 점심 미제공<br>
+								커피브레이크
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="sub-tit-wrap">
                 <h4 class="sub-tit">등록비 결제 수단</h4>
             </div>

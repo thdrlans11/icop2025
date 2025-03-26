@@ -238,7 +238,7 @@
         <li>
             <div class="form-tit">Abstract Title <strong class="required">*</strong> </div>
             <div class="form-con">
-                <input type="text" name="subject" id="subject" value="{{ $apply->subject ?? '' }}" class="form-item korNumNone" onchange="toFirstOpper(this)">
+                <input type="text" name="subject" id="subject" value="{{ $apply->subject ?? '' }}" class="form-item">
                 <p class="mt-10">
                     (<input type="text" id="subject_length" value="{{ empty($apply->subject) ? '' : count(explode(' ', $apply->subject)) }}" class="form-item n-bd text-center" readonly>) 30words (The title should be less than 30 words.)
                 </p>

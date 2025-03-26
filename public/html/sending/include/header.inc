@@ -42,6 +42,12 @@
                         메일 발송
                     </a>
                 </li>
+                <li>
+                    <a href="/html/sending/html/statistics/list_sms.html">
+                        <span class="icon"></span>
+                        통계
+                    </a>
+                </li>
             </ul>
             <a href="#n" class="btn btn-logout">
                 <span class="icon"></span>

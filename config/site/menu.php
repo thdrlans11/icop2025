@@ -106,16 +106,23 @@ return [
                 'route_param' => ['mainNum'=>'2', 'subNum'=>'2'],
             ],
             '3' => [
-                'name' => 'Plenary Lectures',
+                'name' => 'Invited Lectures',
                 'url' => "",
                 'route_target' => 'program.speakers',
                 'route_param' => [],
             ],
-            '4' => [
-                'name' => 'Special Symposia',
+            //'4' => [
+            //    'name' => 'Special Symposia',
+            //    'url' => "",
+            //    'route_target' => 'apply.symposium',
+            //    'route_param' => ['step'=>'1'],
+            //],
+            '5' => [
+                'name' => 'Special Symposia Program',
                 'url' => "",
-                'route_target' => 'apply.symposium',
-                'route_param' => ['step'=>'1'],
+				// 'route_target' => 'ready',
+                'route_target' => 'program.symposiaProgram',
+                'route_param' => [],
             ]
         ],
         '3' => [
@@ -264,7 +271,7 @@ return [
                 'route_param' => [],
             ],
 			 '2' => [
-                'name' => 'Daily Tour Program',
+                'name' => 'Conference Tour',
                 'url' => "",
                 'route_target' => 'tour.dailyProgram',
                 'route_param' => [],

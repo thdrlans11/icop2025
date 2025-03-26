@@ -215,6 +215,33 @@ The hosts of all respiratory symbiont species known so far seem to affiliate wit
                 </div>
             </div>
         </div>
+		<div class="invited-conbox">
+            <div class="invited-con">
+                <div class="img-wrap">
+                    <img src="/assets/image/sub/img_Anastasios.png" alt="Anastasios D. Tsaousis ">
+                </div>
+                <div class="text-wrap">
+                    <strong class="name"><a href="https://www.kent.ac.uk/biosciences/people/653/tsaousis-anastasios" target="_blank"><u>Anastasios D. Tsaousis</u></a></strong>
+                    <p>
+                        Reader in Molecular and Evolutionary ParasitologyGraduate<br>
+						Studies Lead (Taught), University of Kent<br>UK
+                    </p>
+                    <p class="tit"><span>Lecture Title: Decoding the Gut’s Enigma: Unravelling the Role of Blastocystis in Health and Disease</span><button type="button" class="btn-toggle js-btn-toggle"></button></p>
+					<div class="abstract-con js-toggle-con">
+                        Blastocystis is one of the most prevalent eukaryotic microorganisms inhabiting the human gut, yet its role in health and disease remains enigmatic. Traditionally considered a pathogen, recent advances in microbiome research suggest that Blastocystis may function as a commensal or even beneficial organism. This presentation will explore the dual nature of Blastocystis, integrating multi-omics approaches to dissect its interactions within the gut ecosystem.<br>
+						We employ metagenomics, metabolomics, and transcriptomics to investigate the impact of Blastocystis on host health, focusing on its relationship with gut microbiota composition, immune modulation, and metabolic outputs. Emerging evidence suggests that specific Blastocystis subtypes are associated with gut homeostasis, while others may contribute to gastrointestinal disorders. Understanding these subtype-specific effects is crucial for redefining their clinical significance.<br>
+						Furthermore, Blastocystis exhibits remarkable genetic and metabolic diversity, allowing it to persist in diverse hosts and environments. By elucidating its interactions with bacterial communities and metabolic pathways, we aim to determine whether Blastocystis serves as a key component of the gut ecosystem or a potential disruptor.<br>
+						This talk will provide an integrative perspective on Blastocystis and its implications for human health, highlighting the need for standardised diagnostic approaches and subtype-based analyses. The findings underscore the necessity of a paradigm shift in our understanding of this organism, moving from a pathogen-centric view to a more nuanced assessment of its ecological role in the gut.<br>
+						<strong>Keywords:</strong> Blastocystis, gut microbiome, health and disease, metagenomics, microbial eukaryotes
+                    </div>
+                    <p>
+                       Dr. Anastasios D. Tsaousis is a Reader in Molecular and Evolutionary Parasitology at the University of Kent, UK. His research focuses on microbial eukaryotes, particularly Blastocystis, Cryptosporidium, and Naegleria, investigating their evolution, host interactions, and roles in the microbiome. He is the Chair of the COST Action Blastocystis under One Health and has played a pivotal role in advancing knowledge on the ecological and medical significance of Blastocystis. Dr. Tsaousis obtained his PhD in Molecular Cell Evolution from Newcastle University and has held research positions at Dalhousie University (Canada), Charles University (Czech Republic), and the University of Saskatchewan (Caanda). His work has led to significant discoveries on mitochondrial-related organelles, anaerobic adaptation, and host-microbe interactions. He has received numerous research grants and awards, including the prestigious 2022 Hutner Achievement Award from the International Society of Protistologists, recognising his outstanding contributions to protistology. As an active mentor and scientific communicator, Dr. Tsaousis has led international collaborations and training initiatives to enhance protist research worldwide. His work integrates molecular biology, genomics, and microbiome research to decipher the complex relationships between parasites and their hosts.
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <div class="sub-tit-wrap text-center">
             <h4 class="sub-tit">ISOP Past Presidents Talk</h4>

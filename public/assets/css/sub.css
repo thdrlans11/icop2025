@@ -1185,6 +1185,9 @@ p + .name strong{
 .program-table .bg-orange2{
     background-color: #fff6e6 !important;
 }
+.program-table .bg-orange3{
+    background-color: #ffecd2 !important;
+}
 .program-table .bg-pink{
     background-color: #fff0fd !important;
 }
@@ -1193,6 +1196,9 @@ p + .name strong{
 }
 .program-table .bg-green{
     background-color: #f9fff0 !important;
+}
+.program-table .bg-green2{
+    background-color: #f0fff0 !important;
 }
 .program-table .bg-skyblue{
     background-color: #f0fcff !important;
@@ -1521,6 +1527,165 @@ p + .name strong{
 .cst-table td .form-group,
 .cst-table td .form-item{
     width: 100%;
+}
+
+/* Program::Special Symposia Program */
+.special-program{
+    display: flex;
+    gap: 45px;
+    align-items: start;
+    padding: 0 50px;
+}
+.special-program + .special-program{
+    margin-top: 70px;
+}
+.special-program .img-wrap{
+    flex: 0 0 auto;
+    width: 250px;
+}
+.special-program .img-wrap img{
+    border: 1px solid #f5f2f0;
+    border-radius: 5px;
+}
+.special-program .text-wrap{
+    width: 100%;
+}
+.organizer-info,
+.session-info{
+    margin-bottom: 20px;
+}
+.organizer-info .tit{
+    margin-bottom: 20px;
+}
+.organizer-info .tit .mark,
+.session-info .tit .mark{
+    display: inline-block;
+    width: 155px;
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+}
+.organizer-info .tit .mark{
+    background: linear-gradient(to right, #0579b5, #47b0e6);
+}
+.organizer-info .name{
+    font-size: 2.8rem;
+    color: #0b9bba;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: underline;
+}
+.organizer-info p{
+    margin-top: 5px;
+}
+.session-info .tit{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+.session-info .tit .mark{
+    flex: 0 0 auto;
+    background: linear-gradient(to right, #234789, #2d60be);
+}
+.session-info .tit strong{
+    display: inline-block;
+    padding-left: 40px;
+    margin: 0 10px;
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    background-image: url('../image/sub/ic_lecture_tit.png');
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #02348b;
+    line-height: 1.3;
+}
+.session-info .tit button{
+    flex: 0 0 auto;
+    margin-top: 2px;
+}
+.session-info .tit > strong span{
+    display: inline;
+    padding: 0 2px 2px;
+    box-shadow: inset 0 -10px #f1f8ff;
+}
+.special-program ul{
+    width: 100%;
+    margin-top: 30px;
+}
+.special-program ul > li{
+    display: flex;
+    gap: 40px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+}
+.special-program ul > li + li{
+    margin-top: 20px;
+}
+.special-program ul > li.date{
+    background-image: url('../image/sub/ic_program_date.png');
+}
+.special-program ul > li.speakers{
+    background-image: url('../image/sub/ic_program_speakers.png');
+}
+.special-program ul > li > strong{
+    flex: 0 0 auto;
+    width: 150px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #02348b;
+    letter-spacing: -0.02em;
+}
+.special-program ul > li > strong span{
+    display: inline;
+    padding: 0 2px 2px;
+    box-shadow: inset 0 -10px #f1f8ff;
+}
+.special-program ul > li div{
+    width: 100%;
+}
+.speakers-info{
+    line-height: 1.5;
+}
+.speakers-info + .speakers-info{
+    margin-top: 15px;
+}
+.speakers-info p{
+    padding: 10px 20px;
+}
+.speakers-info p strong{
+    font-weight: 600;
+}
+.speakers-info p:first-child{
+    background-color: #f2faff;
+    border-radius: 15px;
+    font-weight: 500;
+    color: #224689;
+}
+.special-program{
+    position: relative;
+}
+.special-program .tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    padding-top: 33px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('../image/sub/bg_progarm_tag.png');
+    width: 280px;
+    height: 93px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.03em;
+    line-height: 1;
 }
 
 /* SUBMISSION::Guidelines */

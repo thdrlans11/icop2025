@@ -66,7 +66,7 @@
                         <li>
                             <a href="{{ route($val['route_target'],$val['route_param']) }}">
                                 {{ $val['name'] }}
-                                @if( $key == '2' || $key == '5' )
+                                @if( $key == '2' || $key == '5' || $key == '7' )
                                 <span class="new">N</span>
                                 @endif
                             </a>
@@ -75,8 +75,8 @@
                                 @foreach( config('site.menu.sub_menu')[$key] as $skey => $sval ) @if( $key == '4' && $skey > 3 ) @continue @endif
                                 <li>
                                     <a href="{{ route($sval['route_target'],$sval['route_param']) }}">
-                                        {{ $sval['name'] }}
-                                        @if( ( $key == '2' && $skey == '3' ) || ( $key == '5' && $skey == '3' ) || ( $key == '5' && $skey == '4' ) )
+                                        {!! $key == '2' && $skey == '5' ? str_replace("Special Symposia ", "Special Symposia<br>", $sval['name']) : $sval['name'] !!}
+                                        @if( ( $key == '2' && $skey == '3' ) || ( $key == '2' && $skey == '5' ) || ( $key == '2' && $skey == '1' ) || ( $key == '5' && $skey == '3' ) || ( $key == '5' && $skey == '4' ) )
                                         <span class="new">N</span>
                                         @endif
                                     </a>
@@ -123,7 +123,7 @@
                                 @if( $mainNum == '4' && $skey > 3 && !isset($rgubun) ) @continue @endif
                                 @if( $mainNum == '4' && $skey <= 3 && isset($rgubun) ) @continue @endif
                                 <li {!! $subNum == $skey ? 'class="on"' : '' !!}>
-                                    <a href="{{ route($sval['route_target'],$sval['route_param']) }}"><span>{{ $sval['name'] }}</span></a>
+                                    <a href="{{ route($sval['route_target'],$sval['route_param']) }}"><span>{!! $sval['name'] !!}</span></a>
                                 </li>
                                 @endforeach
                             </ul>
@@ -133,7 +133,7 @@
             </article>
             <article class="sub-contents">
                 <div class="page-tit-wrap inner-layer">
-                    <h3 class="page-tit">{{ config('site.menu.sub_menu')[$mainNum][$subNum]['name'] }}</h3>
+                    <h3 class="page-tit">{!! config('site.menu.sub_menu')[$mainNum][$subNum]['name'] !!}</h3>
                 </div>
                 <div class="sub-conbox inner-layer">
             @endif

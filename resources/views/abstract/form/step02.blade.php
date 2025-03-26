@@ -116,7 +116,7 @@
         </li>
         <li>
             <div class="form-tit">Abstract <strong class="required">*</strong></div>
-            <div class="form-con">
+            <div class="form-con" style="word-break: break-all">
                 {!! $apply->content ?? '' !!}
             </div>
         </li>

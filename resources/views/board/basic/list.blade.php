@@ -26,7 +26,16 @@ function dbChange(sid,field,value){
 
 @section('content')
 <div id="board" class="board-wrap">
-	
+   <!--  <div class="board-info-box">
+        <img src="/assets/image/sub/ic_board_info.png" alt="">
+        <div class="text-wrap">
+            <strong class="tit">CAUTION !!</strong>
+            <p>
+                Please note that ICOP 2025 does not handle accommodation, and therefore, we do not send any emails regarding accommodation. <br>
+                Kindly disregard any emails you receive about accommodation unless you have made a booking through them.
+            </p>
+        </div>
+    </div> -->
 	<div class="sch-form-wrap">
 		<form action="{{ route('board.list', $code) }}" method="get">
 			<fieldset>

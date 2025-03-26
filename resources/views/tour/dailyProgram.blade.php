@@ -41,13 +41,16 @@
                 <strong>Cost per person :</strong>
                 <div>
                     <p>
-                        ₩90,000 <br>
-                        <span class="fz-small">* If you only apply for the afternoon tour, it costs ₩52,000</span>
+                        ₩124,000 <br>
+                        <span class="fz-small">* If you only apply for the afternoon tour, it costs ₩82,000</span>
                     </p>
-                    <div class="qr-box">
+                   <!--  <div class="qr-box">
                         <img src="/assets/image/sub/img_qr.png" alt="">
-                    </div>
+                    </div> -->
                 </div>
+            </li>
+			<li class="date">
+                <strong>Application period : </strong> <p>April. 1(Tue.)~April.30(Wed.) </p> <p style="color: red;">※ We will inform you later.</p> 
             </li>
         </ul>
 
@@ -66,13 +69,15 @@
             </div>
             <div class="tour-course-con">
                 <div class="text-wrap">
-                    <strong class="tit">2. BUKCHON HANOK VILLAGE</strong>
+                    <strong class="tit">2. Namsangol Hanok Village</strong>
                     <p>
-                        Surrounded by Gyeongbokgung Palace, Changdeokgung Palace and Jongmyo Shrine, Bukchon Hanok Village is home to hundreds of traditional houses, called hanok, that date back to the Joseon Dynasty. The name Bukchon, which literally translates to "northern village," came about as the neighborhood lies north of two significant Seoul landmarks, Cheonggyecheon Stream and Jongno. Today, many of these hanoks operate as cultural centers, guesthouses, restaurants and tea houses, providing visitors with an opportunity to experience, learn and immerse themselves in traditional Korean culture. Also, the rickshaw tour guides you to the smaller alleys as well.
+                        Namsan, a symbol of Seoul, was formerly known as Mount Mookmyeok and has been referred to as Namsan due to its location south of the capital city. With its beautiful natural scenery, Namsan was a place where our ancestors built pavilions in the valleys and engaged in leisure activities, expressing their appreciation for nature through poetry and painting. The area attracted many people, especially the elegant men and women of the time, who sought to enjoy the splendid landscapes.
+						On a 7,934m<sup>2</sup> site located to the northeast of Namsan, five traditional hanok (Korean houses) from various parts of the city have been relocated and restored. The interiors are furnished with period-appropriate items that reflect the status and character of the people who once lived there, providing a glimpse into the lives of our ancestors. The traditional garden has been restored to its original form, with native plants from Namsan's natural vegetation planted, and a stream has been created to allow water to flow naturally. Pavilions and ponds have also been restored, creating a garden in traditional style.
+						To the west of the garden, a picturesque stream flows, and around it, antique-style pavilions have been built, evoking the old atmosphere of Namsan, where our ancestors once leisurely enjoyed the surroundings. Additionally, a time capsule was buried 15 meters underground on November 29, 1994, to commemorate the 600th anniversary of Seoul as the capital. The capsule contains 600 items representing the city’s appearance, civic life, and social culture, which will be revealed to future generations in the year 2394.
                     </p>
                 </div>
                 <div class="img-wrap">
-                    <img src="/assets/image/sub/img_tour_course02.png" alt="BUKCHON HANOK VILLAGE">
+                    <img src="/assets/image/sub/img_tour_course02_v2.png" alt="BUKCHON HANOK VILLAGE">
                 </div>
             </div>
             <div class="tour-course-con">
@@ -97,7 +102,7 @@
                     </p>
                 </div>
                 <div class="img-wrap">
-                    <img src="/assets/image/sub/img_tour_course04.png" alt="* Dinner. Tojong SAMGYETANG (CHICKEN SOUP WITH GINSENG)">
+                    <img src="/assets/image/sub/img_tour_course04_v2.png" alt="* Dinner. Tojong SAMGYETANG (CHICKEN SOUP WITH GINSENG)">
                 </div>
             </div>
         </div>

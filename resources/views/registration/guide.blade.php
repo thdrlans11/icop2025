@@ -144,7 +144,7 @@
                 <tr>
                     <th scope="row">Accompanying Person</th>
                     <td class="text-left">
-                        All program Sessions <br>
+                        Lunch (Mon, Tue, Thu, Fri)<br>
                         Coffee Break
                     </td>
                 </tr>

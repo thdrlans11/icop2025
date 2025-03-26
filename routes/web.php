@@ -27,6 +27,7 @@ Route::prefix('program')->controller(\App\Http\Controllers\Program\ProgramContro
     Route::get('', 'program')->name('program.program');
     Route::get('speakers', 'speakers')->name('program.speakers');
     Route::get('symposia', 'symposia')->name('program.symposia');
+    Route::get('symposiaProgram', 'symposiaProgram')->name('program.symposiaProgram');
 });
 
 //Special Symposium

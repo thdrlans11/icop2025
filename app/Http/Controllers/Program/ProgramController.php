@@ -29,4 +29,9 @@ class ProgramController extends Controller
         return view('program.symposia')->with(['subNum' => '4']);
     }
 
+    public function symposiaProgram()
+    {
+        return view('program.symposiaProgram')->with(['subNum' => '5']);
+    }
+
 }

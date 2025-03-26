@@ -14,6 +14,26 @@
 
 ====================================== */
 /* list */
+.board-info-box{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+    background-color: #fff4f4;
+}
+.board-info-box .text-wrap{
+    line-height: 1.4;
+    letter-spacing: -0.03em;
+    color: #222;
+}
+.board-info-box .tit{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e73e3e;
+}
 .sch-wrap{
     display: flex;
     flex-direction: row;
