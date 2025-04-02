@@ -13,7 +13,7 @@
                 <strong>Itinerary</strong>
                 <div class="bg-box">
                     <div>
-                        <strong class="tit">Afternoon Tour (14:00~19:30)</strong>
+                        <strong class="tit">Tour A (14:00~19:30)</strong>
                         <ul class="list-type list-type-bar">
                             <li>
                                 Gyeongbokgung Palace
@@ -30,9 +30,14 @@
                         </ul>
                     </div>
                     <div>
-                        <strong class="tit">[Optional] Evening Tour (20:00~22:00)</strong>
+                        <strong class="tit">Tour B (14:00~ 22:00)</strong>
                         <ul class="list-type list-type-bar">
-                            <li>N-Seoul Tower & Observatory</li>
+                            <li>Gyeongbokgung Palace</li>
+							<li>Bukchon Hanok Village</li>
+							<li>Insadong Antique Street Tour</li>
+							<li>Tojong Samgyetang (Korean chiecken Soup with Ginsaeng<br>
+							<span style="margin-left:100px;">+</span><br>
+							N-Seoul Tower & Observatory</li>
                         </ul>
                     </div>
                 </div>
@@ -41,16 +46,32 @@
                 <strong>Cost per person :</strong>
                 <div>
                     <p>
-                        ₩124,000 <br>
-                        <span class="fz-small">* If you only apply for the afternoon tour, it costs ₩82,000</span>
+                        Tour A : ₩82,000 <br>
+						Tour B : ₩124,000 <br>
+                       <!--  <span class="fz-small">* If you only apply for the afternoon tour, it costs ₩82,000</span> -->
                     </p>
-                   <!--  <div class="qr-box">
-                        <img src="/assets/image/sub/img_qr.png" alt="">
-                    </div> -->
+                   
                 </div>
             </li>
 			<li class="date">
-                <strong>Application period : </strong> <p>April. 1(Tue.)~April.30(Wed.) </p> <p style="color: red;">※ We will inform you later.</p> 
+                <strong>Application period : </strong> <p>April. 1(Tue.)~April.30(Wed.) </p> <!-- <p style="color: red;">※ We will inform you later.</p>  -->
+            </li>
+			<li class="qr">
+                <strong>Application QR code </strong>
+                <ul class="qr-list">
+                    <li>
+                        <div class="img-wrap">
+                            <img src="/assets/image/sub/img_qr01.png" alt="">
+                            <strong class="tit">Tour A (&#8361;82,000)</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="/assets/image/sub/img_qr02.png" alt="">
+                            <strong class="tit">Tour B (&#8361;124,000)</strong>
+                        </div>
+                    </li>
+                </ul>
             </li>
         </ul>
 

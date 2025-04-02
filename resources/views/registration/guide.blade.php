@@ -17,12 +17,12 @@
     <div class="regi-date-wrap">
         <div class="regi-date-conbox">
             Early Bird Registration Closes
-            <strong>by 31 March 2025 (23:59 KST)</strong>
+            <strong>Apr 15 (Tue.), 23:59 KST</strong>
         </div>
-        <div class="regi-date-conbox">
+        <!-- <div class="regi-date-conbox">
             Late Registration Closes
             <strong>by 30 April 2025 (23:59 KST)</strong>
-        </div>
+        </div> -->
     </div>
 
     <div class="sub-tit-wrap">
@@ -64,8 +64,8 @@
             <thead>
                 <tr>
                     <th scope="col" colspan="2" class="bg-skyblue">Registration Fee</th>
-                    <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~March 31, 2025)</span></th>
-                    <th scope="col" class="bg-green">Late Registration <br><span>(March 31 – April 30, 2025)</span></th>
+                    <th scope="col" class="bg-navy">Early Bird Registration <br><span>(~ April 15, 2025))</span></th>
+                    <th scope="col" class="bg-green">Onsite Registration<!-- <br><span>(March 31 – April 30, 2025)</span> --></th>
                 </tr>
             </thead>
             <tbody>
@@ -268,12 +268,12 @@
     <div class="regi-date-wrap">
         <div class="regi-date-conbox">
             Early Bird Registration Closes
-            <strong>2025년 3월 31일 (월)</strong>
+            <strong>2025년 4월 15일 (화)</strong>
         </div>
-        <div class="regi-date-conbox">
+        <!-- <div class="regi-date-conbox">
             Late Registration Closes
             <strong>2025년 4월 30일 (수)</strong>
-        </div>
+        </div> -->
     </div>
 
     <div class="sub-tit-wrap">

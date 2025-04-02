@@ -9,13 +9,16 @@
         <div class="date-conbox">
             <p>
                 Deadline of abstract submission
-                <strong>MARCH 31, 2025</strong>
+                <strong>Apr 15 (Tue.), 23:59 KST</strong>
             </p>
         </div>
         <div class="date-conbox">
             <p>
                 Notice of acceptance
-                <strong>APRIL 7, 2025</strong>
+                <strong>1st Notice: <br>
+				April 7 (Mon.), 2025<br>
+				2nd Notice: <br>
+				April 21 (Mon.), 2025</strong>
             </p>
         </div>
     </div>

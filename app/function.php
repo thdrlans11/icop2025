@@ -58,9 +58,9 @@ if (!function_exists('DDay')) {
         if( $target == 'event' ){
             $date = config('site.common.info.eventDay');
         }else if( $target == 'abstract' ){
-            $date = '2025-03-31';
+            $date = '2025-04-15';
         }else if( $target == 'earlyRegistration' ){
-            $date = '2025-03-31';
+            $date = '2025-04-15';
         }else if( $target == 'lastRegistration' ){
             $date = '2025-04-30';
         }

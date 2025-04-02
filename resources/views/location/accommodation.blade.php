@@ -188,7 +188,32 @@
             </div>
         </div>
     
-		
+		 <div class="hotel-tit-wrap">
+            <h5 class="hotel-tit">Snow Flower Guesthouse</h5> <!-- <div class="star"><img src="/assets/image/sub/ic_star.png" alt=""><img src="/assets/image/sub/ic_star.png" alt=""></div> -->
+        </div>
+        <div class="hotel-contents">
+            <div class="img-wrap">
+                <div class="img-rolling js-img-rolling">
+                    <img src="/assets/image/sub/img_hotel_snow01.png" alt="Hotel Snow Flower">
+                    <img src="/assets/image/sub/img_hotel_snow02.png" alt="Hotel Snow Flower">
+                    <img src="/assets/image/sub/img_hotel_snow03.png" alt="Hotel Snow Flower">
+                    <img src="/assets/image/sub/img_hotel_snow04.png" alt="Hotel Snow Flower">
+                </div>
+            </div>
+            <div class="text-wrap">
+                <ul>
+                    <li class="address">
+                        <strong>Address:</strong> Seoul Jongno-gu Sungkyunkwan Road 12, Unigeo Building 4F
+                    </li>
+                    <li class="phone">
+                        <strong>Phone: </strong> <a href="tel:+82-10-3687-1542" target="_blank">+82-10-3687-1542</a>
+                    </li>
+                </ul>
+                <div class="btn-wrap">
+                    <a href="https://snowflowerguesthouse.com/index_en.php" target="_blank" class="btn btn-hotel">Go to Website</a>
+                </div>
+            </div>
+        </div>
         
     </div>  
 </div>

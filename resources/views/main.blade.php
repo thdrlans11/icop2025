@@ -55,19 +55,25 @@
                 <ul class="main-visual-menu cf">
                     <li>
                         Abstract Submission Deadline
-                        <p class="date">March 31 (Mon), 2025</p>
+                        <p class="date">Apr 15 (Tue.), 2025</p>
                         <span class="dday {{ DDay('abstract') == 'END' ? 'end' : '' }}">{{ DDay('abstract') }}</span>
                     </li>
                     <li>
                         Early Bird Registration Deadline
-                        <p class="date">March 31 (Mon), 2025</p>
+                        <p class="date">Apr 15 (Tue.), 2025</p>
                         <span class="dday {{ DDay('earlyRegistration') == 'END' ? 'end' : '' }}">{{ DDay('earlyRegistration') }}</span>
                     </li>
-                    <li>
+					 <li>
+                        Notice of Acceptance
+                        <p class="date">1st Notice:<br>April 7 (Mon.), 2025<br>
+						2nd Notice:<br>April 21 (Mon.), 2025</p>
+                       <!--  <span class="dday {{ DDay('lastRegistration') == 'END' ? 'end' : '' }}">{{ DDay('lastRegistration') }}</span> -->
+                    </li>
+                   <!--  <li>
                         Last Registration Deadline
                         <p class="date">April 30 (Wed), 2025</p>
                         <span class="dday {{ DDay('lastRegistration') == 'END' ? 'end' : '' }}">{{ DDay('lastRegistration') }}</span>
-                    </li>
+                    </li> -->
                     <li>
                         Congress
                         <p class="date">June 22-27, 2025</p>
@@ -237,7 +243,14 @@ University of Rhode Island, USA
             <a href="https://fbp.nnibr.re.kr/fbcc/" target="_blank"><img src="/assets/image/main/bnr_FBCC_250310.png" alt=""></a>
             <a href="https://www.dnalink.com/" target="_blank"><img src="/assets/image/main/bnr_DNALINK_250311.png" alt=""></a>
             <a href="https://xenohelix.com/" target="_blank"><img src="/assets/image/main/bnr_xeno_250317.png" alt=""></a>
-            <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a>
+            <a href="http://www.genomicbase.com/" target="_blank"><img src="/assets/image/main/bnr_genomic_250328.png" alt=""></a>
+			<a href="https://blog.naver.com/j_one_bio" target="_blank"><img src="/assets/image/main/bnr_jone_250331.png" alt=""></a>
+			<a href="https://www.frontiersin.org/" target="_blank"><img src="/assets/image/main/bnr_frontires_250331.png" alt=""></a>
+			<a href="https://www.sciencedirect.com/journal/european-journal-of-protistology" target="_blank"><img src="/assets/image/main/bnr_elsevier_250401.png" alt=""></a>
+			<a href="https://www.moore.org/" target="_blank"><img src="/assets/image/main/bnr_moore_250331.png" alt=""></a>
+			<a href="https://www.skku.edu/eng/" target="_blank"><img src="/assets/image/main/bnr_skku_250331.png" alt=""></a>
+			<a href="https://bk21four.skku.edu/bio/main/main.jsp" target="_blank"><img src="/assets/image/main/bnr_brainkorea_250331.png" alt=""></a>
+
 <!--             <a href="#n" target="_blank"><img src="/assets/image/main/img_no_sponsor.png" alt=""></a> -->
         </div>
     </div>

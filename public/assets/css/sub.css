@@ -2758,6 +2758,18 @@ p + .name strong{
 .silver .sponsor-tit > span{
     background-image: url('../image/sub/bg_sponsor_silver.png');
 }
+.gold .sponsor-tit > span{
+    background-image: url('../image/sub/bg_sponsor_gold.png');
+}
+.pl .sponsor-tit > span{
+    background-image: url('../image/sub/bg_sponsor_pl.png');
+}
+.bronze .sponsor-tit > span{
+    background-image: url('../image/sub/bg_sponsor_bronze.png');
+}
+.adv .sponsor-tit > span{
+    background-image: url('../image/sub/bg_sponsor_Advertising.png');
+}
 .sponsor-list{
     display: flex;
     justify-content: center;
@@ -2767,17 +2779,23 @@ p + .name strong{
 .sponsor-list > li{
     border: 1px solid #dcdfe5;
 }
+.sponsor-list.n3,
+.sponsor-list.n4,
+.sponsor-list.n5{
+    flex-wrap: wrap;
+}
 .sponsor-list.n3 > li{
-    width: calc((100% - 40px)/3);
+    width: calc((100% - 80px)/3);
 }
 .sponsor-list.n4 > li{
-    width: calc((100% - 60px)/4);
+    width: calc((100% - 120px)/4);
 }
 .sponsor-list.n5 > li{
-    width: calc((100% - 80px)/5);
+    width: calc((100% - 160px)/5);
 }
 .sponsor-list > li > a{
     display: block;
+    text-align: center;
 }
 .sponsor-list > li img{
     max-width: 100%;
@@ -3478,6 +3496,9 @@ p + .map-tit-wrap{
     background-position: center;
     border-radius: 50%;
 }
+.tour-program-list > li.qr:before{
+    background-image: url('../image/sub/ic_tour_qr.png');
+}
 .tour-program-list > li.date:before{
     background-image: url('../image/sub/ic_tour_date.png');
 }
@@ -3507,7 +3528,7 @@ p + .map-tit-wrap{
     background-color: #f0fdff;
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-image: url('../image/sub/bg_tour_box.png');
+    /* background-image: url('../image/sub/bg_tour_box.png');*/ 
     border: 1px solid #e0eaf1;
     border-radius: 0 20px 20px 20px;
     margin-bottom: 20px;
@@ -3601,7 +3622,25 @@ p + .map-tit-wrap{
 .tour-course-con .tit.text-skyblue{
     color: #008dd1 !important;
 }
-
+.tour-program-list > li.qr{
+    flex-direction: column;
+}
+.tour-program-list > li.qr .qr-list{
+    flex: 0 0 auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.qr-list{
+    display: flex;
+    gap: 40px;
+}
+.qr-list > li .tit{
+    display: block;
+    margin-top: 20px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+}
 
 /* Registration::Visa */
 .img-contents:nth-child(3) .bg-tit-wrap{

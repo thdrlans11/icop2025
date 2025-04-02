@@ -173,9 +173,9 @@
                         <strong><span>Speakers</span></strong>
                         <div>
                             <div class="speakers-info">
-                                <p>TBD</p>
+                                <p>New predatory representatives of the poorly studied stramenopile group Bigyromonada elucidate the origin of parasitism in Oomycetes and Pirsoniales</p>
                                 <p>
-                                    <strong>Brian Leander</strong>, University of British Columbia, Canada
+                                    <strong>Kristina Prokina</strong>, Université Paris-Saclay, France
                                 </p>
                             </div>
                             <div class="speakers-info">
@@ -191,7 +191,7 @@
                                 </p>
                             </div>
                             <div class="speakers-info">
-                                <p>TBD</p>
+                                <p>Predatory flagellates as important branches of the eukaryotic tree of life and key members of microbial communities</p>
                                 <p>
                                     <strong>Denis Tikhonenkov</strong>, Russian Academy of Sciences, Russian Federation
                                 </p>
@@ -530,10 +530,15 @@
                 <div class="session-info">
                     <div class="tit">
                         <span class="mark">SS 7</span>
-                        <strong><span>Origin of multicellularity in Eukaryotes</span></strong> <button type="button" class="btn-toggle js-btn-toggle"></button>
+                        <strong><span>Exploring the Evolutionary Origins of Multicellularity in Amorphea</span></strong> <button type="button" class="btn-toggle js-btn-toggle"></button>
                     </div>
                     <div class="abstract-con js-toggle-con">
-                        TBU
+                        The transitions from unicellular to multicellular life are one of the most significant evolutionary milestones in eukaryotic history. This symposium explores the diverse mechanisms driving the emergence of multicellularity, with a particular focus on Amoebozoa and Opisthokonta. By integrating perspectives from cell biology, experimental evolution, and comparative genomics, the discussion highlights the selective pressures, genetic innovations, and environmental factors that shaped this evolutionary transition.<br>
+						- This special symposium features investigations into:<br>
+						- The clonal-aggregative development of the choanoflagellate Choanoeca flexa in response to environmental conditions.<br>
+						- The presence of regulated cell death pathways in unicellular ancestors and their functional co-option during the evolution of animal multicellularity.<br>
+						- The regulation of aggregate size under different oxygen conditions in the filasterean Capsaspora owczarzaki.<br>
+						- The collective behavior of the aggregative amoebozoan Thecamoeba homeri, which involves resource sequestration and potential bacterial farming.
                     </div>
                 </div>
                 <ul>
@@ -547,25 +552,25 @@
                         <strong><span>Speakers</span></strong>
                         <div>
                             <div class="speakers-info">
-                                <p>TBA</p>
+                                <p>Clonal-aggregative multicellularity in a close relative of animals</p>
                                 <p>
                                     <strong>Núria Ros-Rocher</strong>, Institute Pasteur, France
                                 </p>
                             </div>
                             <div class="speakers-info">
-                                <p>TBA</p>
+                                <p>Stress, recognition and death: the role of environmental responses and inter-organismal relationships in the emergence of animals</p>
                                 <p>
                                     <strong>Michelle Leger</strong>, Okinawa Institute of Science and Technology, Japan
                                 </p>
                             </div>
                             <div class="speakers-info">
-                                <p>TBA</p>
+                                <p>Simulating the origins of multicellularity by artificial selection on the filasterean <em>Capsaspora owczarzaki</em>.</p>
                                 <p>
                                     <strong>Gonzalo Bercedo-Saborid</strong>, Biologia Evolutiva, Spain
                                 </p>
                             </div>
                             <div class="speakers-info">
-                                <p>TBA</p>
+                                <p>Cooperative Hoarding and Aggregative Multicellularity in <em>Thecamoeba homeri</em></p>
                                 <p>
                                     <strong>Tristan Henderson</strong>, Mississippi State University, United States
                                 </p>
@@ -1055,7 +1060,7 @@
                             <div class="speakers-info">
                                 <p>Toxin production in bloom-forming, harmful alga Alexandrium pacificum (Group IV) is regulated by cyst formation-promoting bacteria Jannaschia cystaugens NBRC 100362T</p>
                                 <p>
-                                    <strong>Zhun Li</strong>, KRIBB, China
+                                    <strong>Jiang Yue</strong>, Korea Research Institute of Bioscience and Biotechnology (KRIBB), China
                                 </p>
                             </div>
                             <div class="speakers-info">
